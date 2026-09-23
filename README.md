@@ -35,3 +35,14 @@ Native German speakers are especially welcome—**Mark** and **Fachwerk51**, you
 ## Sync from DeskPlanner
 
 The canonical app copies live under `client/src/locales/` in DeskPlanner. This repo’s `SOURCE.md` records the last synced commit. Optionally run `scripts/sync-from-deskplanner.sh` from a machine that has both checkouts side by side.
+
+## Import into DeskPlanner
+
+After strings are reviewed here, pull them into the app checkout:
+
+```bash
+cd DeskPlanner
+L10N_DIR=../ohmydesk-l10n npm run locales:import-l10n
+```
+
+**Note:** This requires [DeskPlanner PR #182](https://github.com/bodrovphone/DeskPlanner/pull/182) to be merged (adds `npm run locales:import-l10n`). Until then, use the PR branch or wait for merge.

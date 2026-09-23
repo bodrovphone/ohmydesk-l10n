@@ -1,0 +1,125 @@
+{
+  "title": "Aufgaben",
+  "accessRestricted": "Aufgaben werden zwischen Space-Eigentümern und Managern geteilt.",
+  "pageDescription": "Gemeinsame Aufgaben und Bedarfsverfolgung für alle, die {{space}} verwalten.",
+  "subtitleSingle": "Eine gemeinsame Liste für alle Manager. Datierte Aufgaben erhalten am Vortag eine Erinnerung.",
+  "subtitleGroup": "Eine gemeinsame Liste für alle Manager über alle Standorte hinweg. Datierte Aufgaben erhalten am Vortag eine Erinnerung.",
+  "addTask": "Aufgabe hinzufügen",
+  "error": {
+    "loadFailed": "Aufgaben konnten nicht geladen werden",
+    "applyMigration": "Wende die Aufgaben-Datenbankmigration an und lade diese Seite neu."
+  },
+  "empty": {
+    "title": "Nichts zu erledigen",
+    "description": "Erfasse Wartungsarbeiten, Mitglieder-Follow-ups, Einkäufe oder alles, woran das Team denken sollte.",
+    "addFirst": "Erste Aufgabe hinzufügen"
+  },
+  "sections": {
+    "open": "Offen",
+    "allDone": "Alles erledigt.",
+    "allDoneHint": "Erledigte Aufgaben bleiben unten zur Ansicht erhalten.",
+    "completed": "Erledigt",
+    "completedDate": "Erledigt am {{date}}"
+  },
+  "deadline": {
+    "overdue": "Überfällig · {{date}}",
+    "dueToday": "Heute fällig",
+    "dueTomorrow": "Morgen fällig",
+    "due": "Fällig am {{date}}"
+  },
+  "actions": {
+    "reopen": "Wiedereröffnen",
+    "editAria": "{{title}} bearbeiten",
+    "deleteAria": "{{title}} löschen",
+    "completeAria": "{{title}} abschließen"
+  },
+  "dialog": {
+    "titleEdit": "Aufgabe bearbeiten",
+    "titleAdd": "Aufgabe hinzufügen",
+    "description": "Jeder, der diesen Space verwaltet, kann dies sehen und bearbeiten.",
+    "taskLabel": "Aufgabe",
+    "taskPlaceholder": "z. B. Kaffeebohnen bestellen",
+    "notesLabel": "Notizen",
+    "notesPlaceholder": "Alles, was der nächste Manager wissen sollte",
+    "deadlineLabel": "Fälligkeitsdatum",
+    "deadlineHint": "Das Team erhält am Vortag um 09:00 Uhr eine Erinnerung.",
+    "saveChanges": "Änderungen speichern",
+    "optional": "(optional)"
+  },
+  "deleteDialog": {
+    "title": "Diese Aufgabe löschen?",
+    "description": "„{{title}}“ wird für alle Manager entfernt. Dies kann nicht rückgängig gemacht werden.",
+    "confirm": "Aufgabe löschen",
+    "cancel": "Abbrechen"
+  },
+  "toasts": {
+    "completeError": "Aufgabe konnte nicht abgeschlossen werden",
+    "reopenError": "Aufgabe konnte nicht wiedereröffnet werden",
+    "deleteSuccess": "Aufgabe gelöscht",
+    "deleteError": "Aufgabe konnte nicht gelöscht werden",
+    "addSuccess": "Aufgabe hinzugefügt",
+    "addSuccessReminder": "Wir erinnern das Team am Vortag.",
+    "updateSuccess": "Aufgabe aktualisiert",
+    "addError": "Aufgabe konnte nicht hinzugefügt werden",
+    "updateError": "Aufgabe konnte nicht aktualisiert werden",
+    "tryAgain": "Versuche es erneut."
+  },
+  "inventory": {
+    "subtitle": "Kaffee, Papierwaren, Snacks und mehr verfolgen. Markiere einen Artikel als knapp – oder lass den Schwellenwert greifen –, und wir fordern hier eine Nachbestellung an und benachrichtigen das Team sofort.",
+    "addItem": "Artikel hinzufügen",
+    "errorLoad": "Inventar konnte nicht geladen werden",
+    "errorLoadHint": "Lade diese Seite neu und versuche es erneut.",
+    "empty": {
+      "title": "Noch kein Verbrauchsmaterial erfasst",
+      "description": "Füge Verbrauchsgüter hinzu, die regelmäßig nachbestellt werden – Kaffee, Toilettenpapier, Snacks – und lasse dich nie überraschen.",
+      "addFirst": "Ersten Artikel hinzufügen"
+    },
+    "row": {
+      "decreaseAria": "{{name}} um eins verringern",
+      "increaseAria": "{{name}} um eins erhöhen",
+      "inStock": "auf Lager",
+      "restockAt": "· nachbestellen bei {{threshold}}{{unit}}",
+      "noQuantity": "Keine Menge erfasst",
+      "restockRequested": "Nachbestellung angefordert",
+      "markRestocked": "Als nachgefüllt markieren",
+      "runningLow": "Wird knapp",
+      "editAria": "{{name}} bearbeiten",
+      "removeAria": "{{name}} entfernen"
+    },
+    "dialog": {
+      "titleEdit": "Artikel bearbeiten",
+      "titleAdd": "Artikel hinzufügen",
+      "description": "Menge und Schwellenwert sind optional – setze beides, um automatisch eine Nachbestellung anzufordern, wenn der Vorrat knapp wird.",
+      "nameLabel": "Artikel",
+      "namePlaceholder": "z. B. Toilettenpapier",
+      "quantityLabel": "Menge",
+      "quantityPlaceholder": "z. B. 12",
+      "thresholdLabel": "Nachbestellen bei",
+      "thresholdPlaceholder": "z. B. 3",
+      "unitLabel": "Einheit",
+      "unitPlaceholder": "z. B. Rollen, Packungen, Kartons",
+      "hint": "Wenn die Menge auf den Nachbestellwert sinkt, erstellen wir eine Nachbestell-Aufgabe und benachrichtigen dein Team sofort.",
+      "saveChanges": "Änderungen speichern",
+      "optional": "(optional)"
+    },
+    "deleteDialog": {
+      "title": "Diesen Artikel entfernen?",
+      "description": "„{{name}}“ wird aus dem Inventar entfernt, zusammen mit allen ausstehenden Nachbestellungen.",
+      "confirm": "Artikel entfernen",
+      "cancel": "Abbrechen"
+    },
+    "toasts": {
+      "restockFlagged": "Nachbestellung markiert",
+      "restockFlaggedDesc": "„{{name}}“ ist zur Nachbestellung markiert – wir haben dein Team benachrichtigt.",
+      "flagError": "Dieser Artikel konnte nicht markiert werden",
+      "markedRestocked": "Als nachgefüllt markiert",
+      "markedRestockedDesc": "„{{name}}“ ist wieder auf Lager.",
+      "updateItemError": "Dieser Artikel konnte nicht aktualisiert werden",
+      "itemRemoved": "Artikel entfernt",
+      "removeItemError": "Artikel konnte nicht entfernt werden",
+      "itemUpdated": "Artikel aktualisiert",
+      "itemAdded": "Artikel hinzugefügt",
+      "addItemError": "Artikel konnte nicht hinzugefügt werden"
+    }
+  }
+}

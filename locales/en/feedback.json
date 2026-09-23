@@ -1,0 +1,54 @@
+{
+  "sentiments": {
+    "love": { "label": "Love it" },
+    "good": { "label": "It's fine" },
+    "meh": { "label": "Meh" },
+    "hate": { "label": "Hate it" }
+  },
+  "features": {
+    "mobileApp": "Mobile app",
+    "slackIntegration": "Slack integration",
+    "embeddableWidget": "Embeddable booking widget",
+    "automatedInvoices": "Automated invoices",
+    "publicApi": "Public API / webhooks",
+    "smartLock": "Smart lock integration",
+    "bookableEquipment": "Bookable equipment (printers, etc.)",
+    "multiLanguage": "Multi-language UI",
+    "whiteLabel": "White-label / custom branding",
+    "recurringBookings": "Recurring bookings",
+    "memberPortal": "Member self-service portal"
+  },
+  "form": {
+    "sentimentLegend": "Real talk — how do you feel about it?",
+    "missingLegend": "What's missing?",
+    "missingHint": "(pick anything that bugs you)",
+    "otherPlaceholder": "Something else? Type it here…",
+    "messageLegend": "Anything else?",
+    "messageHint": "(rant, roast, requests — go for it)",
+    "messagePlaceholder": "Optional. Bug? Praise? Random thought?",
+    "emailLegend": "Your email",
+    "emailHint": "(so we can reply)",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Send it",
+    "submitting": "Sending…"
+  },
+  "emailWarning": {
+    "title": "No email = no reply.",
+    "body": "We can't follow up if something's broken or worth a chat. Drop one above, or send anyway.",
+    "cta": "Send anyway — don't reply"
+  },
+  "errors": {
+    "empty": "Pick at least one thing — sentiment, missing feature, or write something below.",
+    "rateLimited": "Sent one already — give it a minute before another.",
+    "submitFailed": "Couldn't submit ({{reason}}). Try again or email hello@ohmydesk.app.",
+    "generic": "Something broke. Try again, or email hello@ohmydesk.app."
+  },
+  "success": {
+    "title": "Got it. Thanks.",
+    "hate": "Brutal. Noted. We'll do better.",
+    "meh": "Fair. We'll keep cooking.",
+    "love": "Means a lot. Truly.",
+    "default": "We read every one. Cheers.",
+    "backLink": "← Back to OhMyDesk"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "header": {
+    "title": "OhMyDesk Concierge",
+    "subtitle": "Fragen Sie alles zum Produkt"
+  },
+  "greeting": "Hallo! Ich bin der OhMyDesk Concierge. Fragen Sie mich alles zum Produkt — Funktionen, Preise, Vergleich oder den Einstieg.",
+  "starters": {
+    "whatIs": "Was ist OhMyDesk?",
+    "pricing": "Was kostet es?",
+    "compareCobot": "Wie schneidet ihr im Vergleich zu Cobot ab?",
+    "flexPasses": "Gehen auch Flex-Tagespässe?"
+  },
+  "input": {
+    "placeholder": "Fragen zu Funktionen, Preisen…"
+  },
+  "aria": {
+    "dialog": "OhMyDesk Concierge",
+    "close": "Chat schließen",
+    "typing": "Concierge tippt",
+    "message": "Ihre Nachricht",
+    "send": "Nachricht senden",
+    "open": "Mit dem OhMyDesk Concierge chatten",
+    "closeBubble": "OhMyDesk Concierge schließen"
+  },
+  "errors": {
+    "generic": "Entschuldigung — etwas ist schiefgelaufen. Bitte schreiben Sie an hello@ohmydesk.app.",
+    "network": "Server nicht erreichbar. Bitte erneut versuchen oder hello@ohmydesk.app schreiben."
+  }
+}

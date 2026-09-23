@@ -1,0 +1,105 @@
+{
+  "mobile": {
+    "title": "Deine Daumen sind zu klein dafür",
+    "description": "Der Raumplan-Editor benötigt eine echte Tastatur, eine Maus und am besten eine Tasse Kaffee. Komm an einem Computer zurück, um Möbel und Tische anzuordnen."
+  },
+  "title": "Raumplan",
+  "description": "Ordne Schreibtische, Wände, Türen und andere Objekte an, um das physische Layout deines Spaces abzubilden.",
+  "toolbar": {
+    "saving": "Speichern…",
+    "saveFailed": "Speichern fehlgeschlagen",
+    "unsaved": "Nicht gespeichert",
+    "saved": "Gespeichert",
+    "zoomIn": "Vergrößern",
+    "zoomOut": "Verkleinern",
+    "splitView": "Geteilte Ansicht",
+    "combineRooms": "Räume kombinieren",
+    "save": "Speichern",
+    "clearAll": "Alles leeren",
+    "clearRoom": "Raum leeren"
+  },
+  "canvas": {
+    "emptyAddPrompt": "Füge Schreibtische oder Formen aus dem rechten Bereich hinzu.",
+    "emptyShortcuts": "Ziehen zum Verschieben · Klicken zum Auswählen · <kbd>R</kbd> zum Drehen",
+    "helpDrag": "<b>Ziehen</b> zum Bewegen · Klicken zum Auswählen.",
+    "helpKeys": "<kbd>R</kbd> dreht · <kbd>←→↑↓</kbd> verschiebt · <kbd>Entf</kbd> entfernt · <kbd>Esc</kbd> hebt Auswahl auf."
+  },
+  "tile": {
+    "remove": "Entfernen",
+    "rotateCcw": "90° gegen den Uhrzeigersinn drehen",
+    "rotateCw": "90° im Uhrzeigersinn drehen"
+  },
+  "panel": {
+    "view": {
+      "title": "Ansicht",
+      "combinedHelp": "Alle Räume auf einer Fläche. Wähle einen Raum zum Fokussieren.",
+      "singleHelp": "Wähle, welcher Raum angeordnet werden soll.",
+      "noRooms": "Noch keine Räume vorhanden – erstelle einen auf der Seite „Räume“.",
+      "allRoomsCombined": "Alle Räume zusammen"
+    },
+    "selection": {
+      "title": "Auswahl",
+      "shapeFallback": "Form",
+      "position": "Position",
+      "rotation": "Drehung",
+      "room": "Raum",
+      "unplace": "Vom Plan nehmen",
+      "remove": "Entfernen"
+    },
+    "shapes": {
+      "title": "Formen",
+      "help": "Klicke, um ein Objekt auf die Fläche zu setzen. Nach dem Platzieren verschiebbar.",
+      "addTitle": "{{label}} hinzufügen"
+    },
+    "desks": {
+      "title": "Zu platzierende Tische",
+      "loading": "Laden…",
+      "allPlaced": "Alle Tische platziert"
+    }
+  },
+  "shapes": {
+    "pillar": "Säule",
+    "table": "Tisch",
+    "couch": "Sofa",
+    "door": "Tür",
+    "window": "Fenster",
+    "wc": "WC",
+    "kitchen": "Küche",
+    "wall": "Wand"
+  },
+  "dialogs": {
+    "combine": {
+      "title": "Räume auf der Fläche kombinieren",
+      "description": "Dies zeigt alle Räume zusammen auf einer Fläche, damit du den gesamten Space anordnen kannst. Tische bleiben ihren ursprünglichen Räumen zugeordnet – im Kalender oder bei Buchungen ändert sich nichts. Du kannst jederzeit zur geteilten Ansicht zurückkehren.",
+      "cancel": "Abbrechen",
+      "confirm": "Kombinieren"
+    },
+    "split": {
+      "title": "Zu geteilter Ansicht wechseln?",
+      "description": "Der Raumplan zeigt wieder jeweils einen einzelnen Raum an. Dein Layout ist bereits gespeichert – es geht nichts verloren.",
+      "cancel": "Abbrechen",
+      "confirm": "Geteilte Ansicht"
+    },
+    "unsaved": {
+      "title": "Ungespeicherte Änderungen",
+      "description": "Du hast ungespeicherte Änderungen am Raumplan. Speichere sie jetzt, oder verlasse die Seite und verwerfe sie.",
+      "stay": "Bleiben",
+      "leaveWithoutSaving": "Ohne Speichern verlassen",
+      "saveAndLeave": "Speichern & verlassen"
+    }
+  },
+  "modal": {
+    "title": "Grundriss",
+    "replace": "Ersetzen",
+    "remove": "Entfernen",
+    "uploading": "Wird hochgeladen…",
+    "removing": "Wird entfernt…",
+    "uploadPrompt": "Grundriss hochladen",
+    "uploadHelp": "Per Drag & Drop ablegen oder klicken. JPEG, PNG, WebP oder GIF bis zu 5MB.",
+    "chooseFile": "Datei auswählen",
+    "errorType": "Bitte ein JPEG-, PNG-, WebP- oder GIF-Bild hochladen.",
+    "errorSize": "Datei darf maximal 5MB groß sein.",
+    "errorUpload": "Grundriss konnte nicht hochgeladen werden. Bitte erneut versuchen.",
+    "errorDelete": "Grundriss konnte nicht entfernt werden. Bitte erneut versuchen."
+  }
+}

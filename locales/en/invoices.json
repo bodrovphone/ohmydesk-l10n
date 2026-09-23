@@ -1,0 +1,309 @@
+{
+  "title": "Invoices",
+  "description": "Every invoice across your members and companies — paid, unpaid, and drafts in one ledger.",
+  "autoInvoicing": "Auto invoicing",
+  "addInvoice": "Add invoice",
+  "askOwnerOrAdmin": "Ask a space owner or admin to manage invoices.",
+  "summary": {
+    "outstanding": "Outstanding",
+    "paid": "Paid",
+    "allInvoices": "All invoices"
+  },
+  "tabs": {
+    "all": "All",
+    "unpaid": "Unpaid",
+    "paid": "Paid"
+  },
+  "monthFilter": {
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month",
+    "clearFilter": "Clear month filter",
+    "filterByMonth": "Filter by month"
+  },
+  "searchPlaceholder": "Search by number or name…",
+  "plans": {
+    "label": "Plan",
+    "allPlans": "All plans",
+    "categories": {
+      "virtual_office": "Virtual office",
+      "dedicated_desk": "Dedicated desk",
+      "hotdesk": "Hotdesk",
+      "private_office": "Private office",
+      "flex": "Flex",
+      "day_pass": "Day pass"
+    }
+  },
+  "status": {
+    "draft": "Draft",
+    "sent": "Sent",
+    "paid": "Paid",
+    "void": "Void"
+  },
+  "loading": "Loading invoices…",
+  "emptyState": {
+    "noMatch": "No invoices match “{{query}}”.",
+    "noneInView": "No invoices in this view.",
+    "noneInViewScoped": "No {{scope}} invoices in this view.",
+    "noInvoicesYet": "No invoices yet",
+    "noInvoicesDesc": "Raise one manually, or generate this month's invoices for members on auto-billing."
+  },
+  "row": {
+    "manualInvoice": "Manual invoice",
+    "openMemberCard": "Open {{name}}'s member card",
+    "openInvoice": "Open invoice {{number}}",
+    "due": "Due {{date}}",
+    "overdue": "Overdue {{date}}",
+    "covers": "Covers {{period}}"
+  },
+  "picker": {
+    "title": "New invoice",
+    "description": "Pick the member to bill, or start a manual invoice.",
+    "searchPlaceholder": "Search members…",
+    "empty": "No members found.",
+    "manualNoMember": "Manual invoice (no member)"
+  },
+  "actions": {
+    "send": "Send",
+    "resend": "Resend",
+    "preview": "Preview",
+    "downloadPdf": "Download PDF",
+    "markAsPaid": "Mark as paid",
+    "void": "Void",
+    "downloadFailed": "Download failed",
+    "downloadFailedDesc": "Could not generate the PDF.",
+    "sendFailed": "Send failed",
+    "sendFailedDesc": "Could not send the invoice.",
+    "noEmailTitle": "No email on file",
+    "noEmailDesc": "Add a contact email to the member profile before sending invoices.",
+    "invoiceSent": "Invoice sent",
+    "invoiceSentDesc": "Emailed to {{email}}.",
+    "markedPaid": "Marked as paid",
+    "updateFailed": "Update failed",
+    "updateFailedDesc": "Could not update the invoice.",
+    "invoiceVoided": "Invoice voided",
+    "voidFailed": "Void failed",
+    "voidFailedDesc": "Could not void the invoice.",
+    "voidDialogTitle": "Void invoice {{number}}?",
+    "voidDialogDesc": "The invoice will be marked as void and become read-only. The invoice number is preserved for your records and won't be reused.",
+    "cancel": "Cancel",
+    "confirmVoid": "Void invoice"
+  },
+  "batch": {
+    "title": "Generate pending invoices",
+    "description": "Creates a draft invoice for every member with auto-invoicing turned on, using their active monthly contract for the cycle window and total. You'll review and send each draft from the member's invoice list.",
+    "buildingPreview": "Building preview…",
+    "noOptedIn": "No members have auto-invoicing turned on yet.",
+    "noOptedInHint": "Open a member's billing details and switch it on to include them here.",
+    "lines": "· {{count}} line",
+    "lines_plural": "· {{count}} lines",
+    "willCreate": "<1>{{count}}</1> will be created",
+    "skipped": ", <1>{{count}}</1> skipped",
+    "cancel": "Cancel",
+    "generateBtn": "Generate {{count}} draft",
+    "generateBtn_plural": "Generate {{count}} drafts",
+    "generateBtnZero": "Generate drafts",
+    "skipReasons": {
+      "missing_billing_info": "Billing info missing",
+      "no_active_monthly_plan": "No active monthly contract",
+      "already_invoiced": "Already invoiced this cycle"
+    },
+    "createdToastSingle": "1 draft invoice created",
+    "createdToastPlural": "{{count}} draft invoices created",
+    "createdDesc": "Review and send them from each member.",
+    "alreadyCoveredDesc": "Nothing new to invoice — every opted-in member was already covered.",
+    "failedTitle": "Generation failed",
+    "failedDesc": "Could not create invoices."
+  },
+  "preview": {
+    "invoiceTitle": "Invoice {{number}}",
+    "fallbackTitle": "Invoice",
+    "loadFailed": "Couldn't load this invoice. Please try again.",
+    "generating": "Generating preview…",
+    "close": "Close",
+    "downloadPdf": "Download PDF"
+  },
+  "editor": {
+    "title": "New invoice",
+    "forClient": "For {{name}}.",
+    "willSaveAs": "Will save as <1>{{number}}</1>.",
+    "billTo": {
+      "title": "Bill to",
+      "appliesToThis": "Applies to this invoice only",
+      "profile": "Billing profile",
+      "memberFallback": "Member",
+      "business": "business",
+      "personal": "personal",
+      "companyName": "Company legal name",
+      "companyNamePlaceholder": "Acme Coworking Ltd.",
+      "email": "Billing email",
+      "emailHint": "(where invoices are sent)",
+      "emailPlaceholder": "billing@acme.com",
+      "taxId": "Tax / company ID",
+      "taxIdPlaceholder": "123456789",
+      "vatId": "VAT ID",
+      "vatIdHint": "(optional)",
+      "vatIdPlaceholder": "VAT0000000",
+      "address": "Billing address",
+      "addressPlaceholder": "123 Main Street\nCity, Country",
+      "attn": "Attn",
+      "attnHint": "(optional)",
+      "attnPlaceholder": "Full name of contact person",
+      "prefilledHelp": "Prefilled from the member profile. Edits here stay on this invoice — save the member's company details in their profile to avoid re-typing.",
+      "manualHelp": "Manual invoice — type the recipient details below. Nothing is saved to a member profile."
+    },
+    "numberAndDates": {
+      "title": "Number & dates",
+      "invoiceNumber": "Invoice number",
+      "resetToAuto": "Reset to auto",
+      "collisionSuffixed": "<1>{{number}}</1> is already taken by another (non-void) invoice — this draft will save as <3>{{effective}}</3>. Void or delete the conflicting one if you need the bare number.",
+      "overridden": "Will save as <1>{{number}}</1>. Voided invoices' numbers are reusable.",
+      "autoSequence": "From the org sequence. Edit to override for this invoice — voided numbers can be reused as-is.",
+      "issueDate": "Issue date",
+      "dueDate": "Due date",
+      "dueDateHint": "(optional)",
+      "periodFrom": "Period from",
+      "periodTo": "Period to"
+    },
+    "planGeneration": {
+      "title": "Generate from plan",
+      "description": "Split the billing period by calendar month and prorate partial months.",
+      "clear": "Clear",
+      "generateLines": "Generate lines",
+      "loading": "Loading active plans…",
+      "noPlans": "No active monthly desk, virtual-office, or private-office plan with a price was found. You can still enter invoice lines manually.",
+      "selectPlaceholder": "Select an active plan",
+      "perMonth": "{{price}} per month",
+      "perMonthUnit": "/month",
+      "activeRange": "Active {{start}}–{{end}}",
+      "withoutStartDate": "without start date",
+      "ongoing": "ongoing",
+      "payer": "Payer: {{payer}}",
+      "businessDetails": "Business details",
+      "personalDetails": "Personal details",
+      "assignedProfileUnavailable": "assigned profile unavailable",
+      "datesLimited": "Dates were limited to the active plan term: {{period}}.",
+      "linesGenerated": "{{count}} monthly line generated.",
+      "linesGenerated_plural": "{{count}} monthly lines generated.",
+      "failedTitle": "Could not generate lines",
+      "failedDesc": "Check the selected plan and billing dates."
+    },
+    "unlinkedCharges": {
+      "title": "Unlinked charges",
+      "description": "Existing Charges for this member that aren't on any invoice yet — add one to fold it into this invoice instead of retyping it.",
+      "loading": "Loading…",
+      "empty": "No unlinked Charges for this member.",
+      "add": "Add",
+      "loadMore": "Load more",
+      "unlinkedWarningTitle": "Invoice saved, but some charges were not linked",
+      "unlinkedWarningDesc": "{{failedCount}} of {{totalCount}} selected charge(s) could not be attached to the invoice. Check with Alex before sending it — an unlinked charge amount may otherwise be posted again."
+    },
+    "lines": {
+      "title": "Line items",
+      "addLine": "Add line",
+      "removeLine": "Remove line",
+      "descriptionPlaceholder": "Description",
+      "qtyPlaceholder": "Qty",
+      "unitPlaceholder": "Unit",
+      "pricePlaceholder": "Price",
+      "lineTotalAria": "Line total",
+      "addDiscount": "+ Add discount",
+      "percentageAria": "Percentage discount",
+      "absoluteAria": "Fixed-amount discount",
+      "discountValueAria": "Discount value",
+      "removeDiscount": "Remove discount",
+      "vatRate": "VAT rate %",
+      "defaultRentWorkspace": "Workspace rental",
+      "defaultRentFlex": "Flex plan",
+      "defaultRentDesk": "Desk rental"
+    },
+    "payment": {
+      "title": "Payment",
+      "method": "Method",
+      "notSet": "Not set",
+      "methods": {
+        "credit_card": "Credit card",
+        "cash": "Cash",
+        "bank_transfer": "Bank transfer"
+      },
+      "bankDetailsConfigured": "Bank details from Organization → Billing are included automatically on the PDF footer.",
+      "bankDetailsMissing": "Tip: add bank details in Settings → Organization → Billing so they appear on every invoice."
+    },
+    "notes": {
+      "title": "Notes",
+      "hint": "(optional)",
+      "placeholder": "Thank-you message, payment terms, reference number..."
+    },
+    "signatures": {
+      "title": "Signatures",
+      "signedBy": "Signed by",
+      "signedByPlaceholder": "Full name",
+      "compiledBy": "Compiled by",
+      "compiledByPlaceholder": "Accountant's name"
+    },
+    "preview": {
+      "iframeTitle": "Invoice preview",
+      "generating": "Generating preview…",
+      "emptyPrompt": "Enter a recipient name to generate an invoice preview.",
+      "download": "Download preview",
+      "preparing": "Preparing..."
+    },
+    "validation": {
+      "enterRecipient": "Enter a recipient name.",
+      "setIssueDate": "Set an issue date.",
+      "setBillingPeriod": "Set the billing period.",
+      "startBeforeEnd": "Billing period start must be on or before the end date.",
+      "lineError": "Line {{number}}: {{reason}}.",
+      "addAtLeastOneLine": "Add at least one line with a description.",
+      "missingDescription": "missing description",
+      "qtyGreaterThanZero": "quantity must be greater than zero"
+    },
+    "footer": {
+      "cancel": "Cancel",
+      "saveDraft": "Save draft"
+    },
+    "toasts": {
+      "savedTitle": "Invoice saved",
+      "savedDesc": "Draft {{number}} created.",
+      "saveFailedTitle": "Save failed",
+      "saveFailedDesc": "Could not save invoice."
+    }
+  },
+  "memberDialog": {
+    "titleStatement": "Statement",
+    "titleInvoices": "Invoices",
+    "descStatement": "Charges and payments in one chronological running balance.",
+    "descInvoices_one": "{{count}} invoice — send, download, or mark as paid.",
+    "descInvoices_other": "{{count}} invoices — send, download, or mark as paid.",
+    "descNoInvoices": "No invoices yet. Create the first one below.",
+    "tabInvoices": "Invoices",
+    "tabStatement": "Statement",
+    "close": "Close",
+    "addInvoice": "Add invoice"
+  },
+  "statement": {
+    "balance": "Balance",
+    "owes": "Owes {{amount}}",
+    "inCredit": "{{amount}} in credit",
+    "settled": "Settled",
+    "loadingBalance": "Loading balance…",
+    "balanceError": "Balance could not be loaded.",
+    "otherCurrencyNotice_one": "{{count}} entry uses another currency and is excluded from the {{currency}} balance.",
+    "otherCurrencyNotice_other": "{{count}} entries use another currency and are excluded from the {{currency}} balance.",
+    "loadingStatement": "Loading statement…",
+    "statementError": "Statement could not be loaded.",
+    "emptyState": "No charges or payments yet.",
+    "headers": {
+      "date": "Date",
+      "detail": "Detail",
+      "charge": "Charge",
+      "paid": "Paid",
+      "balance": "Balance"
+    },
+    "sortAria": "Sort by {{label}} {{direction}}",
+    "ascending": "ascending",
+    "descending": "descending",
+    "invoiceLink": "Invoice {{number}}",
+    "editPayment": "Edit payment",
+    "immutablePayment": "Immutable payment"
+  }
+}

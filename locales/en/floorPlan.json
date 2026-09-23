@@ -1,0 +1,105 @@
+{
+  "mobile": {
+    "title": "Your thumbs are too small for this",
+    "description": "The floor plan editor needs a real keyboard, a mouse, and ideally a cup of coffee. Come back on a computer and we'll let you rearrange the furniture."
+  },
+  "title": "Floor Plan",
+  "description": "Arrange desks, walls, doors, and other objects to match the physical layout of your space.",
+  "toolbar": {
+    "saving": "Saving…",
+    "saveFailed": "Save failed",
+    "unsaved": "Unsaved",
+    "saved": "Saved",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "splitView": "Split view",
+    "combineRooms": "Combine rooms",
+    "save": "Save",
+    "clearAll": "Clear all",
+    "clearRoom": "Clear room"
+  },
+  "canvas": {
+    "emptyAddPrompt": "Add desks or shapes from the panel on the right.",
+    "emptyShortcuts": "Drag to reposition · click to select · <kbd>R</kbd> to rotate",
+    "helpDrag": "<b>Drag</b> to move · click to select.",
+    "helpKeys": "<kbd>R</kbd> rotates · <kbd>←→↑↓</kbd> nudge · <kbd>Del</kbd> removes · <kbd>Esc</kbd> deselects."
+  },
+  "tile": {
+    "remove": "Remove",
+    "rotateCcw": "Rotate CCW 90°",
+    "rotateCw": "Rotate CW 90°"
+  },
+  "panel": {
+    "view": {
+      "title": "View",
+      "combinedHelp": "All rooms on one canvas. Pick a room to focus.",
+      "singleHelp": "Pick which room to lay out.",
+      "noRooms": "No rooms yet — add one in the Rooms page.",
+      "allRoomsCombined": "All rooms combined"
+    },
+    "selection": {
+      "title": "Selection",
+      "shapeFallback": "Shape",
+      "position": "Position",
+      "rotation": "Rotation",
+      "room": "Room",
+      "unplace": "Unplace",
+      "remove": "Remove"
+    },
+    "shapes": {
+      "title": "Shapes",
+      "help": "Click to drop one onto the canvas. Drag once placed.",
+      "addTitle": "Add {{label}}"
+    },
+    "desks": {
+      "title": "Desks to place",
+      "loading": "Loading…",
+      "allPlaced": "All desks placed"
+    }
+  },
+  "shapes": {
+    "pillar": "Pillar",
+    "table": "Table",
+    "couch": "Couch",
+    "door": "Door",
+    "window": "Window",
+    "wc": "WC",
+    "kitchen": "Kitchen",
+    "wall": "Wall"
+  },
+  "dialogs": {
+    "combine": {
+      "title": "Combine rooms on canvas",
+      "description": "This shows all rooms together on one canvas so you can lay out the full space. Desks stay linked to their original rooms — nothing changes in the calendar or bookings. You can switch back to split view at any time.",
+      "cancel": "Cancel",
+      "confirm": "Combine"
+    },
+    "split": {
+      "title": "Switch to split view?",
+      "description": "The floor plan will go back to showing one room at a time. Your layout is already saved — nothing will be lost.",
+      "cancel": "Cancel",
+      "confirm": "Split view"
+    },
+    "unsaved": {
+      "title": "Unsaved changes",
+      "description": "You have unsaved floor plan changes. Save them now, or leave and lose them.",
+      "stay": "Stay",
+      "leaveWithoutSaving": "Leave without saving",
+      "saveAndLeave": "Save & leave"
+    }
+  },
+  "modal": {
+    "title": "Floor Plan",
+    "replace": "Replace",
+    "remove": "Remove",
+    "uploading": "Uploading…",
+    "removing": "Removing…",
+    "uploadPrompt": "Upload your floor plan",
+    "uploadHelp": "Drag & drop or click to select. JPEG, PNG, WebP, or GIF up to 5MB.",
+    "chooseFile": "Choose File",
+    "errorType": "Please upload a JPEG, PNG, WebP, or GIF image.",
+    "errorSize": "File must be under 5MB.",
+    "errorUpload": "Failed to upload floor plan. Please try again.",
+    "errorDelete": "Failed to remove floor plan. Please try again."
+  }
+}

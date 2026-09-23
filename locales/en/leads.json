@@ -1,0 +1,201 @@
+{
+  "title": "Leads",
+  "description": "People who have asked about your space. Track them from first hello to signed-up member.",
+  "export": "Export",
+  "exportComingSoon": "Export coming soon",
+  "stages": {
+    "new": {
+      "label": "New",
+      "hint": "Just reached out"
+    },
+    "contacted": {
+      "label": "Contacted",
+      "hint": "Awaiting reply"
+    },
+    "toured": {
+      "label": "Toured",
+      "hint": "Visited the space"
+    },
+    "ready": {
+      "label": "Ready",
+      "hint": "Close the deal"
+    }
+  },
+  "relTime": {
+    "today": "Today",
+    "yesterday": "1 day ago",
+    "daysAgo": "{{count}}d ago",
+    "weeksAgo": "{{count}}w ago",
+    "monthsAgo": "{{count}}mo ago"
+  },
+  "channels": {
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "viber": "Viber",
+    "instagram": "Instagram",
+    "email": "Email",
+    "walkin": "Walk-in",
+    "referral": "Referral",
+    "other": "Contact"
+  },
+  "channelPlaceholders": {
+    "whatsapp": "+359 88 …",
+    "telegram": "@handle",
+    "viber": "+359 88 …",
+    "instagram": "@handle or url",
+    "email": "name@example.com",
+    "walkin": "Walked in Fri 5pm",
+    "referral": "Via Maria",
+    "other": "Where from?"
+  },
+  "summary": {
+    "allLeads": "All leads",
+    "staleCount": "{{count}} stale"
+  },
+  "nudge": {
+    "eyebrow": "OhMyDesk AI",
+    "title_one": "{{count}} lead has gone cold.",
+    "title_other": "{{count}} leads have gone cold.",
+    "desc": "No reply in {{days}}+ days. A friendly check-in usually pulls a renewal.",
+    "dismiss": "Dismiss",
+    "reviewThem": "Review them"
+  },
+  "actionbar": {
+    "addLead": "Add lead",
+    "viewMode": "View mode",
+    "kanban": "Kanban",
+    "list": "List",
+    "columns": "Columns",
+    "hiddenBadge": "{{count}} hidden",
+    "minColumnsTooltip": "Minimum 2 columns required",
+    "showHideColumns": "Show/hide columns"
+  },
+  "card": {
+    "deleteLead": "Delete lead",
+    "conciergeBadge": "Concierge",
+    "conciergeTitle": "Auto-created by the AI concierge",
+    "wants": "Wants",
+    "added": "Added {{time}}",
+    "moveBackTo": "Move back to {{stage}}",
+    "moveTo": "Move to {{stage}}",
+    "finalStage": "Final stage"
+  },
+  "deleteAlert": {
+    "title": "Delete {{name}}?",
+    "description": "This lead will be permanently removed. This cannot be undone.",
+    "cancel": "Cancel",
+    "delete": "Delete lead"
+  },
+  "list": {
+    "leadCol": "Lead",
+    "channelCol": "Channel",
+    "wantsCol": "Wants",
+    "stageCol": "Stage",
+    "addedCol": "Added",
+    "emptyStageTitle": "No leads in this stage.",
+    "emptyStageDesc": "Clear the filter, or move someone forward."
+  },
+  "kanban": {
+    "addToStage": "Add to this stage",
+    "hideColumn": "Hide this column",
+    "emptyNote": "No leads here yet.",
+    "addLeadBtn": "+ Add a lead"
+  },
+  "emptyState": {
+    "title": "No leads yet",
+    "description": "Add someone who asked about your space, or wait for the first inquiry to come in."
+  },
+  "drawer": {
+    "detailsAria": "{{name}} details",
+    "addedPrefix": "· Added {{time}}",
+    "convertCta": {
+      "title": "Ready to convert.",
+      "desc": "Create the member from this lead and remove it from the pipeline.",
+      "btn": "Convert to member",
+      "converting": "Converting…"
+    },
+    "leadSection": {
+      "title": "Lead",
+      "nameLabel": "Name",
+      "namePlaceholder": "Lead name",
+      "channelLabel": "Channel",
+      "contactLabel": "Phone, @handle, or email",
+      "contactPlaceholder": "+359 88 …  /  @handle  /  name@example.com",
+      "stageLabel": "Stage"
+    },
+    "requestSection": {
+      "title": "Request",
+      "datesLabel": "Preferred dates",
+      "datesPlaceholder": "Jun 1–7 · Flexible · This summer…",
+      "notesLabel": "Notes",
+      "notesPlaceholder": "What did they ask? Any context worth remembering."
+    },
+    "timelineSection": {
+      "title": "Timeline",
+      "reachedOutWhat": "Reached out via <ch>{{channel}}</ch>. {{notes}}",
+      "noContext": "No additional context.",
+      "repliedWhen": "Replied",
+      "repliedWhat": "You moved the lead into <st>{{stage}}</st>.",
+      "touredWhen": "Toured",
+      "touredWhat": "{{name}} <vis>visited</vis> the space.",
+      "nowWhen": "Now",
+      "nowWhat": "<bold>Confirmed interest.</bold> Ready to convert when you are.",
+      "staleWhen": "{{days}}d quiet",
+      "staleWhat": "No reply in {{days}} days — consider a friendly nudge."
+    },
+    "footer": {
+      "deleteConfirm": "Delete this lead?",
+      "yesDelete": "Yes, delete",
+      "deleting": "Deleting…",
+      "cancel": "Cancel",
+      "contact": "Contact",
+      "backTo": "Back to {{stage}}",
+      "moveTo": "Move to {{stage}}",
+      "deleteLead": "Delete lead"
+    },
+    "missingContact": {
+      "title": "Update contact info to reach out",
+      "ariaLabel": "Update contact info",
+      "noContactDesc": "This lead doesn't have a {{channel}} handle on file yet. Add one above (e.g. <code>{{placeholder}}</code>) and we'll wire up the Contact button.",
+      "offlineChannelDesc": "Walk-ins and referrals don't have an inbox to open. Pick a different channel above (WhatsApp, Telegram, Email…) if you've got a way to reach them.",
+      "invalidHandleDesc": "The contact info doesn't look right for {{channel}}. Try <code>{{placeholder}}</code>.{{telegramNote}}",
+      "telegramNote": " A Telegram @username works too — just type it as @handle.",
+      "gotIt": "Got it"
+    }
+  },
+  "addModal": {
+    "title": "Add a lead",
+    "ariaLabel": "Add a lead",
+    "subtitle": "Track someone who's asked about the space. Convert to a member when they sign up.",
+    "nameLabel": "Name *",
+    "namePlaceholder": "e.g. Maria Petrov",
+    "reachLabel": "How did they reach you?",
+    "contactLabel": "Handle / phone / email",
+    "datesLabel": "Preferred dates *",
+    "datesPlaceholder": "Jun 1–7 · Flexible · This summer…",
+    "stageLabel": "Stage",
+    "notesLabel": "Notes",
+    "optional": "(optional)",
+    "notesPlaceholder": "What did they ask? Any context worth remembering.",
+    "cancel": "Cancel",
+    "addLead": "Add lead",
+    "adding": "Adding…"
+  },
+  "toasts": {
+    "saved": "Saved",
+    "leadUpdated": "Lead updated",
+    "failedToSave": "Failed to save",
+    "editNotSaved": "Edit could not be saved.",
+    "movedTo": "Moved to {{stage}}",
+    "failed": "Failed",
+    "couldNotMove": "Could not move the lead.",
+    "leadAdded": "Lead added",
+    "couldNotAdd": "Could not add the lead.",
+    "couldNotUpdateChannel": "Could not update the channel.",
+    "leadDeleted": "Lead deleted",
+    "couldNotDelete": "Could not delete the lead.",
+    "convertedToMember": "Converted to member",
+    "convertedDesc": "{{name}} is now a member. Set up billing on the Members page.",
+    "couldNotConvert": "Could not convert this lead."
+  }
+}

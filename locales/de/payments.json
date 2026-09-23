@@ -1,0 +1,174 @@
+{
+  "title": "Gebühren & Zahlungen",
+  "pageDescription": "Ein einfaches vorzeichenbehaftetes Hauptbuch: Gebühren erhöhen den Saldo, Zahlungen verringern ihn, und Stornierungen oder Rückerstattungen wahren den Prüfpfad.",
+  "addCharge": "Gebühr hinzufügen",
+  "addPayment": "Zahlung hinzufügen",
+  "editPayment": "Zahlung bearbeiten",
+  "reference": "Referenz",
+  "tabs": {
+    "payments": "Zahlungen",
+    "charges": "Gebühren"
+  },
+  "filters": {
+    "source": "Quelle",
+    "allSources": "Alle Quellen",
+    "manual": "Manuell",
+    "auto": "Automatisch",
+    "for": "Für",
+    "anything": "Alles",
+    "invoice": "Rechnung",
+    "booking": "Buchung",
+    "plan": "Tarif",
+    "standalone": "Eigenständig",
+    "from": "Von",
+    "to": "Bis"
+  },
+  "summary": {
+    "totalPayments": "Zahlungen gesamt (erfolgreich)"
+  },
+  "methods": {
+    "cash": "Bar",
+    "card": "Karte",
+    "bank_transfer": "Banküberweisung",
+    "stripe": "Stripe",
+    "other": "Sonstige",
+    "unspecified": "Nicht angegeben"
+  },
+  "statuses": {
+    "success": "Erfolgreich",
+    "pending": "Ausstehend",
+    "failed": "Fehlgeschlagen",
+    "refunded": "Erstattet",
+    "refund": "Rückerstattung"
+  },
+  "references": {
+    "none": "Keine",
+    "invoice": "Rechnung",
+    "booking": "Buchung",
+    "plan": "Tarif"
+  },
+  "table": {
+    "date": "Datum",
+    "member": "Mitglied",
+    "description": "Beschreibung",
+    "invoice": "Rechnung",
+    "amount": "Betrag",
+    "method": "Methode",
+    "for": "Für",
+    "status": "Status",
+    "loading": "Wird geladen…",
+    "noCharges": "Noch keine Gebühren.",
+    "noPayments": "Noch keine Zahlungen.",
+    "recordFirstPayment": " Erfassen Sie Ihre erste Zahlung oben.",
+    "unknownMember": "Unbekannt",
+    "linkMember": "Mitglied verknüpfen",
+    "invoiceItem": "Rechnung {{number}}",
+    "createReversal": "Stornierung erstellen",
+    "deleteManualCharge": "Manuelle Gebühr löschen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "recordRefund": "Rückerstattung erfassen",
+    "deleteManualPayment": "Manuelle Zahlung löschen",
+    "autoPaymentTooltip": "Automatische Zahlung",
+    "pagination": {
+      "newer": "Neuere",
+      "older": "Ältere",
+      "page": "Seite {{page}}"
+    }
+  },
+  "dialogs": {
+    "deletePayment": {
+      "title": "Diese manuelle Zahlung löschen?",
+      "description": "Dadurch wird der manuelle Buchungseintrag dauerhaft gelöscht. Verwenden Sie Erstatten, wenn tatsächlich Geld zurückgegeben wurde.",
+      "confirm": "Löschen"
+    },
+    "refundPayment": {
+      "title": "Vollständige Rückerstattung erfassen?",
+      "description": "Dies fügt eine separate ausgehende Zahlung hinzu und behält die ursprüngliche Zahlung im Prüfpfad bei.",
+      "confirm": "Rückerstattung erfassen"
+    },
+    "reverseCharge": {
+      "title": "Diese Gebühr stornieren?",
+      "description": "Eine neue negative Gebühr über denselben Betrag wird hinzugefügt. Die ursprüngliche Gebühr bleibt sichtbar.",
+      "confirm": "Stornierung erstellen"
+    },
+    "deleteCharge": {
+      "title": "Diese manuelle Gebühr löschen?",
+      "description": "Dadurch wird die manuell erstellte Gebühr dauerhaft entfernt.",
+      "confirm": "Löschen"
+    },
+    "payment": {
+      "titleAdd": "Zahlung hinzufügen",
+      "titleEdit": "Zahlung bearbeiten",
+      "lockedNotice": "Erfolgreiche und integrationsgesperrte Zahlungen sind unveränderlich. Erfassen Sie stattdessen eine Rückerstattung.",
+      "memberLabel": "Mitglied",
+      "memberOptional": "(optional)",
+      "memberValidation": "Wählen Sie ein bestehendes Mitglied aus der Liste aus.",
+      "dateLabel": "Datum",
+      "amountLabel": "Betrag ({{currency}})",
+      "amountPlaceholder": "0,00",
+      "methodLabel": "Methode",
+      "statusLabel": "Status",
+      "revenueNotice": "Die Erfassung einer Zahlung bucht auch Einnahmen nach Zahlungsdatum ein.",
+      "forLabel": "Für",
+      "forNothing": "Nichts Spezifisches",
+      "forInvoice": "Rechnung",
+      "forBooking": "Buchung",
+      "forPlan": "Tarif",
+      "referenceLabel": "Referenz",
+      "applyToLabel": "Anwenden auf",
+      "applyToOptional": "(optional)",
+      "searchChargePlaceholder": "Gebührenbeschreibung suchen",
+      "chooseMemberFirst": "Wählen Sie zuerst ein Mitglied aus",
+      "noChargeReference": "Keine Gebührenreferenz",
+      "searchingCharges": "Gebühren werden gesucht… ",
+      "chargeTraceableHint": "Suchen Sie nach Beschreibung, um eine ältere Gebühr auszuwählen. Dies dient nur als nachverfolgbare Referenz; der Saldo verwendet immer den vollen Zahlungsbetrag.",
+      "noteLabel": "Notiz",
+      "notePlaceholder": "Optional — wofür diese Zahlung bestimmt war",
+      "saving": "Wird gespeichert…",
+      "immutable": "Unveränderlich",
+      "save": "Speichern",
+      "record": "Erfassen"
+    },
+    "charge": {
+      "title": "Manuelle Gebühr hinzufügen",
+      "memberLabel": "Mitglied",
+      "memberOptional": "(optional)",
+      "memberValidation": "Wählen Sie ein bestehendes Mitglied aus der Liste aus.",
+      "dateLabel": "Datum",
+      "amountLabel": "Betrag ({{currency}})",
+      "descriptionLabel": "Beschreibung",
+      "descriptionPlaceholder": "Was in Rechnung gestellt wird",
+      "reversalHint": "Korrekturen werden mit einer separaten negativen Stornogebühr erfasst.",
+      "saving": "Wird gespeichert…",
+      "add": "Gebühr hinzufügen"
+    },
+    "memberLink": {
+      "title": "Bestehendes Mitglied verknüpfen",
+      "memberLabel": "Mitglied",
+      "memberValidation": "Wählen Sie ein bestehendes Mitglied aus der Liste aus.",
+      "linking": "Wird verknüpft…",
+      "link": "Mitglied verknüpfen"
+    }
+  },
+  "toasts": {
+    "paymentDeleted": "Zahlung gelöscht",
+    "refundRecorded": "Rückerstattung erfasst",
+    "couldNotRefund": "Rückerstattung konnte nicht erfasst werden.",
+    "reversalCreated": "Stornogebühr erstellt",
+    "couldNotReverse": "Gebühr konnte nicht storniert werden.",
+    "chargeDeleted": "Manuelle Gebühr gelöscht",
+    "paymentRecordedSuccess": "Zahlung als erfolgreich erfasst",
+    "paymentUpdated": "Zahlung aktualisiert",
+    "paymentRecorded": "Zahlung erfasst",
+    "couldNotSavePayment": "Zahlung konnte nicht gespeichert werden.",
+    "chargeAdded": "Gebühr hinzugefügt",
+    "couldNotCreateCharge": "Gebühr konnte nicht erstellt werden.",
+    "memberLinked": "Mitglied verknüpft",
+    "couldNotLinkMember": "Mitglied konnte nicht verknüpft werden.",
+    "chargeLinkedError": "Diese Gebühr ist mit einer Rechnung oder Stornierung verknüpft und kann nicht gelöscht werden.",
+    "paymentRefundedError": "Diese Zahlung weist bereits eine Rückerstattung auf und kann nicht gelöscht werden.",
+    "couldNotDeleteCharge": "Gebühr konnte nicht gelöscht werden.",
+    "couldNotDeletePayment": "Zahlung konnte nicht gelöscht werden."
+  }
+}

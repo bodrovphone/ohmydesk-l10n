@@ -1,0 +1,97 @@
+{
+  "brand": {
+    "homeAria": "OhMyDesk Startseite",
+    "alt": "OhMyDesk"
+  },
+  "stepper": {
+    "progressAria": "Onboarding-Fortschritt"
+  },
+  "steps": {
+    "spaceInfo": "Space-Infos",
+    "roomsDesks": "Räume & Tische",
+    "meetingRooms": "Meetingräume",
+    "pricing": "Preise",
+    "notifications": "Benachrichtigungen"
+  },
+  "common": {
+    "next": "Weiter",
+    "back": "Zurück",
+    "skipImportLater": "Überspringen — Daten später importieren",
+    "importOfficeRnd": "Import aus OfficeRnD / Nexudus"
+  },
+  "step0": {
+    "addLocationTitle": "Neuen Standort hinzufügen",
+    "nameSpaceTitle": "Benennen Sie Ihren Coworking-Space",
+    "addLocationSub": "Richten Sie einen weiteren Standort für Ihre Marke ein.",
+    "nameSpaceSub": "Dies ist für Ihre Teammitglieder sichtbar.",
+    "spaceName": "Name des Space",
+    "spaceNamePlaceholder": "z. B. Downtown Hub",
+    "spaceUrl": "Ihre Space-URL",
+    "urlPrefix": "ohmydesk.app/",
+    "slugPlaceholder": "ihr-space",
+    "urlAvailable": "Diese URL ist verfügbar",
+    "urlTaken": "Diese URL ist bereits vergeben",
+    "urlHelp": "Automatisch aus dem Space-Namen erzeugt. Später in den Einstellungen änderbar.",
+    "slugEditDone": "Fertig",
+    "slugEdit": "Bearbeiten",
+    "multiTitle": "Ich betreibe mehrere Standorte",
+    "multiDesc": "Aktivieren, wenn Ihre Marke mehr als einen Coworking-Space hat.",
+    "multiExtra": "Richten Sie jetzt den ersten Standort ein. Weitere können Sie später unter Einstellungen hinzufügen.",
+    "backToWorkspace": "Zurück zum Workspace",
+    "alreadyHaveAccount": "Bereits ein Konto?",
+    "signIn": "Anmelden"
+  },
+  "step1": {
+    "title": "Räume & Tische einrichten",
+    "description": "Legen Sie fest, wie viele Räume und Tische Sie haben.",
+    "roomsCount": "Anzahl Räume",
+    "roomsAndDesks": "Räume & Tische",
+    "roomPlaceholder": "Raum {{number}}",
+    "workingDays": "Arbeitstage",
+    "workingDaysHelp": "Wählen Sie, an welchen Tagen Ihr Space für Buchungen geöffnet ist.",
+    "preview": "Vorschau: {{rooms}} Raum, {{desks}} Tische gesamt",
+    "preview_plural": "Vorschau: {{rooms}} Räume, {{desks}} Tische gesamt"
+  },
+  "step2": {
+    "title": "Meetingräume",
+    "description": "Haben Sie Räume für stundenweise Buchung?",
+    "noDesksOnly": "Nein, nur Tische",
+    "skipStep": "Schritt überspringen",
+    "yesMeetingRooms": "Ja, ich habe Meetingräume",
+    "configureRates": "Stundensätze festlegen",
+    "meetingRoomCount": "Anzahl Meetingräume",
+    "meetingRoomPlaceholder": "Meetingraum {{number}}",
+    "perHour": "/Std.",
+    "currencyNextStep": "Die Währung wird im nächsten Schritt festgelegt."
+  },
+  "step3": {
+    "title": "Währung wählen",
+    "description": "Gilt für alle Preise und Umsatz-Auswertungen.",
+    "customCurrencyLabel": "Oder ISO-Währungscode eingeben",
+    "customCurrencyPlaceholder": "z. B. GBP, JPY, CHF",
+    "customCurrencyUnknown": "„{{code}}“ ist uns kein Währungscode — wird trotzdem verwendet, bitte auf Tippfehler prüfen.",
+    "defaultPriceLabel": "Standardpreis pro Tisch/Tag ({{symbol}})",
+    "defaultPriceHelp": "Später in den Einstellungen änderbar.",
+    "creating": "Wird erstellt...",
+    "createSpace": "Space erstellen",
+    "createFailed": "Organisation konnte nicht erstellt werden. Bitte erneut versuchen."
+  },
+  "step5": {
+    "title": "Ihr erster Standort ist bereit!",
+    "description": "Sie betreiben mehrere Standorte. So geht es weiter.",
+    "addingTitle": "Weitere Standorte hinzufügen",
+    "addingBody": "Wenn der erste Space steht, öffnen Sie <1>Einstellungen</1>, um einen weiteren Standort hinzuzufügen. Jeder Standort hat eigenen Kalender, Räume und Team.",
+    "goToSpace": "Zu meinem Space"
+  },
+  "telegram": {
+    "title": "Telegram-Benachrichtigungen verbinden",
+    "description": "Benachrichtigungen bei Buchungsstart oder Ende von Zuweisungen. Später unter Einstellungen möglich.",
+    "connected": "Telegram verbunden!",
+    "goCalendar": "Zum Kalender",
+    "waitingConnection": "Warte auf Verbindung...",
+    "generatingLink": "Link wird erstellt...",
+    "connect": "Telegram verbinden",
+    "openBotStart": "Bot in Telegram öffnen und Start drücken",
+    "skip": "Jetzt überspringen"
+  }
+}

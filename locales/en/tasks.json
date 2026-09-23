@@ -1,0 +1,125 @@
+{
+  "title": "Tasks",
+  "accessRestricted": "Tasks are shared between space owners and managers.",
+  "pageDescription": "Shared to-dos and supply tracking for everyone managing {{space}}.",
+  "subtitleSingle": "One shared list for every manager. Dated tasks get a reminder the day before.",
+  "subtitleGroup": "One shared list for every manager across all locations. Dated tasks get a reminder the day before.",
+  "addTask": "Add task",
+  "error": {
+    "loadFailed": "Tasks could not be loaded",
+    "applyMigration": "Apply the Tasks database migration, then refresh this page."
+  },
+  "empty": {
+    "title": "Nothing to chase",
+    "description": "Add maintenance, member follow-ups, supply runs, or anything the management team should remember.",
+    "addFirst": "Add your first task"
+  },
+  "sections": {
+    "open": "Open",
+    "allDone": "Everything is done.",
+    "allDoneHint": "Completed tasks remain below for reference.",
+    "completed": "Completed",
+    "completedDate": "Completed {{date}}"
+  },
+  "deadline": {
+    "overdue": "Overdue · {{date}}",
+    "dueToday": "Due today",
+    "dueTomorrow": "Due tomorrow",
+    "due": "Due {{date}}"
+  },
+  "actions": {
+    "reopen": "Reopen",
+    "editAria": "Edit {{title}}",
+    "deleteAria": "Delete {{title}}",
+    "completeAria": "Complete {{title}}"
+  },
+  "dialog": {
+    "titleEdit": "Edit task",
+    "titleAdd": "Add task",
+    "description": "Everyone managing this space can see and update it.",
+    "taskLabel": "Task",
+    "taskPlaceholder": "e.g. Order coffee beans",
+    "notesLabel": "Notes",
+    "notesPlaceholder": "Anything the next manager should know",
+    "deadlineLabel": "Deadline",
+    "deadlineHint": "The team gets one reminder at 09:00 on the previous day.",
+    "saveChanges": "Save changes",
+    "optional": "(optional)"
+  },
+  "deleteDialog": {
+    "title": "Delete this task?",
+    "description": "“{{title}}” will be removed for every manager. This cannot be undone.",
+    "confirm": "Delete task",
+    "cancel": "Cancel"
+  },
+  "toasts": {
+    "completeError": "Could not complete task",
+    "reopenError": "Could not reopen task",
+    "deleteSuccess": "Task deleted",
+    "deleteError": "Could not delete task",
+    "addSuccess": "Task added",
+    "addSuccessReminder": "We’ll remind the team the day before.",
+    "updateSuccess": "Task updated",
+    "addError": "Could not add task",
+    "updateError": "Could not update task",
+    "tryAgain": "Try again."
+  },
+  "inventory": {
+    "subtitle": "Track coffee, paper goods, snacks and more. Flag an item as running low — or let it cross its threshold — and we flag it for restock here and alert the team instantly.",
+    "addItem": "Add item",
+    "errorLoad": "Inventory could not be loaded",
+    "errorLoadHint": "Refresh this page and try again.",
+    "empty": {
+      "title": "No supplies tracked yet",
+      "description": "Add the consumables you restock regularly — coffee, toilet paper, snacks — and never run out by surprise.",
+      "addFirst": "Add your first item"
+    },
+    "row": {
+      "decreaseAria": "Decrease {{name}} by one",
+      "increaseAria": "Increase {{name}} by one",
+      "inStock": "in stock",
+      "restockAt": "· restock at {{threshold}}{{unit}}",
+      "noQuantity": "No quantity tracked",
+      "restockRequested": "Restock requested",
+      "markRestocked": "Mark restocked",
+      "runningLow": "Running low",
+      "editAria": "Edit {{name}}",
+      "removeAria": "Remove {{name}}"
+    },
+    "dialog": {
+      "titleEdit": "Edit item",
+      "titleAdd": "Add item",
+      "description": "Quantity and threshold are optional — set both to auto-flag a restock when stock runs low.",
+      "nameLabel": "Item",
+      "namePlaceholder": "e.g. Toilet paper",
+      "quantityLabel": "Quantity",
+      "quantityPlaceholder": "e.g. 12",
+      "thresholdLabel": "Restock at",
+      "thresholdPlaceholder": "e.g. 3",
+      "unitLabel": "Unit",
+      "unitPlaceholder": "e.g. rolls, bags, boxes",
+      "hint": "When the quantity drops to the restock level, we create a Restock task and alert your team straight away.",
+      "saveChanges": "Save changes",
+      "optional": "(optional)"
+    },
+    "deleteDialog": {
+      "title": "Remove this item?",
+      "description": "“{{name}}” will be removed from inventory, along with any pending restock flag for it.",
+      "confirm": "Remove item",
+      "cancel": "Cancel"
+    },
+    "toasts": {
+      "restockFlagged": "Restock flagged",
+      "restockFlaggedDesc": "“{{name}}” is marked for restock — we’ve alerted your team.",
+      "flagError": "Could not flag this item",
+      "markedRestocked": "Marked restocked",
+      "markedRestockedDesc": "“{{name}}” is back in stock.",
+      "updateItemError": "Could not update this item",
+      "itemRemoved": "Item removed",
+      "removeItemError": "Could not remove item",
+      "itemUpdated": "Item updated",
+      "itemAdded": "Item added",
+      "addItemError": "Could not add item"
+    }
+  }
+}

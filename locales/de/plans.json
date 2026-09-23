@@ -1,0 +1,126 @@
+{
+  "heading": "Tarife",
+  "pageDescription": "Legen Sie die Angebote, Preise und Verfügbarkeitsregeln für Schreibtische und virtuelle Büros fest.",
+  "status": {
+    "active": "Aktiv",
+    "disabled": "Deaktiviert",
+    "unsaved": "Nicht gespeichert",
+    "saved": "Gespeichert",
+    "saving": "Wird gespeichert…",
+    "enable": "Aktivieren",
+    "disable": "Deaktivieren",
+    "saveChanges": "Änderungen speichern"
+  },
+  "variantList": {
+    "headers": {
+      "name": "Name",
+      "days": "Tage",
+      "price": "Preis",
+      "autoInvoice": "Auto-Rechnung",
+      "discount": "Rabatt"
+    },
+    "namePlaceholder": "z. B. Standard",
+    "descriptionPlaceholder": "Optional – wird Besuchern auf der Buchungsseite angezeigt (z. B. Leistungen, Bedingungen).",
+    "autoInvoiceOn": "Ein",
+    "remove": "Entfernen",
+    "addVariant": "Variante hinzufügen",
+    "maxVariants": "Maximal {{max}} Varianten erreicht"
+  },
+  "dayPass": {
+    "title": "Tagespass",
+    "description": "Ein Tag am Schreibtisch, bezahlt pro Besuch. Jeder Tag ist eine eigene Buchung, Tage verfallen nicht genutzter Zeit.",
+    "priceLabel": "Tagespreis ({{currency}})",
+    "help": "Einzeltarif für einen Tag · wird für Spontanbesucher und Online-Buchungen genutzt.",
+    "updated": "Tagespass aktualisiert."
+  },
+  "dedicated": {
+    "weeklyTitle": "Wochentarif",
+    "weeklyDesc": "Ein fester Schreibtisch für sieben Tage reserviert. Wenn die letzten Tage reguläre Schließtage sind, endet die Laufzeit am vorangehenden Werktag.",
+    "monthlyTitle": "Monatstarif",
+    "monthlyDesc": "Ein fester Schreibtisch für einen rollierenden Kalendermonat. Kann unbefristet Monat für Monat verlängert oder pausiert werden, wobei ungenutzte Tage gutgeschrieben werden.",
+    "priceLabel": "Preis pro {{unit}} ({{currency}})",
+    "unitWeek": "Woche",
+    "unitMonth": "Monat",
+    "updated": "{{title}} aktualisiert.",
+    "disabledToast": "{{title}} wird nicht mehr angeboten."
+  },
+  "flex": {
+    "title": "Flex-Tarif",
+    "description": "Ein Besuchspaket zu einem festen Paketpreis. Das Mitglied bucht einen Platz und jeder Tag verringert das Guthaben automatisch.",
+    "noPermission": "Bitten Sie einen Workspace-Inhaber oder Admin, den Flex-Tarif zu konfigurieren.",
+    "disableConfirmTitle": "Flex-Tarif deaktivieren?",
+    "disableConfirmBody": "Neue Flex-Pakete können nicht mehr verkauft werden. Bestehendes Guthaben bleibt erhalten und kann aufgebraucht werden.",
+    "bundlesLabel": "Flex-Pakete – Tage × Preis ({{currency}})",
+    "bundlesHelp": "Jedes Paket wird für eine feste Anzahl an Tagen verkauft. Die Tage bestimmen die enthaltenen Besuche.",
+    "daysLabel": "Tage",
+    "perVisit": "Pro Besuch",
+    "autoExpireLabel": "Ungenutztes Guthaben verfallen lassen nach",
+    "autoExpireDays": "(Tage, optional)",
+    "never": "Nie",
+    "autoExpireHelp": "Leer lassen, damit Guthaben nie verfällt. Falls festgelegt, verfallen ungenutzte Tage nach dieser Frist ab Aktivierung. Eine Erinnerungs-E-Mail wird vorab versendet.",
+    "updated": "Flex-Tarif aktualisiert.",
+    "disabledToast": "Flex-Tarif deaktiviert – bestehendes Guthaben bleibt erhalten."
+  },
+  "hotdesk": {
+    "title": "Hotdesk-Tarif",
+    "description": "Pauschal-Mitgliedschaft für jeden freien Schreibtisch.",
+    "noPermission": "Bitten Sie einen Workspace-Inhaber oder Admin, den Hotdesk-Tarif zu konfigurieren.",
+    "disableConfirmTitle": "Hotdesk-Tarif deaktivieren?",
+    "disableConfirmBody": "Mitglieder mit aktivem Hotdesk-Tarif erscheinen nicht mehr in der Auslastungsanzeige des Kalenders.",
+    "help": "Unbegrenzter Zugang zu freien Plätzen im Buchungszeitraum. Aktivieren, um Hotdesk-Kunden zu erfassen und die Auslastung zu sehen.",
+    "tiersLabel": "Tarifstufen ({{currency}})",
+    "daysLabel": "Laufzeit (Tage)",
+    "periodHelp": "Laufzeit legt die Standarddauer in Tagen fest. Wird für Umsatzberichte und automatische Rechnungsstellung verwendet.",
+    "updated": "Hotdesk-Tarif aktualisiert.",
+    "disabledToast": "Hotdesk-Tarif deaktiviert."
+  },
+  "virtualOffice": {
+    "title": "Virtuelles Büro Tarif",
+    "description": "Geschäftsadresse und Postservice, ganz ohne Schreibtisch.",
+    "noPermission": "Bitten Sie einen Workspace-Inhaber oder Admin, den Tarif für virtuelle Büros zu konfigurieren.",
+    "disableConfirmTitle": "Tarif für virtuelle Büros deaktivieren?",
+    "disableConfirmBody": "Mitglieder mit virtuellem Büro werden nicht mehr zum Umsatz gezählt.",
+    "help": "Kunden erhalten eine Geschäftsadresse und Postservice – ohne Schreibtisch. Aktivieren, um virtuelle Bürokunden zu verwalten und deren Umsatz zu erfassen.",
+    "priceLabel": "Monatlicher Preis ({{currency}})",
+    "revenueHelp": "Wird für Umsatzberichte und automatische Rechnungsstellung verwendet.",
+    "updated": "Tarif für virtuelle Büros aktualisiert.",
+    "disabledToast": "Tarif für virtuelle Büros deaktiviert."
+  },
+  "pricingAdvisor": {
+    "eyebrow": "OhMyDesk KI · Preisberater",
+    "preamble": "Basierend auf den Buchungen der letzten 30 Tage und Ihren aktuellen Preisen:",
+    "dismissAll": "Alle Vorschläge ausblenden",
+    "weekVsMonth": {
+      "bold": "Wochen- und Monatstarif kosten pro Tag fast dasselbe",
+      "text": "({{week}} vs. {{month}}). Mitglieder wählen möglicherweise den Wochentarif, um sich nicht länger zu binden.",
+      "cta": "Lösungsvorschlag"
+    },
+    "dayMover": {
+      "bold": "Der Tagespass ist Ihr gefragtestes Angebot",
+      "text": "({{sold}} in den letzten 30 Tagen verkauft). Eine Erhöhung um {{sym}}1 bringt ca. +{{sym}}{{sold}}/Monat ohne nennenswerten Nachfragerückgang.",
+      "cta": "Auf {{sym}}{{price}} anheben"
+    },
+    "flexCliff": {
+      "bold": "Der Flex-Preis pro Besuch liegt bei {{sym}}{{flex}}",
+      "text": "– günstiger als der Tagespass ({{sym}}{{day}}). Ein Mengenrabatt ist sinnvoll, aber ein Unterschied von {{sym}}{{diff}} ist sehr hoch.",
+      "cta": "Abstand verringern"
+    }
+  },
+  "pricingGroups": {
+    "title": "Preisgruppen",
+    "description": "Ordnen Sie Mitglieder Gruppen zu (z. B. Studenten, Freunde & Familie), um einen prozentualen Rabatt auf alle Preise zu gewähren – Plätze, Meetingräume und Büros.",
+    "empty": "Noch keine Preisgruppen vorhanden.",
+    "placeholder": "z. B. Student",
+    "addGroup": "Gruppe hinzufügen",
+    "maxGroups": "Maximal {{max}} Gruppen erreicht",
+    "updated": "Preisgruppen aktualisiert."
+  },
+  "matrix": {
+    "tag": "Alternative",
+    "title": "Positionierungsmatrix",
+    "sub": "Weicht vom Standardlayout ab. Stellt alle 4 Tarife nach Bindungsdauer × Preis pro Tag dar, mit Blasengröße = Verkaufsvolumen. Schnelle visuelle Orientierung für Überlappungen.",
+    "cheaperAxis": "← günstiger / pro Tag",
+    "commitmentAxis": "kürzere Bindung ←      → längere Bindung",
+    "note": "Wenn zwei Blasen nahe beieinander liegen, überschneiden sich Ihre Tarife und Mitglieder wählen den günstigeren. Die Matrix verdeutlicht Lücken auf einen Blick."
+  }
+}

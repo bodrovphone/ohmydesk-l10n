@@ -1,0 +1,174 @@
+{
+  "title": "Charges & payments",
+  "pageDescription": "A simple signed ledger: charges increase the balance, payments reduce it, and reversals or refunds preserve the audit trail.",
+  "addCharge": "Add charge",
+  "addPayment": "Add payment",
+  "editPayment": "Edit payment",
+  "reference": "Reference",
+  "tabs": {
+    "payments": "Payments",
+    "charges": "Charges"
+  },
+  "filters": {
+    "source": "Source",
+    "allSources": "All sources",
+    "manual": "Manual",
+    "auto": "Automatic",
+    "for": "For",
+    "anything": "Anything",
+    "invoice": "Invoice",
+    "booking": "Booking",
+    "plan": "Plan",
+    "standalone": "Standalone",
+    "from": "From",
+    "to": "To"
+  },
+  "summary": {
+    "totalPayments": "Total payments (success)"
+  },
+  "methods": {
+    "cash": "Cash",
+    "card": "Card",
+    "bank_transfer": "Bank transfer",
+    "stripe": "Stripe",
+    "other": "Other",
+    "unspecified": "Unspecified"
+  },
+  "statuses": {
+    "success": "Success",
+    "pending": "Pending",
+    "failed": "Failed",
+    "refunded": "Refunded",
+    "refund": "Refund"
+  },
+  "references": {
+    "none": "None",
+    "invoice": "Invoice",
+    "booking": "Booking",
+    "plan": "Plan"
+  },
+  "table": {
+    "date": "Date",
+    "member": "Member",
+    "description": "Description",
+    "invoice": "Invoice",
+    "amount": "Amount",
+    "method": "Method",
+    "for": "For",
+    "status": "Status",
+    "loading": "Loading…",
+    "noCharges": "No charges yet.",
+    "noPayments": "No payments yet.",
+    "recordFirstPayment": " Record your first one above.",
+    "unknownMember": "Unknown",
+    "linkMember": "Link member",
+    "invoiceItem": "Invoice {{number}}",
+    "createReversal": "Create reversal",
+    "deleteManualCharge": "Delete manual charge",
+    "edit": "Edit",
+    "delete": "Delete",
+    "recordRefund": "Record refund",
+    "deleteManualPayment": "Delete manual payment",
+    "autoPaymentTooltip": "Automatic payment",
+    "pagination": {
+      "newer": "Newer",
+      "older": "Older",
+      "page": "Page {{page}}"
+    }
+  },
+  "dialogs": {
+    "deletePayment": {
+      "title": "Delete this manual payment?",
+      "description": "This permanently removes the manual ledger entry. Use Refund when money was actually returned.",
+      "confirm": "Delete"
+    },
+    "refundPayment": {
+      "title": "Record a full refund?",
+      "description": "This adds a separate outgoing payment and keeps the original payment in the audit trail.",
+      "confirm": "Record refund"
+    },
+    "reverseCharge": {
+      "title": "Reverse this charge?",
+      "description": "A new negative Charge for the same amount will be added. The original Charge remains visible.",
+      "confirm": "Create reversal"
+    },
+    "deleteCharge": {
+      "title": "Delete this manual charge?",
+      "description": "This permanently removes the manually created Charge.",
+      "confirm": "Delete"
+    },
+    "payment": {
+      "titleAdd": "Add payment",
+      "titleEdit": "Edit payment",
+      "lockedNotice": "Successful and integration-locked payments are immutable. Record a refund instead.",
+      "memberLabel": "Member",
+      "memberOptional": "(optional)",
+      "memberValidation": "Select an existing member from the list.",
+      "dateLabel": "Date",
+      "amountLabel": "Amount ({{currency}})",
+      "amountPlaceholder": "0.00",
+      "methodLabel": "Method",
+      "statusLabel": "Status",
+      "revenueNotice": "Recording a payment also records revenue by payment date.",
+      "forLabel": "For",
+      "forNothing": "Nothing specific",
+      "forInvoice": "Invoice",
+      "forBooking": "Booking",
+      "forPlan": "Plan",
+      "referenceLabel": "Reference",
+      "applyToLabel": "Apply to",
+      "applyToOptional": "(optional)",
+      "searchChargePlaceholder": "Search Charge description",
+      "chooseMemberFirst": "Choose a member first",
+      "noChargeReference": "No Charge reference",
+      "searchingCharges": "Searching Charges… ",
+      "chargeTraceableHint": "Search by description to select an older Charge. This is a traceable reference only; the balance always uses the full payment amount.",
+      "noteLabel": "Note",
+      "notePlaceholder": "Optional — what this payment was for",
+      "saving": "Saving…",
+      "immutable": "Immutable",
+      "save": "Save",
+      "record": "Record"
+    },
+    "charge": {
+      "title": "Add manual charge",
+      "memberLabel": "Member",
+      "memberOptional": "(optional)",
+      "memberValidation": "Select an existing member from the list.",
+      "dateLabel": "Date",
+      "amountLabel": "Amount ({{currency}})",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "What is being charged",
+      "reversalHint": "Corrections are recorded with a separate negative reversal Charge.",
+      "saving": "Saving…",
+      "add": "Add charge"
+    },
+    "memberLink": {
+      "title": "Link existing member",
+      "memberLabel": "Member",
+      "memberValidation": "Select an existing member from the list.",
+      "linking": "Linking…",
+      "link": "Link member"
+    }
+  },
+  "toasts": {
+    "paymentDeleted": "Payment deleted",
+    "refundRecorded": "Refund recorded",
+    "couldNotRefund": "Could not record the refund.",
+    "reversalCreated": "Reversal charge created",
+    "couldNotReverse": "Could not reverse the charge.",
+    "chargeDeleted": "Manual charge deleted",
+    "paymentRecordedSuccess": "Payment recorded as successful",
+    "paymentUpdated": "Payment updated",
+    "paymentRecorded": "Payment recorded",
+    "couldNotSavePayment": "Could not save the payment.",
+    "chargeAdded": "Charge added",
+    "couldNotCreateCharge": "Could not create the charge.",
+    "memberLinked": "Member linked",
+    "couldNotLinkMember": "Could not link the member.",
+    "chargeLinkedError": "This Charge is linked to an invoice or reversal and cannot be deleted.",
+    "paymentRefundedError": "This payment already has a refund and cannot be deleted.",
+    "couldNotDeleteCharge": "Could not delete charge.",
+    "couldNotDeletePayment": "Could not delete payment."
+  }
+}

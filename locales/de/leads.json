@@ -1,0 +1,201 @@
+{
+  "title": "Leads",
+  "description": "Personen, die sich für Ihren Space interessieren. Begleiten Sie sie vom ersten Kontakt bis zum Mitglied.",
+  "export": "Exportieren",
+  "exportComingSoon": "Export demnächst verfügbar",
+  "stages": {
+    "new": {
+      "label": "Neu",
+      "hint": "Gerade angefragt"
+    },
+    "contacted": {
+      "label": "Kontaktiert",
+      "hint": "Wartet auf Antwort"
+    },
+    "toured": {
+      "label": "Besichtigt",
+      "hint": "Space besichtigt"
+    },
+    "ready": {
+      "label": "Bereit",
+      "hint": "Abschlussbereit"
+    }
+  },
+  "relTime": {
+    "today": "Heute",
+    "yesterday": "Vor 1 Tag",
+    "daysAgo": "vor {{count}} T.",
+    "weeksAgo": "vor {{count}} Wo.",
+    "monthsAgo": "vor {{count}} Mon."
+  },
+  "channels": {
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "viber": "Viber",
+    "instagram": "Instagram",
+    "email": "E-Mail",
+    "walkin": "Walk-in",
+    "referral": "Empfehlung",
+    "other": "Kontakt"
+  },
+  "channelPlaceholders": {
+    "whatsapp": "+49 170 …",
+    "telegram": "@handle",
+    "viber": "+49 170 …",
+    "instagram": "@handle oder URL",
+    "email": "name@beispiel.de",
+    "walkin": "Kam Fr. um 17 Uhr vorbei",
+    "referral": "Über Maria",
+    "other": "Woher?"
+  },
+  "summary": {
+    "allLeads": "Alle Leads",
+    "staleCount": "{{count}} inaktiv"
+  },
+  "nudge": {
+    "eyebrow": "OhMyDesk KI",
+    "title_one": "{{count}} Lead ist inaktiv geworden.",
+    "title_other": "{{count}} Leads sind inaktiv geworden.",
+    "desc": "Keine Antwort seit mehr als {{days}} Tagen. Eine kurze Nachricht führt oft zum Abschluss.",
+    "dismiss": "Ausblenden",
+    "reviewThem": "Überprüfen"
+  },
+  "actionbar": {
+    "addLead": "Lead hinzufügen",
+    "viewMode": "Ansichtsmodus",
+    "kanban": "Kanban",
+    "list": "Liste",
+    "columns": "Spalten",
+    "hiddenBadge": "{{count}} ausgeblendet",
+    "minColumnsTooltip": "Mindestens 2 Spalten erforderlich",
+    "showHideColumns": "Spalten ein-/ausblenden"
+  },
+  "card": {
+    "deleteLead": "Lead löschen",
+    "conciergeBadge": "Concierge",
+    "conciergeTitle": "Automatisch von der KI-Concierge erstellt",
+    "wants": "Wünscht",
+    "added": "Hinzugefügt {{time}}",
+    "moveBackTo": "Zurück zu {{stage}}",
+    "moveTo": "Weiter zu {{stage}}",
+    "finalStage": "Letzte Phase"
+  },
+  "deleteAlert": {
+    "title": "\"{{name}}\" löschen?",
+    "description": "Dieser Lead wird unwiderruflich gelöscht. Dies kann nicht rückgängig gemacht werden.",
+    "cancel": "Abbrechen",
+    "delete": "Lead löschen"
+  },
+  "list": {
+    "leadCol": "Lead",
+    "channelCol": "Kanal",
+    "wantsCol": "Wünscht",
+    "stageCol": "Phase",
+    "addedCol": "Hinzugefügt",
+    "emptyStageTitle": "Keine Leads in dieser Phase.",
+    "emptyStageDesc": "Filter zurücksetzen oder einen Lead weiterbewegen."
+  },
+  "kanban": {
+    "addToStage": "Zu dieser Phase hinzufügen",
+    "hideColumn": "Diese Spalte ausblenden",
+    "emptyNote": "Noch keine Leads hier.",
+    "addLeadBtn": "+ Lead hinzufügen"
+  },
+  "emptyState": {
+    "title": "Noch keine Leads",
+    "description": "Fügen Sie jemanden hinzu, der nach Ihrem Space gefragt hat, oder warten Sie auf die erste Anfrage."
+  },
+  "drawer": {
+    "detailsAria": "Details zu {{name}}",
+    "addedPrefix": "· Hinzugefügt {{time}}",
+    "convertCta": {
+      "title": "Bereit zur Umwandlung.",
+      "desc": "Mitglied aus diesem Lead erstellen und aus der Pipeline entfernen.",
+      "btn": "In Mitglied umwandeln",
+      "converting": "Wird umgewandelt…"
+    },
+    "leadSection": {
+      "title": "Lead",
+      "nameLabel": "Name",
+      "namePlaceholder": "Name des Leads",
+      "channelLabel": "Kanal",
+      "contactLabel": "Telefon, @Handle oder E-Mail",
+      "contactPlaceholder": "+49 170 …  /  @handle  /  name@beispiel.de",
+      "stageLabel": "Phase"
+    },
+    "requestSection": {
+      "title": "Anfrage",
+      "datesLabel": "Gewünschte Daten",
+      "datesPlaceholder": "1.–7. Juni · Flexibel · Diesen Sommer…",
+      "notesLabel": "Notizen",
+      "notesPlaceholder": "Was wurde angefragt? Wichtige Details oder Kontext."
+    },
+    "timelineSection": {
+      "title": "Verlauf",
+      "reachedOutWhat": "Kontakt aufgenommen über <ch>{{channel}}</ch>. {{notes}}",
+      "noContext": "Kein weiterer Kontext.",
+      "repliedWhen": "Geantwortet",
+      "repliedWhat": "Sie haben den Lead nach <st>{{stage}}</st> verschoben.",
+      "touredWhen": "Besichtigt",
+      "touredWhat": "{{name}} hat den Space <vis>besichtigt</vis>.",
+      "nowWhen": "Aktuell",
+      "nowWhat": "<bold>Interesse bestätigt.</bold> Bereit zur Umwandlung.",
+      "staleWhen": "{{days}} Tage ohne Rückmeldung",
+      "staleWhat": "Keine Rückmeldung seit {{days}} Tagen — Zeit für ein kurzes Nachhaken."
+    },
+    "footer": {
+      "deleteConfirm": "Diesen Lead löschen?",
+      "yesDelete": "Ja, löschen",
+      "deleting": "Wird gelöscht…",
+      "cancel": "Abbrechen",
+      "contact": "Kontaktieren",
+      "backTo": "Zurück zu {{stage}}",
+      "moveTo": "Weiter zu {{stage}}",
+      "deleteLead": "Lead löschen"
+    },
+    "missingContact": {
+      "title": "Kontaktdaten für Kontaktaufnahme aktualisieren",
+      "ariaLabel": "Kontaktdaten aktualisieren",
+      "noContactDesc": "Für diesen Lead ist noch kein {{channel}}-Handle hinterlegt. Fügen Sie oben eines hinzu (z. B. <code>{{placeholder}}</code>), um den Kontaktieren-Button zu aktivieren.",
+      "offlineChannelDesc": "Laufkundschaft und Empfehlungen haben keinen direkten Posteingang. Wählen Sie oben einen anderen Kanal (WhatsApp, Telegram, E-Mail…), falls Kontaktdaten vorliegen.",
+      "invalidHandleDesc": "Die Kontaktdaten scheinen für {{channel}} nicht zu passen. Versuchen Sie <code>{{placeholder}}</code>.{{telegramNote}}",
+      "telegramNote": " Ein Telegram-@Benutzername funktioniert auch — einfach als @handle eingeben.",
+      "gotIt": "Verstanden"
+    }
+  },
+  "addModal": {
+    "title": "Lead hinzufügen",
+    "ariaLabel": "Lead hinzufügen",
+    "subtitle": "Erfassen Sie Interessenten für Ihren Space. Wandeln Sie sie in Mitglieder um, sobald sie sich anmelden.",
+    "nameLabel": "Name *",
+    "namePlaceholder": "z. B. Maria Petrov",
+    "reachLabel": "Wie hat der Lead Sie kontaktiert?",
+    "contactLabel": "Handle / Telefon / E-Mail",
+    "datesLabel": "Gewünschte Daten *",
+    "datesPlaceholder": "1.–7. Juni · Flexibel · Diesen Sommer…",
+    "stageLabel": "Phase",
+    "notesLabel": "Notizen",
+    "optional": "(optional)",
+    "notesPlaceholder": "Was wurde angefragt? Wichtige Details oder Kontext.",
+    "cancel": "Abbrechen",
+    "addLead": "Lead hinzufügen",
+    "adding": "Wird hinzugefügt…"
+  },
+  "toasts": {
+    "saved": "Gespeichert",
+    "leadUpdated": "Lead aktualisiert",
+    "failedToSave": "Speichern fehlgeschlagen",
+    "editNotSaved": "Änderung konnte nicht gespeichert werden.",
+    "movedTo": "Nach {{stage}} verschoben",
+    "failed": "Fehler",
+    "couldNotMove": "Lead konnte nicht verschoben werden.",
+    "leadAdded": "Lead hinzugefügt",
+    "couldNotAdd": "Lead konnte nicht hinzugefügt werden.",
+    "couldNotUpdateChannel": "Kanal konnte nicht aktualisiert werden.",
+    "leadDeleted": "Lead gelöscht",
+    "couldNotDelete": "Lead konnte nicht gelöscht werden.",
+    "convertedToMember": "In Mitglied umgewandelt",
+    "convertedDesc": "{{name}} ist jetzt Mitglied. Richten Sie die Abrechnung unter Mitglieder ein.",
+    "couldNotConvert": "Lead konnte nicht umgewandelt werden."
+  }
+}

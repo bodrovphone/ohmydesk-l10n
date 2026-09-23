@@ -1,0 +1,126 @@
+{
+  "heading": "Plans",
+  "pageDescription": "Set the products, prices, and availability rules you offer for desks and virtual offices.",
+  "status": {
+    "active": "Active",
+    "disabled": "Disabled",
+    "unsaved": "Unsaved",
+    "saved": "Saved",
+    "saving": "Saving…",
+    "enable": "Enable",
+    "disable": "Disable",
+    "saveChanges": "Save changes"
+  },
+  "variantList": {
+    "headers": {
+      "name": "Name",
+      "days": "Days",
+      "price": "Price",
+      "autoInvoice": "Auto-invoice",
+      "discount": "Discount"
+    },
+    "namePlaceholder": "e.g. Standard",
+    "descriptionPlaceholder": "Optional — shown to visitors on the public booking page, e.g. what's included, conditions.",
+    "autoInvoiceOn": "On",
+    "remove": "Remove",
+    "addVariant": "Add variant",
+    "maxVariants": "Maximum {{max}} variants reached"
+  },
+  "dayPass": {
+    "title": "Day Pass",
+    "description": "One day at a desk, paid per visit. Each day is its own booking and nothing carries over.",
+    "priceLabel": "Price per day ({{currency}})",
+    "help": "Single-day rate · used for walk-ins and public link bookings.",
+    "updated": "Day pass updated."
+  },
+  "dedicated": {
+    "weeklyTitle": "Weekly Plan",
+    "weeklyDesc": "One named desk held for a seven-day term. If only the final days are regular days off, the term ends on the preceding working day.",
+    "monthlyTitle": "Monthly Plan",
+    "monthlyDesc": "One named desk held for a rolling calendar month — the start date through the day before the same date next month. Can run open-ended, renewing month after month until you end it, and can be frozen mid-term with the unused days banked for later.",
+    "priceLabel": "Price per {{unit}} ({{currency}})",
+    "unitWeek": "week",
+    "unitMonth": "month",
+    "updated": "{{title}} updated.",
+    "disabledToast": "{{title}} is no longer offered."
+  },
+  "flex": {
+    "title": "Flex Plan",
+    "description": "A pack of visits sold at a fixed price for the pack. The member books a desk and each booking burns one visit; the balance decrements automatically, and they can book themselves through a personal link.",
+    "noPermission": "Ask a space owner or admin to configure the Flex plan.",
+    "disableConfirmTitle": "Disable Flex Plan?",
+    "disableConfirmBody": "New flex packages can't be sold. Existing member balances are kept — members can still use their remaining days.",
+    "bundlesLabel": "Flex bundles — days × price ({{currency}})",
+    "bundlesHelp": "Each bundle is sold as a fixed number of days. Days sets how many desk visits are included.",
+    "daysLabel": "Days",
+    "perVisit": "Per visit",
+    "autoExpireLabel": "Auto-expire unused balance after",
+    "autoExpireDays": "(days, optional)",
+    "never": "Never",
+    "autoExpireHelp": "Leave blank to never expire. If set, each member's balance gets a fixed deadline from the day their plan is activated — days left unused on that date are forfeited. One reminder email goes out beforehand.",
+    "updated": "Flex plan updated.",
+    "disabledToast": "Flex plan disabled — existing balances kept."
+  },
+  "hotdesk": {
+    "title": "Hotdesk Plan",
+    "description": "A flat monthly membership for any desk that is free.",
+    "noPermission": "Ask a space owner or admin to configure the Hotdesk plan.",
+    "disableConfirmTitle": "Disable Hotdesk Plan?",
+    "disableConfirmBody": "Members with an active hotdesk plan will no longer appear on the calendar demand indicator.",
+    "help": "Unlimited desk access for the plan period. Enable to track hotdesk members and see demand on the calendar.",
+    "tiersLabel": "Tiers ({{currency}})",
+    "daysLabel": "Period (days)",
+    "periodHelp": "Period sets the default plan duration in days. Used for revenue reporting and auto-invoicing.",
+    "updated": "Hotdesk plan updated.",
+    "disabledToast": "Hotdesk plan disabled."
+  },
+  "virtualOffice": {
+    "title": "Virtual Office Plan",
+    "description": "A business address and mail handling, with no desk at all.",
+    "noPermission": "Ask a space owner or admin to configure the Virtual Office plan.",
+    "disableConfirmTitle": "Disable Virtual Office Plan?",
+    "disableConfirmBody": "Members on a virtual office plan will no longer be counted in revenue.",
+    "help": "Members on a virtual office plan get a business address and mail handling — no desk access. Enable to track virtual office members and count their revenue (they never take up desk capacity).",
+    "priceLabel": "Monthly price ({{currency}})",
+    "revenueHelp": "Used for revenue reporting and auto-invoicing.",
+    "updated": "Virtual office plan updated.",
+    "disabledToast": "Virtual office plan disabled."
+  },
+  "pricingAdvisor": {
+    "eyebrow": "OhMyDesk AI · Pricing advisor",
+    "preamble": "Based on the last 30 days of bookings and your current rates:",
+    "dismissAll": "Dismiss all suggestions",
+    "weekVsMonth": {
+      "bold": "Weekly and Monthly land almost the same per day",
+      "text": "({{week}} vs {{month}}). Members may default to Weekly and avoid the commitment.",
+      "cta": "How to fix"
+    },
+    "dayMover": {
+      "bold": "Day Pass is your top mover",
+      "text": "({{sold}} sold last 30d). Raising it {{sym}}1 ≈ +{{sym}}{{sold}}/mo, no drop expected at this volume.",
+      "cta": "Raise to {{sym}}{{price}}"
+    },
+    "flexCliff": {
+      "bold": "Flex per-visit is {{sym}}{{flex}}",
+      "text": "— cheaper than your {{sym}}{{day}} Day Pass. That's by design (commitment discount), but {{sym}}{{diff}} is a steep cliff.",
+      "cta": "Tighten gap"
+    }
+  },
+  "pricingGroups": {
+    "title": "Pricing Groups",
+    "description": "Tag members into named groups (e.g. Student, Friends & Family) for a percentage off every price — desks, meeting rooms, and private offices.",
+    "empty": "No pricing groups yet.",
+    "placeholder": "e.g. Student",
+    "addGroup": "Add group",
+    "maxGroups": "Maximum {{max}} groups reached",
+    "updated": "Pricing groups updated."
+  },
+  "matrix": {
+    "tag": "Alternative",
+    "title": "Positioning matrix",
+    "sub": "Diverges from the standard layout. Plots all 4 plans by commitment length × price-per-day, with bubble size = sales volume. Quick visual for spotting overlap.",
+    "cheaperAxis": "← cheaper / per day",
+    "commitmentAxis": "shorter commitment ←      → longer",
+    "note": "When two bubbles sit close together, your plans overlap and members will pick the cheaper one. The matrix makes the gap (or lack of one) between Weekly and Flex obvious at a glance."
+  }
+}

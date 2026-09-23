@@ -1,0 +1,111 @@
+{
+  "title": "Übersicht",
+  "pageDescription": "So steht es diesen Monat um den Standort: Umsatz, Ausgaben, Auslastung und Ausblick.",
+  "addPayment": "Zahlung erfassen",
+  "addPaymentTitle": "Einmalige Zahlung hinzufügen",
+  "prevMonth": "Vorheriger Monat",
+  "nextMonth": "Nächster Monat",
+  "ai": {
+    "badge": "KI-Einblick",
+    "eyebrow": "OhMyDesk KI · {{eyebrow}}",
+    "summaryEyebrow": "{{month}} Zusammenfassung",
+    "dismiss": "Schließen",
+    "actions": {
+      "seeEmptyDays": "Freie Tage prüfen",
+      "promoteFlex": "Flex-Tarif bewerben",
+      "viewPipeline": "Pipeline ansehen",
+      "reviewExpenses": "Ausgaben prüfen",
+      "openCalendar": "Kalender öffnen"
+    },
+    "profitUpOccDownTitle": "Sie liegen {{percent}}% im Nettogewinn im Plus — aber die Auslastung ist gesunken.",
+    "profitUpOccDownBody": "Die Auslastung ist im Vergleich zum Vormonat um {{points}} Pkt. gesunken. Teurere Tarife tragen den Umsatz; erwägen Sie einen Flex-Tarif, um freie Tage zu sichern.",
+    "profitUpTitle": "Nettogewinn ist um {{percent}}% gegenüber dem Vormonat gestiegen.",
+    "profitUpBody": "Erfolgreicher {{month}}. Umsatz {{verb}}, Ausgaben blieben im Rahmen. Ein Blick auf die Pipeline des nächsten Monats lohnt sich.",
+    "revenueExpanded": "gewachsen",
+    "revenueHeld": "gehalten",
+    "profitDownTitle": "Nettogewinn ist um {{percent}}% gegenüber dem Vormonat gesunken.",
+    "profitDownBody": "Umsatz ging zurück und die Differenz ist spürbar. Prüfen Sie freie Tage und ob Verträge ohne Verlängerung endeten.",
+    "occDownTitle": "Auslastung ist um {{points}} Pkt. gegenüber dem Vormonat gesunken.",
+    "occDownBody": "Selbst bei stabilem Gewinn verschenken freie Tische Potenzial. Ein Flex-Tarif zu fairem Preis steigert oft die Auslastung.",
+    "steadyTitle": "{{month}} verläuft stabil.",
+    "steadyBody": "Nettogewinn von {{net}} bei einer Auslastung von {{occ}}%. Alles ruhig — guter Zeitpunkt, um den nächsten Monat zu planen.",
+    "inRedTitle": "{{month}} schloss mit Verlust ab.",
+    "inRedBody": "Nettogewinn beträgt {{net}}. Wiederkehrende Ausgaben senken, Tische füllen oder beides.",
+    "startedTitle": "{{month}} fängt gerade erst an.",
+    "startedBodyNoDesk": "Diesen Monat noch keine Tischtage gebucht. Öffnen Sie den Kalender, um freie Kapazitäten zu sehen.",
+    "startedBodyWithDesk": "Nettogewinn von {{net}} bei {{occ}}% Auslastung. Sobald weitere Monate hinzukommen, zeigt diese Karte Vergleiche und Trends auf einen Blick."
+  },
+  "kpi": {
+    "netProfit": "Nettogewinn",
+    "revenue": "Umsatz",
+    "expenses": "Ausgaben",
+    "occupancy": "Auslastung",
+    "vsMonth": "ggü. {{month}}",
+    "vsLast": "ggü. {{amount}} Vormonat",
+    "item_one": "1 Eintrag",
+    "item_other": "{{count}} Einträge",
+    "deskDays": "{{occupied}}/{{total}} Tischtage"
+  },
+  "trend": {
+    "title": "Umsatzentwicklung",
+    "historyMeta": "Letzte {{count}} Monate · {{start}} — {{end}}",
+    "notEnoughHistory": "Noch nicht genügend Daten",
+    "viewLabel": "Umsatzansicht",
+    "byPayment": "Nach Zahlung",
+    "byService": "Nach erbrachter Leistung",
+    "revenue": "Umsatz",
+    "expenses": "Ausgaben",
+    "profit": "Nettogewinn",
+    "empty": "Ein Trend wird sichtbar, sobald Daten für mindestens zwei Monate vorliegen."
+  },
+  "byPlan": {
+    "title": "Umsatz nach Tarif",
+    "empty": "Diesen Monat noch kein Umsatz.",
+    "intake": "Einnahmen {{month}}"
+  },
+  "plans": {
+    "day_pass": "Tagesticket",
+    "weekly": "Wochentisch",
+    "monthly": "Monatstisch",
+    "flex": "Flex",
+    "hotdesk": "Hotdesk",
+    "virtual_office": "Virtuelles Büro",
+    "private_office": "Eigenes Büro",
+    "dedicated_desk": "Fester Schreibtisch",
+    "custom": "Individuell",
+    "other": "Sonstige"
+  },
+  "upcoming": {
+    "title": "Anstehende Zahlungen",
+    "horizon": "Nächste 60 Tage",
+    "empty": "Für die nächsten 60 Tage ist nichts vorgemerkt.",
+    "due": "Fällig",
+    "overdue": "Überfällig",
+    "forecast": "Prognose",
+    "unpaid": "unbezahlt",
+    "unpaidOnly": "Unbezahlt",
+    "member": "Mitglied"
+  },
+  "doorCodes": {
+    "title": "Aktive Türcodes",
+    "viewAll": "Alle {{count}} anzeigen →",
+    "rightNow": "{{count}} im Moment",
+    "dialogTitle": "Aktive Türcodes ({{count}})",
+    "unknown": "Unbekannt",
+    "until": "· bis {{date}}"
+  },
+  "contributors": {
+    "title": "Top-Umsatzbringer",
+    "empty": "Diesen Monat noch keinem Mitglied Umsatz zugeordnet.",
+    "member": "Mitglied",
+    "unattributed": "Nicht zugeordnet"
+  },
+  "expensesByCategory": {
+    "title": "Ausgaben nach Kategorie",
+    "meta_one": "{{month}} · 1 Eintrag",
+    "meta_other": "{{month}} · {{count}} Einträge",
+    "empty": "Diesen Monat keine Ausgaben erfasst.",
+    "uncategorized": "Ohne Kategorie",
+    "total": "Gesamt"
+  }
+}

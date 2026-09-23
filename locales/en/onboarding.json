@@ -1,0 +1,97 @@
+{
+  "brand": {
+    "homeAria": "OhMyDesk home",
+    "alt": "OhMyDesk"
+  },
+  "stepper": {
+    "progressAria": "Onboarding progress"
+  },
+  "steps": {
+    "spaceInfo": "Space Info",
+    "roomsDesks": "Rooms & Desks",
+    "meetingRooms": "Meeting Rooms",
+    "pricing": "Pricing",
+    "notifications": "Notifications"
+  },
+  "common": {
+    "next": "Next",
+    "back": "Back",
+    "skipImportLater": "Skip — I'll import all data later",
+    "importOfficeRnd": "Import from OfficeRnD / Nexudus"
+  },
+  "step0": {
+    "addLocationTitle": "Add a new location",
+    "nameSpaceTitle": "Name your coworking space",
+    "addLocationSub": "Set up another location for your brand.",
+    "nameSpaceSub": "This will be visible to your team members.",
+    "spaceName": "Space Name",
+    "spaceNamePlaceholder": "e.g. Downtown Hub",
+    "spaceUrl": "Your space URL",
+    "urlPrefix": "ohmydesk.app/",
+    "slugPlaceholder": "your-space",
+    "urlAvailable": "This URL is available",
+    "urlTaken": "This URL is already taken",
+    "urlHelp": "Auto-generated from your space name. You can change it later in Settings.",
+    "slugEditDone": "Done",
+    "slugEdit": "Edit",
+    "multiTitle": "I manage multiple locations",
+    "multiDesc": "Check this if your brand has more than one coworking space.",
+    "multiExtra": "Set up your first location now. You can add more from Settings later.",
+    "backToWorkspace": "Back to workspace",
+    "alreadyHaveAccount": "Already have an account?",
+    "signIn": "Sign in"
+  },
+  "step1": {
+    "title": "Set up rooms & desks",
+    "description": "Configure how many rooms and desks you have.",
+    "roomsCount": "Number of Rooms",
+    "roomsAndDesks": "Rooms & Desks",
+    "roomPlaceholder": "Room {{number}}",
+    "workingDays": "Working Days",
+    "workingDaysHelp": "Select which days your space is open for bookings.",
+    "preview": "Preview: {{rooms}} room, {{desks}} total desks",
+    "preview_plural": "Preview: {{rooms}} rooms, {{desks}} total desks"
+  },
+  "step2": {
+    "title": "Meeting rooms",
+    "description": "Do you have rooms available for hourly booking?",
+    "noDesksOnly": "No, desks only",
+    "skipStep": "Skip this step",
+    "yesMeetingRooms": "Yes, I have meeting rooms",
+    "configureRates": "Configure hourly rates",
+    "meetingRoomCount": "Number of meeting rooms",
+    "meetingRoomPlaceholder": "Meeting Room {{number}}",
+    "perHour": "/hr",
+    "currencyNextStep": "Currency is set in the next step."
+  },
+  "step3": {
+    "title": "Choose your currency",
+    "description": "This will be used for all pricing and revenue tracking.",
+    "customCurrencyLabel": "Or enter ISO currency code",
+    "customCurrencyPlaceholder": "e.g. GBP, JPY, CHF",
+    "customCurrencyUnknown": "We don’t recognize “{{code}}” as a currency code — it’ll still be used, so double-check for a typo.",
+    "defaultPriceLabel": "Default price per desk/day ({{symbol}})",
+    "defaultPriceHelp": "You can change this later in settings.",
+    "creating": "Creating...",
+    "createSpace": "Create Space",
+    "createFailed": "Failed to create organization. Please try again."
+  },
+  "step5": {
+    "title": "Your first location is ready!",
+    "description": "You mentioned you manage multiple locations. Here's what to do next.",
+    "addingTitle": "Adding more locations",
+    "addingBody": "Once you're comfortable with your first space, go to <1>Settings</1> to add another location. Each location gets its own calendar, rooms, and team.",
+    "goToSpace": "Go to my space"
+  },
+  "telegram": {
+    "title": "Connect Telegram notifications",
+    "description": "Get notified when bookings start or assignments end. You can always connect later in Settings.",
+    "connected": "Telegram connected!",
+    "goCalendar": "Go to Calendar",
+    "waitingConnection": "Waiting for connection...",
+    "generatingLink": "Generating link...",
+    "connect": "Connect Telegram",
+    "openBotStart": "Open the bot in Telegram and press Start",
+    "skip": "Skip for now"
+  }
+}

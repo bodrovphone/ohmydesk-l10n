@@ -1,0 +1,54 @@
+{
+  "sentiments": {
+    "love": { "label": "Liebe es" },
+    "good": { "label": "Geht klar" },
+    "meh": { "label": "Naja" },
+    "hate": { "label": "Nicht mein Ding" }
+  },
+  "features": {
+    "mobileApp": "Mobile App",
+    "slackIntegration": "Slack-Integration",
+    "embeddableWidget": "Einbettbares Buchungs-Widget",
+    "automatedInvoices": "Automatische Rechnungen",
+    "publicApi": "Öffentliche API / Webhooks",
+    "smartLock": "Smart-Lock-Integration",
+    "bookableEquipment": "Buchbare Geräte (Drucker usw.)",
+    "multiLanguage": "Mehrsprachige Oberfläche",
+    "whiteLabel": "White-Label / eigenes Branding",
+    "recurringBookings": "Wiederkehrende Buchungen",
+    "memberPortal": "Mitglieder-Self-Service-Portal"
+  },
+  "form": {
+    "sentimentLegend": "Ehrlich — wie fühlt es sich an?",
+    "missingLegend": "Was fehlt?",
+    "missingHint": "(alles ankreuzen, was stört)",
+    "otherPlaceholder": "Etwas anderes? Hier eintippen…",
+    "messageLegend": "Noch etwas?",
+    "messageHint": "(rant, Lob, Wünsche — her damit)",
+    "messagePlaceholder": "Optional. Bug? Lob? Irgendein Gedanke?",
+    "emailLegend": "Ihre E-Mail",
+    "emailHint": "(damit wir antworten können)",
+    "emailPlaceholder": "sie@beispiel.de",
+    "submit": "Absenden",
+    "submitting": "Wird gesendet…"
+  },
+  "emailWarning": {
+    "title": "Keine E-Mail = keine Antwort.",
+    "body": "Ohne E-Mail können wir nicht nachfassen, wenn etwas kaputt ist oder ein Gespräch lohnt. Oben eintragen oder trotzdem senden.",
+    "cta": "Trotzdem senden — bitte nicht antworten"
+  },
+  "errors": {
+    "empty": "Wählen Sie mindestens etwas — Stimmung, fehlendes Feature oder Text unten.",
+    "rateLimited": "Schon gesendet — bitte eine Minute warten.",
+    "submitFailed": "Senden fehlgeschlagen ({{reason}}). Erneut versuchen oder hello@ohmydesk.app schreiben.",
+    "generic": "Etwas ist schiefgelaufen. Erneut versuchen oder hello@ohmydesk.app schreiben."
+  },
+  "success": {
+    "title": "Alles klar. Danke.",
+    "hate": "Brutal. Notiert. Wir werden besser.",
+    "meh": "Fair. Wir bleiben dran.",
+    "love": "Bedeutet viel. Wirklich.",
+    "default": "Wir lesen jede Nachricht. Danke.",
+    "backLink": "← Zurück zu OhMyDesk"
+  }
+}

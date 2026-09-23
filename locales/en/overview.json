@@ -1,0 +1,111 @@
+{
+  "title": "Overview",
+  "pageDescription": "How the space is doing this month: revenue, expenses, occupancy, and what is coming next.",
+  "addPayment": "Add payment",
+  "addPaymentTitle": "Add a one-off payment",
+  "prevMonth": "Previous month",
+  "nextMonth": "Next month",
+  "ai": {
+    "badge": "AI insight",
+    "eyebrow": "OhMyDesk AI · {{eyebrow}}",
+    "summaryEyebrow": "{{month}} summary",
+    "dismiss": "Dismiss",
+    "actions": {
+      "seeEmptyDays": "See empty days",
+      "promoteFlex": "Promote a Flex slot",
+      "viewPipeline": "View pipeline",
+      "reviewExpenses": "Review expenses",
+      "openCalendar": "Open the calendar"
+    },
+    "profitUpOccDownTitle": "You're {{percent}}% up on net profit — but occupancy slipped.",
+    "profitUpOccDownBody": "Occupancy is down {{points}} pts vs last month. Higher-priced plans are carrying revenue; consider opening a Flex slot to lock in the empty days.",
+    "profitUpTitle": "Net profit is up {{percent}}% vs last month.",
+    "profitUpBody": "Healthy {{month}}. Revenue {{verb}}, expenses stayed in check. Worth a quick look at next month's pipeline so the momentum carries.",
+    "revenueExpanded": "expanded",
+    "revenueHeld": "held",
+    "profitDownTitle": "Net profit is down {{percent}}% vs last month.",
+    "profitDownBody": "Revenue trailed off and the gap matters. Look at empty days and whether any contract ended without a renewal.",
+    "occDownTitle": "Occupancy slipped {{points}} pts vs last month.",
+    "occDownBody": "Even with profit flat, empty desks are leaving money on the table. A Flex slot at fair price often pulls the rate back up.",
+    "steadyTitle": "{{month}} is on a steady track.",
+    "steadyBody": "Net profit of {{net}} with occupancy at {{occ}}%. No fires — good time to plan next month's pipeline.",
+    "inRedTitle": "{{month}} closed in the red.",
+    "inRedBody": "Net profit is {{net}}. Trim a recurring expense, fill a desk, or both.",
+    "startedTitle": "{{month}} is just getting started.",
+    "startedBodyNoDesk": "No desk-days booked yet this month. Open the calendar to see what's free and start filling the week.",
+    "startedBodyWithDesk": "Net profit of {{net}} on {{occ}}% occupancy. As more months roll in, this card will start comparing — so trends become visible at a glance."
+  },
+  "kpi": {
+    "netProfit": "Net profit",
+    "revenue": "Revenue",
+    "expenses": "Expenses",
+    "occupancy": "Occupancy",
+    "vsMonth": "vs {{month}}",
+    "vsLast": "vs {{amount}} last",
+    "item_one": "1 item",
+    "item_other": "{{count}} items",
+    "deskDays": "{{occupied}}/{{total}} desk-days"
+  },
+  "trend": {
+    "title": "Revenue trend",
+    "historyMeta": "Last {{count}} months · {{start}} — {{end}}",
+    "notEnoughHistory": "Not enough history yet",
+    "viewLabel": "Revenue view",
+    "byPayment": "By payment",
+    "byService": "By services delivered",
+    "revenue": "Revenue",
+    "expenses": "Expenses",
+    "profit": "Net profit",
+    "empty": "A trend will appear once you have at least two months of data."
+  },
+  "byPlan": {
+    "title": "Revenue by plan",
+    "empty": "No revenue yet this month.",
+    "intake": "{{month}} intake"
+  },
+  "plans": {
+    "day_pass": "Day pass",
+    "weekly": "Weekly desk",
+    "monthly": "Monthly desk",
+    "flex": "Flex",
+    "hotdesk": "Hotdesk",
+    "virtual_office": "Virtual office",
+    "private_office": "Private office",
+    "dedicated_desk": "Dedicated desk",
+    "custom": "Custom",
+    "other": "Other"
+  },
+  "upcoming": {
+    "title": "Upcoming payments",
+    "horizon": "Next 60 days",
+    "empty": "Nothing on the books for the next 60 days.",
+    "due": "Due",
+    "overdue": "Overdue",
+    "forecast": "Forecast",
+    "unpaid": "unpaid",
+    "unpaidOnly": "Unpaid",
+    "member": "Member"
+  },
+  "doorCodes": {
+    "title": "Active door codes",
+    "viewAll": "View all {{count}} →",
+    "rightNow": "{{count}} right now",
+    "dialogTitle": "Active door codes ({{count}})",
+    "unknown": "Unknown",
+    "until": "· until {{date}}"
+  },
+  "contributors": {
+    "title": "Top contributors",
+    "empty": "No member revenue attributed yet this month.",
+    "member": "Member",
+    "unattributed": "Unattributed"
+  },
+  "expensesByCategory": {
+    "title": "Expenses by category",
+    "meta_one": "{{month}} · 1 item",
+    "meta_other": "{{month}} · {{count}} items",
+    "empty": "No expenses logged this month.",
+    "uncategorized": "Uncategorized",
+    "total": "Total"
+  }
+}

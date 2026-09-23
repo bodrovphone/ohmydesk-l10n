@@ -1,0 +1,29 @@
+{
+  "header": {
+    "title": "OhMyDesk concierge",
+    "subtitle": "Ask anything about the product"
+  },
+  "greeting": "Hi! I'm the OhMyDesk concierge. Ask me anything about the product — features, pricing, how we compare, or getting started.",
+  "starters": {
+    "whatIs": "What is OhMyDesk?",
+    "pricing": "How much does it cost?",
+    "compareCobot": "How do you compare to Cobot?",
+    "flexPasses": "Can it handle flex day passes?"
+  },
+  "input": {
+    "placeholder": "Ask about features, pricing…"
+  },
+  "aria": {
+    "dialog": "OhMyDesk concierge",
+    "close": "Close chat",
+    "typing": "Concierge is typing",
+    "message": "Your message",
+    "send": "Send message",
+    "open": "Chat with the OhMyDesk concierge",
+    "closeBubble": "Close the OhMyDesk concierge"
+  },
+  "errors": {
+    "generic": "Sorry — something went wrong. Please email hello@ohmydesk.app.",
+    "network": "I could not reach the server. Please try again, or email hello@ohmydesk.app."
+  }
+}

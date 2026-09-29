@@ -107,5 +107,13 @@
     "empty": "Diesen Monat keine Ausgaben erfasst.",
     "uncategorized": "Ohne Kategorie",
     "total": "Gesamt"
+  },
+  "loading": {
+    "updating": "Wird aktualisiert…",
+    "heroTitle": "{{month}} wird zusammengestellt…",
+    "heroBody": "Umsatz, Ausgaben und Auslastung erscheinen gleich hier.",
+    "trend": "Die letzten 6 Monate werden geladen…",
+    "trendMeta": "Letzte 6 Monate",
+    "card": "Wird geladen…"
   }
 }

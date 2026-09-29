@@ -14,6 +14,17 @@
     "noMatchTitle": "Nothing matches.",
     "noMatchDescription": "Clear the filters, or invite someone new."
   },
+  "autocomplete": {
+    "placeholder": "Enter name",
+    "existingClients": "Existing clients",
+    "allClients": "All clients",
+    "createClient": "Create client \"{{name}}\"",
+    "possibleMatches": "Possible matches",
+    "emailMatch": "email match",
+    "phoneMatch": "phone match",
+    "similarName": "similar name",
+    "createNewAnyway": "Create new anyway"
+  },
   "filters": {
     "ariaLabel": "Filter by plan",
     "all": "All",
@@ -188,7 +199,7 @@
       "createInvoice": "Create invoice",
       "autoGenerate": "Auto-generate monthly invoice",
       "autoGenerateOn": "When on, this member is included in the monthly batch run.",
-      "autoGenerateOff": "Add billing name + address (Overview → billing requisites) to enable.",
+      "autoGenerateOff": "Add billing name + address (Overview → billing profiles) to enable.",
       "statement": "Statement"
     },
     "delete": "Remove"
@@ -327,6 +338,7 @@
   },
   "billingProfiles": {
     "heading": "Additional billing profiles",
+    "companyName": "Company name",
     "headingDesc": "Bill some of this member's plans to another entity (e.g. their company). You pick the profile as \"Bill to\" when raising an invoice — their own details above stay the default.",
     "labelRequired": "Label *",
     "billingEmail": "Billing email",
@@ -392,7 +404,15 @@
     "tryAgain": "Try again.",
     "linked": "Billing profile linked",
     "linkedDesc": "Now shares {{label}}.",
-    "couldNotLink": "Could not link profile"
+    "couldNotLink": "Could not link profile",
+    "unlink": "Unlink",
+    "unlinkTitle": "Unlink billing profile?",
+    "unlinkDescription": "Remove {{label}} from this member's billing settings. Their billing will use their personal details. The profile owner, other members, and past invoices are unchanged.",
+    "unlinkBlocked": "End this member's active desk, virtual office, or private office assignment before unlinking this profile.",
+    "unlinkChecking": "Checking active plan assignments…",
+    "unlinkCheckFailed": "Could not verify active plan assignments.",
+    "unlinked": "Billing profile unlinked",
+    "couldNotUnlink": "Could not unlink billing profile"
   },
   "planTargets": {
     "billEachPlan": "Bill each plan to",
@@ -544,6 +564,7 @@
     "chooseFile": "Choose file",
     "limitNote": "Up to {{count}} rows. Comma, semicolon, or tab delimited.",
     "orPaste": "Or paste CSV text",
+    "pastePlaceholder": "name,email,phone\nAlice,alice@example.com,555-1234\nBob,bob@example.com,",
     "parseBtn": "Parse pasted CSV",
     "tooManyRows": "File has {{count}} rows. Only the first {{limit}} will be imported. Split the file to import the rest.",
     "columnMapping": "Column mapping",
@@ -623,12 +644,6 @@
     "cancel": "Cancel",
     "save": "Save"
   },
-  "autocomplete": {
-    "placeholder": "Enter name",
-    "existingClients": "Existing clients",
-    "allClients": "All clients",
-    "createClient": "Create client \"{{name}}\""
-  },
   "payment": {
     "received": "Payment received",
     "updating": "Thanks! Updating your account…",
@@ -644,5 +659,12 @@
       "overdue": "Overdue",
       "unpaid": "Unpaid"
     }
+  },
+  "doorAccess": {
+    "title": "Extra door access",
+    "description": "Doors this member can also open with their booking PIN. The front door is always included.",
+    "noKeypad": "(no keypad)",
+    "note": "Applies to door codes created from now on.",
+    "saveError": "Couldn't save door access. Try again."
   }
 }

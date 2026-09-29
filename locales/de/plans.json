@@ -17,11 +17,15 @@
       "days": "Tage",
       "price": "Preis",
       "autoInvoice": "Auto-Rechnung",
+      "sharedInvoiceDate": "Gemeinsamer Rechnungstag",
       "discount": "Rabatt"
     },
     "namePlaceholder": "z. B. Standard",
     "descriptionPlaceholder": "Optional – wird Besuchern auf der Buchungsseite angezeigt (z. B. Leistungen, Bedingungen).",
     "autoInvoiceOn": "Ein",
+    "calendarMonth": "Kalendermonat",
+    "assignmentDate": "Startdatum",
+    "sharedInvoiceDateHelp": "Kalendermonat: Die erste Rechnung wird bis Monatsende anteilig berechnet; danach beginnt jeder Zeitraum am 1. Startdatum: Ein voller Monat ab Vertragsbeginn. Gilt nur für neue Zuweisungen.",
     "remove": "Entfernen",
     "addVariant": "Variante hinzufügen",
     "maxVariants": "Maximal {{max}} Varianten erreicht"
@@ -86,6 +90,57 @@
     "updated": "Tarif für virtuelle Büros aktualisiert.",
     "disabledToast": "Tarif für virtuelle Büros deaktiviert."
   },
+  "services": {
+    "title": "Services & Extras",
+    "description": "Kaffee, Snacks, Mahlzeiten, Schließfächer und weitere Extras zu festen Preisen, bereit für Buchungen.",
+    "empty": "Noch keine Services. Fügen Sie Kaffee, eine Snackbox oder ein Schließfach mit Preis hinzu.",
+    "help": "Buchungen können Services noch nicht nutzen – das Hinzufügen zu Buchungen und Rechnungen folgt als Nächstes.",
+    "noPermission": "Bitten Sie einen Inhaber oder Admin des Spaces, Services und Extras zu verwalten.",
+    "add": "Service hinzufügen",
+    "nameLabel": "Name des Service",
+    "namePlaceholder": "z. B. Kaffee-Flatrate",
+    "priceLabel": "Preis",
+    "unitLabel": "Abrechnung",
+    "descriptionLabel": "Beschreibung",
+    "descriptionPlaceholder": "Optional – was enthalten ist, z. B. Filterkaffee und Tee den ganzen Tag.",
+    "appliesToLabel": "Verfügbar für",
+    "appliesToEmpty": "Noch nirgends angeboten: Wählen Sie oben mindestens eine Buchungsart, sonst erscheint dieses Extra bei keiner Buchung.",
+    "publicEnabled": "Bei der öffentlichen Buchung anzeigen",
+    "allowQuantity": "Kunde kann die Menge wählen",
+    "maxQuantityShort": "Max.",
+    "maxQuantityLabel": "Höchstmenge",
+    "maxQuantityPlaceholder": "Unbegrenzt",
+    "archive": "Archivieren",
+    "restore": "Wiederherstellen",
+    "archivedHeading_one": "{{count}} archivierter Service",
+    "archivedHeading_other": "{{count}} archivierte Services",
+    "updated": "Services aktualisiert.",
+    "units": {
+      "per_booking": "Pro Buchung",
+      "per_day": "Pro Tag",
+      "per_hour": "Pro Stunde"
+    },
+    "appliesTo": {
+      "day_pass": "Tagespass",
+      "flex": "Flex-Tarif",
+      "weekly": "Wochentarif",
+      "monthly": "Monatstarif",
+      "meeting_room_hourly": "Meetingraum (stundenweise)",
+      "meeting_room_whole_day": "Meetingraum (ganzer Tag)"
+    },
+    "errors": {
+      "nameRequired": "Bitte einen Namen eingeben.",
+      "maxQuantityInvalid": "Die Höchstmenge muss eine ganze Zahl ab 1 sein.",
+      "fixRows": "Einige Services müssen vor dem Speichern korrigiert werden.",
+      "saveFailed": "Services konnten nicht gespeichert werden. Bitte versuchen Sie es erneut."
+    },
+    "perPerson": "Preis pro Person",
+    "perPersonShort": "pro Person",
+    "perPersonHint": "Wird für jede teilnehmende Person berechnet – die Buchung fragt nach der Anzahl. Nur für Besprechungsräume.",
+    "perPersonRoomsOnly": "Leistungen pro Person gibt es nur für Besprechungsräume.",
+    "roomsLabel": "Verfügbar in Räumen",
+    "allRooms": "Alle Räume"
+  },
   "pricingAdvisor": {
     "eyebrow": "OhMyDesk KI · Preisberater",
     "preamble": "Basierend auf den Buchungen der letzten 30 Tage und Ihren aktuellen Preisen:",
@@ -122,5 +177,10 @@
     "cheaperAxis": "← günstiger / pro Tag",
     "commitmentAxis": "kürzere Bindung ←      → längere Bindung",
     "note": "Wenn zwei Blasen nahe beieinander liegen, überschneiden sich Ihre Tarife und Mitglieder wählen den günstigeren. Die Matrix verdeutlicht Lücken auf einen Blick."
+  },
+  "conceptExploration": "Konzept-Exploration",
+  "quantityStepper": {
+    "increase": "Erhöhen",
+    "decrease": "Verringern"
   }
 }

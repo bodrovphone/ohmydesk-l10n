@@ -35,6 +35,8 @@
       "sizePlaceholder": "≈4 desks",
       "autoInvoiceTitle": "Auto-invoice ongoing agreements",
       "autoInvoiceDesc": "When this office is let on an open-ended agreement, create the next monthly invoice automatically.",
+      "sharedInvoiceDateTitle": "Align to a shared invoice date",
+      "sharedInvoiceDateDesc": "On: prorate the first charge through month-end, then start each cycle on the 1st. Off: charge a full month from the assignment date. New assignments only.",
       "saving": "Saving…",
       "save": "Save",
       "nameRequiredTitle": "Name required",
@@ -42,7 +44,8 @@
       "officeUpdated": "Office updated",
       "officeAdded": "Office added",
       "saveErrorTitle": "Could not save",
-      "saveErrorDesc": "Try again."
+      "saveErrorDesc": "Try again.",
+      "addOffice": "Add office"
     },
     "assign": {
       "title": "Assign {{name}}",
@@ -81,6 +84,73 @@
       "confirm": "Delete",
       "success": "Office deleted",
       "error": "Could not delete"
+    },
+    "view": {
+      "cards": "Cards",
+      "list": "List",
+      "ariaLabel": "Private office layout"
+    },
+    "table": {
+      "office": "Office",
+      "price": "Price",
+      "status": "Status",
+      "tenant": "Tenant",
+      "term": "Term",
+      "autoInvoice": "Auto-invoice"
+    },
+    "filters": {
+      "toggle": "Filters",
+      "searchPlaceholder": "Search office, company…",
+      "status": "Status",
+      "allStatuses": "All",
+      "occupied": "Occupied",
+      "vacant": "Vacant",
+      "price": "Price",
+      "min": "Min",
+      "max": "Max",
+      "autoInvoice": "Auto-invoice",
+      "allAutoInvoice": "All",
+      "autoInvoiceOn": "Enabled",
+      "autoInvoiceOff": "Disabled",
+      "clear": "Clear filters",
+      "noMatch": "No private offices match these filters."
+    },
+    "detail": {
+      "title": "Private office details",
+      "edit": "Edit office",
+      "officeDetails": "Office details",
+      "name": "Name",
+      "monthlyPrice": "Monthly price",
+      "size": "Size note",
+      "autoInvoice": "Auto-invoice",
+      "sharedInvoiceDate": "Shared invoice date",
+      "calendarMonth": "Calendar month",
+      "assignmentDate": "Assignment date",
+      "publicListing": "Listed on public page",
+      "tenantDetails": "Current tenant",
+      "company": "Company",
+      "status": "Status",
+      "term": "Term",
+      "started": "Started",
+      "ends": "Ends",
+      "openEnded": "Open-ended",
+      "notes": "Notes",
+      "billingAddress": "Billing details",
+      "billingName": "Billing name",
+      "legalName": "Legal name",
+      "address": "Address",
+      "taxId": "Company / Reg ID",
+      "vatId": "VAT ID",
+      "representative": "Representative",
+      "profile": "Profile",
+      "billTo": "Bill to",
+      "notAdded": "Not added",
+      "noTenant": "No tenant currently assigned",
+      "assignCompany": "Assign company",
+      "endAgreement": "End agreement",
+      "on": "On",
+      "off": "Off",
+      "showInvoices": "Show invoices"
     }
   },
   "virtual": {
@@ -255,7 +325,8 @@
       "from": "From",
       "to": "To",
       "clear": "Clear filters",
-      "noMatch": "No members match these filters."
+      "noMatch": "No members match these filters.",
+      "toggle": "Filters"
     }
   }
 }

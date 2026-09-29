@@ -22,6 +22,8 @@
     "enabled": "Enabled",
     "disabled": "Disabled",
     "enableToggle": "Enable public booking",
+    "autoLinkMembersToggle": "Auto-link bookings to existing members",
+    "autoLinkMembersDesc": "When enabled, a unique email or phone match links the booking; names alone are never used. Visitors with no existing email or phone match appear in Leads.",
     "noTelegramBanner": "Without Telegram connected, you'll only see new bookings when you open the calendar. Connect Telegram in the Notifications page for instant alerts.",
     "deskBooking": "Desk booking",
     "deskBookingLink": "Desk booking link",
@@ -58,6 +60,12 @@
     "embedBadge": "Floating \"Book now\" badge",
     "embedCode": "Embed code",
     "embedNote": "Uses the \"Link to\" scope picked above for {{target}}. Paid bookings open in a secure popup window — the rest happens right on your page.",
+    "conversionTitle": "Track bookings in Google Ads / GA4",
+    "conversionDesc": "Use a stable thank-you URL or listen for a JavaScript event when a visitor completes a booking.",
+    "conversionUrlLabel": "Thank-you page URL (paid Stripe checkout)",
+    "conversionUrlHint": "Create a Google Ads or GA4 conversion that matches this path (desks). Meeting rooms and offices use /meetings/complete and /offices/complete instead.",
+    "conversionGtmLabel": "GTM / Wix custom code (embed)",
+    "conversionGtmHint": "Paste on the page that hosts the embed. Fires when a booking succeeds (paid or free).",
     "targetMeetingRooms": "meeting rooms",
     "targetPrivateOffices": "private offices",
     "targetDeskBooking": "desk booking",
@@ -143,7 +151,33 @@
     "doorCodesNote": "Door codes follow Operating Hours (Organization → General). Closed days get no code.",
     "save": "Save",
     "saving": "Saving...",
-    "disconnectShortDesc": "Your lock vendor account will be unlinked from OhMyDesk. You can reconnect at any time."
+    "disconnectShortDesc": "Your lock vendor account will be unlinked from OhMyDesk. You can reconnect at any time.",
+    "doorAccess": {
+      "title": "Door access by pass",
+      "description": "Day passes follow your opening hours. Switch a pass to 24/7 to give its members one code that works around the clock for the whole period, weekends and closed days included.",
+      "weekly": "Weekly pass: 24/7",
+      "monthly": "Monthly pass: 24/7",
+      "note": "Applies to codes created from now on. Codes already sent keep their hours.",
+      "saved": "Door access updated",
+      "saveError": "Couldn't save door access. Try again."
+    },
+    "extraLocks": {
+      "title": "Extra doors",
+      "description": "Map more locks from the same account, like a makerspace or storage room. Members you give access to on the Members page get the same PIN on those doors for their bookings.",
+      "add": "Add another lock",
+      "lock": "Lock",
+      "label": "Name members will see",
+      "labelPlaceholder": "e.g. Makerspace",
+      "pricing": "$15/month per extra lock, added to your plan.",
+      "trialNote": "Extra locks are $15/month each and available on a paid plan. Contact us to add one.",
+      "noMoreDevices": "Every lock on this account is already mapped.",
+      "noKeypad": "No keypad: members won't get a PIN on this door.",
+      "remove": "Remove extra lock",
+      "added": "{{name}} added",
+      "addError": "Couldn't add the lock. Try again.",
+      "removed": "{{name}} removed",
+      "removeError": "Couldn't remove the lock. Try again."
+    }
   },
   "calendarSync": {
     "title": "Calendar sync",
@@ -376,5 +410,32 @@
     "frontDoorSet": "Front door set to {{name}}.",
     "failedSaveFrontDoor": "Failed to save front door lock.",
     "smartLockRemoved": "Smart lock integration removed."
+  },
+  "legalDocs": {
+    "title": "Checkout legal documents",
+    "description": "Your Terms of Use and privacy policy, shown right above the final button on every public booking form. Upload a PDF or link to the page on your own website.",
+    "terms": {
+      "title": "Terms of Use",
+      "help": "Visitors see “By placing this order, I accept the Terms of Use” with a link to this document."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "help": "Visitors must tick a box confirming they have read your privacy policy before they can book."
+    },
+    "notSet": "Not set",
+    "uploadedPdf": "Uploaded PDF",
+    "uploadPdf": "Upload PDF",
+    "replacePdf": "Replace with PDF",
+    "useLink": "Use a link",
+    "saveLink": "Save link",
+    "cancel": "Cancel",
+    "remove": "Remove",
+    "saved": "Saved — the booking page shows it now",
+    "removed": "Removed from the booking page",
+    "saveFailed": "Could not save",
+    "pdfOnly": "Please choose a PDF file",
+    "tooLarge": "The PDF is larger than 10 MB",
+    "invalidLink": "Enter a full link starting with http:// or https://",
+    "ownerOnly": "Only the space owner can change these documents."
   }
 }

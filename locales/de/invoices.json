@@ -68,6 +68,7 @@
     "preview": "Vorschau",
     "downloadPdf": "PDF herunterladen",
     "markAsPaid": "Als bezahlt markieren",
+    "recordPaymentTitle": "Zahlung für Rechnung {{number}} erfassen",
     "void": "Stornieren",
     "downloadFailed": "Download fehlgeschlagen",
     "downloadFailedDesc": "PDF konnte nicht erstellt werden.",
@@ -149,7 +150,9 @@
       "attnHint": "(optional)",
       "attnPlaceholder": "Vollständiger Name des Ansprechpartners",
       "prefilledHelp": "Aus dem Mitgliedsprofil übernommen. Änderungen hier gelten nur für diese Rechnung – speichern Sie Firmendaten im Profil, um erneutes Eingeben zu vermeiden.",
-      "manualHelp": "Manuelle Rechnung – geben Sie die Empfängerdaten unten ein. Es wird nichts im Mitgliedsprofil gespeichert."
+      "manualHelp": "Manuelle Rechnung – geben Sie die Empfängerdaten unten ein. Es wird nichts im Mitgliedsprofil gespeichert.",
+      "editButton": "Bearbeiten",
+      "collapse": "Einklappen"
     },
     "numberAndDates": {
       "title": "Nummer & Daten",
@@ -303,7 +306,48 @@
     "ascending": "aufsteigend",
     "descending": "absteigend",
     "invoiceLink": "Rechnung {{number}}",
+    "coverage": "Zeitraum {{period}}",
     "editPayment": "Zahlung bearbeiten",
+    "recordPayment": "Zahlung erfassen",
     "immutablePayment": "Unveränderliche Zahlung"
+  },
+  "pdf": {
+    "brandPart1": "OhMy",
+    "brandPart2": "Desk",
+    "brandTagline": "Coworking on autopilot",
+    "noLineItems": "Keine Positionen.",
+    "footer": "Erstellt mit OhMyDesk · ohmydesk.app"
+  },
+  "memberList": {
+    "loading": "Wird geladen…",
+    "empty": "Keine früheren Rechnungen für dieses Mitglied.",
+    "covers": "Zeitraum {{period}}",
+    "showMore": "{{count}} weitere anzeigen"
+  },
+  "exportCsv": "CSV exportieren",
+  "export": {
+    "title": "Rechnungen exportieren",
+    "description": "Eine CSV-Datei mit allen Rechnungen, die im gewählten Monat ausgestellt wurden (nach Rechnungsdatum) – für Ihre Buchhaltung. Entwürfe und stornierte Rechnungen sind mit ihrem Status enthalten.",
+    "count_one": "{{count}} Rechnung in diesem Monat ausgestellt",
+    "count_other": "{{count}} Rechnungen in diesem Monat ausgestellt",
+    "download": "CSV herunterladen",
+    "failed": "Die CSV-Datei konnte nicht erstellt werden",
+    "loadFailed": "Rechnungen für diesen Monat konnten nicht geladen werden",
+    "columns": {
+      "invoiceNumber": "Rechnungsnummer",
+      "issueDate": "Rechnungsdatum",
+      "dueDate": "Fällig am",
+      "status": "Status",
+      "customer": "Kunde",
+      "customerVatId": "USt-IdNr. Kunde",
+      "periodStart": "Leistungszeitraum von",
+      "periodEnd": "Leistungszeitraum bis",
+      "net": "Netto",
+      "vatRate": "USt. %",
+      "vatAmount": "USt.",
+      "total": "Brutto",
+      "currency": "Währung",
+      "paidOn": "Bezahlt am"
+    }
   }
 }

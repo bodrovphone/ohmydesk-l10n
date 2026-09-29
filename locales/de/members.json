@@ -14,6 +14,17 @@
     "noMatchTitle": "Keine Treffer.",
     "noMatchDescription": "Setzen Sie die Filter zurück oder laden Sie neue Mitglieder ein."
   },
+  "autocomplete": {
+    "placeholder": "Name eingeben",
+    "existingClients": "Bestehende Kunden",
+    "allClients": "Alle Kunden",
+    "createClient": "Kunde „{{name}}“ anlegen",
+    "possibleMatches": "Mögliche Treffer",
+    "emailMatch": "E-Mail stimmt überein",
+    "phoneMatch": "Telefonnummer stimmt überein",
+    "similarName": "ähnlicher Name",
+    "createNewAnyway": "Trotzdem neu anlegen"
+  },
   "filters": {
     "ariaLabel": "Nach Tarif filtern",
     "all": "Alle",
@@ -188,7 +199,7 @@
       "createInvoice": "Rechnung erstellen",
       "autoGenerate": "Monatliche Rechnung automatisch erstellen",
       "autoGenerateOn": "Wenn aktiviert, wird dieses Mitglied in den monatlichen Rechnungslauf einbezogen.",
-      "autoGenerateOff": "Fügen Sie Rechnungsname + Adresse (Übersicht → Rechnungsdaten) hinzu, um dies zu aktivieren.",
+      "autoGenerateOff": "Fügen Sie Rechnungsname + Adresse (Übersicht → Rechnungsprofile) hinzu, um dies zu aktivieren.",
       "statement": "Kontoauszug"
     },
     "delete": "Entfernen"
@@ -327,6 +338,7 @@
   },
   "billingProfiles": {
     "heading": "Zusätzliche Rechnungsprofile",
+    "companyName": "Firmenname",
     "headingDesc": "Rechnen Sie einzelne Tarife über ein anderes Unternehmen ab. Das Profil kann beim Erstellen einer Rechnung gewählt werden — die oben hinterlegten Daten bleiben Standard.",
     "labelRequired": "Bezeichnung *",
     "billingEmail": "Rechnungs-E-Mail",
@@ -392,7 +404,15 @@
     "tryAgain": "Bitte versuchen Sie es erneut.",
     "linked": "Rechnungsprofil verknüpft",
     "linkedDesc": "Nutzt nun {{label}}.",
-    "couldNotLink": "Profil konnte nicht verknüpft werden"
+    "couldNotLink": "Profil konnte nicht verknüpft werden",
+    "unlink": "Verknüpfung lösen",
+    "unlinkTitle": "Rechnungsprofil-Verknüpfung lösen?",
+    "unlinkDescription": "{{label}} aus den Rechnungseinstellungen dieses Mitglieds entfernen. Die persönlichen Rechnungsdaten werden wieder verwendet. Profilinhaber, andere Mitglieder und frühere Rechnungen bleiben unverändert.",
+    "unlinkBlocked": "Beenden Sie zuerst die aktive Schreibtisch-, virtuelle Büro- oder Eigenbüro-Zuweisung dieses Mitglieds, bevor Sie das Profil trennen.",
+    "unlinkChecking": "Aktive Tarifzuweisungen werden geprüft…",
+    "unlinkCheckFailed": "Aktive Tarifzuweisungen konnten nicht geprüft werden.",
+    "unlinked": "Rechnungsprofil-Verknüpfung gelöst",
+    "couldNotUnlink": "Rechnungsprofil konnte nicht getrennt werden"
   },
   "planTargets": {
     "billEachPlan": "Tarife abrechnen an",
@@ -544,6 +564,7 @@
     "chooseFile": "Datei auswählen",
     "limitNote": "Bis zu {{count}} Zeilen. Komma-, Semikolon- oder Tabulator-getrennt.",
     "orPaste": "Oder CSV-Text einfügen",
+    "pastePlaceholder": "name,email,phone\nAlice,alice@example.com,555-1234\nBob,bob@example.com,",
     "parseBtn": "Eingefügte CSV verarbeiten",
     "tooManyRows": "Datei enthält {{count}} Zeilen. Nur die ersten {{limit}} werden importiert. Teilen Sie die Datei, um den Rest zu importieren.",
     "columnMapping": "Spaltenzuordnung",
@@ -623,12 +644,6 @@
     "cancel": "Abbrechen",
     "save": "Speichern"
   },
-  "autocomplete": {
-    "placeholder": "Name eingeben",
-    "existingClients": "Bestehende Kunden",
-    "allClients": "Alle Kunden",
-    "createClient": "Kunde „{{name}}“ anlegen"
-  },
   "payment": {
     "received": "Zahlung eingegangen",
     "updating": "Danke! Ihr Konto wird aktualisiert…",
@@ -644,5 +659,12 @@
       "overdue": "Überfällig",
       "unpaid": "Ausstehend"
     }
+  },
+  "doorAccess": {
+    "title": "Zugang zu weiteren Türen",
+    "description": "Türen, die dieses Mitglied mit seiner Buchungs-PIN zusätzlich öffnen kann. Die Eingangstür ist immer dabei.",
+    "noKeypad": "(kein Keypad)",
+    "note": "Gilt für Türcodes, die ab jetzt erstellt werden.",
+    "saveError": "Der Türzugang konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
   }
 }

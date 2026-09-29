@@ -21,7 +21,11 @@
     "plan": "Tarif",
     "standalone": "Eigenständig",
     "from": "Von",
-    "to": "Bis"
+    "to": "Bis",
+    "member": "Mitglied",
+    "allMembers": "Alle Mitglieder",
+    "selectedMembers": "{{count}} ausgewählt",
+    "clearMembers": "Zurücksetzen"
   },
   "summary": {
     "totalPayments": "Zahlungen gesamt (erfolgreich)"
@@ -45,6 +49,8 @@
     "none": "Keine",
     "invoice": "Rechnung",
     "booking": "Buchung",
+    "desk": "Schreibtisch",
+    "meetingRoom": "Besprechungsraum",
     "plan": "Tarif"
   },
   "table": {
@@ -58,7 +64,9 @@
     "status": "Status",
     "loading": "Wird geladen…",
     "noCharges": "Noch keine Gebühren.",
+    "noChargesFiltered": "Keine Gebühren entsprechen diesen Filtern.",
     "noPayments": "Noch keine Zahlungen.",
+    "noPaymentsFiltered": "Keine Zahlungen entsprechen diesen Filtern.",
     "recordFirstPayment": " Erfassen Sie Ihre erste Zahlung oben.",
     "unknownMember": "Unbekannt",
     "linkMember": "Mitglied verknüpfen",

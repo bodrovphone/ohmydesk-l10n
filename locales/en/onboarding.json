@@ -13,6 +13,13 @@
     "pricing": "Pricing",
     "notifications": "Notifications"
   },
+  "stepLanguage": {
+    "title": "Choose your language",
+    "description": "We detected a default from your browser. Pick the language you want for the dashboard.",
+    "label": "Dashboard language",
+    "help": "You can change this anytime under My OhMyDesk → Your language.",
+    "continue": "Continue"
+  },
   "common": {
     "next": "Next",
     "back": "Back",
@@ -82,6 +89,31 @@
     "addingTitle": "Adding more locations",
     "addingBody": "Once you're comfortable with your first space, go to <1>Settings</1> to add another location. Each location gets its own calendar, rooms, and team.",
     "goToSpace": "Go to my space"
+  },
+  "publicJoin": {
+    "defaultSpace": "the space",
+    "linkInactiveTitle": "This link isn’t active",
+    "linkInactiveDesc": "It may have expired or already been used. Ask the team to send you a fresh sign-up link.",
+    "thanksTitle": "Thanks, {{name}}! 🎉",
+    "thanksThere": "there",
+    "thanksDesc": "Your details are with {{space}}. The team will confirm your membership shortly.",
+    "welcomeTitle": "Welcome to {{space}} 👋",
+    "welcomeDesc": "Tell us a bit about you and the team will get you set up. Takes about a minute.",
+    "yourName": "Your name",
+    "fullNamePlaceholder": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "contactHint": "Add at least one — an email or a phone number.",
+    "company": "Company",
+    "optional": "(optional)",
+    "companyPlaceholder": "If you’re joining for a company",
+    "consentAria": "Consent to store details",
+    "consentLabel": "I agree that {{space}} can store these details to manage my membership.",
+    "sendDetails": "Send my details",
+    "poweredByPrefix": "Powered by",
+    "brandName": "OhMyDesk",
+    "errorExpired": "This link has just expired or was already used.",
+    "errorGeneric": "Something went wrong. Please try again, or ask the team for a new link."
   },
   "telegram": {
     "title": "Connect Telegram notifications",

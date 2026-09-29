@@ -197,5 +197,6 @@
     "convertedToMember": "Converted to member",
     "convertedDesc": "{{name}} is now a member. Set up billing on the Members page.",
     "couldNotConvert": "Could not convert this lead."
-  }
+  },
+  "contactInfoIncompleteTitle": "Contact info missing or incomplete"
 }

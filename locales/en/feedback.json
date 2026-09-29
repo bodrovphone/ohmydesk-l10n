@@ -1,9 +1,17 @@
 {
   "sentiments": {
-    "love": { "label": "Love it" },
-    "good": { "label": "It's fine" },
-    "meh": { "label": "Meh" },
-    "hate": { "label": "Hate it" }
+    "love": {
+      "label": "Love it"
+    },
+    "good": {
+      "label": "It's fine"
+    },
+    "meh": {
+      "label": "Meh"
+    },
+    "hate": {
+      "label": "Hate it"
+    }
   },
   "features": {
     "mobileApp": "Mobile app",
@@ -50,5 +58,14 @@
     "love": "Means a lot. Truly.",
     "default": "We read every one. Cheers.",
     "backLink": "← Back to OhMyDesk"
+  },
+  "promptCard": {
+    "dismissAria": "Dismiss for now",
+    "maybeLater": "Maybe later",
+    "dontShowAgain": "Don't show again"
+  },
+  "inAppDialog": {
+    "title": "Roast me. Praise me.",
+    "description": "Three quick questions. Goes straight to my Telegram. I read every one."
   }
 }

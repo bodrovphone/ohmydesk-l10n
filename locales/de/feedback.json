@@ -1,9 +1,17 @@
 {
   "sentiments": {
-    "love": { "label": "Liebe es" },
-    "good": { "label": "Geht klar" },
-    "meh": { "label": "Naja" },
-    "hate": { "label": "Nicht mein Ding" }
+    "love": {
+      "label": "Liebe es"
+    },
+    "good": {
+      "label": "Geht klar"
+    },
+    "meh": {
+      "label": "Naja"
+    },
+    "hate": {
+      "label": "Nicht mein Ding"
+    }
   },
   "features": {
     "mobileApp": "Mobile App",
@@ -50,5 +58,14 @@
     "love": "Bedeutet viel. Wirklich.",
     "default": "Wir lesen jede Nachricht. Danke.",
     "backLink": "← Zurück zu OhMyDesk"
+  },
+  "promptCard": {
+    "dismissAria": "Vorerst schließen",
+    "maybeLater": "Vielleicht später",
+    "dontShowAgain": "Nicht mehr anzeigen"
+  },
+  "inAppDialog": {
+    "title": "Roast me. Praise me.",
+    "description": "Drei kurze Fragen. Geht direkt an mein Telegram. Ich lese jede Nachricht."
   }
 }

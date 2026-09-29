@@ -27,6 +27,14 @@
   "changeStartDate": "Change start date",
   "startsOn": "Starts on {{date}}",
   "yourDetails": "Your details",
+  "publicContact": {
+    "heading": "Details from public booking",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "address": "Company address",
+    "vat": "VAT ID"
+  },
   "fullName": "Full name",
   "emailAddress": "Email address",
   "phoneNumber": "Phone number",
@@ -68,6 +76,7 @@
     "phoneHelp": "Double-check this number — it's how the space manager will reach you.",
     "email": "Email *",
     "emailHelp": "We'll send you a confirmation.",
+    "invalidEmail": "Enter a valid email address, for example name@example.com.",
     "notes": "Notes",
     "notesPlaceholder": "Anything the space manager should know",
     "b2bCheckbox": "I'm booking for my company",
@@ -105,7 +114,9 @@
     "to": "To",
     "continue": "Continue",
     "redirectingToPayment": "Redirecting to payment…",
-    "submitting": "Submitting…"
+    "submitting": "Submitting…",
+    "booking": "Booking...",
+    "bookFor": "Book {{amount}}"
   },
   "offices": {
     "interestRegistered": "Interest registered",
@@ -126,6 +137,7 @@
     "vatNumber": "VAT number",
     "vatNumberPlaceholder": "VAT number (for the invoice)",
     "contactName": "Contact name",
+    "invalidEmail": "Enter a valid email address, for example name@example.com.",
     "contactNamePlaceholder": "Your name",
     "email": "Email",
     "emailPlaceholder": "you@company.com",
@@ -193,6 +205,7 @@
     "vatNumber": "VAT number",
     "phoneHelpLong": "Double-check this number -- it's how the space manager will reach you. A wrong digit means an awkward call to a stranger and an empty desk.",
     "emailOptionalHelp": "Optional. We'll send you a confirmation.",
+    "invalidEmail": "Enter a valid email address, for example name@example.com.",
     "notesPlaceholderManager": "Anything the space manager should know",
     "privacyNoticeDesk": "By submitting, you agree that your contact details will be shared with the space manager for booking purposes.",
     "seeAvailableDates": "See available dates",
@@ -211,6 +224,33 @@
     "requestPlan": "Request {{plan}}",
     "booking": "Booking..."
   },
+  "memberBooking": {
+    "notFoundTitle": "Not found",
+    "notFoundDesc": "This booking link is invalid or has expired.",
+    "successTitle": "You're in, {{name}}!",
+    "reserved_one": "Your desk at {{orgName}} is reserved.",
+    "reserved_other": "{{count}} desks at {{orgName}} are reserved.",
+    "daysRemaining": "{{remaining}}/{{total}} days remaining",
+    "bookAnotherDay": "Book another day",
+    "welcome": "Welcome, {{name}}",
+    "flexPlanDefault": "Flex plan",
+    "flexDaysBalance": "{{remaining}}/{{total}} days",
+    "expiresOn": "Expires {{date}}",
+    "upcomingTitle": "Your upcoming bookings",
+    "flexExhaustedTitle": "All flex days used up",
+    "flexExhaustedDesc": "Liked having a flex plan? Ask the space to renew it for you.",
+    "daysUsedTitle": "Days you used ({{used}}/{{total}})",
+    "pickDatesTitle": "Pick your dates",
+    "balanceExpiresHint": "Your balance expires {{date}} — book before then to use these days.",
+    "booking": "Booking...",
+    "confirmBooking_one": "Confirm {{count}} Day Booking",
+    "confirmBooking_other": "Confirm {{count}} Days Booking",
+    "errorNoBalance": "Your flex balance is empty. Please contact the space manager.",
+    "errorNoDesks": "Sorry, no desks are available on {{date}}. Please adjust your selection.",
+    "errorFailed": "Failed to book. Please try again.",
+    "slotFree": "{{count}} free",
+    "slotFull": "Full"
+  },
   "availabilityCalendar": {
     "multiHint": "Tap individual dates to select multiple",
     "legend": "Green = desks free · grey = closed or full",
@@ -218,5 +258,34 @@
     "selected_other": "{{count}} dates selected",
     "done": "Done",
     "cancel": "Cancel"
+  },
+  "poweredByPromo": {
+    "line": "Built by the team behind this space — <compare>see how OhMyDesk compares</compare> or <pricing>check pricing</pricing>."
+  },
+  "publicExtras": {
+    "perHour_one": "per hour, {{count}} hour",
+    "perHour_other": "per hour, {{count}} hours",
+    "title": "Add extras",
+    "perDay_one": "per day, {{count}} day",
+    "perDay_other": "per day, {{count}} days",
+    "less": "One less",
+    "more": "One more",
+    "oneTime": "Extras are charged once, with your first payment. Renewals cover the pass only.",
+    "invalid": "One of the extras is no longer available. Please check your extras and try again.",
+    "perPerson": "per person",
+    "forPeople_one": "for {{count}} person",
+    "forPeople_other": "for {{count}} people",
+    "addPeople": "Enter how many people are coming",
+    "peopleLabel": "How many people are coming?",
+    "peoplePlaceholder": "1–{{count}}",
+    "peopleHelp": "Extras marked “per person” are charged for everyone coming.",
+    "peopleRequired": "Please enter how many people are coming.",
+    "peopleTooMany_one": "This room fits {{count}} person.",
+    "peopleTooMany_other": "This room fits at most {{count}} people."
+  },
+  "legal": {
+    "acceptTerms": "By placing this order, I accept the <link>Terms of Use</link>.",
+    "privacyConsent": "I have read the <link>privacy policy</link> and agree that my details are processed for this booking.",
+    "consentRequired": "Please confirm that you have read the privacy policy."
   }
 }

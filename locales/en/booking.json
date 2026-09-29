@@ -284,8 +284,8 @@
     "peopleTooMany_other": "This room fits at most {{count}} people."
   },
   "legal": {
-    "acceptTerms": "By placing this order, I accept the <link>Terms of Use</link>.",
-    "privacyConsent": "I have read the <link>privacy policy</link> and agree that my details are processed for this booking.",
+    "acceptTerms": "By placing this order, I accept the <doc>Terms of Use</doc>.",
+    "privacyConsent": "I have read the <doc>privacy policy</doc> and agree that my details are processed for this booking.",
     "consentRequired": "Please confirm that you have read the privacy policy."
   }
 }

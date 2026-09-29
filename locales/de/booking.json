@@ -284,8 +284,8 @@
     "peopleTooMany_other": "Dieser Raum bietet Platz für höchstens {{count}} Personen."
   },
   "legal": {
-    "acceptTerms": "Mit meiner Bestellung akzeptiere ich die <link>Nutzungsbedingungen</link>.",
-    "privacyConsent": "Ich habe die <link>Datenschutzerklärung</link> gelesen und bin mit der Verarbeitung meiner Angaben für diese Buchung einverstanden.",
+    "acceptTerms": "Mit meiner Bestellung akzeptiere ich die <doc>Nutzungsbedingungen</doc>.",
+    "privacyConsent": "Ich habe die <doc>Datenschutzerklärung</doc> gelesen und bin mit der Verarbeitung meiner Angaben für diese Buchung einverstanden.",
     "consentRequired": "Bitte bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben."
   }
 }

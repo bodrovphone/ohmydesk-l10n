@@ -17,11 +17,15 @@
       "days": "Days",
       "price": "Price",
       "autoInvoice": "Auto-invoice",
+      "sharedInvoiceDate": "Shared invoice date",
       "discount": "Discount"
     },
     "namePlaceholder": "e.g. Standard",
     "descriptionPlaceholder": "Optional — shown to visitors on the public booking page, e.g. what's included, conditions.",
     "autoInvoiceOn": "On",
+    "calendarMonth": "Calendar month",
+    "assignmentDate": "Assignment date",
+    "sharedInvoiceDateHelp": "Calendar month: prorate the first charge through month-end; later cycles start on the 1st. Assignment date: charge a full month from the start date. New assignments only.",
     "remove": "Remove",
     "addVariant": "Add variant",
     "maxVariants": "Maximum {{max}} variants reached"
@@ -86,6 +90,57 @@
     "updated": "Virtual office plan updated.",
     "disabledToast": "Virtual office plan disabled."
   },
+  "services": {
+    "title": "Services & extras",
+    "description": "Coffee, snacks, meals, lockers and other extras with a set price, ready to add to bookings.",
+    "empty": "No services yet. Add coffee, a snack box or a locker with its price.",
+    "help": "Bookings can't use services yet — adding them to bookings and invoices comes next.",
+    "noPermission": "Ask a space owner or admin to manage services and extras.",
+    "add": "Add service",
+    "nameLabel": "Service name",
+    "namePlaceholder": "e.g. Coffee flat",
+    "priceLabel": "Price",
+    "unitLabel": "Charged",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Optional — what's included, e.g. filter coffee and tea all day.",
+    "appliesToLabel": "Available for",
+    "appliesToEmpty": "Not offered anywhere yet: tick at least one booking type above, or this extra won't appear on any booking.",
+    "publicEnabled": "Show on public booking",
+    "allowQuantity": "Customer can choose quantity",
+    "maxQuantityShort": "Max",
+    "maxQuantityLabel": "Maximum quantity",
+    "maxQuantityPlaceholder": "No limit",
+    "archive": "Archive",
+    "restore": "Restore",
+    "archivedHeading_one": "{{count}} archived service",
+    "archivedHeading_other": "{{count}} archived services",
+    "updated": "Services updated.",
+    "units": {
+      "per_booking": "Per booking",
+      "per_day": "Per day",
+      "per_hour": "Per hour"
+    },
+    "appliesTo": {
+      "day_pass": "Day pass",
+      "flex": "Flex plan",
+      "weekly": "Weekly plan",
+      "monthly": "Monthly plan",
+      "meeting_room_hourly": "Meeting room (hourly)",
+      "meeting_room_whole_day": "Meeting room (whole day)"
+    },
+    "errors": {
+      "nameRequired": "Enter a name.",
+      "maxQuantityInvalid": "Maximum must be a whole number of 1 or more.",
+      "fixRows": "Some services need a fix before saving.",
+      "saveFailed": "Could not save services. Please try again."
+    },
+    "perPerson": "Price per person",
+    "perPersonShort": "per person",
+    "perPersonHint": "Charged for every person coming — the booking asks how many. Meeting rooms only.",
+    "perPersonRoomsOnly": "Per-person services are for meeting rooms only.",
+    "roomsLabel": "Available in rooms",
+    "allRooms": "All rooms"
+  },
   "pricingAdvisor": {
     "eyebrow": "OhMyDesk AI · Pricing advisor",
     "preamble": "Based on the last 30 days of bookings and your current rates:",
@@ -122,5 +177,10 @@
     "cheaperAxis": "← cheaper / per day",
     "commitmentAxis": "shorter commitment ←      → longer",
     "note": "When two bubbles sit close together, your plans overlap and members will pick the cheaper one. The matrix makes the gap (or lack of one) between Weekly and Flex obvious at a glance."
+  },
+  "conceptExploration": "Concept exploration",
+  "quantityStepper": {
+    "increase": "Increase",
+    "decrease": "Decrease"
   }
 }

@@ -67,6 +67,9 @@
     "saving": "Wird gespeichert...",
     "saveChanges": "Änderungen speichern",
     "createBooking": "Buchung erstellen",
+    "recordPayment": "Zahlung erfassen",
+    "paymentDialogTitle": "Besprechungsraumzahlung erfassen",
+    "paymentRecorded": "Zahlung erfasst",
     "toastCreated": "Buchung erstellt",
     "toastUpdated": "Buchung aktualisiert",
     "toastCancelled": "Buchung storniert",
@@ -77,6 +80,10 @@
     "toastGenericError": "Fehler beim Speichern der Buchung.",
     "promptNoHours": "Für diesen Raum sind an einem oder mehreren Tagen keine Betriebszeiten konfiguriert. Trotzdem buchen?",
     "errorSpaceClosed": "Der Space ist an einem oder mehreren Tagen geschlossen.",
-    "errorSlotTaken": "Der Raum ist an einem oder mehreren Tagen bereits gebucht."
+    "errorSlotTaken": "Der Raum ist an einem oder mehreren Tagen bereits gebucht.",
+    "attendees": "Anzahl Personen",
+    "attendeesPlaceholder": "1–{{count}}",
+    "attendeesHint": "Extras pro Person werden für diese Anzahl berechnet. Eine Änderung passt sie an.",
+    "attendeesInvalid": "Die Anzahl Personen muss eine ganze Zahl ab 1 sein."
   }
 }

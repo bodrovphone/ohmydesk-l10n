@@ -197,5 +197,6 @@
     "convertedToMember": "In Mitglied umgewandelt",
     "convertedDesc": "{{name}} ist jetzt Mitglied. Richten Sie die Abrechnung unter Mitglieder ein.",
     "couldNotConvert": "Lead konnte nicht umgewandelt werden."
-  }
+  },
+  "contactInfoIncompleteTitle": "Kontaktdaten fehlen oder unvollständig"
 }

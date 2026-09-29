@@ -50,5 +50,14 @@
     "love": "Means a lot. Truly.",
     "default": "We read every one. Cheers.",
     "backLink": "← Back to OhMyDesk"
+  },
+  "promptCard": {
+    "dismissAria": "Dismiss for now",
+    "maybeLater": "Maybe later",
+    "dontShowAgain": "Don't show again"
+  },
+  "inAppDialog": {
+    "title": "Roast me. Praise me.",
+    "description": "Three quick questions. Goes straight to my Telegram. I read every one."
   }
 }

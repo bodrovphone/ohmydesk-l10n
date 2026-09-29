@@ -39,7 +39,10 @@
     "languagesSearchPlaceholder": "Search languages...",
     "languagesEmpty": "No language found.",
     "availableLanguages": "Available languages",
-    "defaultLangNote": "Primary space language • Always on",
+    "alwaysOnNote": "Always available",
+    "matchBrowser": "Match the visitor's browser",
+    "defaultLanguageLabel": "Default language",
+    "defaultLanguageHelp": "People opening this space see this language first. A language they pick on the switcher is remembered for this space only.",
     "languagesHelp": "Languages available for your space. When multiple languages are enabled, a language switcher appears on your public booking page and across the space.",
     "removeLangTitle": "Remove {{name}}",
     "defaultBadge": "(Default)",
@@ -315,6 +318,10 @@
     "running": "Running…",
     "runNowHelp": "Runs the same invoice generator as the monthly schedule without changing the saved day.",
     "lastRun": "Last auto-run:"
+  },
+  "profile": {
+    "languageTitle": "Your language",
+    "languageDescription": "Applies to the operator dashboard and member portal on this device. Saved to your account when signed in."
   },
   "myOhMyDesk": {
     "yourPlan": "Your plan",

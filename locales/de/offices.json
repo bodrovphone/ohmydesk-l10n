@@ -35,6 +35,8 @@
       "sizePlaceholder": "≈4 Schreibtische",
       "autoInvoiceTitle": "Laufende Verträge automatisch abrechnen",
       "autoInvoiceDesc": "Erstellt bei unbefristeten Verträgen für dieses Büro automatisch die monatliche Folgerechnung.",
+      "sharedInvoiceDateTitle": "An gemeinsamen Rechnungstag anpassen",
+      "sharedInvoiceDateDesc": "Ein: Die erste Rechnung wird bis Monatsende anteilig berechnet; danach beginnt jeder Zeitraum am 1. Aus: Ein voller Monat ab Vertragsbeginn. Gilt nur für neue Zuweisungen.",
       "saving": "Wird gespeichert…",
       "save": "Speichern",
       "nameRequiredTitle": "Name erforderlich",
@@ -42,7 +44,8 @@
       "officeUpdated": "Büro aktualisiert",
       "officeAdded": "Büro hinzugefügt",
       "saveErrorTitle": "Fehler beim Speichern",
-      "saveErrorDesc": "Bitte versuchen Sie es erneut."
+      "saveErrorDesc": "Bitte versuchen Sie es erneut.",
+      "addOffice": "Büro hinzufügen"
     },
     "assign": {
       "title": "{{name}} zuweisen",
@@ -81,6 +84,73 @@
       "confirm": "Löschen",
       "success": "Büro gelöscht",
       "error": "Büro konnte nicht gelöscht werden"
+    },
+    "view": {
+      "cards": "Karten",
+      "list": "Liste",
+      "ariaLabel": "Layout für private Büros"
+    },
+    "table": {
+      "office": "Büro",
+      "price": "Preis",
+      "status": "Status",
+      "tenant": "Mieter",
+      "term": "Laufzeit",
+      "autoInvoice": "Automatische Rechnung"
+    },
+    "filters": {
+      "toggle": "Filter",
+      "searchPlaceholder": "Büro, Unternehmen suchen…",
+      "status": "Status",
+      "allStatuses": "Alle",
+      "occupied": "Belegt",
+      "vacant": "Frei",
+      "price": "Preis",
+      "min": "Min.",
+      "max": "Max.",
+      "autoInvoice": "Automatische Rechnung",
+      "allAutoInvoice": "Alle",
+      "autoInvoiceOn": "Aktiviert",
+      "autoInvoiceOff": "Deaktiviert",
+      "clear": "Filter zurücksetzen",
+      "noMatch": "Keine privaten Büros entsprechen diesen Filtern."
+    },
+    "detail": {
+      "title": "Details zum privaten Büro",
+      "edit": "Büro bearbeiten",
+      "officeDetails": "Bürodetails",
+      "name": "Name",
+      "monthlyPrice": "Monatlicher Preis",
+      "size": "Größenangabe",
+      "autoInvoice": "Automatische Rechnung",
+      "sharedInvoiceDate": "Gemeinsamer Rechnungstag",
+      "calendarMonth": "Kalendermonat",
+      "assignmentDate": "Startdatum",
+      "publicListing": "Auf öffentlicher Seite anzeigen",
+      "tenantDetails": "Aktueller Mieter",
+      "company": "Unternehmen",
+      "status": "Status",
+      "term": "Laufzeit",
+      "started": "Gestartet",
+      "ends": "Endet",
+      "openEnded": "Unbefristet",
+      "notes": "Notizen",
+      "billingAddress": "Rechnungsdaten",
+      "billingName": "Rechnungsempfänger",
+      "legalName": "Offizieller Firmenname",
+      "address": "Adresse",
+      "taxId": "Steuer- / Handelsregisternummer",
+      "vatId": "USt-IdNr.",
+      "representative": "Vertretungsberechtigte Person",
+      "profile": "Profil",
+      "billTo": "Rechnungsempfänger",
+      "notAdded": "Nicht hinterlegt",
+      "noTenant": "Derzeit kein Mieter zugewiesen",
+      "assignCompany": "Unternehmen zuweisen",
+      "endAgreement": "Vertrag beenden",
+      "on": "Ein",
+      "off": "Aus",
+      "showInvoices": "Rechnungen anzeigen"
     }
   },
   "virtual": {
@@ -255,7 +325,8 @@
       "from": "Von",
       "to": "Bis",
       "clear": "Filter zurücksetzen",
-      "noMatch": "Keine Mitglieder entsprechen diesen Filtern."
+      "noMatch": "Keine Mitglieder entsprechen diesen Filtern.",
+      "toggle": "Filter"
     }
   }
 }

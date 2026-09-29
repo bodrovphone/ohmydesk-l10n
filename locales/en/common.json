@@ -1,5 +1,6 @@
 {
   "language": "Language",
+  "languageSaveError": "Could not save your language preference. Please try again.",
   "languages": {
     "en": "English",
     "de": "Deutsch"
@@ -121,7 +122,9 @@
     "invoiceDueInDays_other": "Invoice due in {{count}} days",
     "invoiceDueToday": "Invoice due today",
     "payBankTransfer": "Pay by bank transfer to keep your space active.",
-    "viewDetails": "View details"
+    "viewDetails": "View details",
+    "askOwner": "Ask your space owner.",
+    "dismissAria": "Dismiss"
   },
   "commandPalette": {
     "title": "Search the app",
@@ -402,8 +405,11 @@
     "sendAriaLabel": "Send",
     "inputPlaceholder": "Ask anything…",
     "welcomeReadOnly": "Hi! Ask me who's in today, your revenue, when a desk is next free, or how any OhMyDesk feature works.",
-    "welcomeCanAct": " You can also ask me to book, cancel, or mark a booking paid; add a lead; let or vacate an office; draft an invoice; or record an expense — I'll confirm before saving.",
+    "welcomeCanAct": " You can also ask me to book or cancel, start a booking or invoice payment in the workspace, add a lead, let or vacate an office, draft an invoice, or record an expense.",
     "confirm": "Confirm",
+    "openInvoice": "Open invoice",
+    "openCalendar": "Open calendar",
+    "paymentFlowOpened": "Open the source screen to record payment in the full form.",
     "cancel": "Cancel",
     "cancelledNotice": "Cancelled — nothing was saved.",
     "footerHintCanAct": "Actions ask for your confirmation before saving",
@@ -430,5 +436,68 @@
       "signedUp": "Signed Up",
       "lastActive": "Last Active"
     }
+  },
+  "ui": {
+    "pagination": {
+      "navLabel": "pagination",
+      "previousPage": "Go to previous page",
+      "previous": "Previous",
+      "nextPage": "Go to next page",
+      "morePages": "More pages"
+    },
+    "sidebar": {
+      "title": "Sidebar",
+      "mobileDescription": "Displays the mobile sidebar.",
+      "toggle": "Toggle Sidebar"
+    },
+    "breadcrumb": {
+      "navLabel": "breadcrumb",
+      "more": "More"
+    },
+    "carousel": {
+      "previousSlide": "Previous slide",
+      "nextSlide": "Next slide"
+    }
+  },
+  "errorBoundary": {
+    "title": "Something went wrong",
+    "reload": "Reload Page"
+  },
+  "notFoundPage": {
+    "goBack": "Go back",
+    "workspace": "Workspace"
+  },
+  "brand": {
+    "name": "OhMyDesk",
+    "ariaLabel": "OhMyDesk"
+  },
+  "copyAction": "Copy",
+  "spaceContact": {
+    "contactUs": "Contact us"
+  },
+  "extras": {
+    "title": "Extras",
+    "paidOnline": "paid online",
+    "add": "Add",
+    "pick": "Add an extra…",
+    "quantity": "Quantity",
+    "remove": "Remove extra",
+    "perDay": "/ day",
+    "perHour": "/ hour",
+    "periodsDays_one": "{{count}} day",
+    "periodsDays_other": "{{count}} days",
+    "periodsHours_one": "{{count}} hour",
+    "periodsHours_other": "{{count}} hours",
+    "saveFirst": "Save the booking first to add extras.",
+    "needsMember": "Link a member to this booking to add extras. They're charged to the member.",
+    "noGroup": "Extras can be added to member bookings created in the calendar.",
+    "addError": "Couldn't add the extra",
+    "removeError": "Couldn't remove the extra",
+    "perPerson": "per person",
+    "people_one": "{{count}} person",
+    "people_other": "{{count}} people",
+    "forPeople_one": "Charged for {{count}} person — the booking's headcount.",
+    "forPeople_other": "Charged for {{count}} people — the booking's headcount.",
+    "needsPeople": "Save how many people are coming first: per-person extras use the booking's headcount."
   }
 }

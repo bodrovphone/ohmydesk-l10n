@@ -13,6 +13,13 @@
     "pricing": "Preise",
     "notifications": "Benachrichtigungen"
   },
+  "stepLanguage": {
+    "title": "Sprache wählen",
+    "description": "Wir haben eine Voreinstellung aus Ihrem Browser erkannt. Wählen Sie die Sprache für das Dashboard.",
+    "label": "Dashboard-Sprache",
+    "help": "Sie können das jederzeit unter Mein OhMyDesk → Ihre Sprache ändern.",
+    "continue": "Weiter"
+  },
   "common": {
     "next": "Weiter",
     "back": "Zurück",
@@ -82,6 +89,31 @@
     "addingTitle": "Weitere Standorte hinzufügen",
     "addingBody": "Wenn der erste Space steht, öffnen Sie <1>Einstellungen</1>, um einen weiteren Standort hinzuzufügen. Jeder Standort hat eigenen Kalender, Räume und Team.",
     "goToSpace": "Zu meinem Space"
+  },
+  "publicJoin": {
+    "defaultSpace": "dem Space",
+    "linkInactiveTitle": "Dieser Link ist nicht aktiv",
+    "linkInactiveDesc": "Er ist möglicherweise abgelaufen oder wurde bereits genutzt. Bitten Sie das Team um einen neuen Anmeldelink.",
+    "thanksTitle": "Danke, {{name}}! 🎉",
+    "thanksThere": "Sie",
+    "thanksDesc": "Ihre Angaben liegen bei {{space}}. Das Team bestätigt Ihre Mitgliedschaft in Kürze.",
+    "welcomeTitle": "Willkommen bei {{space}} 👋",
+    "welcomeDesc": "Erzählen Sie uns kurz von sich — das Team richtet alles ein. Dauert etwa eine Minute.",
+    "yourName": "Ihr Name",
+    "fullNamePlaceholder": "Vollständiger Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "contactHint": "Mindestens E-Mail oder Telefonnummer angeben.",
+    "company": "Unternehmen",
+    "optional": "(optional)",
+    "companyPlaceholder": "Falls Sie für ein Unternehmen beitreten",
+    "consentAria": "Einwilligung zur Datenspeicherung",
+    "consentLabel": "Ich stimme zu, dass {{space}} diese Daten zur Verwaltung meiner Mitgliedschaft speichern darf.",
+    "sendDetails": "Angaben senden",
+    "poweredByPrefix": "Bereitgestellt von",
+    "brandName": "OhMyDesk",
+    "errorExpired": "Dieser Link ist gerade abgelaufen oder wurde bereits genutzt.",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte erneut versuchen oder das Team um einen neuen Link bitten."
   },
   "telegram": {
     "title": "Telegram-Benachrichtigungen verbinden",

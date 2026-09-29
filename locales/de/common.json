@@ -1,5 +1,6 @@
 {
   "language": "Sprache",
+  "languageSaveError": "Ihre Spracheinstellung konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.",
   "languages": {
     "en": "English",
     "de": "Deutsch"
@@ -121,7 +122,9 @@
     "invoiceDueInDays_other": "Rechnung fällig in {{count}} Tagen",
     "invoiceDueToday": "Rechnung heute fällig",
     "payBankTransfer": "Zahlen Sie per Banküberweisung, um Ihren Space aktiv zu halten.",
-    "viewDetails": "Details ansehen"
+    "viewDetails": "Details ansehen",
+    "askOwner": "Fragen Sie den Space-Inhaber.",
+    "dismissAria": "Schließen"
   },
   "commandPalette": {
     "title": "App durchsuchen",
@@ -402,8 +405,11 @@
     "sendAriaLabel": "Senden",
     "inputPlaceholder": "Alles fragen…",
     "welcomeReadOnly": "Hallo! Fragen Sie mich, wer heute gebucht hat, Ihren Umsatz, wann der nächste freie Schreibtisch verfügbar ist oder wie eine OhMyDesk-Funktion funktioniert.",
-    "welcomeCanAct": " Sie können mich auch bitten zu buchen, zu stornieren oder eine Buchung als bezahlt zu markieren, einen Lead hinzuzufügen, ein Büro zu vermieten oder freizugeben, eine Rechnung zu erstellen oder eine Ausgabe zu erfassen — ich bestätige vor dem Speichern.",
+    "welcomeCanAct": " Sie können mich auch bitten, Buchungen zu erstellen oder zu stornieren, eine Buchungs- oder Rechnungszahlung im Arbeitsbereich zu beginnen, einen Lead hinzuzufügen, ein Büro zu vermieten oder freizugeben, eine Rechnung zu erstellen oder eine Ausgabe zu erfassen.",
     "confirm": "Bestätigen",
+    "openInvoice": "Rechnung öffnen",
+    "openCalendar": "Kalender öffnen",
+    "paymentFlowOpened": "Öffne die Quellseite, um die Zahlung im vollständigen Formular zu erfassen.",
     "cancel": "Abbrechen",
     "cancelledNotice": "Abgebrochen — nichts wurde gespeichert.",
     "footerHintCanAct": "Aktionen werden vor dem Speichern bestätigt",
@@ -430,5 +436,68 @@
       "signedUp": "Registriert",
       "lastActive": "Zuletzt aktiv"
     }
+  },
+  "ui": {
+    "pagination": {
+      "navLabel": "Seitennummerierung",
+      "previousPage": "Zur vorherigen Seite",
+      "previous": "Zurück",
+      "nextPage": "Zur nächsten Seite",
+      "morePages": "Weitere Seiten"
+    },
+    "sidebar": {
+      "title": "Seitenleiste",
+      "mobileDescription": "Zeigt die mobile Seitenleiste.",
+      "toggle": "Seitenleiste ein-/ausblenden"
+    },
+    "breadcrumb": {
+      "navLabel": "Brotkrumen",
+      "more": "Mehr"
+    },
+    "carousel": {
+      "previousSlide": "Vorherige Folie",
+      "nextSlide": "Nächste Folie"
+    }
+  },
+  "errorBoundary": {
+    "title": "Etwas ist schiefgelaufen",
+    "reload": "Seite neu laden"
+  },
+  "notFoundPage": {
+    "goBack": "Zurück",
+    "workspace": "Workspace"
+  },
+  "brand": {
+    "name": "OhMyDesk",
+    "ariaLabel": "OhMyDesk"
+  },
+  "copyAction": "Kopieren",
+  "spaceContact": {
+    "contactUs": "Kontakt"
+  },
+  "extras": {
+    "title": "Extras",
+    "paidOnline": "online bezahlt",
+    "add": "Hinzufügen",
+    "pick": "Extra hinzufügen…",
+    "quantity": "Menge",
+    "remove": "Extra entfernen",
+    "perDay": "/ Tag",
+    "perHour": "/ Stunde",
+    "periodsDays_one": "{{count}} Tag",
+    "periodsDays_other": "{{count}} Tage",
+    "periodsHours_one": "{{count}} Stunde",
+    "periodsHours_other": "{{count}} Stunden",
+    "saveFirst": "Speichern Sie die Buchung zuerst, um Extras hinzuzufügen.",
+    "needsMember": "Verknüpfen Sie ein Mitglied mit dieser Buchung, um Extras hinzuzufügen. Sie werden dem Mitglied berechnet.",
+    "noGroup": "Extras lassen sich zu Mitgliederbuchungen aus dem Kalender hinzufügen.",
+    "addError": "Extra konnte nicht hinzugefügt werden",
+    "removeError": "Extra konnte nicht entfernt werden",
+    "perPerson": "pro Person",
+    "people_one": "{{count}} Person",
+    "people_other": "{{count}} Personen",
+    "forPeople_one": "Berechnet für {{count}} Person – die Personenzahl der Buchung.",
+    "forPeople_other": "Berechnet für {{count}} Personen – die Personenzahl der Buchung.",
+    "needsPeople": "Speichern Sie zuerst, wie viele Personen kommen: Extras pro Person nutzen die Personenzahl der Buchung."
   }
 }

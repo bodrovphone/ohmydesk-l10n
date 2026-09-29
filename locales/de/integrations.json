@@ -22,6 +22,8 @@
     "enabled": "Aktiviert",
     "disabled": "Deaktiviert",
     "enableToggle": "Öffentliche Buchung aktivieren",
+    "autoLinkMembersToggle": "Buchungen automatisch bestehenden Mitgliedern zuordnen",
+    "autoLinkMembersDesc": "Wenn aktiviert, wird die Buchung bei einem eindeutigen Treffer anhand von E-Mail-Adresse oder Telefonnummer zugeordnet; Namen allein zählen nicht. Besucher ohne bestehenden E-Mail- oder Telefonnummerntreffer erscheinen unter Leads.",
     "noTelegramBanner": "Ohne verbundenes Telegram sehen Sie neue Buchungen erst beim Öffnen des Kalenders. Verbinden Sie Telegram auf der Benachrichtigungsseite für sofortige Hinweise.",
     "deskBooking": "Schreibtisch-Buchung",
     "deskBookingLink": "Link zur Schreibtisch-Buchung",
@@ -58,6 +60,12 @@
     "embedBadge": "Schwebendes \"Jetzt buchen\"-Badge",
     "embedCode": "Einbettungscode",
     "embedNote": "Verwendet den oben gewählten \"Verlinken auf\"-Bereich für {{target}}. Kostenpflichtige Buchungen öffnen sich in einem sicheren Popup-Fenster — der Rest passiert direkt auf Ihrer Seite.",
+    "conversionTitle": "Buchungen in Google Ads / GA4 tracken",
+    "conversionDesc": "Nutzen Sie eine feste Danke-URL oder ein JavaScript-Event, wenn ein Besucher eine Buchung abschließt.",
+    "conversionUrlLabel": "Danke-Seiten-URL (bezahlter Stripe-Checkout)",
+    "conversionUrlHint": "Legen Sie in Google Ads oder GA4 eine Conversion an, die zu diesem Pfad passt (Schreibtische). Meetingräume und Büros: /meetings/complete und /offices/complete.",
+    "conversionGtmLabel": "GTM / Wix Custom Code (Embed)",
+    "conversionGtmHint": "Auf der Seite mit dem Embed einfügen. Feuert bei erfolgreicher Buchung (bezahlt oder kostenlos).",
     "targetMeetingRooms": "Meetingräume",
     "targetPrivateOffices": "private Büros",
     "targetDeskBooking": "die Schreibtisch-Buchung",
@@ -143,7 +151,33 @@
     "doorCodesNote": "Türcodes richten sich nach den Öffnungszeiten (Organisation → Allgemein). Geschlossene Tage erhalten keinen Code.",
     "save": "Speichern",
     "saving": "Wird gespeichert...",
-    "disconnectShortDesc": "Ihr Schloss-Herstellerkonto wird von OhMyDesk getrennt. Sie können sich jederzeit wieder verbinden."
+    "disconnectShortDesc": "Ihr Schloss-Herstellerkonto wird von OhMyDesk getrennt. Sie können sich jederzeit wieder verbinden.",
+    "doorAccess": {
+      "title": "Zutritt nach Pass",
+      "description": "Tagespässe folgen Ihren Öffnungszeiten. Stellen Sie einen Pass auf 24/7, erhalten seine Mitglieder einen Code, der rund um die Uhr für den ganzen Zeitraum gilt, auch am Wochenende und an Schließtagen.",
+      "weekly": "Wochenpass: 24/7",
+      "monthly": "Monatspass: 24/7",
+      "note": "Gilt für ab jetzt erstellte Codes. Bereits versendete Codes behalten ihre Zeiten.",
+      "saved": "Zutritt aktualisiert",
+      "saveError": "Zutritt konnte nicht gespeichert werden. Bitte erneut versuchen."
+    },
+    "extraLocks": {
+      "title": "Weitere Türen",
+      "description": "Verknüpfen Sie weitere Schlösser aus demselben Konto, etwa für Makerspace oder Lager. Mitglieder, denen Sie auf der Mitgliederseite Zugang geben, erhalten für ihre Buchungen dieselbe PIN auch für diese Türen.",
+      "add": "Weiteres Schloss hinzufügen",
+      "lock": "Schloss",
+      "label": "Name, den Mitglieder sehen",
+      "labelPlaceholder": "z. B. Makerspace",
+      "pricing": "15 $ pro Monat je zusätzlichem Schloss, zusätzlich zu Ihrem Tarif.",
+      "trialNote": "Zusätzliche Schlösser kosten je 15 $ pro Monat und sind in einem bezahlten Tarif verfügbar. Kontaktieren Sie uns, um eines hinzuzufügen.",
+      "noMoreDevices": "Alle Schlösser dieses Kontos sind bereits verknüpft.",
+      "noKeypad": "Kein Keypad: Mitglieder erhalten für diese Tür keine PIN.",
+      "remove": "Zusätzliches Schloss entfernen",
+      "added": "{{name}} hinzugefügt",
+      "addError": "Das Schloss konnte nicht hinzugefügt werden. Bitte versuchen Sie es erneut.",
+      "removed": "{{name}} entfernt",
+      "removeError": "Das Schloss konnte nicht entfernt werden. Bitte versuchen Sie es erneut."
+    }
   },
   "calendarSync": {
     "title": "Kalender-Synchronisierung",
@@ -281,8 +315,7 @@
     "baseUrl": "Basis-URL",
     "apiBaseUrl": "API-Basis-URL",
     "sendKeyHint": "Senden Sie Ihren Schlüssel als",
-    "readDocs": "API-Dokumentation lesen →"
-    ,
+    "readDocs": "API-Dokumentation lesen →",
     "newKeyLabel": "Ihr neuer API-Schlüssel",
     "newKeyWarning": "Kopieren Sie ihn jetzt — aus Sicherheitsgründen wird er nicht noch einmal angezeigt.",
     "neverUsed": "Nie verwendet",
@@ -360,8 +393,7 @@
     "failedToConnectWhatsapp": "WhatsApp konnte nicht verbunden werden.",
     "whatsappDisconnectedDesc": "WhatsApp ist nicht mehr verbunden.",
     "failedToDisconnect": "Trennen fehlgeschlagen.",
-    "missingToken": "Fehlendes Token"
-    ,
+    "missingToken": "Fehlendes Token",
     "pasteBotToken": "Fügen Sie Ihr Bot-Token von @BotFather ein.",
     "botConnected": "Bot verbunden",
     "botAnswering": "@{{username}} beantwortet jetzt Anfragen.",
@@ -378,5 +410,32 @@
     "frontDoorSet": "Eingangstür auf {{name}} eingestellt.",
     "failedSaveFrontDoor": "Eingangstürschloss konnte nicht gespeichert werden.",
     "smartLockRemoved": "Smart-Lock-Integration entfernt."
+  },
+  "legalDocs": {
+    "title": "Rechtliche Dokumente im Buchungsablauf",
+    "description": "Ihre Nutzungsbedingungen und Datenschutzerklärung, direkt über dem letzten Button jedes öffentlichen Buchungsformulars. Laden Sie ein PDF hoch oder verlinken Sie die Seite auf Ihrer eigenen Website.",
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "help": "Besucher sehen „Mit meiner Bestellung akzeptiere ich die Nutzungsbedingungen“ mit einem Link zu diesem Dokument."
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "help": "Besucher müssen per Häkchen bestätigen, dass sie Ihre Datenschutzerklärung gelesen haben, bevor sie buchen können."
+    },
+    "notSet": "Nicht festgelegt",
+    "uploadedPdf": "Hochgeladenes PDF",
+    "uploadPdf": "PDF hochladen",
+    "replacePdf": "Durch PDF ersetzen",
+    "useLink": "Link verwenden",
+    "saveLink": "Link speichern",
+    "cancel": "Abbrechen",
+    "remove": "Entfernen",
+    "saved": "Gespeichert – die Buchungsseite zeigt es jetzt an",
+    "removed": "Von der Buchungsseite entfernt",
+    "saveFailed": "Speichern fehlgeschlagen",
+    "pdfOnly": "Bitte wählen Sie eine PDF-Datei",
+    "tooLarge": "Das PDF ist größer als 10 MB",
+    "invalidLink": "Geben Sie einen vollständigen Link ein, der mit http:// oder https:// beginnt",
+    "ownerOnly": "Nur der Inhaber des Space kann diese Dokumente ändern."
   }
 }

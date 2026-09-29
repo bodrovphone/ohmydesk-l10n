@@ -21,7 +21,11 @@
     "plan": "Plan",
     "standalone": "Standalone",
     "from": "From",
-    "to": "To"
+    "to": "To",
+    "member": "Member",
+    "allMembers": "All members",
+    "selectedMembers": "{{count}} selected",
+    "clearMembers": "Clear"
   },
   "summary": {
     "totalPayments": "Total payments (success)"
@@ -45,6 +49,8 @@
     "none": "None",
     "invoice": "Invoice",
     "booking": "Booking",
+    "desk": "Desk",
+    "meetingRoom": "Meeting room",
     "plan": "Plan"
   },
   "table": {
@@ -58,7 +64,9 @@
     "status": "Status",
     "loading": "Loading…",
     "noCharges": "No charges yet.",
+    "noChargesFiltered": "No charges match these filters.",
     "noPayments": "No payments yet.",
+    "noPaymentsFiltered": "No payments match these filters.",
     "recordFirstPayment": " Record your first one above.",
     "unknownMember": "Unknown",
     "linkMember": "Link member",

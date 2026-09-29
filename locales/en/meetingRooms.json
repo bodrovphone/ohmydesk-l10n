@@ -67,6 +67,9 @@
     "saving": "Saving...",
     "saveChanges": "Save Changes",
     "createBooking": "Create Booking",
+    "recordPayment": "Record payment",
+    "paymentDialogTitle": "Record meeting-room payment",
+    "paymentRecorded": "Payment recorded",
     "toastCreated": "Booking created",
     "toastUpdated": "Booking updated",
     "toastCancelled": "Booking cancelled",
@@ -77,6 +80,10 @@
     "toastGenericError": "Failed to save booking.",
     "promptNoHours": "This room has no configured operating hours on one or more of those days. Book it anyway?",
     "errorSpaceClosed": "The space is closed on one or more of those days.",
-    "errorSlotTaken": "The room is already booked on one or more of those days."
+    "errorSlotTaken": "The room is already booked on one or more of those days.",
+    "attendees": "Number of people",
+    "attendeesPlaceholder": "1–{{count}}",
+    "attendeesHint": "Per-person extras are charged for this many people. Changing it re-prices them.",
+    "attendeesInvalid": "Number of people must be a whole number of 1 or more."
   }
 }

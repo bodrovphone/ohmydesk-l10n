@@ -39,7 +39,10 @@
     "languagesSearchPlaceholder": "Sprachen suchen...",
     "languagesEmpty": "Keine Sprache gefunden.",
     "availableLanguages": "Verfügbare Sprachen",
-    "defaultLangNote": "Primäre Space-Sprache • Immer aktiv",
+    "alwaysOnNote": "Immer verfügbar",
+    "matchBrowser": "Browsersprache des Besuchers",
+    "defaultLanguageLabel": "Standardsprache",
+    "defaultLanguageHelp": "Wer diesen Space öffnet, sieht zuerst diese Sprache. Eine Auswahl im Sprachumschalter gilt nur für diesen Space.",
     "languagesHelp": "Verfügbare Sprachen für Ihren Space. Bei mehreren Sprachen wird ein Sprachumschalter auf der Buchungsseite und im Space angezeigt.",
     "removeLangTitle": "{{name}} entfernen",
     "defaultBadge": "(Standard)",
@@ -315,6 +318,10 @@
     "running": "Läuft…",
     "runNowHelp": "Führt denselben Generator wie der monatliche Plan aus, ohne den gespeicherten Tag zu ändern.",
     "lastRun": "Letzter Auto-Lauf:"
+  },
+  "profile": {
+    "languageTitle": "Ihre Sprache",
+    "languageDescription": "Gilt für Operator-Dashboard und Mitgliederportal. Wird in Ihrem Konto gespeichert, wenn Sie angemeldet sind."
   },
   "myOhMyDesk": {
     "yourPlan": "Ihr Tarif",

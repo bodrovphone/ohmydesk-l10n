@@ -15,15 +15,7 @@
     "noMatchDescription": "Clear the filters, or invite someone new."
   },
   "autocomplete": {
-    "placeholder": "Enter name",
-    "existingClients": "Existing clients",
-    "allClients": "All clients",
-    "createClient": "Create client \"{{name}}\"",
-    "possibleMatches": "Possible matches",
-    "emailMatch": "email match",
-    "phoneMatch": "phone match",
-    "similarName": "similar name",
-    "createNewAnyway": "Create new anyway"
+    "empty": "No members yet."
   },
   "filters": {
     "ariaLabel": "Filter by plan",
@@ -643,6 +635,17 @@
     "namePlaceholder": "Enter person's name",
     "cancel": "Cancel",
     "save": "Save"
+  },
+  "autocomplete": {
+    "placeholder": "Enter name",
+    "existingClients": "Existing clients",
+    "allClients": "All clients",
+    "createClient": "Create client \"{{name}}\"",
+    "possibleMatches": "Possible matches",
+    "emailMatch": "email match",
+    "phoneMatch": "phone match",
+    "similarName": "similar name",
+    "createNewAnyway": "Create new anyway"
   },
   "payment": {
     "received": "Payment received",

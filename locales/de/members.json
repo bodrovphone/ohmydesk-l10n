@@ -15,15 +15,7 @@
     "noMatchDescription": "Setzen Sie die Filter zurück oder laden Sie neue Mitglieder ein."
   },
   "autocomplete": {
-    "placeholder": "Name eingeben",
-    "existingClients": "Bestehende Kunden",
-    "allClients": "Alle Kunden",
-    "createClient": "Kunde „{{name}}“ anlegen",
-    "possibleMatches": "Mögliche Treffer",
-    "emailMatch": "E-Mail stimmt überein",
-    "phoneMatch": "Telefonnummer stimmt überein",
-    "similarName": "ähnlicher Name",
-    "createNewAnyway": "Trotzdem neu anlegen"
+    "empty": "Noch keine Mitglieder."
   },
   "filters": {
     "ariaLabel": "Nach Tarif filtern",
@@ -643,6 +635,17 @@
     "namePlaceholder": "Name eingeben",
     "cancel": "Abbrechen",
     "save": "Speichern"
+  },
+  "autocomplete": {
+    "placeholder": "Name eingeben",
+    "existingClients": "Bestehende Kunden",
+    "allClients": "Alle Kunden",
+    "createClient": "Kunde „{{name}}“ anlegen",
+    "possibleMatches": "Mögliche Treffer",
+    "emailMatch": "E-Mail stimmt überein",
+    "phoneMatch": "Telefonnummer stimmt überein",
+    "similarName": "ähnlicher Name",
+    "createNewAnyway": "Trotzdem neu anlegen"
   },
   "payment": {
     "received": "Zahlung eingegangen",

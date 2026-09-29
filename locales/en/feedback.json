@@ -1,17 +1,9 @@
 {
   "sentiments": {
-    "love": {
-      "label": "Love it"
-    },
-    "good": {
-      "label": "It's fine"
-    },
-    "meh": {
-      "label": "Meh"
-    },
-    "hate": {
-      "label": "Hate it"
-    }
+    "love": { "label": "Love it" },
+    "good": { "label": "It's fine" },
+    "meh": { "label": "Meh" },
+    "hate": { "label": "Hate it" }
   },
   "features": {
     "mobileApp": "Mobile app",

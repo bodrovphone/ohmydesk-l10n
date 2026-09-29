@@ -1,17 +1,9 @@
 {
   "sentiments": {
-    "love": {
-      "label": "Liebe es"
-    },
-    "good": {
-      "label": "Geht klar"
-    },
-    "meh": {
-      "label": "Naja"
-    },
-    "hate": {
-      "label": "Nicht mein Ding"
-    }
+    "love": { "label": "Liebe es" },
+    "good": { "label": "Geht klar" },
+    "meh": { "label": "Naja" },
+    "hate": { "label": "Nicht mein Ding" }
   },
   "features": {
     "mobileApp": "Mobile App",

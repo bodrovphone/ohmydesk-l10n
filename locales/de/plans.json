@@ -22,6 +22,8 @@
     },
     "namePlaceholder": "z. B. Standard",
     "descriptionPlaceholder": "Optional – wird Besuchern auf der Buchungsseite angezeigt (z. B. Leistungen, Bedingungen).",
+    "addCaption": "Beschreibung hinzufügen",
+    "daysSuffix": "Tage",
     "autoInvoiceOn": "Ein",
     "calendarMonth": "Kalendermonat",
     "assignmentDate": "Startdatum",
@@ -35,9 +37,24 @@
     "description": "Ein Tag am Schreibtisch, bezahlt pro Besuch. Jeder Tag ist eine eigene Buchung, Tage verfallen nicht genutzter Zeit.",
     "priceLabel": "Tagespreis ({{currency}})",
     "help": "Einzeltarif für einen Tag · wird für Spontanbesucher und Online-Buchungen genutzt.",
-    "updated": "Tagespass aktualisiert."
+    "updated": "Tagespass aktualisiert.",
+    "stopConfirmBody": "Besucher können auf Ihrer öffentlichen Buchungsseite keinen Tagespass mehr kaufen, und der Tagespass verschwindet aus der Tarifliste, wenn Sie im Kalender buchen. Bestehende Tagesbuchungen behalten Datum und Preis."
+  },
+  "dedicatedDesk": {
+    "title": "Dedicated-Desk-Tarife",
+    "description": "Tagespässe und feste Schreibtisch-Laufzeiten (wöchentlich, monatlich oder eigene Dauer). Die Laufzeit steuert das Enddatum bei Buchungen im Schreibtisch-Kalender.",
+    "updated": "Dedicated-Desk-Tarife aktualisiert.",
+    "saveFailed": "Speichern der Dedicated-Desk-Tarife fehlgeschlagen."
   },
   "dedicated": {
+    "daysLabelMonthly": "Tage (optional)",
+    "monthlyDaysPlaceholder": "Monat",
+    "monthlyDaysHelp": "Leer lassen für einen rollierenden Kalendermonat. Zahl eintragen für eine feste Laufzeit (z. B. 60 Tage).",
+    "enableTier": "{{title}} anbieten",
+    "disableTier": "{{title}} nicht mehr anbieten",
+    "stopOffering": "Nicht mehr anbieten",
+    "stopConfirmTitle": "{{title}} nicht mehr anbieten?",
+    "stopConfirmBody": "Neue Buchungen können ihn nicht mehr nutzen: Er verschwindet aus dem Kalender, aus Mitglieder → Tarif aktivieren und von Ihrer öffentlichen Buchungsseite. Bestehende Buchungen mit {{title}} behalten Daten, Preis und Rechnungen.",
     "weeklyTitle": "Wochentarif",
     "weeklyDesc": "Ein fester Schreibtisch für sieben Tage reserviert. Wenn die letzten Tage reguläre Schließtage sind, endet die Laufzeit am vorangehenden Werktag.",
     "monthlyTitle": "Monatstarif",

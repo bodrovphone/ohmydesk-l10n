@@ -4,10 +4,10 @@
 |-------|--------|
 | Repository | https://github.com/bodrovphone/DeskPlanner |
 | Branch | `staging` |
-| Git SHA | `f5878dcba08b3f54ffe4e8bd53146808976546ad` |
-| Synced at (commit date) | 2026-09-29 |
+| Git SHA | `a05b9a687a40a26c1137c6b7a9a808779419debc` |
+| Synced at (commit date) | 2026-09-30 |
 | Paths copied | `client/src/locales/en/*.json`, `client/src/locales/de/*.json` |
 
-Also includes the new keys from DeskPlanner PRs [#261](https://github.com/bodrovphone/DeskPlanner/pull/261) (`8f1150cd`: invoice CSV export, checkout legal documents) and [#262](https://github.com/bodrovphone/DeskPlanner/pull/262) (`ec2b076e`: per-person meeting-room extras), which were open when this sync ran.
+The SHA is the head of DeskPlanner PR [#281](https://github.com/bodrovphone/DeskPlanner/pull/281) (`feat/omd-337-dedicated-plans-feedback`, open when this sync ran) on top of `staging` at `bf4d1f03` (PR #280 merged). New `plans` keys: dedicated desk plans card, term-length Days, Stop offering confirmations, Day Pass switch-off, Add caption. The `invoices`, `payments`, `leads` and `common` changes come from DeskPlanner PRs merged into `staging` after the 2026-09-29 sync.
 
 Update this file whenever locales are refreshed from DeskPlanner.

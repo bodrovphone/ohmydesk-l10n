@@ -2,7 +2,17 @@
   "title": "Leads",
   "description": "People who have asked about your space. Track them from first hello to signed-up member.",
   "export": "Export",
-  "exportComingSoon": "Export coming soon",
+  "csv": {
+    "columns": {
+      "name": "Name",
+      "stage": "Stage",
+      "source": "Source",
+      "contact": "Contact",
+      "preferredDates": "Preferred dates",
+      "notes": "Notes",
+      "createdAt": "Created at"
+    }
+  },
   "stages": {
     "new": {
       "label": "New",

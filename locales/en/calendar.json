@@ -164,6 +164,8 @@
     "startDate": "Start Date *",
     "endDate": "End Date *",
     "coversDates": "Covers {{start}} → {{end}}",
+    "termDays_one": "{{count}} day",
+    "termDays_other": "{{count}} days",
     "ongoingContract": "Ongoing — open-ended, no end date",
     "aboutOngoing": "About ongoing contracts",
     "ongoingContractTooltip": "A rolling / month-to-month contract with no fixed end date. Auto-books the next monthly cycle; mark each as paid to extend by another month. Leave it unticked for a fixed-term booking.",

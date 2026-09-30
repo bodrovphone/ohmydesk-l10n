@@ -38,13 +38,33 @@
     "priceLabel": "Tagespreis ({{currency}})",
     "help": "Einzeltarif für einen Tag · wird für Spontanbesucher und Online-Buchungen genutzt.",
     "updated": "Tagespass aktualisiert.",
-    "stopConfirmBody": "Besucher können auf Ihrer öffentlichen Buchungsseite keinen Tagespass mehr kaufen, und der Tagespass verschwindet aus der Tarifliste, wenn Sie im Kalender buchen. Bestehende Tagesbuchungen behalten Datum und Preis."
+    "stopConfirmBody": "Besucher können auf Ihrer öffentlichen Buchungsseite keinen Tagespass mehr kaufen, und der Tagespass verschwindet aus der Tarifliste, wenn Sie im Kalender buchen. Bestehende Tagesbuchungen behalten Datum und Preis. Die Änderung wird beim Speichern übernommen."
   },
   "dedicatedDesk": {
     "title": "Dedicated-Desk-Tarife",
-    "description": "Tagespässe und feste Schreibtisch-Laufzeiten (wöchentlich, monatlich oder eigene Dauer). Die Laufzeit steuert das Enddatum bei Buchungen im Schreibtisch-Kalender.",
+    "description": "Ein fester Schreibtisch pro Buchung. Tagespass, Wochen- und Monatstarif haben feste Laufzeiten; für jede andere Laufzeit eine Variante hinzufügen. Laufzeiten zählen Kalendertage, Schließtage eingeschlossen.",
     "updated": "Dedicated-Desk-Tarife aktualisiert.",
     "saveFailed": "Speichern der Dedicated-Desk-Tarife fehlgeschlagen."
+  },
+  "deskPlans": {
+    "length": {
+      "day": "1 Tag",
+      "week": "7 Tage",
+      "month": "1 Monat"
+    },
+    "lockedHint": "Feste Laufzeit. Für eine andere Laufzeit eine Variante hinzufügen.",
+    "monthHint": "Ein Kalendermonat, Schließtage eingeschlossen.",
+    "termHint": "Kalendertage, Schließtage eingeschlossen.",
+    "unitLabel": "Einheit der Laufzeit",
+    "unitDays": "Tage",
+    "unitMonth": "Monat",
+    "offer": "Anbieten",
+    "termName_one": "{{count}}-Tage-Tarif",
+    "termName_other": "{{count}}-Tage-Tarif",
+    "invalidTerm": "Mindestens 2 Tage eingeben.",
+    "removeConfirmTitle": "{{name}} entfernen?",
+    "removeConfirmBody": "Neue Buchungen können ihn nicht mehr nutzen. Bestehende Buchungen behalten Daten, Preis und Rechnungen. Die Änderung wird beim Speichern übernommen.",
+    "removeAction": "Entfernen"
   },
   "dedicated": {
     "daysLabelMonthly": "Tage (optional)",
@@ -54,7 +74,7 @@
     "disableTier": "{{title}} nicht mehr anbieten",
     "stopOffering": "Nicht mehr anbieten",
     "stopConfirmTitle": "{{title}} nicht mehr anbieten?",
-    "stopConfirmBody": "Neue Buchungen können ihn nicht mehr nutzen: Er verschwindet aus dem Kalender, aus Mitglieder → Tarif aktivieren und von Ihrer öffentlichen Buchungsseite. Bestehende Buchungen mit {{title}} behalten Daten, Preis und Rechnungen.",
+    "stopConfirmBody": "Neue Buchungen können ihn nicht mehr nutzen: Er verschwindet aus dem Kalender, aus Mitglieder → Tarif aktivieren und von Ihrer öffentlichen Buchungsseite. Bestehende Buchungen mit {{title}} behalten Daten, Preis und Rechnungen. Die Änderung wird beim Speichern übernommen.",
     "weeklyTitle": "Wochentarif",
     "weeklyDesc": "Ein fester Schreibtisch für sieben Tage reserviert. Wenn die letzten Tage reguläre Schließtage sind, endet die Laufzeit am vorangehenden Werktag.",
     "monthlyTitle": "Monatstarif",

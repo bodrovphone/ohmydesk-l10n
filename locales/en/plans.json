@@ -38,13 +38,33 @@
     "priceLabel": "Price per day ({{currency}})",
     "help": "Single-day rate · used for walk-ins and public link bookings.",
     "updated": "Day pass updated.",
-    "stopConfirmBody": "Visitors can no longer buy a day pass on your public booking page, and Day Pass disappears from the plan list when you book from the desk calendar. Day bookings you already have keep their dates and price."
+    "stopConfirmBody": "Visitors can no longer buy a day pass on your public booking page, and Day Pass disappears from the plan list when you book from the desk calendar. Day bookings you already have keep their dates and price. The change applies when you save."
   },
   "dedicatedDesk": {
     "title": "Dedicated desk plans",
-    "description": "Day passes and fixed-term desk holds (weekly, monthly, or custom length). Term length drives the calendar end date when you book from the desk calendar.",
+    "description": "One named desk per booking. Day Pass, Weekly and Monthly have fixed lengths; add a variant for any other length. Lengths count calendar days, days off included.",
     "updated": "Dedicated desk plans updated.",
     "saveFailed": "Failed to save dedicated desk plans."
+  },
+  "deskPlans": {
+    "length": {
+      "day": "1 day",
+      "week": "7 days",
+      "month": "1 month"
+    },
+    "lockedHint": "Fixed length. Add a variant for a different length.",
+    "monthHint": "One calendar month, days off included.",
+    "termHint": "Calendar days, days off included.",
+    "unitLabel": "Length unit",
+    "unitDays": "days",
+    "unitMonth": "month",
+    "offer": "Offer",
+    "termName_one": "{{count}}-day plan",
+    "termName_other": "{{count}}-day plan",
+    "invalidTerm": "Enter at least 2 days.",
+    "removeConfirmTitle": "Remove {{name}}?",
+    "removeConfirmBody": "New bookings can no longer use it. Bookings already on it keep their dates, price and invoices. The change applies when you save.",
+    "removeAction": "Remove"
   },
   "dedicated": {
     "weeklyTitle": "Weekly Plan",
@@ -55,7 +75,7 @@
     "disableTier": "Stop offering {{title}}",
     "stopOffering": "Stop offering",
     "stopConfirmTitle": "Stop offering {{title}}?",
-    "stopConfirmBody": "New bookings can no longer use it: it disappears from the desk calendar, Members → Activate Plan and your public booking page. Bookings already on {{title}} keep their dates, price and invoices.",
+    "stopConfirmBody": "New bookings can no longer use it: it disappears from the desk calendar, Members → Activate Plan and your public booking page. Bookings already on {{title}} keep their dates, price and invoices. The change applies when you save.",
     "weeklyDesc": "One named desk held for a seven-day term. If only the final days are regular days off, the term ends on the preceding working day.",
     "monthlyTitle": "Monthly Plan",
     "monthlyDesc": "One named desk held for a rolling calendar month — the start date through the day before the same date next month. Can run open-ended, renewing month after month until you end it, and can be frozen mid-term with the unused days banked for later.",

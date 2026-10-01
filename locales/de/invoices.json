@@ -235,7 +235,7 @@
       "clear": "Zurücksetzen",
       "generateLines": "Positionen erstellen",
       "loading": "Aktive Tarife werden geladen…",
-      "noPlans": "Kein aktiver Monatsvertrag für Schreibtisch, virtuelles Büro oder eigenes Büro gefunden, der über dieses Rechnungsprofil abgerechnet werden kann. Sie können Rechnungspositionen manuell eingeben.",
+      "noPlans": "Kein laufender Monatsvertrag für Schreibtisch, virtuelles Büro oder eigenes Büro gefunden, der über dieses Rechnungsprofil abgerechnet werden kann. Wochen-, Tages- und Schreibtischbuchungen mit eigener Laufzeit finden Sie unter „Aus Gebühren“, oder Sie geben Rechnungspositionen manuell ein.",
       "selectPlaceholder": "Aktiven Tarif auswählen",
       "perMonth": "{{price}} pro Monat",
       "perMonthUnit": "/Monat",

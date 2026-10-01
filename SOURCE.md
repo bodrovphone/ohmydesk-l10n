@@ -4,7 +4,7 @@
 |-------|--------|
 | Repository | https://github.com/bodrovphone/DeskPlanner |
 | Branch | `staging` |
-| Git SHA | `b27caff83ef78625c1ead197100cb787c5493c43` |
+| Git SHA | `5fb787e90ec4bc188a76968694beb5b124314c1a` |
 | Synced at (commit date) | 2026-09-30 |
 | Paths copied | `client/src/locales/en/*.json`, `client/src/locales/de/*.json` |
 

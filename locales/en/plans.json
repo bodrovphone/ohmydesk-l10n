@@ -43,10 +43,10 @@
     "stopConfirmBody": "Visitors can no longer buy a day pass on your public booking page, and Day Pass disappears from the plan list when you book from the desk calendar. Day bookings you already have keep their dates and price. The change applies when you save."
   },
   "dedicatedDesk": {
-    "title": "Dedicated desk plans",
-    "description": "One named desk per booking. Day Pass, Weekly and Monthly have fixed lengths; add a variant for any other length. Lengths count calendar days, days off included.",
-    "updated": "Dedicated desk plans updated.",
-    "saveFailed": "Failed to save dedicated desk plans."
+    "title": "Reserved desk plans",
+    "description": "One named desk held for one person, by the day, week, month or your own length. Day Pass, Weekly and Monthly have fixed lengths; lengths count calendar days, days off included.",
+    "updated": "Reserved desk plans updated.",
+    "saveFailed": "Failed to save reserved desk plans."
   },
   "deskPlans": {
     "length": {

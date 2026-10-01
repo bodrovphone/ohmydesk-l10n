@@ -235,7 +235,7 @@
       "clear": "Clear",
       "generateLines": "Generate lines",
       "loading": "Loading active plans…",
-      "noPlans": "No active monthly desk, virtual-office, or private-office plan payable through this bill-to profile was found. You can still enter invoice lines manually.",
+      "noPlans": "No open-ended monthly desk, virtual-office or private-office plan is payable through this bill-to profile. Weekly, day-pass and custom-length desk bookings are under From charges, or you can enter invoice lines manually.",
       "selectPlaceholder": "Select an active plan",
       "perMonth": "{{price}} per month",
       "perMonthUnit": "/month",

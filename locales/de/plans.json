@@ -43,10 +43,10 @@
     "stopConfirmBody": "Besucher können auf Ihrer öffentlichen Buchungsseite keinen Tagespass mehr kaufen, und der Tagespass verschwindet aus der Tarifliste, wenn Sie im Kalender buchen. Bestehende Tagesbuchungen behalten Datum und Preis. Die Änderung wird beim Speichern übernommen."
   },
   "dedicatedDesk": {
-    "title": "Dedicated-Desk-Tarife",
-    "description": "Ein fester Schreibtisch pro Buchung. Tagespass, Wochen- und Monatstarif haben feste Laufzeiten; für jede andere Laufzeit eine Variante hinzufügen. Laufzeiten zählen Kalendertage, Schließtage eingeschlossen.",
-    "updated": "Dedicated-Desk-Tarife aktualisiert.",
-    "saveFailed": "Speichern der Dedicated-Desk-Tarife fehlgeschlagen."
+    "title": "Fixdesk-Tarife",
+    "description": "Ein fester Schreibtisch für eine Person – tageweise, wöchentlich, monatlich oder mit eigener Laufzeit. Tagespass, Wochen- und Monatstarif haben feste Laufzeiten; Laufzeiten zählen Kalendertage, Schließtage eingeschlossen.",
+    "updated": "Fixdesk-Tarife aktualisiert.",
+    "saveFailed": "Speichern der Fixdesk-Tarife fehlgeschlagen."
   },
   "deskPlans": {
     "length": {

@@ -2,7 +2,17 @@
   "title": "Leads",
   "description": "Personen, die sich für Ihren Space interessieren. Begleiten Sie sie vom ersten Kontakt bis zum Mitglied.",
   "export": "Exportieren",
-  "exportComingSoon": "Export demnächst verfügbar",
+  "csv": {
+    "columns": {
+      "name": "Name",
+      "stage": "Phase",
+      "source": "Quelle",
+      "contact": "Kontakt",
+      "preferredDates": "Bevorzugte Termine",
+      "notes": "Notizen",
+      "createdAt": "Erstellt am"
+    }
+  },
   "stages": {
     "new": {
       "label": "Neu",

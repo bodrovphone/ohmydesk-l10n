@@ -25,7 +25,11 @@
     "member": "Member",
     "allMembers": "All members",
     "selectedMembers": "{{count}} selected",
-    "clearMembers": "Clear"
+    "clearMembers": "Clear",
+    "clearFilters": "Clear filters",
+    "searchMembers": "Search members",
+    "noMatchingMembers": "No matching members.",
+    "notAssigned": "Not assigned"
   },
   "summary": {
     "totalPayments": "Total payments (success)"
@@ -62,6 +66,10 @@
     "method": "Method",
     "for": "For",
     "status": "Status",
+    "actions": "Actions",
+    "sortBy": "Sort by {{column}}",
+    "sortByAscending": "Sort by {{column}} ascending",
+    "sortByDescending": "Sort by {{column}} descending",
     "loading": "Loading…",
     "noCharges": "No charges yet.",
     "noChargesFiltered": "No charges match these filters.",
@@ -75,20 +83,34 @@
     "deleteManualCharge": "Delete manual charge",
     "edit": "Edit",
     "delete": "Delete",
+    "editPayment": "Edit payment",
+    "deletePayment": "Delete payment",
+    "editCharge": "Edit charge",
+    "deleteCharge": "Delete charge",
     "recordRefund": "Record refund",
     "deleteManualPayment": "Delete manual payment",
     "autoPaymentTooltip": "Automatic payment",
+    "mutability": {
+      "externalSource": "Imported entries are read-only.",
+      "superseded": "This entry has already been corrected or reversed.",
+      "draftInvoice": "This entry is on a draft invoice. Remove it from the draft before editing.",
+      "sentInvoice": "This entry is protected by a sent or paid invoice. Void the invoice and reissue it to make a correction.",
+      "notFinanceManager": "Only finance managers can change ledger entries.",
+      "unavailable": "Edit and delete are unavailable because the server could not confirm this entry's mutability."
+    },
     "pagination": {
       "newer": "Newer",
       "older": "Older",
-      "page": "Page {{page}}"
+      "page": "Page {{page}}",
+      "pageOf": "Page {{page}} of {{pages}}"
     }
   },
   "dialogs": {
     "deletePayment": {
-      "title": "Delete this manual payment?",
-      "description": "This permanently removes the manual ledger entry. Use Refund when money was actually returned.",
-      "confirm": "Delete"
+      "title": "Delete this payment?",
+      "description": "This records a signed reversal and keeps the original payment in the ledger. Use Record refund when money was actually returned.",
+      "confirm": "Record reversal",
+      "pending": "Recording…"
     },
     "refundPayment": {
       "title": "Record a full refund?",
@@ -101,14 +123,16 @@
       "confirm": "Create reversal"
     },
     "deleteCharge": {
-      "title": "Delete this manual charge?",
-      "description": "This permanently removes the manually created Charge.",
-      "confirm": "Delete"
+      "title": "Delete this charge?",
+      "description": "This records a separate reversal and keeps the original charge visible in the ledger.",
+      "confirm": "Record reversal",
+      "pending": "Recording…"
     },
     "payment": {
       "titleAdd": "Add payment",
       "titleEdit": "Edit payment",
       "lockedNotice": "Successful and integration-locked payments are immutable. Record a refund instead.",
+      "successStatusHint": "A successful payment stays successful. Corrections are recorded as signed ledger events.",
       "memberLabel": "Member",
       "memberOptional": "(optional)",
       "memberValidation": "Select an existing member from the list.",
@@ -140,6 +164,7 @@
     },
     "charge": {
       "title": "Add manual charge",
+      "titleEdit": "Edit charge",
       "memberLabel": "Member",
       "memberOptional": "(optional)",
       "memberValidation": "Select an existing member from the list.",
@@ -149,7 +174,8 @@
       "descriptionPlaceholder": "What is being charged",
       "reversalHint": "Corrections are recorded with a separate negative reversal Charge.",
       "saving": "Saving…",
-      "add": "Add charge"
+      "add": "Add charge",
+      "save": "Save changes"
     },
     "memberLink": {
       "title": "Link existing member",
@@ -160,18 +186,20 @@
     }
   },
   "toasts": {
-    "paymentDeleted": "Payment deleted",
+    "paymentDeleted": "Payment reversal recorded",
     "refundRecorded": "Refund recorded",
     "couldNotRefund": "Could not record the refund.",
     "reversalCreated": "Reversal charge created",
     "couldNotReverse": "Could not reverse the charge.",
-    "chargeDeleted": "Manual charge deleted",
+    "chargeDeleted": "Charge reversal recorded",
     "paymentRecordedSuccess": "Payment recorded as successful",
     "paymentUpdated": "Payment updated",
     "paymentRecorded": "Payment recorded",
     "couldNotSavePayment": "Could not save the payment.",
     "chargeAdded": "Charge added",
+    "chargeUpdated": "Charge correction recorded",
     "couldNotCreateCharge": "Could not create the charge.",
+    "couldNotUpdateCharge": "Could not update the charge.",
     "memberLinked": "Member linked",
     "couldNotLinkMember": "Could not link the member.",
     "chargeLinkedError": "This Charge is linked to an invoice or reversal and cannot be deleted.",

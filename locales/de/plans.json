@@ -9,7 +9,9 @@
     "saving": "Wird gespeichert…",
     "enable": "Aktivieren",
     "disable": "Deaktivieren",
-    "saveChanges": "Änderungen speichern"
+    "saveChanges": "Änderungen speichern",
+    "expand": "{{title}} aufklappen",
+    "collapse": "{{title}} zuklappen"
   },
   "variantList": {
     "headers": {

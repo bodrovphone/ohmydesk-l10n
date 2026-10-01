@@ -9,7 +9,9 @@
     "saving": "Saving…",
     "enable": "Enable",
     "disable": "Disable",
-    "saveChanges": "Save changes"
+    "saveChanges": "Save changes",
+    "expand": "Expand {{title}}",
+    "collapse": "Collapse {{title}}"
   },
   "variantList": {
     "headers": {

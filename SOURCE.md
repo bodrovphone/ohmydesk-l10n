@@ -4,7 +4,7 @@
 |-------|-------|
 | Repository | https://github.com/bodrovphone/DeskPlanner |
 | Branch | `alex_b/spanish-localization` |
-| Git SHA | `209f0561731b61e2e0679300d1da009b1b23386b` |
+| Git SHA | `8b85131c98ef013a91e4cd0e58573387811ecc56` |
 | Synced on | 2026-10-18 |
 | Paths copied | `client/src/locales/{en,de,es}/*.json` (24 namespaces per language) |
 | App integration | [DeskPlanner PR #550](https://github.com/bodrovphone/DeskPlanner/pull/550) |

@@ -1,0 +1,119 @@
+{
+  "title": "Resumen",
+  "pageDescription": "Cómo le va al espacio este mes: ingresos, gastos, ocupación y lo que viene.",
+  "addPayment": "Añadir pago",
+  "addPaymentTitle": "Añadir un pago único",
+  "prevMonth": "Mes anterior",
+  "nextMonth": "Mes siguiente",
+  "ai": {
+    "badge": "Análisis de IA",
+    "eyebrow": "OhMyDesk IA · {{eyebrow}}",
+    "summaryEyebrow": "Resumen de {{month}}",
+    "dismiss": "Descartar",
+    "actions": {
+      "seeEmptyDays": "Ver días vacíos",
+      "promoteFlex": "Promocionar un puesto flexible",
+      "viewPipeline": "Ver contactos potenciales",
+      "reviewExpenses": "Revisar gastos",
+      "openCalendar": "Abrir el calendario"
+    },
+    "profitUpOccDownTitle": "Has subido un {{percent}}% en beneficio neto, pero la ocupación ha bajado.",
+    "profitUpOccDownBody": "La ocupación ha bajado {{points}} puntos con respecto al mes pasado. Los planes de mayor precio están generando ingresos; considera abrir un puesto flexible para ocupar los días vacíos.",
+    "profitUpTitle": "El beneficio neto ha subido un {{percent}}% con respecto al mes pasado.",
+    "profitUpBody": "Un {{month}} saludable. Los ingresos {{verb}}, los gastos se mantuvieron bajo control. Vale la pena echar un vistazo rápido a los contactos potenciales del próximo mes para mantener el impulso.",
+    "revenueExpanded": "se expandieron",
+    "revenueHeld": "se mantuvieron",
+    "profitDownTitle": "El beneficio neto ha bajado un {{percent}}% con respecto al mes pasado.",
+    "profitDownBody": "Los ingresos disminuyeron y la diferencia importa. Revisa los días vacíos y si algún contrato terminó sin renovación.",
+    "occDownTitle": "La ocupación bajó {{points}} puntos con respecto al mes pasado.",
+    "occDownBody": "Incluso con el beneficio plano, los puestos vacíos están dejando dinero sobre la mesa. Un puesto flexible a un precio justo a menudo recupera la tasa.",
+    "steadyTitle": "{{month}} va por buen camino.",
+    "steadyBody": "Beneficio neto de {{net}} con una ocupación del {{occ}}%. No hay problemas, buen momento para planificar los contactos potenciales del próximo mes.",
+    "inRedTitle": "{{month}} cerró en números rojos.",
+    "inRedBody": "El beneficio neto es de {{net}}. Recorta un gasto recurrente, ocupa un puesto o ambas cosas.",
+    "startedTitle": "{{month}} acaba de empezar.",
+    "startedBodyNoDesk": "No hay días de puesto reservados este mes. Abre el calendario para ver qué está libre y empieza a llenar la semana.",
+    "startedBodyWithDesk": "Beneficio neto de {{net}} con una ocupación del {{occ}}%. A medida que pasen los meses, esta tarjeta empezará a comparar, de modo que las tendencias serán visibles de un vistazo."
+  },
+  "kpi": {
+    "netProfit": "Beneficio neto",
+    "revenue": "Ingresos",
+    "expenses": "Gastos",
+    "occupancy": "Ocupación",
+    "vsMonth": "vs {{month}}",
+    "vsLast": "vs {{amount}} el último",
+    "item_one": "1 elemento",
+    "item_other": "{{count}} elementos",
+    "deskDays": "{{occupied}}/{{total}} días de puesto"
+  },
+  "trend": {
+    "title": "Tendencia de ingresos",
+    "historyMeta": "Últimos {{count}} meses · {{start}} — {{end}}",
+    "notEnoughHistory": "Todavía no hay suficiente historial",
+    "viewLabel": "Vista de ingresos",
+    "byPayment": "Por pago",
+    "byService": "Por servicios prestados",
+    "revenue": "Ingresos",
+    "expenses": "Gastos",
+    "profit": "Beneficio neto",
+    "empty": "Aparecerá una tendencia una vez que tengas al menos dos meses de datos."
+  },
+  "byPlan": {
+    "title": "Ingresos por plan",
+    "empty": "Aún no hay ingresos este mes.",
+    "intake": "Ingresos de {{month}}"
+  },
+  "plans": {
+    "day_pass": "Pase de un día",
+    "weekly": "Puesto semanal",
+    "monthly": "Puesto mensual",
+    "flex": "Flexible",
+    "hotdesk": "Puesto compartido",
+    "virtual_office": "Oficina virtual",
+    "private_office": "Oficina privada",
+    "dedicated_desk": "Puesto dedicado",
+    "custom": "Personalizado",
+    "other": "Otro"
+  },
+  "upcoming": {
+    "title": "Próximos pagos",
+    "horizon": "Próximos 60 días",
+    "empty": "Nada reservado para los próximos 60 días.",
+    "due": "Pendiente",
+    "overdue": "Vencido",
+    "forecast": "Previsión",
+    "unpaid": "impagado",
+    "unpaidOnly": "Impagado",
+    "member": "Miembro"
+  },
+  "doorCodes": {
+    "title": "Códigos de acceso activos",
+    "viewAll": "Ver los {{count}} →",
+    "rightNow": "{{count}} ahora mismo",
+    "dialogTitle": "Códigos de acceso activos ({{count}})",
+    "unknown": "Desconocido",
+    "until": "· hasta el {{date}}"
+  },
+  "contributors": {
+    "title": "Principales colaboradores",
+    "empty": "Aún no se han atribuido ingresos de miembros este mes.",
+    "member": "Miembro",
+    "unattributed": "Sin atribuir"
+  },
+  "expensesByCategory": {
+    "title": "Gastos por categoría",
+    "meta_one": "{{month}} · 1 artículo",
+    "meta_other": "{{month}} · {{count}} artículos",
+    "empty": "No se han registrado gastos este mes.",
+    "uncategorized": "Sin categorizar",
+    "total": "Total"
+  },
+  "loading": {
+    "updating": "Actualizando…",
+    "heroTitle": "Reuniendo datos de {{month}}…",
+    "heroBody": "Los ingresos, gastos y ocupación estarán aquí en un momento.",
+    "trend": "Cargando los últimos 6 meses…",
+    "trendMeta": "Últimos 6 meses",
+    "card": "Cargando…"
+  }
+}

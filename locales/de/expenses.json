@@ -18,7 +18,11 @@
     "generateCta": "{{count}} generieren",
     "expensesDown": "Ausgaben sind um <b>{{diff}}</b> gesunken im Vergleich zu {{month}}. Solider Monat.",
     "expensesUp": "Ausgaben sind um <b>{{diff}}</b> gestiegen im Vergleich zu {{month}}. Prüfen Sie kurz die Änderungen.",
-    "dismiss": "Schließen"
+    "dismiss": "Schließen",
+    "prefix": "KI:"
+  },
+  "categoryIconPicker": {
+    "changeIcon": "Kategorie-Symbol ändern"
   },
   "thisMonth": {
     "title": "Dieser Monat",

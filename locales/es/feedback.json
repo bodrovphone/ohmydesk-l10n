@@ -1,0 +1,88 @@
+{
+  "sentiments": {
+    "love": {
+      "label": "Me encanta"
+    },
+    "good": {
+      "label": "Está bien"
+    },
+    "meh": {
+      "label": "Regular"
+    },
+    "hate": {
+      "label": "Lo odio"
+    }
+  },
+  "features": {
+    "mobileApp": "Aplicación móvil",
+    "slackIntegration": "Integración con Slack",
+    "embeddableWidget": "Widget de reservas incrustable",
+    "automatedInvoices": "Facturas automatizadas",
+    "publicApi": "API pública / webhooks",
+    "smartLock": "Integración con cerradura inteligente",
+    "bookableEquipment": "Equipo reservable (impresoras, etc.)",
+    "multiLanguage": "Interfaz de usuario multiidioma",
+    "whiteLabel": "Marca blanca / personalización",
+    "recurringBookings": "Reservas recurrentes",
+    "memberPortal": "Portal de autoservicio para miembros"
+  },
+  "form": {
+    "sentimentLegend": "En serio, ¿qué te parece?",
+    "missingLegend": "¿Qué falta?",
+    "missingHint": "(elige lo que te moleste)",
+    "otherPlaceholder": "¿Algo más? Escríbelo aquí…",
+    "messageLegend": "¿Algo más?",
+    "messageHint": "(quejas, críticas, peticiones, adelante)",
+    "messagePlaceholder": "Opcional. ¿Un error? ¿Un elogio? ¿Un pensamiento al azar?",
+    "emailLegend": "Tu correo electrónico",
+    "emailHint": "(para que podamos responderte)",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "submit": "Enviar",
+    "submitting": "Enviando…"
+  },
+  "emailWarning": {
+    "title": "Sin correo electrónico = sin respuesta.",
+    "body": "No podemos hacer un seguimiento si algo está roto o merece una conversación. Escribe uno arriba, o envía de todos modos.",
+    "cta": "Enviar de todos modos, no responder"
+  },
+  "errors": {
+    "empty": "Elige al menos una cosa: tu opinión, una función que falta o escribe algo a continuación.",
+    "rateLimited": "Ya enviaste uno, espera un minuto antes de enviar otro.",
+    "submitFailed": "No se pudo enviar ({{reason}}). Inténtalo de nuevo o envía un correo electrónico a hello@ohmydesk.app.",
+    "generic": "Algo salió mal. Inténtalo de nuevo o envía un correo electrónico a hello@ohmydesk.app."
+  },
+  "success": {
+    "title": "Recibido. Gracias.",
+    "hate": "Brutal. Anotado. Lo haremos mejor.",
+    "meh": "Justo. Seguiremos trabajando.",
+    "love": "Significa mucho. De verdad.",
+    "default": "Leemos cada uno. Saludos.",
+    "backLink": "← Volver a OhMyDesk"
+  },
+  "promptCard": {
+    "dismissAria": "Descartar por ahora",
+    "maybeLater": "Quizás más tarde",
+    "dontShowAgain": "No volver a mostrar",
+    "prompts": {
+      "day_7": {
+        "title": "¿Qué tal tu primera semana?",
+        "body": "¿Algo te ha molestado? ¿Falta algo? Solo 30 segundos, sin necesidad de correo electrónico.",
+        "cta": "Te cuento mi opinión"
+      },
+      "day_30": {
+        "title": "Después de un mes, ¿qué te parece?",
+        "body": "Ya llevas un mes usando OhMyDesk. ¿Qué funciona bien y qué no?",
+        "cta": "Te cuento"
+      },
+      "periodic_90": {
+        "title": "Hola, una pregunta rápida.",
+        "body": "¿Hay algo más que te gustaría que hiciera OhMyDesk? ¿O algo ha dejado de funcionar?",
+        "cta": "Claro"
+      }
+    }
+  },
+  "inAppDialog": {
+    "title": "Critícame. Alábame.",
+    "description": "Tres preguntas rápidas. Van directamente a mi Telegram. Las leo todas."
+  }
+}

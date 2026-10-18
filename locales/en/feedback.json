@@ -1,9 +1,17 @@
 {
   "sentiments": {
-    "love": { "label": "Love it" },
-    "good": { "label": "It's fine" },
-    "meh": { "label": "Meh" },
-    "hate": { "label": "Hate it" }
+    "love": {
+      "label": "Love it"
+    },
+    "good": {
+      "label": "It's fine"
+    },
+    "meh": {
+      "label": "Meh"
+    },
+    "hate": {
+      "label": "Hate it"
+    }
   },
   "features": {
     "mobileApp": "Mobile app",
@@ -50,5 +58,31 @@
     "love": "Means a lot. Truly.",
     "default": "We read every one. Cheers.",
     "backLink": "← Back to OhMyDesk"
+  },
+  "promptCard": {
+    "dismissAria": "Dismiss for now",
+    "maybeLater": "Maybe later",
+    "dontShowAgain": "Don't show again",
+    "prompts": {
+      "day_7": {
+        "title": "How's your first week?",
+        "body": "Anything pissed you off so far? Anything missing? 30 seconds, no email needed.",
+        "cta": "Tell me what you think"
+      },
+      "day_30": {
+        "title": "A month in — real talk?",
+        "body": "You've actually used this for a month now. What's working, what's not?",
+        "cta": "I'll tell you"
+      },
+      "periodic_90": {
+        "title": "Hey — quick check-in.",
+        "body": "Anything new you wish OhMyDesk did? Or that broke recently?",
+        "cta": "Sure"
+      }
+    }
+  },
+  "inAppDialog": {
+    "title": "Roast me. Praise me.",
+    "description": "Three quick questions. Goes straight to my Telegram. I read every one."
   }
 }

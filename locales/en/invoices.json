@@ -7,7 +7,53 @@
   "summary": {
     "outstanding": "Outstanding",
     "paid": "Paid",
-    "allInvoices": "All invoices"
+    "overdue": "Overdue",
+    "overdueCount_one": "{{count}} invoice",
+    "overdueCount_other": "{{count}} invoices",
+    "allInvoices": "All invoices",
+    "invoicesInView": "Invoices in view"
+  },
+  "filters": {
+    "title": "Filter invoices",
+    "status": "Status",
+    "allStatuses": "All statuses",
+    "selectedCount": "{{count}} selected",
+    "clearSelection": "Clear",
+    "clearFilters": "Clear filters",
+    "invoiceDate": "Invoice date",
+    "invoiceDateFrom": "Invoice date from",
+    "invoiceDateTo": "Invoice date to",
+    "coveragePeriod": "Coverage period",
+    "coverageFrom": "Coverage period from",
+    "coverageTo": "Coverage period to",
+    "from": "From",
+    "to": "To",
+    "coverageHint": "Filters invoices whose billing period overlaps this range. This does not filter by issue date."
+  },
+  "bulk": {
+    "selectAllVisible": "Select all eligible visible invoices ({{count}})",
+    "selectInvoice": "Select invoice {{number}}",
+    "selectedCount_one": "{{count}} invoice selected",
+    "selectedCount_other": "{{count}} invoices selected",
+    "sendSelected": "Send drafts ({{count}})",
+    "resendSelected": "Resend sent ({{count}})",
+    "clearSelection": "Clear selection",
+    "confirmSendTitle": "Send selected invoices?",
+    "confirmResendTitle": "Resend selected invoices?",
+    "confirmSendDescription": "This will email the selected drafts. Invoices in other statuses or without a recipient email will be reported as skipped.",
+    "confirmResendDescription": "This will email the selected sent invoices again. Invoices in other statuses or without a recipient email will be reported as skipped.",
+    "confirmSend": "Confirm and send",
+    "confirmResend": "Confirm and resend",
+    "processing": "Sending invoice emails…",
+    "resultsTitle": "Bulk email results",
+    "resultSummary": "Succeeded: {{succeeded}} · Skipped: {{skipped}} · Failed: {{failed}}",
+    "succeeded": "Sent successfully",
+    "skipped": "Skipped — {{reason}}",
+    "failed": "Failed — {{reason}}",
+    "statusMismatch": "The invoice does not match this action's required status.",
+    "noRecipientEmail": "No recipient email is available.",
+    "invoiceMissing": "The invoice is no longer available.",
+    "done": "Done"
   },
   "tabs": {
     "all": "All",
@@ -20,7 +66,7 @@
     "clearFilter": "Clear month filter",
     "filterByMonth": "Filter by month"
   },
-  "searchPlaceholder": "Search by number or name…",
+  "searchPlaceholder": "Search by number, name or company…",
   "plans": {
     "label": "Plan",
     "allPlans": "All plans",
@@ -37,11 +83,13 @@
     "draft": "Draft",
     "sent": "Sent",
     "paid": "Paid",
+    "overdue": "Overdue",
     "void": "Void"
   },
   "loading": "Loading invoices…",
   "emptyState": {
     "noMatch": "No invoices match “{{query}}”.",
+    "noFiltered": "No invoices match these filters.",
     "noneInView": "No invoices in this view.",
     "noneInViewScoped": "No {{scope}} invoices in this view.",
     "noInvoicesYet": "No invoices yet",
@@ -66,8 +114,42 @@
     "send": "Send",
     "resend": "Resend",
     "preview": "Preview",
+    "editDraft": "Edit draft",
     "downloadPdf": "Download PDF",
+    "copyPortalLink": "Copy member portal link",
+    "portalLinkCopied": "Portal link copied",
+    "portalLinkCopiedDesc": "Paste it in WhatsApp, Telegram or email. The member signs in and sees this invoice.",
+    "copyPortalLinkFailed": "Could not copy the portal link",
+    "copyPortalLinkClipboardFailed": "Could not access the clipboard. You can copy the link manually below.",
+    "copyPortalLinkNoMember": "This invoice has no member, so there is no portal to open.",
+    "copyPortalLinkDraftTitle": "Mark invoice {{number}} as sent and copy the portal link?",
+    "copyPortalLinkDraftDescription": "The invoice becomes sent (no PDF email). Then we copy a sign-in link the member can open in WhatsApp or Telegram.",
+    "copyPortalLinkDraftConfirm": "Mark as sent and copy link",
+    "copyPortalLinkManualTitle": "Member portal link",
+    "copyPortalLinkManualDescription": "We could not access your clipboard. Copy this link manually to send it via WhatsApp, Telegram or email:",
+    "copyPortalLinkManualCopy": "Copy link",
+    "markAsSent": "Mark as sent without emailing",
+    "markAsSentConfirmTitle": "Mark invoice as sent?",
+    "markAsSentConfirmDescription": "The invoice will become read-only and post to the member's balance. The buyer will not receive an email.",
+    "markAsSentConfirm": "Mark as sent",
+    "markAsSentPending": "Marking as sent…",
+    "invoiceMarkedSent": "Invoice marked as sent",
+    "markSentFailed": "Could not mark invoice as sent",
+    "addPayment": "Add payment",
     "markAsPaid": "Mark as paid",
+    "markAsPaidWithoutPayment": "Mark paid without a payment entry",
+    "markAsPaidWithoutPaymentConfirmTitle": "Mark invoice {{number}} paid without a payment?",
+    "markAsPaidWithoutPaymentConfirmDescription": "This marks the invoice paid and sets its paid date without creating a payment entry. Invoice processing may still link its Charges and confirm linked bookings.",
+    "markAsPaidWithoutPaymentConfirm": "Mark paid",
+    "markedPaidWithoutPayment": "Invoice marked paid. No payment entry was created.",
+    "markPaidWithoutPaymentFailed": "Could not mark invoice as paid",
+    "unmarkPaid": "Unmark as paid",
+    "unmarkPaidConfirmTitle": "Unmark invoice {{number}} as paid?",
+    "unmarkPaidConfirmDescription": "The invoice goes back to Sent and its paid date is cleared. Payments recorded against it are reversed with a counter-entry in Payments (nothing is deleted), and bookings it confirmed go back to Booked unless they are paid otherwise.",
+    "unmarkPaidConfirm": "Unmark as paid",
+    "unmarkedPaid": "Invoice is unpaid again and back to Sent.",
+    "unmarkPaidFailed": "Could not unmark the invoice as paid",
+    "recordPaymentTitle": "Record payment for Invoice {{number}}",
     "void": "Void",
     "downloadFailed": "Download failed",
     "downloadFailedDesc": "Could not generate the PDF.",
@@ -88,32 +170,6 @@
     "cancel": "Cancel",
     "confirmVoid": "Void invoice"
   },
-  "batch": {
-    "title": "Generate pending invoices",
-    "description": "Creates a draft invoice for every member with auto-invoicing turned on, using their active monthly contract for the cycle window and total. You'll review and send each draft from the member's invoice list.",
-    "buildingPreview": "Building preview…",
-    "noOptedIn": "No members have auto-invoicing turned on yet.",
-    "noOptedInHint": "Open a member's billing details and switch it on to include them here.",
-    "lines": "· {{count}} line",
-    "lines_plural": "· {{count}} lines",
-    "willCreate": "<1>{{count}}</1> will be created",
-    "skipped": ", <1>{{count}}</1> skipped",
-    "cancel": "Cancel",
-    "generateBtn": "Generate {{count}} draft",
-    "generateBtn_plural": "Generate {{count}} drafts",
-    "generateBtnZero": "Generate drafts",
-    "skipReasons": {
-      "missing_billing_info": "Billing info missing",
-      "no_active_monthly_plan": "No active monthly contract",
-      "already_invoiced": "Already invoiced this cycle"
-    },
-    "createdToastSingle": "1 draft invoice created",
-    "createdToastPlural": "{{count}} draft invoices created",
-    "createdDesc": "Review and send them from each member.",
-    "alreadyCoveredDesc": "Nothing new to invoice — every opted-in member was already covered.",
-    "failedTitle": "Generation failed",
-    "failedDesc": "Could not create invoices."
-  },
   "preview": {
     "invoiceTitle": "Invoice {{number}}",
     "fallbackTitle": "Invoice",
@@ -124,6 +180,8 @@
   },
   "editor": {
     "title": "New invoice",
+    "titleEdit": "Edit invoice {{number}}",
+    "editingDraft": "Changes apply to this draft only; the invoice number stays the same.",
     "forClient": "For {{name}}.",
     "willSaveAs": "Will save as <1>{{number}}</1>.",
     "billTo": {
@@ -138,7 +196,7 @@
       "email": "Billing email",
       "emailHint": "(where invoices are sent)",
       "emailPlaceholder": "billing@acme.com",
-      "taxId": "Tax / company ID",
+      "taxId": "Registration / company ID",
       "taxIdPlaceholder": "123456789",
       "vatId": "VAT ID",
       "vatIdHint": "(optional)",
@@ -149,7 +207,9 @@
       "attnHint": "(optional)",
       "attnPlaceholder": "Full name of contact person",
       "prefilledHelp": "Prefilled from the member profile. Edits here stay on this invoice — save the member's company details in their profile to avoid re-typing.",
-      "manualHelp": "Manual invoice — type the recipient details below. Nothing is saved to a member profile."
+      "manualHelp": "Manual invoice — type the recipient details below. Nothing is saved to a member profile.",
+      "editButton": "Edit",
+      "collapse": "Collapse"
     },
     "numberAndDates": {
       "title": "Number & dates",
@@ -162,15 +222,23 @@
       "dueDate": "Due date",
       "dueDateHint": "(optional)",
       "periodFrom": "Period from",
-      "periodTo": "Period to"
+      "periodTo": "Period to",
+      "fixedNumber": "A draft keeps the number it was created with."
+    },
+    "sources": {
+      "fromPlans": "From plans",
+      "fromCharges": "From charges",
+      "includeSharedPlans": "Include plans from members sharing this billing profile",
+      "includeSharedCharges": "Include charges from members sharing this billing profile",
+      "manualEntryHint": "Add charges above, or enter invoice lines manually."
     },
     "planGeneration": {
       "title": "Generate from plan",
-      "description": "Split the billing period by calendar month and prorate partial months.",
+      "description": "Split the billing period by calendar month and prorate partial months. Extend “Period to” to bill several months in advance — one line per month.",
       "clear": "Clear",
       "generateLines": "Generate lines",
       "loading": "Loading active plans…",
-      "noPlans": "No active monthly desk, virtual-office, or private-office plan with a price was found. You can still enter invoice lines manually.",
+      "noPlans": "No open-ended monthly desk, virtual-office or private-office plan is payable through this bill-to profile. Weekly, day-pass and custom-length desk bookings are under From charges, or you can enter invoice lines manually.",
       "selectPlaceholder": "Select an active plan",
       "perMonth": "{{price}} per month",
       "perMonthUnit": "/month",
@@ -184,16 +252,28 @@
       "datesLimited": "Dates were limited to the active plan term: {{period}}.",
       "linesGenerated": "{{count}} monthly line generated.",
       "linesGenerated_plural": "{{count}} monthly lines generated.",
+      "coveredByCharges": "{{count}} existing Charge added instead of a monthly line; {{lines}} generated for the days it does not cover.",
+      "coveredByCharges_plural": "{{count}} existing Charges added instead of monthly lines; {{lines}} generated for the days they do not cover.",
       "failedTitle": "Could not generate lines",
+      "coverageLoading": "Checking existing Charges for this period…",
+      "coverageFailed": "Could not load the existing Charges for this period, so plan lines cannot be checked for double billing. Reopen the invoice to try again.",
       "failedDesc": "Check the selected plan and billing dates."
     },
     "unlinkedCharges": {
       "title": "Unlinked charges",
-      "description": "Existing Charges for this member that aren't on any invoice yet — add one to fold it into this invoice instead of retyping it.",
+      "description": "Existing Charges that aren't on an invoice yet: those billed to this bill-to profile, plus the member's own bookings and manual charges. Add one to fold it into this invoice instead of retyping it.",
       "loading": "Loading…",
-      "empty": "No unlinked Charges for this member.",
+      "empty": "No unlinked Charges payable through this bill-to profile.",
       "add": "Add",
       "loadMore": "Load more",
+      "allPeriods": "Show charges from all periods",
+      "allPeriodsNote": "Charges added from other periods stay on the invoice until the billing period changes.",
+      "billedElsewhere_one": "{{count}} charge is billed to {{payer}} — switch Bill to to see it.",
+      "billedElsewhere_other": "{{count}} charges are billed to {{payer}} — switch Bill to to see them.",
+      "billedElsewhereCapped": "{{count}}+ charges are billed to {{payer}} — switch Bill to to see them.",
+      "payerOwnDetails": "the member's own billing details",
+      "payerOtherProfile": "another billing profile",
+      "payerSeveral": "other billing profiles",
       "unlinkedWarningTitle": "Invoice saved, but some charges were not linked",
       "unlinkedWarningDesc": "{{failedCount}} of {{totalCount}} selected charge(s) could not be attached to the invoice. Check with Alex before sending it — an unlinked charge amount may otherwise be posted again."
     },
@@ -240,6 +320,10 @@
       "compiledBy": "Compiled by",
       "compiledByPlaceholder": "Accountant's name"
     },
+    "notesAndSignatures": {
+      "title": "Notes & signatures",
+      "hasNotes": "Note added"
+    },
     "preview": {
       "iframeTitle": "Invoice preview",
       "generating": "Generating preview…",
@@ -259,26 +343,17 @@
     },
     "footer": {
       "cancel": "Cancel",
-      "saveDraft": "Save draft"
+      "saveDraft": "Save draft",
+      "saveChanges": "Save changes"
     },
     "toasts": {
       "savedTitle": "Invoice saved",
       "savedDesc": "Draft {{number}} created.",
       "saveFailedTitle": "Save failed",
-      "saveFailedDesc": "Could not save invoice."
+      "saveFailedDesc": "Could not save invoice.",
+      "updatedDesc": "Draft {{number}} updated.",
+      "planChargesLinkDeferred": "Plan charges will be linked to this invoice when it is sent."
     }
-  },
-  "memberDialog": {
-    "titleStatement": "Statement",
-    "titleInvoices": "Invoices",
-    "descStatement": "Charges and payments in one chronological running balance.",
-    "descInvoices_one": "{{count}} invoice — send, download, or mark as paid.",
-    "descInvoices_other": "{{count}} invoices — send, download, or mark as paid.",
-    "descNoInvoices": "No invoices yet. Create the first one below.",
-    "tabInvoices": "Invoices",
-    "tabStatement": "Statement",
-    "close": "Close",
-    "addInvoice": "Add invoice"
   },
   "statement": {
     "balance": "Balance",
@@ -303,7 +378,231 @@
     "ascending": "ascending",
     "descending": "descending",
     "invoiceLink": "Invoice {{number}}",
+    "coverage": "Covers {{period}}",
     "editPayment": "Edit payment",
-    "immutablePayment": "Immutable payment"
+    "editCharge": "Edit charge",
+    "payCharge": "Record payment for this charge",
+    "recordPayment": "Record payment",
+    "immutablePayment": "Immutable payment",
+    "upcoming": "Upcoming",
+    "edit": {
+      "date": "Date",
+      "description": "Description",
+      "note": "Note",
+      "method": "Payment method",
+      "amount": "Amount",
+      "save": "Save changes",
+      "deleteCharge": "Delete charge",
+      "deletePayment": "Delete payment"
+    },
+    "payChoice": {
+      "title": "Pay the whole invoice {{number}}?",
+      "description": "“{{charge}}” is one of several lines on invoice {{number}}. Paying the whole invoice settles every line at once; paying only this charge leaves the rest of the invoice open.",
+      "chargeOnly": "Only this charge ({{amount}})",
+      "wholeInvoice": "Whole invoice ({{amount}})"
+    }
+  },
+  "pdf": {
+    "brandPart1": "OhMy",
+    "brandPart2": "Desk",
+    "brandTagline": "Coworking on autopilot",
+    "noLineItems": "No line items.",
+    "footer": "Generated by OhMyDesk · ohmydesk.app",
+    "paymentMethods": {
+      "credit_card": "Credit card",
+      "cash": "Cash",
+      "bank_transfer": "Bank transfer"
+    }
+  },
+  "memberList": {
+    "loading": "Loading…",
+    "empty": "No past invoices for this member.",
+    "covers": "Covers {{period}}",
+    "issued": "Issued {{date}}",
+    "showMore": "Show {{count}} more"
+  },
+  "exportCsv": "Export CSV",
+  "lineRecipient": "Service recipient: {{name}}",
+  "export": {
+    "title": "Export invoices",
+    "description": "A CSV of every invoice issued in the chosen month, by issue date — for your accountant. Drafts and void invoices are included with their status.",
+    "count_one": "{{count}} invoice issued this month",
+    "count_other": "{{count}} invoices issued this month",
+    "download": "Download CSV",
+    "failed": "Could not create the CSV file",
+    "ownDetails": "Member's own details",
+    "loadFailed": "Could not load invoices for this month",
+    "columns": {
+      "invoiceNumber": "Invoice number",
+      "issueDate": "Issue date",
+      "dueDate": "Due date",
+      "status": "Status",
+      "customer": "Customer",
+      "billingEntity": "Billing entity",
+      "customerEmail": "Customer email",
+      "customerVatId": "Customer VAT ID",
+      "periodStart": "Period start",
+      "periodEnd": "Period end",
+      "net": "Net",
+      "vatRate": "VAT %",
+      "vatAmount": "VAT",
+      "total": "Total",
+      "currency": "Currency",
+      "paidOn": "Paid on"
+    }
+  },
+  "autoPage": {
+    "title": "Auto invoicing",
+    "description": "Monthly drafts for members on recurring plans, one per payer. Drafts are not sent until you send them.",
+    "backToInvoices": "Back to invoices",
+    "refresh": "Refresh",
+    "loading": "Loading this month…",
+    "loadFailed": "Could not load this month. Try again.",
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month",
+    "status": {
+      "line": "Automatic drafts: {{state}} · {{lead}} · {{due}} · auto-send: {{autoSend}}",
+      "on": "on",
+      "off": "off",
+      "leadSameDay": "same day",
+      "leadBefore_one": "{{count}} day before",
+      "leadBefore_other": "{{count}} days before",
+      "leadAfter_one": "{{count}} day after",
+      "leadAfter_other": "{{count}} days after",
+      "dueOnIssue": "due on issue",
+      "dueIn_one": "due in {{count}} day",
+      "dueIn_other": "due in {{count}} days",
+      "noDueDate": "no due date",
+      "settingsLink": "Billing & invoices settings"
+    },
+    "summary": {
+      "toInvoice": "To invoice",
+      "alreadyInvoiced": "Already invoiced",
+      "uncharged": "Charges without invoice",
+      "missingBilling": "Missing billing details",
+      "invoiceCount_one": "{{count}} invoice",
+      "invoiceCount_other": "{{count}} invoices",
+      "chargeCount_one": "{{count}} charge",
+      "chargeCount_other": "{{count}} charges",
+      "memberCount_one": "{{count}} member",
+      "memberCount_other": "{{count}} members"
+    },
+    "toInvoice": {
+      "title": "To invoice",
+      "description": "One draft per payer for this month. Select groups to create only some of them.",
+      "createSelected": "Create selected ({{count}})",
+      "createAll": "Create all drafts ({{count}})",
+      "selectGroup": "Select {{payer}}",
+      "empty": "Nothing to invoice for this month.",
+      "emptyHint": "Members appear here once auto-invoicing is on for them and their plans have charges in this month.",
+      "issue": "Issue {{date}}",
+      "due": "Due {{date}}",
+      "noDue": "No due date"
+    },
+    "existing": {
+      "title": "Already invoiced for this month",
+      "description": "Invoices drafted or sent for the month shown. Select drafts to send them in bulk.",
+      "empty": "No invoices for this month yet.",
+      "source": {
+        "auto": "Auto",
+        "manual": "Manual"
+      },
+      "justCreated": "New"
+    },
+    "planKind": {
+      "hotdesk": "Hot desk",
+      "virtual_office": "Virtual office",
+      "private_office": "Private office",
+      "monthly_desk": "Monthly desk",
+      "other": "Other plan"
+    },
+    "createDialog": {
+      "title": "Create drafts",
+      "description": "Drafts are created for the groups below. Nothing is sent to members.",
+      "summary_one": "{{count}} draft invoice · {{total}}",
+      "summary_other": "{{count}} draft invoices · {{total}}",
+      "issueDate": "Issue date",
+      "dueDate": "Due date",
+      "chronology": "Invoice numbers must follow issue dates; this date is earlier than invoice {{number}} ({{date}}).",
+      "confirm_one": "Create {{count}} draft",
+      "confirm_other": "Create {{count}} drafts",
+      "pending": "Creating drafts…",
+      "dueDateHint": "From the payment terms in Billing settings; applies to every draft. Leave empty for no due date.",
+      "dueBeforeIssue": "The due date can't be before the issue date."
+    },
+    "toast": {
+      "created_one": "{{count}} draft invoice created",
+      "created_other": "{{count}} draft invoices created",
+      "createdDesc": "Review and send each draft from the list below.",
+      "failed": "Could not create the drafts",
+      "skipped_one": "{{count}} draft was not created: {{reasons}}",
+      "skipped_other": "{{count}} drafts were not created: {{reasons}}",
+      "skipReason": {
+        "already_invoiced": "already invoiced",
+        "missing_charge": "a plan charge was removed, check the member's charges",
+        "not_eligible": "no longer eligible (member switched off or billing details missing)",
+        "unknown_group": "no longer due, refresh the page",
+        "write_failed": "could not be created, try again or contact support",
+        "cycle_not_generated": "the plan's charge for this period could not be created"
+      }
+    },
+    "toCreate": {
+      "title": "Charges to create",
+      "description": "These plans wait for a Charge: one was removed, or the cycle was never generated although its invoice date has passed (for example a plan added after the run). Create them here; they are dated today and then drafted like any other.",
+      "createSelected_one": "Create {{count}} selected",
+      "createSelected_other": "Create {{count}} selected",
+      "createAll_one": "Create {{count}} charge",
+      "createAll_other": "Create all {{count}} charges",
+      "select": "Select {{name}}",
+      "reason": {
+        "charge_removed": "Charge removed",
+        "not_generated": "Not generated yet"
+      },
+      "confirmTitle_one": "Create {{count}} charge?",
+      "confirmTitle_other": "Create {{count}} charges?",
+      "confirmDescription": "Each charge is posted to the member's account dated today, at the plan's current price. No invoice is created; the charges then appear under To invoice.",
+      "confirm_one": "Create {{count}} charge",
+      "confirm_other": "Create {{count}} charges",
+      "toast": {
+        "created_one": "{{count}} charge created",
+        "created_other": "{{count}} charges created",
+        "createdDesc": "They now appear under To invoice.",
+        "skipped_one": "{{count}} item was left as it was: it already has a charge, is invoiced or is not due yet.",
+        "skipped_other": "{{count}} items were left as they were: they already have a charge, are invoiced or are not due yet.",
+        "failed": "Could not create the charges"
+      }
+    },
+    "charges": {
+      "title": "Charges without invoice",
+      "description": "Charges for this month that no draft covers. Each one shows why it is not invoiced yet.",
+      "empty": "Every charge for this month is covered by an invoice.",
+      "reason": {
+        "in_preview": "In preview",
+        "member_excluded": "Member excluded",
+        "missing_billing_info": "Missing billing details"
+      }
+    },
+    "missing": {
+      "title": "Missing billing details",
+      "description": "These members are opted in, but auto-invoicing needs their payer's billing details first.",
+      "empty": "No opted-in member is missing billing details.",
+      "payer": "Payer: {{name}}",
+      "noPayer": "No payer yet",
+      "fields": {
+        "billing_legal_name": "Legal name",
+        "billing_address": "Address",
+        "billing_tax_id": "Tax ID"
+      },
+      "openBilling": "Open billing"
+    },
+    "excluded": {
+      "title": "Excluded from auto-invoicing",
+      "description": "Auto-invoicing is off for these members, so their charges stay uninvoiced until you turn it on.",
+      "empty": "No member is excluded from auto-invoicing.",
+      "turnOn": "Turn on",
+      "turningOn": "Turning on…",
+      "turnedOn": "Auto-invoicing is on for {{name}}.",
+      "turnOnFailed": "Could not turn on auto-invoicing"
+    }
   }
 }

@@ -11,7 +11,15 @@
     "roomsDesks": "Räume & Tische",
     "meetingRooms": "Meetingräume",
     "pricing": "Preise",
-    "notifications": "Benachrichtigungen"
+    "notifications": "Benachrichtigungen",
+    "finance": "Finanzen"
+  },
+  "stepLanguage": {
+    "title": "Sprache wählen",
+    "description": "Wir haben eine Voreinstellung aus Ihrem Browser erkannt. Wählen Sie die Sprache für das Dashboard.",
+    "label": "Dashboard-Sprache",
+    "help": "Sie können das jederzeit unter Mein OhMyDesk → Ihre Sprache ändern.",
+    "continue": "Weiter"
   },
   "common": {
     "next": "Weiter",
@@ -26,6 +34,20 @@
     "nameSpaceSub": "Dies ist für Ihre Teammitglieder sichtbar.",
     "spaceName": "Name des Space",
     "spaceNamePlaceholder": "z. B. Downtown Hub",
+    "shopName": "Name des Verleihs",
+    "nameRentalTitle": "Benennen Sie Ihren Verleih",
+    "nameRentalSub": "Ihre Kunden sehen diesen Namen auf der Buchungsseite.",
+    "verticalLabel": "Was betreiben Sie?",
+    "vertical": {
+      "coworking": {
+        "title": "Coworking-Space",
+        "desc": "Schreibtische, Besprechungsräume, Büros und Mitgliedschaften."
+      },
+      "rental": {
+        "title": "Verleih",
+        "desc": "Fahrräder, E-Bikes oder Ausrüstung tageweise vermieten."
+      }
+    },
     "spaceUrl": "Ihre Space-URL",
     "urlPrefix": "ohmydesk.app/",
     "slugPlaceholder": "ihr-space",
@@ -83,6 +105,31 @@
     "addingBody": "Wenn der erste Space steht, öffnen Sie <1>Einstellungen</1>, um einen weiteren Standort hinzuzufügen. Jeder Standort hat eigenen Kalender, Räume und Team.",
     "goToSpace": "Zu meinem Space"
   },
+  "publicJoin": {
+    "defaultSpace": "dem Space",
+    "linkInactiveTitle": "Dieser Link ist nicht aktiv",
+    "linkInactiveDesc": "Er ist möglicherweise abgelaufen oder wurde bereits genutzt. Bitten Sie das Team um einen neuen Anmeldelink.",
+    "thanksTitle": "Danke, {{name}}! 🎉",
+    "thanksThere": "Sie",
+    "thanksDesc": "Ihre Angaben liegen bei {{space}}. Das Team bestätigt Ihre Mitgliedschaft in Kürze.",
+    "welcomeTitle": "Willkommen bei {{space}} 👋",
+    "welcomeDesc": "Erzählen Sie uns kurz von sich — das Team richtet alles ein. Dauert etwa eine Minute.",
+    "yourName": "Ihr Name",
+    "fullNamePlaceholder": "Vollständiger Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "contactHint": "Mindestens E-Mail oder Telefonnummer angeben.",
+    "company": "Unternehmen",
+    "optional": "(optional)",
+    "companyPlaceholder": "Falls Sie für ein Unternehmen beitreten",
+    "consentAria": "Einwilligung zur Datenspeicherung",
+    "consentLabel": "Ich stimme zu, dass {{space}} diese Daten zur Verwaltung meiner Mitgliedschaft speichern darf.",
+    "sendDetails": "Angaben senden",
+    "poweredByPrefix": "Bereitgestellt von",
+    "brandName": "OhMyDesk",
+    "errorExpired": "Dieser Link ist gerade abgelaufen oder wurde bereits genutzt.",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte erneut versuchen oder das Team um einen neuen Link bitten."
+  },
   "telegram": {
     "title": "Telegram-Benachrichtigungen verbinden",
     "description": "Benachrichtigungen bei Buchungsstart oder Ende von Zuweisungen. Später unter Einstellungen möglich.",
@@ -93,5 +140,14 @@
     "connect": "Telegram verbinden",
     "openBotStart": "Bot in Telegram öffnen und Start drücken",
     "skip": "Jetzt überspringen"
+  },
+  "stepFinance": {
+    "title": "Wie genau verfolgen Sie Ihre Finanzen?",
+    "description": "Damit legen Sie fest, wie Zahlungen erfasst und Umsätze ausgewiesen werden.",
+    "simpleTitle": "Einfach halten",
+    "simpleDesc": "„Als bezahlt markieren“ erfasst die Zahlung sofort mit dem heutigen Datum. Umsatz wird nach erbrachten Leistungen ausgewiesen.",
+    "detailedTitle": "Detaillierte Erfassung",
+    "detailedDesc": "Jede Zahlung öffnet ein Formular für Zahlungsart, Datum und Notiz. Umsatz wird nach Zahlung und nach erbrachten Leistungen ausgewiesen.",
+    "changeLater": "Sie können das jederzeit unter Mein Space → Abrechnung & Rechnungen ändern."
   }
 }

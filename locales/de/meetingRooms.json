@@ -43,6 +43,7 @@
     "newBooking": "Neue Buchung",
     "editBooking": "Buchung bearbeiten",
     "roomLabel": "Besprechungsraum",
+    "dateLabel": "Datum",
     "wholeDayBooking": "Ganztägige Buchung",
     "perDay": " · {{currencySymbol}}{{price}}/Tag",
     "numberOfDays": "Anzahl Tage",
@@ -57,6 +58,9 @@
     "title": "Titel",
     "titlePlaceholder": "z. B. Team-Meeting",
     "bookAgainstHourPack": "Über Stundenpaket buchen ({{remaining}} Std. verbleibend)",
+    "hourPackUsedUp": "Stundenpaket aufgebraucht – diese Buchung wird zum Raumtarif berechnet",
+    "hourPackWaivedToday": "Heute kostenlos dank der Schreibtisch-Buchung des Mitglieds – es werden keine Paketstunden verbraucht.",
+    "hourPackShort": "Diese Buchung braucht {{needed}} Std., im Paket sind nur noch {{left}} Std. übrig – es wird überzogen.",
     "price": "Preis ({{currencySymbol}})",
     "freeSameDay": "Kostenlos · Schreibtisch-Buchung am selben Tag",
     "autoPrice": "Auto: {{currencySymbol}}{{rate}}/Std.",
@@ -67,6 +71,9 @@
     "saving": "Wird gespeichert...",
     "saveChanges": "Änderungen speichern",
     "createBooking": "Buchung erstellen",
+    "recordPayment": "Zahlung erfassen",
+    "paymentDialogTitle": "Besprechungsraumzahlung erfassen",
+    "paymentRecorded": "Zahlung erfasst",
     "toastCreated": "Buchung erstellt",
     "toastUpdated": "Buchung aktualisiert",
     "toastCancelled": "Buchung storniert",
@@ -77,6 +84,10 @@
     "toastGenericError": "Fehler beim Speichern der Buchung.",
     "promptNoHours": "Für diesen Raum sind an einem oder mehreren Tagen keine Betriebszeiten konfiguriert. Trotzdem buchen?",
     "errorSpaceClosed": "Der Space ist an einem oder mehreren Tagen geschlossen.",
-    "errorSlotTaken": "Der Raum ist an einem oder mehreren Tagen bereits gebucht."
+    "errorSlotTaken": "Der Raum ist an einem oder mehreren Tagen bereits gebucht.",
+    "attendees": "Anzahl Personen",
+    "attendeesPlaceholder": "1–{{count}}",
+    "attendeesHint": "Extras pro Person werden für diese Anzahl berechnet. Eine Änderung passt sie an.",
+    "attendeesInvalid": "Die Anzahl Personen muss eine ganze Zahl ab 1 sein."
   }
 }

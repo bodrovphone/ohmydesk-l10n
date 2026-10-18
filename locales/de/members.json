@@ -5,7 +5,7 @@
   "pendingSignups": "Ausstehende Anmeldungen",
   "inviteLink": "Einladungslink",
   "addMember": "Mitglied hinzufügen",
-  "searchPlaceholder": "Nach Name, E-Mail oder Telefon suchen…",
+  "searchPlaceholder": "Nach Name, Unternehmen, E-Mail oder Telefon suchen…",
   "allPricingGroups": "Alle Preisgruppen",
   "fullPriceOnly": "Nur regulärer Preis",
   "empty": {
@@ -30,7 +30,15 @@
     "member": "Mitglied",
     "contact": "Kontakt",
     "plan": "Tarif",
-    "status": "Status"
+    "status": "Status",
+    "balance": "Saldo"
+  },
+  "balanceFilter": {
+    "label": "Saldo",
+    "all": "Jeder Saldo",
+    "owes": "Offen",
+    "credit": "Guthaben",
+    "settled": "Ausgeglichen"
   },
   "showAll": "Alle {{count}} Mitglieder anzeigen",
   "reviewBanners": {
@@ -58,6 +66,8 @@
     "portalDiscoveryBody": "Mitglieder können sich im Portal anmelden, um Tarif, Guthaben, nächste Rechnung und Belege einzusehen. Öffnen Sie ein Mitglied und tippen Sie auf „Zugangslink erstellen“."
   },
   "row": {
+    "balanceOwes": "Offen",
+    "balanceCredit": "Guthaben",
     "portalActive": "Portal-Zugang aktiv",
     "noPortal": "Noch kein Portal-Zugang",
     "pricingGroup": "Preisgruppe: {{name}}",
@@ -69,6 +79,7 @@
     "activatePlan": "Tarif aktivieren",
     "until": "Bis {{date}}",
     "ongoing": "Laufend",
+    "awaitingPayment": "Zahlung ausstehend",
     "daysLeft": "{{count}} Tag übrig",
     "daysLeft_plural": "{{count}} Tage übrig",
     "days": "Tage",
@@ -94,6 +105,7 @@
       "hotdesk": "Hotdesk",
       "virtualOffice": "Virtuelles Büro",
       "office": "Eigenes Büro",
+      "meetingHours": "Besprechungsraum-Stunden",
       "noPlan": "Kein Tarif",
       "paused": "pausiert",
       "exp": "Gültig bis {{date}}",
@@ -102,6 +114,8 @@
   },
   "activePlans": {
     "active": "Aktiv",
+    "awaitingPayment": "Gebucht · Zahlung ausstehend",
+    "awaitingPaymentFrom": "Beginnt am {{date}} · Zahlung ausstehend",
     "frozen": "Pausiert · {{days}}T gespeichert",
     "cancelsWithDate": "Endet am {{date}} (Verlängerung aus)",
     "cancelsAtPeriodEnd": "Endet zum Periodenende",
@@ -112,7 +126,8 @@
     "nextBill": "Nächste Abrechnung {{date}}",
     "openEnded": "Unbefristet",
     "flexLeft": "{{left}} von {{total}} Tagen übrig",
-    "flexExpires": " · Läuft ab am {{date}}"
+    "flexExpires": " · Läuft ab am {{date}}",
+    "renewsViaStripe": "Verlängert sich monatlich über Stripe"
   },
   "drawer": {
     "title": "Details zu {{name}}",
@@ -134,13 +149,17 @@
       "contactPlaceholder": "+49… oder @benutzername",
       "emailLabel": "E-Mail",
       "emailPlaceholder": "mitglied@beispiel.de",
-      "planSection": "Tarif",
+      "emailLanguageLabel": "E-Mail-Sprache",
+      "emailLanguageAuto": "Automatisch (Buchung oder Space-Standard)",
+      "emailLanguageEn": "English",
+      "emailLanguageDe": "Deutsch",
+      "planSection": "Aktive Tarife",
       "noActivePlan": "Kein aktiver Tarif",
       "resumePlan": "Tarif fortsetzen",
       "resumePlanTitle": "{{days}} gespeicherter Tag — Tarif an der pausierten Stelle fortsetzen.",
       "resumePlanTitle_plural": "{{days}} gespeicherte Tage — Tarif an der pausierten Stelle fortsetzen.",
       "activatePlan": "Tarif aktivieren",
-      "history": "Verlauf",
+      "addPlan": "Tarif hinzufügen",
       "active": "aktiv",
       "pricingGroup": "Preisgruppe",
       "fullPrice": "Regulärer Preis",
@@ -161,7 +180,17 @@
       "clearFlexDescription": "Entfernt den Flex-Tarif dieses Mitglieds{{daysPart}}. Es wird ohne Flex-Paket angezeigt. Bestehende Flex-Schreibtischbuchungen bleiben im Kalender, verbrauchen aber kein Guthaben mehr.",
       "clearFlexDaysPart": " ({{left}} von {{total}} Tag übrig)",
       "clearFlexDaysPart_plural": " ({{left}} von {{total}} Tagen übrig)",
-      "clearingFlex": "Wird gelöscht…"
+      "clearingFlex": "Wird gelöscht…",
+      "planHistory": "Verlauf",
+      "planHistoryTitle": "Tarifverlauf",
+      "planHistoryDescription": "Alle Tarife dieses Mitglieds, neueste zuerst.",
+      "flexPacks": "Flex-Pakete",
+      "noFlexPacks": "Noch keine Flex-Pakete.",
+      "loading": "Wird geladen…",
+      "flexPackUsed": "{{used}} von {{total}} Tagen genutzt",
+      "endedOn": "beendet am {{date}}",
+      "officePlans": "Büro & virtuelles Büro",
+      "planHistoryNote": "Monats-, Wochen- und Hotdesk-Tarife werden nicht als einzelne Tarifwechsel protokolliert – dafür siehe den Tab „Buchungen“."
     },
     "repriceDialog": {
       "title": "Neuen Preis jetzt anwenden oder erst künftig?",
@@ -175,20 +204,31 @@
       "loading": "Laden…",
       "noBookings": "Noch keine Buchungen vorhanden.",
       "editBooking": "Buchung bearbeiten",
+      "bookDesk": "Schreibtisch buchen",
+      "bookMeetingRoom": "Besprechungsraum buchen",
       "meetingRooms": "Besprechungsraum-Buchungen",
       "wholeDay": "Ganztägig",
       "hourPack": "Stundenpaket",
       "meetingRoom": "Besprechungsraum",
       "desk": "Schreibtisch",
       "day": "{{count}} Tag",
-      "day_plural": "{{count}} Tage"
+      "day_plural": "{{count}} Tage",
+      "planType": {
+        "day_pass": "Tagespass",
+        "weekly": "Wöchentlich",
+        "monthly": "Monatlich",
+        "custom": "Individuell",
+        "flex": "Flex",
+        "oneOff": "Einzelbuchung"
+      }
     },
     "billing": {
       "invoices": "Rechnungen",
       "createInvoice": "Rechnung erstellen",
       "autoGenerate": "Monatliche Rechnung automatisch erstellen",
+      "autoGenerateHelp": "Wenn deaktiviert, ist dieses Mitglied von der automatischen Rechnungsstellung wiederkehrender Tarife ausgenommen.",
       "autoGenerateOn": "Wenn aktiviert, wird dieses Mitglied in den monatlichen Rechnungslauf einbezogen.",
-      "autoGenerateOff": "Fügen Sie Rechnungsname + Adresse (Übersicht → Rechnungsdaten) hinzu, um dies zu aktivieren.",
+      "autoGenerateOff": "Fügen Sie Rechnungsname + Adresse (Übersicht → Rechnungsprofile) hinzu, um dies zu aktivieren.",
       "statement": "Kontoauszug"
     },
     "delete": "Entfernen"
@@ -199,9 +239,15 @@
       "hotdesk": "Hotdesk",
       "virtual_office": "Virtuelles Büro",
       "dedicated": "Fester Schreibtisch",
-      "meeting_hours": "Besprechungsraum-Stunden"
+      "meeting_hours": "Besprechungsraum-Stunden",
+      "private_office": "Privatbüro"
     },
     "option": "Option",
+    "alreadyActive": "Bereits aktiv – auf der Mitgliedskarte bearbeiten",
+    "privateOffice": {
+      "office": "Büro",
+      "price": "Monatspreis ({{symbol}})"
+    },
     "flexDescription": "{{name}} erhält ab heute <strong>{{count}} Tage</strong> Flex-Zugang.",
     "meetingHours": {
       "description": "Ein vorausbezahltes Stundenguthaben für Besprechungsräume — verringert sich bei Buchungen von {{name}} zum unten festgelegten Preis.",
@@ -245,7 +291,8 @@
     },
     "startDate": "Startdatum",
     "endDate": "Enddatum",
-    "activate": "Aktivieren"
+    "activate": "Aktivieren",
+    "autoInvoiceOptIn": "Automatische Rechnungsstellung für dieses Mitglied aktivieren"
   },
   "alerts": {
     "deleteTitle": "Mitglied löschen",
@@ -280,6 +327,7 @@
     "pricingGroupRepriced": "Preisgruppe aktualisiert und aktueller Preis neu berechnet.",
     "hoursAdded": "{{hours}} Std. zum Paket von {{name}} hinzugefügt.",
     "hourPackSold": "Stundenpaket verkauft",
+    "officeAssigned": "Büro zugewiesen",
     "hourPackSoldDesc": "{{name}}: {{hours}} Std. für {{symbol}}{{price}}.",
     "deskAssigned": "Schreibtisch zugewiesen",
     "deskAssignedDesc": "{{name}} von {{start}} bis {{end}} zugewiesen.",
@@ -289,6 +337,15 @@
     "autoInvoiceOnDesc": "{{name}} wird in den monatlichen Rechnungslauf einbezogen.",
     "autoInvoiceOffDesc": "Für {{name}} wird keine automatische Rechnung erstellt.",
     "autoInvoiceFailed": "Einstellung für automatische Rechnungen konnte nicht aktualisiert werden."
+  },
+  "autoInvoice": {
+    "missingWarning": "Fehlende Angaben: {{items}}. Es werden keine Rechnungen erstellt.",
+    "missingWarningForPlans": "{{plans}} – fehlende Angaben: {{items}}. Es werden keine Rechnungen erstellt.",
+    "missing": {
+      "name": "Rechnungsname",
+      "address": "Rechnungsadresse",
+      "taxId": "Steuernummer"
+    }
   },
   "profile": {
     "title": "Rechnungsdaten",
@@ -319,14 +376,16 @@
     "contactPersonPlaceholder": "Vollständiger Name des Ansprechpartners",
     "paymentMethod": "Zahlungsmethode",
     "notSet": "Nicht festgelegt",
-    "autoInvoiceTitle": "Monatliche Rechnungen automatisch erstellen",
-    "autoInvoiceDesc": "Wenn aktiviert, werden die wiederkehrenden Tarife dieses Mitglieds im monatlichen Rechnungslauf vorbereitet. Sie können jederzeit manuell senden oder stornieren.",
     "autoInvoiceRequired": "Geben Sie oben Rechnungsname und -adresse an, um dies zu aktivieren.",
     "cancel": "Abbrechen",
-    "save": "Speichern"
+    "save": "Speichern",
+    "autosaved": "Änderungen werden automatisch gespeichert",
+    "autosaving": "Speichern…",
+    "autosaveFailed": "Speichern fehlgeschlagen – Verbindung prüfen"
   },
   "billingProfiles": {
     "heading": "Zusätzliche Rechnungsprofile",
+    "companyName": "Firmenname",
     "headingDesc": "Rechnen Sie einzelne Tarife über ein anderes Unternehmen ab. Das Profil kann beim Erstellen einer Rechnung gewählt werden — die oben hinterlegten Daten bleiben Standard.",
     "labelRequired": "Bezeichnung *",
     "billingEmail": "Rechnungs-E-Mail",
@@ -392,13 +451,77 @@
     "tryAgain": "Bitte versuchen Sie es erneut.",
     "linked": "Rechnungsprofil verknüpft",
     "linkedDesc": "Nutzt nun {{label}}.",
-    "couldNotLink": "Profil konnte nicht verknüpft werden"
+    "couldNotLink": "Profil konnte nicht verknüpft werden",
+    "unlink": "Verknüpfung lösen",
+    "unlinkTitle": "Rechnungsprofil-Verknüpfung lösen?",
+    "unlinkDescription": "{{label}} aus den Rechnungseinstellungen dieses Mitglieds entfernen. Die persönlichen Rechnungsdaten werden wieder verwendet. Profilinhaber, andere Mitglieder und frühere Rechnungen bleiben unverändert.",
+    "unlinkBlocked": "Beenden Sie zuerst die aktive Schreibtisch-, virtuelle Büro- oder Eigenbüro-Zuweisung dieses Mitglieds, bevor Sie das Profil trennen.",
+    "unlinkChecking": "Aktive Tarifzuweisungen werden geprüft…",
+    "unlinkCheckFailed": "Aktive Tarifzuweisungen konnten nicht geprüft werden.",
+    "unlinked": "Rechnungsprofil-Verknüpfung gelöst",
+    "couldNotUnlink": "Rechnungsprofil konnte nicht getrennt werden"
+  },
+  "planEdit": {
+    "editPlan": "{{plan}} bearbeiten",
+    "title": {
+      "flex": "Flex-Tarif – {{name}}",
+      "hotdesk": "Hotdesk-Tarif – {{name}}",
+      "desk": "Schreibtisch-Tarif – {{name}}",
+      "meetingHours": "Besprechungsraum-Stunden – {{name}}",
+      "virtualOffice": "Virtuelles Büro – {{name}}",
+      "office": "Privatbüro – {{name}}"
+    },
+    "description": {
+      "flex": "Dieses Flex-Paket korrigieren. Es wird nicht erneut verkauft: Paket und Forderung werden angepasst.",
+      "hotdesk": "Laufzeit, Preis und Rechnungsempfänger des Hotdesks ändern.",
+      "desk": "Schreibtisch-Tarife sind Buchungen im Kalender.",
+      "meetingHours": "Paket korrigieren, Stunden hinzufügen oder beenden.",
+      "virtualOffice": "",
+      "office": ""
+    },
+    "name": "Name",
+    "totalDays": "Tage im Paket",
+    "price": "Preis ({{symbol}})",
+    "monthlyPrice": "Monatspreis ({{symbol}})",
+    "startDate": "Startdatum",
+    "endDate": "Enddatum",
+    "expiryDate": "Läuft ab",
+    "packHours": "Stunden",
+    "flexUsage": "{{used}} von {{total}} Tagen genutzt.",
+    "flexBelowUsed": "Weniger Tage als bereits genutzt setzt das Paket auf null.",
+    "flexCorrectionHint": "Eine Preisänderung ersetzt die Forderung des Pakets; eine Forderung auf einer versendeten Rechnung lässt sich hier nicht ändern.",
+    "flexSubscriptionWarning": "Dieses Mitglied zahlt Flex über ein monatliches Stripe-Abonnement. Das Löschen des Guthabens beendet es nicht: Stripe bucht weiter ab, und jeder bezahlte Monat aktiviert Flex wieder. Um es zu beenden, nutzen Sie „{{action}}“ im Bereich {{section}} der Mitgliedskarte.",
+    "sharedDeskPayerHint": "Ein Zahler für alle Schreibtisch- und Hotdesk-Rechnungen dieses Mitglieds.",
+    "deskBookingsHint": "Daten, Schreibtisch und Preis werden in der Buchung selbst bearbeitet.",
+    "openBookings": "Buchungen öffnen",
+    "endPlan": "Tarif beenden",
+    "endHotdeskConfirm": "Hotdesk-Tarif zum {{date}} beenden? Er verlängert sich nicht mehr; bisherige Rechnungen bleiben.",
+    "endHoursConfirm": "Dieses Stundenpaket beenden? Ungenutzte Stunden verfallen; die Forderungen bleiben.",
+    "topUpRow": "{{date}} · +{{hours}} Std. · {{price}}",
+    "saved": "Tarif gespeichert",
+    "saveFailed": "Tarif konnte nicht gespeichert werden",
+    "endBeforeStart": "Das Enddatum darf nicht vor dem Startdatum liegen."
+  },
+  "planEndImpact": {
+    "checking": "Abgerechnete Zeiträume werden geprüft…",
+    "title_one": "Ende am {{date}} ändert {{count}} abgerechneten Zeitraum",
+    "title_other": "Ende am {{date}} ändert {{count}} abgerechnete Zeiträume",
+    "periodCancelled": "{{start}} – {{end}}: storniert, −{{amount}}",
+    "periodShortened": "{{start}} – {{end}}: nur bis {{newEnd}} anteilig abgerechnet, −{{amount}}",
+    "periodPaid": "{{amount}} bereits bezahlt wird Guthaben",
+    "reversed": "Beim Speichern werden insgesamt {{amount}} im Kontoauszug des Mitglieds storniert.",
+    "paidKept": "{{amount}} davon ist bereits bezahlt — die Zahlung bleibt erhalten und wird dem Mitglied als Guthaben angerechnet.",
+    "invoices": "Abgerechnet auf {{list}}. Rechnungen werden nicht geändert — stornieren Sie eine unbezahlte Rechnung und stellen Sie sie neu aus, wenn sie nicht mehr eingezogen werden soll."
   },
   "planTargets": {
     "billEachPlan": "Tarife abrechnen an",
     "virtualOffice": "Virtuelles Büro",
     "privateOffice": "Eigenes Büro — {{name}}",
-    "separateInvoices": "Wählen Sie das Profil eines anderen Mitglieds, um denselben Zahler zu nutzen. Standardmäßig erhält jedes Mitglied weiterhin eine separate Rechnung."
+    "separateInvoices": "Wählen Sie das Profil eines anderen Mitglieds, um denselben Zahler zu nutzen. Standardmäßig erhält jedes Mitglied weiterhin eine separate Rechnung.",
+    "billTo": "Rechnung an",
+    "memberDetails": "Die eigenen Rechnungsdaten des Mitglieds",
+    "noOwnDetails": "keine Rechnungsdaten",
+    "ownDetailsEmpty": "Die eigenen Rechnungsdaten dieses Mitglieds sind leer. Rechnen Sie den Tarif über ein Rechnungsprofil ab oder ergänzen Sie zuerst die Daten."
   },
   "portal": {
     "heading": "Mitgliederportal-Zugang",
@@ -411,6 +534,8 @@
     "revoke": "Widerrufen",
     "createNewLink": "Neuen Zugangslink erstellen",
     "createLink": "Zugangslink erstellen",
+    "invited": "Eingeladen",
+    "notInvited": "Nicht eingeladen",
     "authCard": {
       "continueWithGoogle": "Mit Google fortfahren",
       "or": "oder",
@@ -436,6 +561,7 @@
     "subscriptionCard": {
       "weeklyPass": "Wochenpass",
       "monthlyPass": "Monatspass",
+      "monthlyFlexPlan": "Monatlicher Flex-Tarif",
       "paymentFailed": "Zahlung fehlgeschlagen",
       "endsThisPeriod": "Endet diese Periode",
       "ended": "Beendet",
@@ -485,10 +611,17 @@
       "yourPlan": "Ihr Tarif",
       "noActivePlan": "Derzeit kein aktiver Tarif.",
       "daysLeft": "Tage übrig",
-      "bookDesk": "Schreibtisch buchen",
       "buyMoreDays": "Mehr Tage kaufen",
+      "flexRenewsNoTopUp": "Ihr Flex-Tarif verlängert sich jeden Monat mit neuen Besuchen, daher können Sie hier keine zusätzlichen Tage kaufen.",
       "renewVo": "Virtuelles Büro verlängern",
       "renewHotdesk": "Hot Desk verlängern",
+      "doorAccess": "Türzugang",
+      "unlockDoor": "Tür entriegeln",
+      "unlockDoorDesc": "Ihre Buchung gilt gerade — tippen Sie, um die Eingangstür zu entriegeln.",
+      "unlockSuccess": "Tür entriegelt",
+      "unlockFailed": "Tür konnte nicht entriegelt werden",
+      "unlockRetryHint": "Warten Sie einen Moment und versuchen Sie es erneut. Klappt es nicht, wenden Sie sich an den Space.",
+      "unlockCooling": "Tür entriegelt — kurz warten, bevor Sie erneut entriegeln",
       "bookings": "Buchungen",
       "noBookings": "Noch keine Buchungen.",
       "upcoming": "Bevorstehend",
@@ -499,8 +632,70 @@
       "contactForInvoice": "Wenden Sie sich an Ihren Space, um eine Rechnung zu begleichen.",
       "stripeSecure": "Zahlungen werden sicher über Stripe abgewickelt.",
       "downloadAriaLabel": "{{invoiceNumber}} als PDF herunterladen",
+      "invoiceNotOnPortal": "Diese Rechnung ist in Ihrem Portal nicht sichtbar.",
       "due": "fällig am",
-      "flex": "Flex"
+      "flex": "Flex",
+      "showMore": "{{count}} weitere anzeigen",
+      "showLess": "Weniger anzeigen",
+      "statement": "Kontoauszug",
+      "statementSince": "Gesamter Zeitraum · seit {{date}}",
+      "exportCsv": "CSV exportieren",
+      "statementExported": "Kontoauszug exportiert",
+      "colDate": "Datum",
+      "colTransaction": "Buchung",
+      "colAmount": "Betrag",
+      "colBalance": "Saldo",
+      "closingBalance": "Endsaldo",
+      "balance": "Saldo",
+      "statementError": "Kontoauszug konnte nicht geladen werden.",
+      "noStatement": "Noch keine Belastungen oder Zahlungen.",
+      "toPay": "Offen",
+      "credit": "Guthaben",
+      "settled": "Ausgeglichen",
+      "desk": "Arbeitsplatz",
+      "meetingRoom": "Besprechungsraum",
+      "privateOffice": "Privatbüro",
+      "billingProfiles": "Rechnungsprofile",
+      "sharedProfile": "Geteilt — wird von deinem Space verwaltet",
+      "taxIdShort": "Reg.-Nr.",
+      "vatIdShort": "USt",
+      "myContacts": "Meine Kontaktdaten",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "edit": "Bearbeiten",
+      "cancel": "Abbrechen",
+      "save": "Speichern",
+      "contactsSaved": "Kontaktdaten gespeichert",
+      "couldNotSave": "Speichern fehlgeschlagen",
+      "tryAgain": "Bitte versuche es erneut.",
+      "concierge": "Concierge",
+      "conciergeText": "Fragen zu deiner Buchung, einer Rechnung oder dem Space? Schreib {{space}} — der Concierge antwortet sofort.",
+      "language": "Sprache",
+      "name": "Name",
+      "requested": "Angefragt",
+      "bookDesk": "Arbeitsplatz buchen",
+      "bookMeetingRoom": "Besprechungsraum buchen",
+      "requestPrivateOffice": "Privatbüro anfragen",
+      "requests": "Anfragen",
+      "spaceBookingsError": "Besprechungsraum- und Büro-Buchungen konnten nicht geladen werden. Lade die Seite neu, um es erneut zu versuchen.",
+      "contactErrors": {
+        "invalid_email": "Gib eine gültige E-Mail-Adresse ein.",
+        "invalid_phone": "Gib eine gültige Telefonnummer ein.",
+        "email_unchanged": "Das ist bereits Ihre E-Mail-Adresse.",
+        "too_many_requests": "Zu viele Versuche. Bitte versuchen Sie es in einer Stunde erneut."
+      },
+      "emailChangeHint": "Eine neue E-Mail-Adresse wird erst verwendet, wenn Sie sie über den Link bestätigen, den wir dorthin senden.",
+      "emailConfirmSent": "Prüfen Sie {{email}}",
+      "emailConfirmSentDesc": "Wir haben einen Bestätigungslink gesendet. Ihre E-Mail-Adresse ändert sich, sobald Sie ihn öffnen.",
+      "emailPending": "Wartet auf Bestätigung: {{email}}"
+    },
+    "confirmEmail": {
+      "doneTitle": "E-Mail-Adresse bestätigt",
+      "doneDesc": "Ihre E-Mail-Adresse lautet jetzt {{email}}.",
+      "openPortal": "Mitgliederportal öffnen",
+      "failedTitle": "Link ungültig",
+      "invalid": "Dieser Bestätigungslink ist abgelaufen oder wurde bereits verwendet. Ändern Sie Ihre E-Mail-Adresse erneut im Mitgliederportal, um einen neuen zu erhalten.",
+      "taken": "Ein anderes Mitglied dieses Spaces verwendet diese E-Mail-Adresse jetzt. Bitten Sie das Team, sie zu aktualisieren."
     }
   },
   "invites": {
@@ -544,6 +739,7 @@
     "chooseFile": "Datei auswählen",
     "limitNote": "Bis zu {{count}} Zeilen. Komma-, Semikolon- oder Tabulator-getrennt.",
     "orPaste": "Oder CSV-Text einfügen",
+    "pastePlaceholder": "name,email,phone\nAlice,alice@example.com,555-1234\nBob,bob@example.com,",
     "parseBtn": "Eingefügte CSV verarbeiten",
     "tooManyRows": "Datei enthält {{count}} Zeilen. Nur die ersten {{limit}} werden importiert. Teilen Sie die Datei, um den Rest zu importieren.",
     "columnMapping": "Spaltenzuordnung",
@@ -600,7 +796,21 @@
     "cancelToast": "Automatische Verlängerung deaktiviert",
     "cancelToastDesc": "Zugang bleibt bis {{date}} aktiv. Es fallen keine weiteren Gebühren an.",
     "resumeToast": "Automatische Verlängerung fortgesetzt",
-    "resumeToastDesc": "Das Abonnement verlängert sich am Ende der aktuellen Periode automatisch."
+    "resumeToastDesc": "Das Abonnement verlängert sich am Ende der aktuellen Periode automatisch.",
+    "extrasHint": "Diese Extras verlängern sich mit dem Pass. Der laufende Zeitraum bleibt bezahlt. Die nächste Verlängerung berechnet nur den Pass.",
+    "stopExtra": "Zum nächsten Zeitraum beenden",
+    "stopExtraConfirm": "{{name}} zum nächsten Zeitraum beenden? Der Pass verlängert sich weiter. Dieser Zeitraum bleibt bezahlt.",
+    "stopExtraToast": "Extra wird nicht verlängert",
+    "stopExtraToastDesc": "{{name}} bleibt in diesem Zeitraum. Die nächste Verlängerung berechnet nur den Pass.",
+    "stopExtraError": "Dieses Extra konnte nicht beendet werden",
+    "addExtrasHint": "Extra zum Pass hinzufügen. Abrechnung beginnt mit der nächsten Verlängerung. Der laufende Zeitraum bleibt unverändert.",
+    "addExtra": "Zum Pass hinzufügen",
+    "addExtraConfirm": "{{name}} zum Pass hinzufügen? Es verlängert sich ab dem nächsten Abrechnungszeitraum mit dem Pass. Dieser Zeitraum bleibt unverändert.",
+    "addExtraToast": "Extra zum Pass hinzugefügt",
+    "addExtraToastDesc": "{{name}} verlängert sich ab dem nächsten Zeitraum wieder mit dem Pass.",
+    "addExtraError": "Dieses Extra konnte nicht hinzugefügt werden",
+    "undoStopExtra": "Weiter verlängern",
+    "undoStopExtraConfirm": "{{name}} am Pass behalten? Es verlängert sich ab dem nächsten Zeitraum wieder."
   },
   "reactivate": {
     "title": "Tarif für {{name}} reaktivieren",
@@ -608,6 +818,11 @@
     "bankedNote_plural": "<1>{{count}}</1> Tage aus dem pausierten Tarif gespeichert. Die Tage werden tageweise platziert, bei Bedarf mit Schreibtischwechsel für Kontinuität.",
     "startDate": "Startdatum",
     "planCoverage": "Tarif gilt von {{start}} bis {{end}}",
+    "desk": "Schreibtisch",
+    "deskFree": "Für den gesamten Plan frei",
+    "deskBusy_one": "Belegt an {{count}} von {{days}} Tagen",
+    "deskBusy_other": "Belegt an {{count}} von {{days}} Tagen",
+    "deskHint": "An belegten Tagen weicht der Tarif auf einen freien Schreibtisch aus — siehe Tabelle unten.",
     "checking": "Schreibtisch-Verfügbarkeit wird geprüft…",
     "table": {
       "date": "Datum",
@@ -624,10 +839,16 @@
     "save": "Speichern"
   },
   "autocomplete": {
+    "empty": "Noch keine Mitglieder.",
     "placeholder": "Name eingeben",
     "existingClients": "Bestehende Kunden",
     "allClients": "Alle Kunden",
-    "createClient": "Kunde „{{name}}“ anlegen"
+    "createClient": "Kunde „{{name}}“ anlegen",
+    "possibleMatches": "Mögliche Treffer",
+    "emailMatch": "E-Mail stimmt überein",
+    "phoneMatch": "Telefonnummer stimmt überein",
+    "similarName": "ähnlicher Name",
+    "createNewAnyway": "Trotzdem neu anlegen"
   },
   "payment": {
     "received": "Zahlung eingegangen",
@@ -644,5 +865,12 @@
       "overdue": "Überfällig",
       "unpaid": "Ausstehend"
     }
+  },
+  "doorAccess": {
+    "title": "Zugang zu weiteren Türen",
+    "description": "Türen, die dieses Mitglied mit seiner Buchungs-PIN zusätzlich öffnen kann. Die Eingangstür ist immer dabei.",
+    "noKeypad": "(kein Keypad)",
+    "note": "Gilt für Türcodes, die ab jetzt erstellt werden.",
+    "saveError": "Der Türzugang konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
   }
 }

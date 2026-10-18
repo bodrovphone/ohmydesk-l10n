@@ -18,7 +18,11 @@
     "generateCta": "Generate {{count}}",
     "expensesDown": "Expenses are down <b>{{diff}}</b> vs {{month}}. Healthy month.",
     "expensesUp": "Expenses are up <b>{{diff}}</b> vs {{month}}. Worth a quick look at what changed.",
-    "dismiss": "Dismiss"
+    "dismiss": "Dismiss",
+    "prefix": "AI:"
+  },
+  "categoryIconPicker": {
+    "changeIcon": "Change category icon"
   },
   "thisMonth": {
     "title": "This month",

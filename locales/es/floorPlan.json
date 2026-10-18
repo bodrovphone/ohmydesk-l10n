@@ -1,0 +1,105 @@
+{
+  "mobile": {
+    "title": "Tus pulgares son demasiado pequeños para esto",
+    "description": "El editor de planos requiere un teclado real, un ratón e idealmente una taza de café. Vuelve desde un ordenador y te dejaremos reorganizar los muebles."
+  },
+  "title": "Plano",
+  "description": "Organiza puestos, paredes, puertas y otros objetos para que coincidan con la distribución física de tu espacio.",
+  "toolbar": {
+    "saving": "Guardando…",
+    "saveFailed": "Error al guardar",
+    "unsaved": "Sin guardar",
+    "saved": "Guardado",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "splitView": "Vista dividida",
+    "combineRooms": "Combinar salas",
+    "save": "Guardar",
+    "clearAll": "Borrar todo",
+    "clearRoom": "Borrar sala"
+  },
+  "canvas": {
+    "emptyAddPrompt": "Añade puestos o formas desde el panel de la derecha.",
+    "emptyShortcuts": "Arrastra para reposicionar · haz clic para seleccionar · <kbd>R</kbd> para rotar",
+    "helpDrag": "<b>Arrastra</b> para mover · haz clic para seleccionar.",
+    "helpKeys": "<kbd>R</kbd> rota · <kbd>←→↑↓</kbd> mueve ligeramente · <kbd>Supr</kbd> elimina · <kbd>Esc</kbd> deselecciona."
+  },
+  "tile": {
+    "remove": "Eliminar",
+    "rotateCcw": "Girar 90° en sentido antihorario",
+    "rotateCw": "Girar 90° en sentido horario"
+  },
+  "panel": {
+    "view": {
+      "title": "Ver",
+      "combinedHelp": "Todas las salas en un solo lienzo. Elige una sala para enfocar.",
+      "singleHelp": "Elige qué sala quieres diseñar.",
+      "noRooms": "Aún no hay salas; añade una en la página Salas.",
+      "allRoomsCombined": "Todas las salas combinadas"
+    },
+    "selection": {
+      "title": "Selección",
+      "shapeFallback": "Forma",
+      "position": "Posición",
+      "rotation": "Rotación",
+      "room": "Sala",
+      "unplace": "Descolocar",
+      "remove": "Eliminar"
+    },
+    "shapes": {
+      "title": "Formas",
+      "help": "Haz clic para soltar una en el lienzo. Arrastra una vez colocada.",
+      "addTitle": "Añadir {{label}}"
+    },
+    "desks": {
+      "title": "Puestos para colocar",
+      "loading": "Cargando…",
+      "allPlaced": "Todos los puestos colocados"
+    }
+  },
+  "shapes": {
+    "pillar": "Pilar",
+    "table": "Mesa",
+    "couch": "Sofá",
+    "door": "Puerta",
+    "window": "Ventana",
+    "wc": "WC",
+    "kitchen": "Cocina",
+    "wall": "Pared"
+  },
+  "dialogs": {
+    "combine": {
+      "title": "Combinar salas en el lienzo",
+      "description": "Esto muestra todas las salas juntas en un solo lienzo para que puedas diseñar el espacio completo. Los puestos permanecen vinculados a sus salas originales; nada cambia en el calendario o las reservas. Puedes volver a la vista dividida en cualquier momento.",
+      "cancel": "Cancelar",
+      "confirm": "Combinar"
+    },
+    "split": {
+      "title": "¿Cambiar a vista dividida?",
+      "description": "El plano volverá a mostrar una sala a la vez. Tu diseño ya está guardado, no se perderá nada.",
+      "cancel": "Cancelar",
+      "confirm": "Vista dividida"
+    },
+    "unsaved": {
+      "title": "Cambios sin guardar",
+      "description": "Tienes cambios sin guardar en el plano. Guárdalos ahora o sal y los perderás.",
+      "stay": "Quedarse",
+      "leaveWithoutSaving": "Salir sin guardar",
+      "saveAndLeave": "Guardar y salir"
+    }
+  },
+  "modal": {
+    "title": "Plano",
+    "replace": "Reemplazar",
+    "remove": "Eliminar",
+    "uploading": "Subiendo…",
+    "removing": "Eliminando…",
+    "uploadPrompt": "Sube tu plano de planta",
+    "uploadHelp": "Arrastra y suelta o haz clic para seleccionar. JPEG, PNG, WebP o GIF de hasta 5 MB.",
+    "chooseFile": "Elegir archivo",
+    "errorType": "Por favor, sube una imagen JPEG, PNG, WebP o GIF.",
+    "errorSize": "El archivo debe pesar menos de 5 MB.",
+    "errorUpload": "No se pudo subir el plano de planta. Inténtalo de nuevo.",
+    "errorDelete": "No se pudo eliminar el plano de planta. Inténtalo de nuevo."
+  }
+}

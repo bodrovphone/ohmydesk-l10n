@@ -1,0 +1,153 @@
+{
+  "brand": {
+    "homeAria": "Inicio de OhMyDesk",
+    "alt": "OhMyDesk"
+  },
+  "stepper": {
+    "progressAria": "Progreso de la incorporación"
+  },
+  "steps": {
+    "spaceInfo": "Información del espacio",
+    "roomsDesks": "Salas y puestos",
+    "meetingRooms": "Salas de reuniones",
+    "pricing": "Precios",
+    "notifications": "Notificaciones",
+    "finance": "Finanzas"
+  },
+  "stepLanguage": {
+    "title": "Elige tu idioma",
+    "description": "Hemos detectado un idioma predeterminado en tu navegador. Elige el idioma que deseas para el panel de control.",
+    "label": "Idioma del panel de control",
+    "help": "Puedes cambiar esto en cualquier momento en Mi OhMyDesk → Tu idioma.",
+    "continue": "Continuar"
+  },
+  "common": {
+    "next": "Siguiente",
+    "back": "Atrás",
+    "skipImportLater": "Omitir — Importaré todos los datos más tarde",
+    "importOfficeRnd": "Importar desde OfficeRnD / Nexudus"
+  },
+  "step0": {
+    "addLocationTitle": "Añadir una nueva ubicación",
+    "nameSpaceTitle": "Nombra tu espacio de coworking",
+    "addLocationSub": "Configura otra ubicación para tu marca.",
+    "nameSpaceSub": "Esto será visible para los miembros de tu equipo.",
+    "spaceName": "Nombre del espacio",
+    "spaceNamePlaceholder": "Ej. Centro Urbano",
+    "shopName": "Nombre de la tienda",
+    "nameRentalTitle": "Nombra tu tienda de alquiler",
+    "nameRentalSub": "Tus clientes verán esto en la página de reservas.",
+    "verticalLabel": "¿Qué gestionas?",
+    "vertical": {
+      "coworking": {
+        "title": "Espacio de coworking",
+        "desc": "Puestos, salas de reuniones, oficinas y membresías."
+      },
+      "rental": {
+        "title": "Tienda de alquiler",
+        "desc": "Bicicletas, bicicletas eléctricas o equipos alquilados por día."
+      }
+    },
+    "spaceUrl": "La URL de tu espacio",
+    "urlPrefix": "ohmydesk.app/",
+    "slugPlaceholder": "tu-espacio",
+    "urlAvailable": "Esta URL está disponible",
+    "urlTaken": "Esta URL ya está en uso",
+    "urlHelp": "Generado automáticamente a partir del nombre de tu espacio. Puedes cambiarlo más tarde en Ajustes.",
+    "slugEditDone": "Hecho",
+    "slugEdit": "Editar",
+    "multiTitle": "Gestiono varias ubicaciones",
+    "multiDesc": "Marca esta opción si tu marca tiene más de un espacio de coworking.",
+    "multiExtra": "Configura tu primera ubicación ahora. Podrás añadir más desde Ajustes más tarde.",
+    "backToWorkspace": "Volver al espacio de trabajo",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "signIn": "Iniciar sesión"
+  },
+  "step1": {
+    "title": "Configurar salas y puestos",
+    "description": "Configura cuántas salas y puestos tienes.",
+    "roomsCount": "Número de salas",
+    "roomsAndDesks": "Salas y puestos",
+    "roomPlaceholder": "Sala {{number}}",
+    "workingDays": "Días laborables",
+    "workingDaysHelp": "Selecciona los días en que tu espacio está abierto para reservas.",
+    "preview": "Vista previa: {{rooms}} sala, {{desks}} puestos totales",
+    "preview_plural": "Vista previa: {{rooms}} salas, {{desks}} puestos totales"
+  },
+  "step2": {
+    "title": "Salas de reuniones",
+    "description": "¿Tienes salas disponibles para reservar por horas?",
+    "noDesksOnly": "No, solo puestos",
+    "skipStep": "Omitir este paso",
+    "yesMeetingRooms": "Sí, tengo salas de reuniones",
+    "configureRates": "Configurar tarifas por hora",
+    "meetingRoomCount": "Número de salas de reuniones",
+    "meetingRoomPlaceholder": "Sala de reuniones {{number}}",
+    "perHour": "/h",
+    "currencyNextStep": "La moneda se configura en el siguiente paso."
+  },
+  "step3": {
+    "title": "Elige tu moneda",
+    "description": "Se utilizará para todos los precios y el seguimiento de ingresos.",
+    "customCurrencyLabel": "O introduce el código ISO de la moneda",
+    "customCurrencyPlaceholder": "p. ej. GBP, JPY, CHF",
+    "customCurrencyUnknown": "No reconocemos «{{code}}» como un código de moneda; se seguirá utilizando, así que verifica si hay un error tipográfico.",
+    "defaultPriceLabel": "Precio predeterminado por puesto/día ({{symbol}})",
+    "defaultPriceHelp": "Puedes cambiar esto más tarde en los ajustes.",
+    "creating": "Creando...",
+    "createSpace": "Crear espacio",
+    "createFailed": "No se pudo crear la organización. Inténtalo de nuevo."
+  },
+  "step5": {
+    "title": "¡Tu primera ubicación está lista!",
+    "description": "Mencionaste que gestionas varias ubicaciones. Esto es lo que debes hacer a continuación.",
+    "addingTitle": "Añadiendo más ubicaciones",
+    "addingBody": "Una vez que te sientas cómodo con tu primer espacio, ve a <1>Ajustes</1> para añadir otra ubicación. Cada ubicación tiene su propio calendario, salas y equipo.",
+    "goToSpace": "Ir a mi espacio"
+  },
+  "publicJoin": {
+    "defaultSpace": "el espacio",
+    "linkInactiveTitle": "Este enlace no está activo",
+    "linkInactiveDesc": "Puede que haya caducado o ya se haya utilizado. Pide al equipo que te envíe un nuevo enlace de registro.",
+    "thanksTitle": "¡Gracias, {{name}}! 🎉",
+    "thanksThere": "allí",
+    "thanksDesc": "Tus datos están con {{space}}. El equipo confirmará tu membresía en breve.",
+    "welcomeTitle": "¡Bienvenido a {{space}} 👋",
+    "welcomeDesc": "Cuéntanos un poco sobre ti y el equipo te configurará. Tarda aproximadamente un minuto.",
+    "yourName": "Tu nombre",
+    "fullNamePlaceholder": "Nombre completo",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "contactHint": "Añade al menos uno: un correo electrónico o un número de teléfono.",
+    "company": "Empresa",
+    "optional": "(opcional)",
+    "companyPlaceholder": "Si te unes por una empresa",
+    "consentAria": "Consentimiento para almacenar detalles",
+    "consentLabel": "Acepto que {{space}} puede almacenar estos datos para gestionar mi membresía.",
+    "sendDetails": "Enviar mis datos",
+    "poweredByPrefix": "Desarrollado por",
+    "brandName": "OhMyDesk",
+    "errorExpired": "Este enlace acaba de caducar o ya se utilizó.",
+    "errorGeneric": "Algo salió mal. Inténtalo de nuevo o pide al equipo un nuevo enlace."
+  },
+  "telegram": {
+    "title": "Conectar notificaciones de Telegram",
+    "description": "Recibe notificaciones cuando comiencen las reservas o terminen las asignaciones. Siempre puedes conectarlo más tarde en Ajustes.",
+    "connected": "¡Telegram conectado!",
+    "goCalendar": "Ir al calendario",
+    "waitingConnection": "Esperando conexión...",
+    "generatingLink": "Generando enlace...",
+    "connect": "Conectar Telegram",
+    "openBotStart": "Abre el bot en Telegram y pulsa Iniciar",
+    "skip": "Omitir por ahora"
+  },
+  "stepFinance": {
+    "title": "¿Con qué precisión haces un seguimiento de las finanzas?",
+    "description": "Esto configura cómo se registran los pagos y cómo se informan los ingresos.",
+    "simpleTitle": "Mantenlo simple",
+    "simpleDesc": "«Marcar como pagado» registra el pago de inmediato con la fecha de hoy. Los ingresos se informan por los servicios prestados.",
+    "detailedTitle": "Seguimiento detallado",
+    "detailedDesc": "Cada pago abre un formulario para el método, la fecha y la nota. Los ingresos se informan tanto por pago como por servicios prestados.",
+    "changeLater": "Puedes cambiar esto en cualquier momento en Mi espacio → Facturación y facturas."
+  }
+}

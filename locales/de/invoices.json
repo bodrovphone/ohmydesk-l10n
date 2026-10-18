@@ -7,7 +7,53 @@
   "summary": {
     "outstanding": "Ausstehend",
     "paid": "Bezahlt",
-    "allInvoices": "Alle Rechnungen"
+    "overdue": "Überfällig",
+    "overdueCount_one": "{{count}} Rechnung",
+    "overdueCount_other": "{{count}} Rechnungen",
+    "allInvoices": "Alle Rechnungen",
+    "invoicesInView": "Rechnungen in Ansicht"
+  },
+  "filters": {
+    "title": "Rechnungen filtern",
+    "status": "Status",
+    "allStatuses": "Alle Status",
+    "selectedCount": "{{count}} ausgewählt",
+    "clearSelection": "Leeren",
+    "clearFilters": "Filter zurücksetzen",
+    "invoiceDate": "Rechnungsdatum",
+    "invoiceDateFrom": "Rechnungsdatum von",
+    "invoiceDateTo": "Rechnungsdatum bis",
+    "coveragePeriod": "Abdeckungszeitraum",
+    "coverageFrom": "Abdeckungszeitraum von",
+    "coverageTo": "Abdeckungszeitraum bis",
+    "from": "Von",
+    "to": "Bis",
+    "coverageHint": "Zeigt Rechnungen, deren Abrechnungszeitraum diesen Zeitraum überschneidet. Das Rechnungsdatum wird dadurch nicht gefiltert."
+  },
+  "bulk": {
+    "selectAllVisible": "Alle auswählbaren sichtbaren Rechnungen markieren ({{count}})",
+    "selectInvoice": "Rechnung {{number}} auswählen",
+    "selectedCount_one": "{{count}} Rechnung ausgewählt",
+    "selectedCount_other": "{{count}} Rechnungen ausgewählt",
+    "sendSelected": "Entwürfe senden ({{count}})",
+    "resendSelected": "Gesendete erneut senden ({{count}})",
+    "clearSelection": "Auswahl aufheben",
+    "confirmSendTitle": "Ausgewählte Rechnungen senden?",
+    "confirmResendTitle": "Ausgewählte Rechnungen erneut senden?",
+    "confirmSendDescription": "Diese Aktion sendet die ausgewählten Entwürfe per E-Mail. Rechnungen mit einem anderen Status oder ohne Empfängeradresse werden als übersprungen aufgeführt.",
+    "confirmResendDescription": "Diese Aktion sendet die ausgewählten gesendeten Rechnungen erneut per E-Mail. Rechnungen mit einem anderen Status oder ohne Empfängeradresse werden als übersprungen aufgeführt.",
+    "confirmSend": "Senden bestätigen",
+    "confirmResend": "Erneutes Senden bestätigen",
+    "processing": "Rechnungs-E-Mails werden gesendet…",
+    "resultsTitle": "Ergebnis des Massenversands",
+    "resultSummary": "Erfolgreich: {{succeeded}} · Übersprungen: {{skipped}} · Fehlgeschlagen: {{failed}}",
+    "succeeded": "Erfolgreich gesendet",
+    "skipped": "Übersprungen — {{reason}}",
+    "failed": "Fehlgeschlagen — {{reason}}",
+    "statusMismatch": "Der Rechnungsstatus passt nicht zu dieser Aktion.",
+    "noRecipientEmail": "Keine Empfängeradresse verfügbar.",
+    "invoiceMissing": "Die Rechnung ist nicht mehr verfügbar.",
+    "done": "Fertig"
   },
   "tabs": {
     "all": "Alle",
@@ -20,7 +66,7 @@
     "clearFilter": "Monatsfilter zurücksetzen",
     "filterByMonth": "Nach Monat filtern"
   },
-  "searchPlaceholder": "Nach Nummer oder Name suchen…",
+  "searchPlaceholder": "Nach Nummer, Name oder Unternehmen suchen…",
   "plans": {
     "label": "Tarif",
     "allPlans": "Alle Tarife",
@@ -37,11 +83,13 @@
     "draft": "Entwurf",
     "sent": "Gesendet",
     "paid": "Bezahlt",
+    "overdue": "Überfällig",
     "void": "Storniert"
   },
   "loading": "Rechnungen werden geladen…",
   "emptyState": {
     "noMatch": "Keine Rechnungen stimmen mit „{{query}}“ überein.",
+    "noFiltered": "Keine Rechnungen entsprechen diesen Filtern.",
     "noneInView": "Keine Rechnungen in dieser Ansicht.",
     "noneInViewScoped": "Keine {{scope}} Rechnungen in dieser Ansicht.",
     "noInvoicesYet": "Noch keine Rechnungen",
@@ -66,8 +114,42 @@
     "send": "Senden",
     "resend": "Erneut senden",
     "preview": "Vorschau",
+    "editDraft": "Entwurf bearbeiten",
     "downloadPdf": "PDF herunterladen",
+    "copyPortalLink": "Mitgliederportal-Link kopieren",
+    "portalLinkCopied": "Portal-Link kopiert",
+    "portalLinkCopiedDesc": "Fügen Sie ihn in WhatsApp, Telegram oder eine E-Mail ein. Das Mitglied meldet sich an und sieht diese Rechnung.",
+    "copyPortalLinkFailed": "Portal-Link konnte nicht kopiert werden",
+    "copyPortalLinkClipboardFailed": "Auf die Zwischenablage konnte nicht zugegriffen werden. Sie können den Link unten manuell kopieren.",
+    "copyPortalLinkNoMember": "Diese Rechnung hat kein Mitglied, daher gibt es kein Portal.",
+    "copyPortalLinkDraftTitle": "Rechnung {{number}} als gesendet markieren und Portal-Link kopieren?",
+    "copyPortalLinkDraftDescription": "Die Rechnung wird als gesendet markiert (keine PDF-E-Mail). Danach kopieren wir einen Anmeldelink, den das Mitglied in WhatsApp oder Telegram öffnen kann.",
+    "copyPortalLinkDraftConfirm": "Als gesendet markieren und Link kopieren",
+    "copyPortalLinkManualTitle": "Mitgliederportal-Link",
+    "copyPortalLinkManualDescription": "Auf die Zwischenablage konnte nicht zugegriffen werden. Kopieren Sie diesen Link manuell, um ihn per WhatsApp, Telegram oder E-Mail zu senden:",
+    "copyPortalLinkManualCopy": "Link kopieren",
+    "markAsSent": "Ohne E-Mail als gesendet markieren",
+    "markAsSentConfirmTitle": "Rechnung als gesendet markieren?",
+    "markAsSentConfirmDescription": "Die Rechnung wird schreibgeschützt und der Mitgliederbilanz zugeordnet. Der Rechnungsempfänger erhält keine E-Mail.",
+    "markAsSentConfirm": "Als gesendet markieren",
+    "markAsSentPending": "Wird als gesendet markiert…",
+    "invoiceMarkedSent": "Rechnung als gesendet markiert",
+    "markSentFailed": "Rechnung konnte nicht als gesendet markiert werden",
+    "addPayment": "Zahlung hinzufügen",
     "markAsPaid": "Als bezahlt markieren",
+    "markAsPaidWithoutPayment": "Als bezahlt markieren, ohne Zahlungseintrag",
+    "markAsPaidWithoutPaymentConfirmTitle": "Rechnung {{number}} ohne Zahlungseintrag als bezahlt markieren?",
+    "markAsPaidWithoutPaymentConfirmDescription": "Die Rechnung wird als bezahlt markiert und das Zahlungsdatum gesetzt, ohne einen Zahlungseintrag zu erstellen. Zugehörige Forderungen können weiterhin verknüpft und verbundene Buchungen bestätigt werden.",
+    "markAsPaidWithoutPaymentConfirm": "Als bezahlt markieren",
+    "markedPaidWithoutPayment": "Rechnung als bezahlt markiert. Es wurde kein Zahlungseintrag erstellt.",
+    "markPaidWithoutPaymentFailed": "Rechnung konnte nicht als bezahlt markiert werden",
+    "unmarkPaid": "Bezahlt-Markierung aufheben",
+    "unmarkPaidConfirmTitle": "Bezahlt-Markierung von Rechnung {{number}} aufheben?",
+    "unmarkPaidConfirmDescription": "Die Rechnung wird wieder auf „Gesendet“ gesetzt und das Zahlungsdatum entfernt. Erfasste Zahlungen zu dieser Rechnung werden unter Zahlungen mit einer Gegenbuchung storniert (nichts wird gelöscht), und von ihr bestätigte Buchungen werden wieder „Gebucht“, sofern sie nicht anderweitig bezahlt sind.",
+    "unmarkPaidConfirm": "Markierung aufheben",
+    "unmarkedPaid": "Rechnung ist wieder offen und auf „Gesendet“ gesetzt.",
+    "unmarkPaidFailed": "Bezahlt-Markierung konnte nicht aufgehoben werden",
+    "recordPaymentTitle": "Zahlung für Rechnung {{number}} erfassen",
     "void": "Stornieren",
     "downloadFailed": "Download fehlgeschlagen",
     "downloadFailedDesc": "PDF konnte nicht erstellt werden.",
@@ -88,32 +170,6 @@
     "cancel": "Abbrechen",
     "confirmVoid": "Rechnung stornieren"
   },
-  "batch": {
-    "title": "Ausstehende Rechnungen generieren",
-    "description": "Erstellt für jedes Mitglied mit aktiver Auto-Abrechnung einen Rechnungsentwurf basierend auf dessen monatlichem Vertrag für den Abrechnungszeitraum und Gesamtbetrag. Sie können jeden Entwurf vor dem Versand prüfen.",
-    "buildingPreview": "Vorschau wird erstellt…",
-    "noOptedIn": "Noch keine Mitglieder für die Auto-Abrechnung aktiviert.",
-    "noOptedInHint": "Aktivieren Sie die Option in den Rechnungsdaten eines Mitglieds, um es hier einzuschließen.",
-    "lines": "· {{count}} Posten",
-    "lines_plural": "· {{count}} Posten",
-    "willCreate": "<1>{{count}}</1> wird erstellt",
-    "skipped": ", <1>{{count}}</1> übersprungen",
-    "cancel": "Abbrechen",
-    "generateBtn": "{{count}} Entwurf erstellen",
-    "generateBtn_plural": "{{count}} Entwürfe erstellen",
-    "generateBtnZero": "Entwürfe erstellen",
-    "skipReasons": {
-      "missing_billing_info": "Rechnungsdaten fehlen",
-      "no_active_monthly_plan": "Kein aktiver Monatsvertrag",
-      "already_invoiced": "Für diesen Abrechnungszeitraum bereits abgerechnet"
-    },
-    "createdToastSingle": "1 Rechnungsentwurf erstellt",
-    "createdToastPlural": "{{count}} Rechnungsentwürfe erstellt",
-    "createdDesc": "Überprüfen und versenden Sie diese direkt beim jeweiligen Mitglied.",
-    "alreadyCoveredDesc": "Keine neuen Rechnungen – alle aktivierten Mitglieder sind für diesen Zeitraum bereits abgedeckt.",
-    "failedTitle": "Generierung fehlgeschlagen",
-    "failedDesc": "Rechnungen konnten nicht erstellt werden."
-  },
   "preview": {
     "invoiceTitle": "Rechnung {{number}}",
     "fallbackTitle": "Rechnung",
@@ -124,6 +180,8 @@
   },
   "editor": {
     "title": "Neue Rechnung",
+    "titleEdit": "Rechnung {{number}} bearbeiten",
+    "editingDraft": "Änderungen gelten nur für diesen Entwurf; die Rechnungsnummer bleibt gleich.",
     "forClient": "Für {{name}}.",
     "willSaveAs": "Wird gespeichert als <1>{{number}}</1>.",
     "billTo": {
@@ -149,7 +207,9 @@
       "attnHint": "(optional)",
       "attnPlaceholder": "Vollständiger Name des Ansprechpartners",
       "prefilledHelp": "Aus dem Mitgliedsprofil übernommen. Änderungen hier gelten nur für diese Rechnung – speichern Sie Firmendaten im Profil, um erneutes Eingeben zu vermeiden.",
-      "manualHelp": "Manuelle Rechnung – geben Sie die Empfängerdaten unten ein. Es wird nichts im Mitgliedsprofil gespeichert."
+      "manualHelp": "Manuelle Rechnung – geben Sie die Empfängerdaten unten ein. Es wird nichts im Mitgliedsprofil gespeichert.",
+      "editButton": "Bearbeiten",
+      "collapse": "Einklappen"
     },
     "numberAndDates": {
       "title": "Nummer & Daten",
@@ -162,15 +222,23 @@
       "dueDate": "Fälligkeitsdatum",
       "dueDateHint": "(optional)",
       "periodFrom": "Zeitraum von",
-      "periodTo": "Zeitraum bis"
+      "periodTo": "Zeitraum bis",
+      "fixedNumber": "Ein Entwurf behält die Nummer, mit der er erstellt wurde."
+    },
+    "sources": {
+      "fromPlans": "Aus Tarifen",
+      "fromCharges": "Aus Gebühren",
+      "includeSharedPlans": "Tarife von Mitgliedern mit diesem Rechnungsprofil einbeziehen",
+      "includeSharedCharges": "Gebühren von Mitgliedern mit diesem Rechnungsprofil einbeziehen",
+      "manualEntryHint": "Fügen Sie oben Gebühren hinzu oder geben Sie Rechnungspositionen manuell ein."
     },
     "planGeneration": {
       "title": "Aus Tarif generieren",
-      "description": "Abrechnungszeitraum nach Kalendermonaten aufteilen und Teilmonate anteilig berechnen.",
+      "description": "Abrechnungszeitraum nach Kalendermonaten aufteilen und Teilmonate anteilig berechnen. Verlängern Sie „Zeitraum bis“, um mehrere Monate im Voraus abzurechnen – eine Position pro Monat.",
       "clear": "Zurücksetzen",
       "generateLines": "Positionen erstellen",
       "loading": "Aktive Tarife werden geladen…",
-      "noPlans": "Kein aktiver Monatsvertrag für Schreibtisch, virtuelles Büro oder eigenes Büro mit Preis gefunden. Sie können Rechnungspositionen manuell eingeben.",
+      "noPlans": "Kein laufender Monatsvertrag für Schreibtisch, virtuelles Büro oder eigenes Büro gefunden, der über dieses Rechnungsprofil abgerechnet werden kann. Wochen-, Tages- und Schreibtischbuchungen mit eigener Laufzeit finden Sie unter „Aus Gebühren“, oder Sie geben Rechnungspositionen manuell ein.",
       "selectPlaceholder": "Aktiven Tarif auswählen",
       "perMonth": "{{price}} pro Monat",
       "perMonthUnit": "/Monat",
@@ -184,16 +252,28 @@
       "datesLimited": "Daten wurden auf die aktive Vertragslaufzeit begrenzt: {{period}}.",
       "linesGenerated": "{{count}} Monatsposition erstellt.",
       "linesGenerated_plural": "{{count}} Monatspositionen erstellt.",
+      "coveredByCharges": "{{count}} bestehende Forderung statt einer Monatsposition übernommen; {{lines}} für die nicht abgedeckten Tage erstellt.",
+      "coveredByCharges_plural": "{{count}} bestehende Forderungen statt Monatspositionen übernommen; {{lines}} für die nicht abgedeckten Tage erstellt.",
       "failedTitle": "Positionen konnten nicht erstellt werden",
+      "coverageLoading": "Vorhandene Belastungen für diesen Zeitraum werden geprüft…",
+      "coverageFailed": "Die vorhandenen Belastungen für diesen Zeitraum konnten nicht geladen werden, daher lassen sich Planzeilen nicht auf Doppelabrechnung prüfen. Öffnen Sie die Rechnung erneut.",
       "failedDesc": "Überprüfen Sie den ausgewählten Tarif und die Abrechnungsdaten."
     },
     "unlinkedCharges": {
       "title": "Nicht zugeordnete Posten",
-      "description": "Bestehende Gebühren für dieses Mitglied, die noch auf keiner Rechnung stehen – fügen Sie eine hinzu, anstatt sie erneut einzugeben.",
+      "description": "Bestehende Gebühren, die noch auf keiner Rechnung stehen: die über dieses Rechnungsprofil abgerechneten sowie eigene Buchungen und manuelle Gebühren des Mitglieds. Fügen Sie eine hinzu, anstatt sie erneut einzugeben.",
       "loading": "Wird geladen…",
-      "empty": "Keine nicht zugeordneten Posten für dieses Mitglied.",
+      "empty": "Keine nicht zugeordneten Gebühren für dieses Rechnungsprofil.",
       "add": "Hinzufügen",
       "loadMore": "Mehr laden",
+      "allPeriods": "Gebühren aus allen Zeiträumen anzeigen",
+      "allPeriodsNote": "Gebühren aus anderen Zeiträumen bleiben auf der Rechnung, bis sich der Abrechnungszeitraum ändert.",
+      "billedElsewhere_one": "{{count}} Gebühr ist {{payer}} zugeordnet – wechseln Sie den Rechnungsempfänger, um sie zu sehen.",
+      "billedElsewhere_other": "{{count}} Gebühren sind {{payer}} zugeordnet – wechseln Sie den Rechnungsempfänger, um sie zu sehen.",
+      "billedElsewhereCapped": "{{count}}+ Gebühren sind {{payer}} zugeordnet – wechseln Sie den Rechnungsempfänger, um sie zu sehen.",
+      "payerOwnDetails": "den eigenen Rechnungsdaten des Mitglieds",
+      "payerOtherProfile": "einem anderen Rechnungsprofil",
+      "payerSeveral": "anderen Rechnungsprofilen",
       "unlinkedWarningTitle": "Rechnung gespeichert, aber einige Posten wurden nicht verknüpft",
       "unlinkedWarningDesc": "{{failedCount}} von {{totalCount}} ausgewählten Gebühren konnten nicht mit der Rechnung verknüpft werden. Prüfen Sie dies vor dem Senden, da der Betrag sonst möglicherweise erneut berechnet wird."
     },
@@ -240,6 +320,10 @@
       "compiledBy": "Erstellt von",
       "compiledByPlaceholder": "Name des Buchhalters"
     },
+    "notesAndSignatures": {
+      "title": "Notizen & Unterschriften",
+      "hasNotes": "Notiz hinzugefügt"
+    },
     "preview": {
       "iframeTitle": "Rechnungsvorschau",
       "generating": "Vorschau wird erstellt…",
@@ -259,26 +343,17 @@
     },
     "footer": {
       "cancel": "Abbrechen",
-      "saveDraft": "Entwurf speichern"
+      "saveDraft": "Entwurf speichern",
+      "saveChanges": "Änderungen speichern"
     },
     "toasts": {
       "savedTitle": "Rechnung gespeichert",
       "savedDesc": "Entwurf {{number}} erstellt.",
       "saveFailedTitle": "Speichern fehlgeschlagen",
-      "saveFailedDesc": "Rechnung konnte nicht gespeichert werden."
+      "saveFailedDesc": "Rechnung konnte nicht gespeichert werden.",
+      "updatedDesc": "Entwurf {{number}} aktualisiert.",
+      "planChargesLinkDeferred": "Tarifgebühren werden beim Senden mit dieser Rechnung verknüpft."
     }
-  },
-  "memberDialog": {
-    "titleStatement": "Kontoauszug",
-    "titleInvoices": "Rechnungen",
-    "descStatement": "Gebühren und Zahlungen in einem chronologischen laufenden Saldo.",
-    "descInvoices_one": "{{count}} Rechnung – senden, herunterladen oder als bezahlt markieren.",
-    "descInvoices_other": "{{count}} Rechnungen – senden, herunterladen oder als bezahlt markieren.",
-    "descNoInvoices": "Noch keine Rechnungen vorhanden. Erstellen Sie die erste unten.",
-    "tabInvoices": "Rechnungen",
-    "tabStatement": "Kontoauszug",
-    "close": "Schließen",
-    "addInvoice": "Rechnung hinzufügen"
   },
   "statement": {
     "balance": "Saldo",
@@ -303,7 +378,231 @@
     "ascending": "aufsteigend",
     "descending": "absteigend",
     "invoiceLink": "Rechnung {{number}}",
+    "coverage": "Zeitraum {{period}}",
     "editPayment": "Zahlung bearbeiten",
-    "immutablePayment": "Unveränderliche Zahlung"
+    "editCharge": "Gebühr bearbeiten",
+    "payCharge": "Zahlung für diese Belastung erfassen",
+    "recordPayment": "Zahlung erfassen",
+    "immutablePayment": "Unveränderliche Zahlung",
+    "upcoming": "Bevorstehend",
+    "edit": {
+      "date": "Datum",
+      "description": "Beschreibung",
+      "note": "Notiz",
+      "method": "Zahlungsart",
+      "amount": "Betrag",
+      "save": "Änderungen speichern",
+      "deleteCharge": "Gebühr löschen",
+      "deletePayment": "Zahlung löschen"
+    },
+    "payChoice": {
+      "title": "Die ganze Rechnung {{number}} bezahlen?",
+      "description": "„{{charge}}“ ist eine von mehreren Positionen der Rechnung {{number}}. Wird die ganze Rechnung bezahlt, sind alle Positionen auf einmal beglichen; wird nur diese Gebühr bezahlt, bleibt der Rest der Rechnung offen.",
+      "chargeOnly": "Nur diese Gebühr ({{amount}})",
+      "wholeInvoice": "Ganze Rechnung ({{amount}})"
+    }
+  },
+  "pdf": {
+    "brandPart1": "OhMy",
+    "brandPart2": "Desk",
+    "brandTagline": "Coworking on autopilot",
+    "noLineItems": "Keine Positionen.",
+    "footer": "Erstellt mit OhMyDesk · ohmydesk.app",
+    "paymentMethods": {
+      "credit_card": "Kreditkarte",
+      "cash": "Barzahlung",
+      "bank_transfer": "Banküberweisung"
+    }
+  },
+  "memberList": {
+    "loading": "Wird geladen…",
+    "empty": "Keine früheren Rechnungen für dieses Mitglied.",
+    "covers": "Zeitraum {{period}}",
+    "issued": "Ausgestellt am {{date}}",
+    "showMore": "{{count}} weitere anzeigen"
+  },
+  "exportCsv": "CSV exportieren",
+  "lineRecipient": "Leistungsempfänger: {{name}}",
+  "export": {
+    "title": "Rechnungen exportieren",
+    "description": "Eine CSV-Datei mit allen Rechnungen, die im gewählten Monat ausgestellt wurden (nach Rechnungsdatum) – für Ihre Buchhaltung. Entwürfe und stornierte Rechnungen sind mit ihrem Status enthalten.",
+    "count_one": "{{count}} Rechnung in diesem Monat ausgestellt",
+    "count_other": "{{count}} Rechnungen in diesem Monat ausgestellt",
+    "download": "CSV herunterladen",
+    "failed": "Die CSV-Datei konnte nicht erstellt werden",
+    "ownDetails": "Eigene Daten des Mitglieds",
+    "loadFailed": "Rechnungen für diesen Monat konnten nicht geladen werden",
+    "columns": {
+      "invoiceNumber": "Rechnungsnummer",
+      "issueDate": "Rechnungsdatum",
+      "dueDate": "Fällig am",
+      "status": "Status",
+      "customer": "Kunde",
+      "billingEntity": "Rechnungsempfänger",
+      "customerEmail": "E-Mail Kunde",
+      "customerVatId": "USt-IdNr. Kunde",
+      "periodStart": "Leistungszeitraum von",
+      "periodEnd": "Leistungszeitraum bis",
+      "net": "Netto",
+      "vatRate": "USt. %",
+      "vatAmount": "USt.",
+      "total": "Brutto",
+      "currency": "Währung",
+      "paidOn": "Bezahlt am"
+    }
+  },
+  "autoPage": {
+    "title": "Auto-Abrechnung",
+    "description": "Monatliche Entwürfe für Mitglieder mit wiederkehrenden Tarifen, einer pro Zahler. Entwürfe werden erst versendet, wenn Sie sie senden.",
+    "backToInvoices": "Zurück zu Rechnungen",
+    "refresh": "Aktualisieren",
+    "loading": "Monat wird geladen…",
+    "loadFailed": "Dieser Monat konnte nicht geladen werden. Bitte erneut versuchen.",
+    "prevMonth": "Vorheriger Monat",
+    "nextMonth": "Nächster Monat",
+    "status": {
+      "line": "Automatische Entwürfe: {{state}} · {{lead}} · {{due}} · automatischer Versand: {{autoSend}}",
+      "on": "an",
+      "off": "aus",
+      "leadSameDay": "am selben Tag",
+      "leadBefore_one": "{{count}} Tag vorher",
+      "leadBefore_other": "{{count}} Tage vorher",
+      "leadAfter_one": "{{count}} Tag danach",
+      "leadAfter_other": "{{count}} Tage danach",
+      "dueOnIssue": "fällig bei Ausstellung",
+      "dueIn_one": "fällig in {{count}} Tag",
+      "dueIn_other": "fällig in {{count}} Tagen",
+      "noDueDate": "kein Fälligkeitsdatum",
+      "settingsLink": "Einstellungen für Abrechnung & Rechnungen"
+    },
+    "summary": {
+      "toInvoice": "Abzurechnen",
+      "alreadyInvoiced": "Bereits abgerechnet",
+      "uncharged": "Gebühren ohne Rechnung",
+      "missingBilling": "Fehlende Rechnungsdaten",
+      "invoiceCount_one": "{{count}} Rechnung",
+      "invoiceCount_other": "{{count}} Rechnungen",
+      "chargeCount_one": "{{count}} Gebühr",
+      "chargeCount_other": "{{count}} Gebühren",
+      "memberCount_one": "{{count}} Mitglied",
+      "memberCount_other": "{{count}} Mitglieder"
+    },
+    "toInvoice": {
+      "title": "Abzurechnen",
+      "description": "Ein Entwurf pro Zahler für diesen Monat. Wählen Sie Gruppen aus, um nur einige davon zu erstellen.",
+      "createSelected": "Auswahl erstellen ({{count}})",
+      "createAll": "Alle Entwürfe erstellen ({{count}})",
+      "selectGroup": "{{payer}} auswählen",
+      "empty": "Für diesen Monat gibt es nichts abzurechnen.",
+      "emptyHint": "Mitglieder erscheinen hier, sobald die Auto-Abrechnung für sie aktiv ist und ihre Tarife in diesem Monat Gebühren haben.",
+      "issue": "Ausgestellt {{date}}",
+      "due": "Fällig {{date}}",
+      "noDue": "Kein Fälligkeitsdatum"
+    },
+    "existing": {
+      "title": "Bereits für diesen Monat abgerechnet",
+      "description": "Für den angezeigten Monat erstellte oder versendete Rechnungen. Wählen Sie Entwürfe aus, um sie gesammelt zu versenden.",
+      "empty": "Für diesen Monat gibt es noch keine Rechnungen.",
+      "source": {
+        "auto": "Auto",
+        "manual": "Manuell"
+      },
+      "justCreated": "Neu"
+    },
+    "planKind": {
+      "hotdesk": "Hotdesk",
+      "virtual_office": "Virtuelles Büro",
+      "private_office": "Eigenes Büro",
+      "monthly_desk": "Monatlicher Schreibtisch",
+      "other": "Anderer Tarif"
+    },
+    "createDialog": {
+      "title": "Entwürfe erstellen",
+      "description": "Für die folgenden Gruppen werden Entwürfe erstellt. An Mitglieder wird nichts gesendet.",
+      "summary_one": "{{count}} Rechnungsentwurf · {{total}}",
+      "summary_other": "{{count}} Rechnungsentwürfe · {{total}}",
+      "issueDate": "Ausstellungsdatum",
+      "dueDate": "Fälligkeitsdatum",
+      "chronology": "Rechnungsnummern müssen den Ausstellungsdaten folgen; dieses Datum liegt vor Rechnung {{number}} ({{date}}).",
+      "confirm_one": "{{count}} Entwurf erstellen",
+      "confirm_other": "{{count}} Entwürfe erstellen",
+      "pending": "Entwürfe werden erstellt…",
+      "dueDateHint": "Aus den Zahlungsbedingungen in den Abrechnungseinstellungen; gilt für alle Entwürfe. Leer lassen für kein Fälligkeitsdatum.",
+      "dueBeforeIssue": "Das Fälligkeitsdatum darf nicht vor dem Ausstellungsdatum liegen."
+    },
+    "toast": {
+      "created_one": "{{count}} Rechnungsentwurf erstellt",
+      "created_other": "{{count}} Rechnungsentwürfe erstellt",
+      "createdDesc": "Prüfen und senden Sie jeden Entwurf aus der Liste unten.",
+      "failed": "Die Entwürfe konnten nicht erstellt werden",
+      "skipped_one": "{{count}} Entwurf wurde nicht erstellt: {{reasons}}",
+      "skipped_other": "{{count}} Entwürfe wurden nicht erstellt: {{reasons}}",
+      "skipReason": {
+        "already_invoiced": "bereits abgerechnet",
+        "missing_charge": "eine Plangebühr wurde entfernt, prüfen Sie die Gebühren des Mitglieds",
+        "not_eligible": "nicht mehr berechtigt (Mitglied ausgeschlossen oder Rechnungsdaten fehlen)",
+        "unknown_group": "nicht mehr fällig, laden Sie die Seite neu",
+        "write_failed": "konnte nicht erstellt werden, versuchen Sie es erneut oder wenden Sie sich an den Support",
+        "cycle_not_generated": "die Plangebühr für diesen Zeitraum konnte nicht erstellt werden"
+      }
+    },
+    "toCreate": {
+      "title": "Zu erstellende Gebühren",
+      "description": "Diese Pläne warten auf eine Gebühr: Sie wurde entfernt, oder der Zyklus wurde nie erzeugt, obwohl sein Rechnungsdatum vorbei ist (zum Beispiel ein Plan, der nach dem Lauf angelegt wurde). Erstellen Sie sie hier; sie werden auf heute datiert und dann wie alle anderen abgerechnet.",
+      "createSelected_one": "{{count}} ausgewählte erstellen",
+      "createSelected_other": "{{count}} ausgewählte erstellen",
+      "createAll_one": "{{count}} Gebühr erstellen",
+      "createAll_other": "Alle {{count}} Gebühren erstellen",
+      "select": "{{name}} auswählen",
+      "reason": {
+        "charge_removed": "Gebühr entfernt",
+        "not_generated": "Noch nicht erzeugt"
+      },
+      "confirmTitle_one": "{{count}} Gebühr erstellen?",
+      "confirmTitle_other": "{{count}} Gebühren erstellen?",
+      "confirmDescription": "Jede Gebühr wird mit heutigem Datum zum aktuellen Planpreis auf das Konto des Mitglieds gebucht. Es wird keine Rechnung erstellt; die Gebühren erscheinen danach unter Abzurechnen.",
+      "confirm_one": "{{count}} Gebühr erstellen",
+      "confirm_other": "{{count}} Gebühren erstellen",
+      "toast": {
+        "created_one": "{{count}} Gebühr erstellt",
+        "created_other": "{{count}} Gebühren erstellt",
+        "createdDesc": "Sie erscheinen jetzt unter Abzurechnen.",
+        "skipped_one": "{{count}} Position blieb unverändert: Sie hat bereits eine Gebühr, ist abgerechnet oder noch nicht fällig.",
+        "skipped_other": "{{count}} Positionen blieben unverändert: Sie haben bereits eine Gebühr, sind abgerechnet oder noch nicht fällig.",
+        "failed": "Die Gebühren konnten nicht erstellt werden"
+      }
+    },
+    "charges": {
+      "title": "Gebühren ohne Rechnung",
+      "description": "Gebühren dieses Monats, die kein Entwurf abdeckt. Bei jeder steht, warum sie noch nicht abgerechnet ist.",
+      "empty": "Jede Gebühr dieses Monats ist durch eine Rechnung abgedeckt.",
+      "reason": {
+        "in_preview": "In der Vorschau",
+        "member_excluded": "Mitglied ausgeschlossen",
+        "missing_billing_info": "Fehlende Rechnungsdaten"
+      }
+    },
+    "missing": {
+      "title": "Fehlende Rechnungsdaten",
+      "description": "Diese Mitglieder sind angemeldet, aber die Auto-Abrechnung braucht zuerst die Rechnungsdaten ihres Zahlers.",
+      "empty": "Keinem angemeldeten Mitglied fehlen Rechnungsdaten.",
+      "payer": "Zahler: {{name}}",
+      "noPayer": "Noch kein Zahler",
+      "fields": {
+        "billing_legal_name": "Firmenname",
+        "billing_address": "Adresse",
+        "billing_tax_id": "Steuernummer"
+      },
+      "openBilling": "Abrechnung öffnen"
+    },
+    "excluded": {
+      "title": "Von der Auto-Abrechnung ausgeschlossen",
+      "description": "Für diese Mitglieder ist die Auto-Abrechnung aus, daher bleiben ihre Gebühren unabgerechnet, bis Sie sie einschalten.",
+      "empty": "Kein Mitglied ist von der Auto-Abrechnung ausgeschlossen.",
+      "turnOn": "Einschalten",
+      "turningOn": "Wird eingeschaltet…",
+      "turnedOn": "Auto-Abrechnung ist für {{name}} eingeschaltet.",
+      "turnOnFailed": "Auto-Abrechnung konnte nicht eingeschaltet werden"
+    }
   }
 }

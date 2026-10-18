@@ -107,5 +107,13 @@
     "empty": "No expenses logged this month.",
     "uncategorized": "Uncategorized",
     "total": "Total"
+  },
+  "loading": {
+    "updating": "Updating…",
+    "heroTitle": "Pulling together {{month}}…",
+    "heroBody": "Revenue, expenses and occupancy will be here in a moment.",
+    "trend": "Loading the last 6 months…",
+    "trendMeta": "Last 6 months",
+    "card": "Loading…"
   }
 }

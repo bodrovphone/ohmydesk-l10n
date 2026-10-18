@@ -1,0 +1,245 @@
+{
+  "heading": "Planes",
+  "pageDescription": "Establece los productos, precios y reglas de disponibilidad que ofreces para puestos y oficinas virtuales.",
+  "status": {
+    "active": "Activo",
+    "disabled": "Deshabilitado",
+    "unsaved": "Sin guardar",
+    "saved": "Guardado",
+    "saving": "Guardando…",
+    "enable": "Habilitar",
+    "disable": "Deshabilitar",
+    "saveChanges": "Guardar cambios",
+    "expand": "Expandir {{title}}",
+    "collapse": "Contraer {{title}}"
+  },
+  "variantList": {
+    "headers": {
+      "name": "Nombre",
+      "days": "Días",
+      "price": "Precio",
+      "autoInvoice": "Facturación automática",
+      "sharedInvoiceDate": "Fecha de factura compartida",
+      "discount": "Descuento"
+    },
+    "namePlaceholder": "Ej. Estándar",
+    "descriptionPlaceholder": "Opcional — se muestra a los visitantes en la página de reservas pública, ej. qué incluye, condiciones.",
+    "addCaption": "Añadir descripción",
+    "daysSuffix": "días",
+    "autoInvoiceOn": "Activado",
+    "calendarMonth": "Mes natural",
+    "assignmentDate": "Fecha de asignación",
+    "sharedInvoiceDateHelp": "Mes natural: prorratea el primer cargo hasta fin de mes; los ciclos posteriores comienzan el día 1. Fecha de asignación: cobra un mes completo desde la fecha de inicio. Solo nuevas asignaciones.",
+    "remove": "Eliminar",
+    "addVariant": "Añadir variante",
+    "maxVariants": "Se ha alcanzado el máximo de {{max}} variantes"
+  },
+  "dayPass": {
+    "title": "Pase de un día",
+    "description": "Un día en un puesto, pagado por visita. Cada día es una reserva independiente y nada se acumula.",
+    "priceLabel": "Precio por día ({{currency}})",
+    "help": "Tarifa de un solo día · utilizada para visitas sin cita previa y reservas de enlaces públicos.",
+    "updated": "Pase de un día actualizado.",
+    "stopConfirmBody": "Los visitantes ya no podrán comprar un pase de un día en tu página de reservas pública, y el Pase de un día desaparecerá de la lista de planes cuando reserves desde el calendario de puestos. Las reservas de día que ya tengas mantendrán sus fechas y precio. El cambio se aplicará cuando guardes."
+  },
+  "dedicatedDesk": {
+    "title": "Planes de puesto reservado",
+    "description": "Un puesto asignado a una persona, por día, semana, mes o la duración que elijas. Pase de un día, Semanal y Mensual tienen duraciones fijas; las duraciones cuentan días naturales, incluyendo días libres.",
+    "updated": "Planes de puesto reservado actualizados.",
+    "saveFailed": "No se pudieron guardar los planes de puesto reservado."
+  },
+  "deskPlans": {
+    "length": {
+      "day": "1 día",
+      "week": "7 días",
+      "month": "1 mes"
+    },
+    "lockedHint": "Duración fija. Añade una variante para una duración diferente.",
+    "monthHint": "Un mes natural, incluyendo días libres.",
+    "termHint": "Días naturales, incluyendo días libres.",
+    "unitLabel": "Unidad de duración",
+    "unitDays": "días",
+    "unitMonth": "mes",
+    "offer": "Ofrecer",
+    "termName_one": "Plan de {{count}} día",
+    "termName_other": "Plan de {{count}} días",
+    "invalidTerm": "Introduce al menos 2 días.",
+    "removeConfirmTitle": "¿Eliminar {{name}}?",
+    "removeConfirmBody": "Las nuevas reservas ya no podrán usarlo. Las reservas ya existentes mantendrán sus fechas, precio y facturas. El cambio se aplicará cuando guardes.",
+    "removeAction": "Eliminar",
+    "autoInvoiceLabel": "Facturación automática",
+    "autoInvoiceHint": "Los miembros con este plan se facturan automáticamente cuando su propia facturación automática está activada."
+  },
+  "dedicated": {
+    "weeklyTitle": "Plan Semanal",
+    "daysLabelMonthly": "Días (opcional)",
+    "monthlyDaysPlaceholder": "Mes",
+    "monthlyDaysHelp": "Deja los días vacíos para un mes natural continuo. Introduce un número para un pase mensual de duración fija (ej. 60 días).",
+    "enableTier": "Ofrecer {{title}}",
+    "disableTier": "Dejar de ofrecer {{title}}",
+    "stopOffering": "Dejar de ofrecer",
+    "stopConfirmTitle": "¿Dejar de ofrecer {{title}}?",
+    "stopConfirmBody": "Las nuevas reservas ya no podrán usarlo: desaparecerá del calendario de puestos, de Miembros → Activar plan y de tu página pública de reservas. Las reservas ya existentes en {{title}} mantendrán sus fechas, precio y facturas. El cambio se aplicará cuando guardes.",
+    "weeklyDesc": "Un puesto asignado por un período de siete días. Si solo los últimos días son festivos, el período termina el día hábil anterior.",
+    "monthlyTitle": "Plan mensual",
+    "monthlyDesc": "Un puesto asignado por un mes natural continuo, desde la fecha de inicio hasta el día anterior a la misma fecha del mes siguiente. Puede ser de duración indefinida, renovándose mes a mes hasta que lo finalices, y puede congelarse a mitad de período con los días no utilizados guardados para más adelante.",
+    "priceLabel": "Precio por {{unit}} ({{currency}})",
+    "unitWeek": "semana",
+    "unitMonth": "mes",
+    "updated": "{{title}} actualizado.",
+    "disabledToast": "{{title}} ya no se ofrece."
+  },
+  "flex": {
+    "title": "Plan flexible",
+    "description": "Un paquete de visitas vendido a un precio fijo por el paquete. El miembro reserva un puesto y cada reserva consume una visita; el saldo disminuye automáticamente, y pueden reservar a través de un enlace personal.",
+    "noPermission": "Pide a un propietario o administrador del espacio que configure el plan flexible.",
+    "disableConfirmTitle": "¿Desactivar el plan flexible?",
+    "disableConfirmBody": "No se pueden vender nuevos paquetes flexibles. Se mantienen los saldos de los miembros existentes; los miembros aún pueden usar sus días restantes.",
+    "bundlesLabel": "Paquetes flexibles: días × precio ({{currency}})",
+    "bundlesHelp": "Cada paquete se vende como un número fijo de días. Los días establecen cuántas visitas al puesto se incluyen.",
+    "daysLabel": "Días",
+    "perVisit": "Por visita",
+    "autoExpireLabel": "Caducidad automática del saldo no utilizado después de",
+    "autoExpireDays": "(días, opcional)",
+    "never": "Nunca",
+    "autoExpireHelp": "Deja en blanco para que nunca caduque. Si se establece, el saldo de cada miembro tendrá una fecha límite fija a partir del día en que se active su plan; los días no utilizados en esa fecha se perderán. Se enviará un correo electrónico de recordatorio con antelación.",
+    "updated": "Plan flexible actualizado.",
+    "disabledToast": "Plan flexible desactivado: se mantienen los saldos existentes.",
+    "renewsMonthly": "Se renueva mensualmente",
+    "renewsMonthlyHelp_one": "Se cobra cada mes por Stripe. Cada mes comienza con {{count}} visita nueva; las visitas no utilizadas no se acumulan.",
+    "renewsMonthlyHelp_other": "Se cobra cada mes por Stripe. Cada mes comienza con {{count}} visitas nuevas; las visitas no utilizadas no se acumulan.",
+    "renewsMonthlyNeedsSubscriptions": "Necesita que la opción \"Renovar automáticamente pases semanales y mensuales\" esté activada en Ajustes → Integraciones → Stripe. Hasta entonces, este plan se vende como un paquete único."
+  },
+  "meetingHours": {
+    "title": "Horas de sala de reuniones",
+    "description": "Paquetes de horas de sala de reuniones vendidos a un precio fijo. Cada reserva por horas contra el paquete consume su duración del saldo; una reserva que es gratuita con la reserva de puesto del miembro ese día no consume horas.",
+    "noPermission": "Pide a un propietario o administrador del espacio que configure los paquetes de horas de sala de reuniones.",
+    "packsLabel": "Paquetes de horas: horas × precio ({{currency}})",
+    "hoursLabel": "Horas",
+    "packsHelp": "Cada paquete se vende como un número fijo de horas desde la tarjeta de miembro.",
+    "defaultLabel": "{{hours}} horas de sala de reuniones",
+    "updated": "Paquetes de horas de sala de reuniones actualizados.",
+    "disabledToast": "Paquetes de horas de sala de reuniones desactivados: los miembros mantienen sus saldos.",
+    "disableConfirmTitle": "¿Desactivar los paquetes de horas de sala de reuniones?",
+    "disableConfirmBody": "No se pueden vender nuevos paquetes. Se mantienen los saldos de los miembros existentes y los paquetes permanecen en su historial."
+  },
+  "hotdesk": {
+    "title": "Plan de puesto flexible",
+    "description": "Una membresía mensual fija para cualquier puesto que esté libre.",
+    "noPermission": "Pide a un propietario o administrador del espacio que configure el plan de puesto flexible.",
+    "disableConfirmTitle": "¿Desactivar el plan de puesto flexible?",
+    "disableConfirmBody": "Los miembros con un plan de puesto flexible activo ya no aparecerán en el indicador de demanda del calendario.",
+    "help": "Acceso ilimitado a puestos durante el período del plan. Actívalo para hacer un seguimiento de los miembros de puesto flexible y ver la demanda en el calendario.",
+    "tiersLabel": "Niveles ({{currency}})",
+    "daysLabel": "Período (días)",
+    "periodHelp": "El período establece la duración predeterminada del plan en días. Se utiliza para informes de ingresos y autofacturación.",
+    "updated": "Plan de puesto flexible actualizado.",
+    "disabledToast": "Plan de puesto flexible desactivado."
+  },
+  "virtualOffice": {
+    "title": "Plan de oficina virtual",
+    "description": "Una dirección comercial y gestión de correo, sin puesto alguno.",
+    "noPermission": "Pide a un propietario o administrador del espacio que configure el plan de oficina virtual.",
+    "disableConfirmTitle": "¿Desactivar el plan de oficina virtual?",
+    "disableConfirmBody": "Los miembros con un plan de oficina virtual ya no se contarán en los ingresos.",
+    "help": "Los miembros con un plan de oficina virtual obtienen una dirección comercial y gestión de correo, sin acceso a puestos. Actívalo para hacer un seguimiento de los miembros de oficina virtual y contar sus ingresos (nunca ocupan capacidad de puestos).",
+    "priceLabel": "Precio mensual ({{currency}})",
+    "revenueHelp": "Se utiliza para informes de ingresos y autofacturación.",
+    "photosFor": "Fotos para \"{{name}}\" en la reserva pública",
+    "updated": "Plan de oficina virtual actualizado.",
+    "disabledToast": "Plan de oficina virtual desactivado."
+  },
+  "services": {
+    "title": "Servicios y extras",
+    "description": "Café, aperitivos, comidas, taquillas y otros extras con un precio fijo, listos para añadir a las reservas.",
+    "empty": "Todavía no hay servicios. Añade café, una caja de aperitivos o una taquilla con su precio.",
+    "help": "Las reservas aún no pueden usar servicios; lo siguiente es añadirlos a las reservas y facturas.",
+    "noPermission": "Pide a un propietario o administrador del espacio que gestione los servicios y extras.",
+    "add": "Añadir servicio",
+    "nameLabel": "Nombre del servicio",
+    "namePlaceholder": "Ej: Café con leche",
+    "priceLabel": "Precio",
+    "unitLabel": "Cobrado",
+    "descriptionLabel": "Descripción",
+    "descriptionPlaceholder": "Opcional — qué incluye, ej. café de filtro y té todo el día.",
+    "appliesToLabel": "Disponible para",
+    "appliesToEmpty": "Aún no se ofrece en ningún sitio: marca al menos un tipo de reserva arriba, o este extra no aparecerá en ninguna reserva.",
+    "publicEnabled": "Mostrar en la reserva pública",
+    "allowQuantity": "El cliente puede elegir la cantidad",
+    "maxQuantityShort": "Máx.",
+    "maxQuantityLabel": "Cantidad máxima",
+    "maxQuantityPlaceholder": "Sin límite",
+    "archive": "Archivar",
+    "restore": "Restaurar",
+    "archivedHeading_one": "{{count}} servicio archivado",
+    "archivedHeading_other": "{{count}} servicios archivados",
+    "updated": "Servicios actualizados.",
+    "units": {
+      "per_booking": "Por reserva",
+      "per_day": "Por día",
+      "per_hour": "Por hora"
+    },
+    "appliesTo": {
+      "day_pass": "Pase de un día",
+      "flex": "Bono flexible",
+      "weekly": "Plan semanal",
+      "monthly": "Plan mensual",
+      "meeting_room_hourly": "Sala de reuniones (por hora)",
+      "meeting_room_whole_day": "Sala de reuniones (día completo)"
+    },
+    "errors": {
+      "nameRequired": "Introduce un nombre.",
+      "maxQuantityInvalid": "La cantidad máxima debe ser un número entero de 1 o más.",
+      "fixRows": "Algunos servicios necesitan una corrección antes de guardar.",
+      "saveFailed": "No se pudieron guardar los servicios. Inténtalo de nuevo."
+    },
+    "perPerson": "Precio por persona",
+    "perPersonShort": "por persona",
+    "perPersonHint": "Se cobra por cada persona que asiste; la reserva pregunta cuántas. Solo para salas de reuniones.",
+    "perPersonRoomsOnly": "Los servicios por persona son solo para salas de reuniones.",
+    "roomsLabel": "Disponible en salas",
+    "allRooms": "Todas las salas"
+  },
+  "pricingAdvisor": {
+    "eyebrow": "OhMyDesk AI · Asesor de precios",
+    "preamble": "Basado en los últimos 30 días de reservas y tus tarifas actuales:",
+    "dismissAll": "Descartar todas las sugerencias",
+    "weekVsMonth": {
+      "bold": "Semanal y Mensual tienen casi el mismo precio por día",
+      "text": "({{week}} vs {{month}}). Los miembros pueden optar por el plan Semanal para evitar el compromiso.",
+      "cta": "Cómo solucionarlo"
+    },
+    "dayMover": {
+      "bold": "El Pase de un Día es tu producto estrella",
+      "text": "({{sold}} vendidos en los últimos 30 días). Subirlo {{sym}}1 ≈ +{{sym}}{{sold}}/mes, no se espera una caída a este volumen.",
+      "cta": "Subir a {{sym}}{{price}}"
+    },
+    "flexCliff": {
+      "bold": "El bono flexible por visita es de {{sym}}{{flex}}",
+      "text": "— más barato que tu Pase de un Día de {{sym}}{{day}}. Esto es intencional (descuento por compromiso), pero {{sym}}{{diff}} es una diferencia muy grande.",
+      "cta": "Reducir la brecha"
+    }
+  },
+  "pricingGroups": {
+    "title": "Grupos de precios",
+    "description": "Etiqueta a los miembros en grupos con nombre (ej. Estudiante, Amigos y Familia) para un porcentaje de descuento en todos los precios — puestos, salas de reuniones y oficinas privadas.",
+    "empty": "Aún no hay grupos de precios.",
+    "placeholder": "Ej: Estudiante",
+    "addGroup": "Añadir grupo",
+    "maxGroups": "Se ha alcanzado el máximo de {{max}} grupos",
+    "updated": "Grupos de precios actualizados."
+  },
+  "matrix": {
+    "tag": "Alternativa",
+    "title": "Matriz de posicionamiento",
+    "sub": "Se desvía del diseño estándar. Representa los 4 planes por duración del compromiso × precio por día, con el tamaño de la burbuja = volumen de ventas. Una visualización rápida para detectar solapamientos.",
+    "cheaperAxis": "← más barato / por día",
+    "commitmentAxis": "compromiso más corto ←      → más largo",
+    "note": "Cuando dos burbujas están cerca, tus planes se solapan y los miembros elegirán el más barato. La matriz hace que la brecha (o la falta de ella) entre Semanal y Flexible sea obvia de un vistazo."
+  },
+  "conceptExploration": "Exploración de conceptos",
+  "quantityStepper": {
+    "increase": "Aumentar",
+    "decrease": "Disminuir"
+  }
+}

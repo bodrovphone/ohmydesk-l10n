@@ -1,0 +1,125 @@
+{
+  "title": "Tareas",
+  "accessRestricted": "Las tareas se comparten entre los propietarios y los administradores del espacio.",
+  "pageDescription": "Tareas pendientes compartidas y seguimiento de suministros para todos los que gestionan {{space}}.",
+  "subtitleSingle": "Una lista compartida para cada administrador. Las tareas con fecha reciben un recordatorio el día anterior.",
+  "subtitleGroup": "Una lista compartida para cada administrador en todas las ubicaciones. Las tareas con fecha reciben un recordatorio el día anterior.",
+  "addTask": "Añadir tarea",
+  "error": {
+    "loadFailed": "No se pudieron cargar las tareas",
+    "applyMigration": "Aplica la migración de la base de datos de Tareas y luego actualiza esta página."
+  },
+  "empty": {
+    "title": "Nada que perseguir",
+    "description": "Añade mantenimiento, seguimientos de miembros, compras de suministros o cualquier cosa que el equipo de gestión deba recordar.",
+    "addFirst": "Añade tu primera tarea"
+  },
+  "sections": {
+    "open": "Abierto",
+    "allDone": "Todo está hecho.",
+    "allDoneHint": "Las tareas completadas permanecen abajo como referencia.",
+    "completed": "Completado",
+    "completedDate": "Completado {{date}}"
+  },
+  "deadline": {
+    "overdue": "Vencido · {{date}}",
+    "dueToday": "Vence hoy",
+    "dueTomorrow": "Vence mañana",
+    "due": "Vence el {{date}}"
+  },
+  "actions": {
+    "reopen": "Reabrir",
+    "editAria": "Editar {{title}}",
+    "deleteAria": "Eliminar {{title}}",
+    "completeAria": "Completar {{title}}"
+  },
+  "dialog": {
+    "titleEdit": "Editar tarea",
+    "titleAdd": "Añadir tarea",
+    "description": "Todos los que gestionan este espacio pueden verlo y actualizarlo.",
+    "taskLabel": "Tarea",
+    "taskPlaceholder": "p. ej. Pedir granos de café",
+    "notesLabel": "Notas",
+    "notesPlaceholder": "Cualquier cosa que el próximo gerente deba saber",
+    "deadlineLabel": "Fecha límite",
+    "deadlineHint": "El equipo recibe un recordatorio a las 09:00 del día anterior.",
+    "saveChanges": "Guardar cambios",
+    "optional": "(opcional)"
+  },
+  "deleteDialog": {
+    "title": "¿Eliminar esta tarea?",
+    "description": "“{{title}}” se eliminará para todos los administradores. Esto no se puede deshacer.",
+    "confirm": "Eliminar tarea",
+    "cancel": "Cancelar"
+  },
+  "toasts": {
+    "completeError": "No se pudo completar la tarea",
+    "reopenError": "No se pudo reabrir la tarea",
+    "deleteSuccess": "Tarea eliminada",
+    "deleteError": "No se pudo eliminar la tarea",
+    "addSuccess": "Tarea añadida",
+    "addSuccessReminder": "Le recordaremos al equipo el día anterior.",
+    "updateSuccess": "Tarea actualizada",
+    "addError": "No se pudo añadir la tarea",
+    "updateError": "No se pudo actualizar la tarea",
+    "tryAgain": "Inténtalo de nuevo."
+  },
+  "inventory": {
+    "subtitle": "Controla el café, los productos de papel, los aperitivos y más. Marca un artículo como bajo de existencias —o deja que cruce su umbral— y lo marcaremos para reabastecimiento aquí y alertaremos al equipo al instante.",
+    "addItem": "Añadir artículo",
+    "errorLoad": "No se pudo cargar el inventario",
+    "errorLoadHint": "Actualiza esta página e inténtalo de nuevo.",
+    "empty": {
+      "title": "Aún no se han rastreado suministros",
+      "description": "Añade los consumibles que repones regularmente —café, papel higiénico, aperitivos— y nunca te quedes sin ellos por sorpresa.",
+      "addFirst": "Añade tu primer artículo"
+    },
+    "row": {
+      "decreaseAria": "Disminuir {{name}} en uno",
+      "increaseAria": "Aumentar {{name}} en uno",
+      "inStock": "en stock",
+      "restockAt": "· reponer en {{threshold}}{{unit}}",
+      "noQuantity": "No se rastrea la cantidad",
+      "restockRequested": "Reposición solicitada",
+      "markRestocked": "Marcar como reabastecido",
+      "runningLow": "Quedan pocas existencias",
+      "editAria": "Editar {{name}}",
+      "removeAria": "Eliminar {{name}}"
+    },
+    "dialog": {
+      "titleEdit": "Editar elemento",
+      "titleAdd": "Añadir elemento",
+      "description": "La cantidad y el umbral son opcionales. Establece ambos para marcar automáticamente una reposición cuando el stock sea bajo.",
+      "nameLabel": "Elemento",
+      "namePlaceholder": "p. ej. Papel higiénico",
+      "quantityLabel": "Cantidad",
+      "quantityPlaceholder": "p. ej. 12",
+      "thresholdLabel": "Reponer en",
+      "thresholdPlaceholder": "p. ej. 3",
+      "unitLabel": "Unidad",
+      "unitPlaceholder": "p. ej. rollos, bolsas, cajas",
+      "hint": "Cuando la cantidad baje al nivel de reposición, crearemos una tarea de reposición y avisaremos a tu equipo de inmediato.",
+      "saveChanges": "Guardar cambios",
+      "optional": "(opcional)"
+    },
+    "deleteDialog": {
+      "title": "¿Eliminar este elemento?",
+      "description": "\"{{name}}\" se eliminará del inventario, junto con cualquier aviso de reposición pendiente para el mismo.",
+      "confirm": "Eliminar elemento",
+      "cancel": "Cancelar"
+    },
+    "toasts": {
+      "restockFlagged": "Reposición marcada",
+      "restockFlaggedDesc": "\"{{name}}\" está marcado para reposición; hemos avisado a tu equipo.",
+      "flagError": "No se pudo marcar este elemento",
+      "markedRestocked": "Marcado como repuesto",
+      "markedRestockedDesc": "\"{{name}}\" está de nuevo en stock.",
+      "updateItemError": "No se pudo actualizar este elemento",
+      "itemRemoved": "Elemento eliminado",
+      "removeItemError": "No se pudo eliminar el elemento",
+      "itemUpdated": "Elemento actualizado",
+      "itemAdded": "Elemento añadido",
+      "addItemError": "No se pudo añadir el elemento"
+    }
+  }
+}

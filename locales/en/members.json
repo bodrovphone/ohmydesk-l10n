@@ -190,7 +190,8 @@
       "flexPackUsed": "{{used}} of {{total}} days used",
       "endedOn": "ended {{date}}",
       "officePlans": "Office & virtual office",
-      "planHistoryNote": "Monthly, weekly and hot-desk plans aren't logged as separate plan changes — see the Bookings tab for those."
+      "planHistoryNote": "Monthly, weekly and hot-desk plans aren't logged as separate plan changes — see the Bookings tab for those.",
+      "emailLanguageEs": "Spanish"
     },
     "repriceDialog": {
       "title": "Apply the new price now, or only later?",

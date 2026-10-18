@@ -25,9 +25,9 @@ Locale: `es`. Use neutral Spanish for Spain and Latin America, with informal
 ## Review status
 
 All 24 Spanish catalogs are AI drafts. No native Spanish review is claimed.
-This draft PR is the review surface; do not treat structural validation as a
-review of translation quality. The normal contribution rule against accepting
-unreviewed machine translations still applies before merge.
+This PR is the review surface; structural validation does not prove translation
+quality. Alex explicitly approved PR readiness with native review to follow later.
+Keep the AI-draft status until that review is complete.
 
 ## What to review
 
@@ -36,7 +36,8 @@ unreviewed machine translations still applies before merge.
 2. Check singular/plural forms, especially availability and balances. Preserve
    every `{{placeholder}}` token, React/HTML tag, URL and formatting marker.
 3. Check terminology in plans, invoices, payments, offices and task screens.
-   Translate the UI without implying Spanish transactional emails or PDFs exist.
+   Spanish member transactional emails and PDFs are implemented in app PR #550;
+   review the Edge templates and generated invoice there as well.
 4. Check longer labels on narrow screens. App screenshots and browser coverage
    are linked from [DeskPlanner PR #550](https://github.com/bodrovphone/DeskPlanner/pull/550).
 5. Open copy corrections here, then import them into DeskPlanner and rerun its

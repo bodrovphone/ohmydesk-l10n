@@ -190,7 +190,8 @@
       "flexPackUsed": "{{used}} de {{total}} días usados",
       "endedOn": "finalizó el {{date}}",
       "officePlans": "Oficina y oficina virtual",
-      "planHistoryNote": "Los planes mensuales, semanales y de puesto de trabajo no se registran como cambios de plan separados; consulta la pestaña Reservas para esos."
+      "planHistoryNote": "Los planes mensuales, semanales y de puesto de trabajo no se registran como cambios de plan separados; consulta la pestaña Reservas para esos.",
+      "emailLanguageEs": "Español"
     },
     "repriceDialog": {
       "title": "¿Aplicar el nuevo precio ahora o solo más tarde?",

@@ -190,7 +190,8 @@
       "flexPackUsed": "{{used}} von {{total}} Tagen genutzt",
       "endedOn": "beendet am {{date}}",
       "officePlans": "Büro & virtuelles Büro",
-      "planHistoryNote": "Monats-, Wochen- und Hotdesk-Tarife werden nicht als einzelne Tarifwechsel protokolliert – dafür siehe den Tab „Buchungen“."
+      "planHistoryNote": "Monats-, Wochen- und Hotdesk-Tarife werden nicht als einzelne Tarifwechsel protokolliert – dafür siehe den Tab „Buchungen“.",
+      "emailLanguageEs": "Spanisch"
     },
     "repriceDialog": {
       "title": "Neuen Preis jetzt anwenden oder erst künftig?",

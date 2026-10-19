@@ -8,6 +8,7 @@
   },
   "steps": {
     "spaceInfo": "Space Info",
+    "shopInfo": "Shop",
     "roomsDesks": "Rooms & Desks",
     "meetingRooms": "Meeting Rooms",
     "pricing": "Pricing",
@@ -35,8 +36,13 @@
     "spaceName": "Space Name",
     "spaceNamePlaceholder": "e.g. Downtown Hub",
     "shopName": "Shop name",
+    "shopNamePlaceholder": "e.g. Elaia Grove",
     "nameRentalTitle": "Name your rental shop",
     "nameRentalSub": "Your customers will see this on the booking page.",
+    "shopUrl": "Your shop URL",
+    "shopSlugPlaceholder": "your-shop",
+    "shopUrlHelp": "Auto-generated from your shop name. You can change it later in Settings.",
+    "shopMultiDesc": "Check this if your brand has more than one shop.",
     "verticalLabel": "What do you run?",
     "vertical": {
       "coworking": {
@@ -96,6 +102,7 @@
     "defaultPriceHelp": "You can change this later in settings.",
     "creating": "Creating...",
     "createSpace": "Create Space",
+    "createShop": "Create shop",
     "createFailed": "Failed to create organization. Please try again."
   },
   "step5": {
@@ -103,7 +110,9 @@
     "description": "You mentioned you manage multiple locations. Here's what to do next.",
     "addingTitle": "Adding more locations",
     "addingBody": "Once you're comfortable with your first space, go to <1>Settings</1> to add another location. Each location gets its own calendar, rooms, and team.",
-    "goToSpace": "Go to my space"
+    "addingBodyRental": "Once you're comfortable with your first shop, go to <1>Settings</1> to add another location. Each location gets its own calendar, fleet, and team.",
+    "goToSpace": "Go to my space",
+    "goToShop": "Go to my shop"
   },
   "publicJoin": {
     "defaultSpace": "the space",
@@ -133,8 +142,10 @@
   "telegram": {
     "title": "Connect Telegram notifications",
     "description": "Get notified when bookings start or assignments end. You can always connect later in Settings.",
+    "rentalDescription": "Get notified when a customer reserves a bike. You can always connect later in Settings.",
     "connected": "Telegram connected!",
     "goCalendar": "Go to Calendar",
+    "goShop": "Go to my shop",
     "waitingConnection": "Waiting for connection...",
     "generatingLink": "Generating link...",
     "connect": "Connect Telegram",

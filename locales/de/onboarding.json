@@ -8,6 +8,7 @@
   },
   "steps": {
     "spaceInfo": "Space-Infos",
+    "shopInfo": "Verleih",
     "roomsDesks": "Räume & Tische",
     "meetingRooms": "Meetingräume",
     "pricing": "Preise",
@@ -35,8 +36,13 @@
     "spaceName": "Name des Space",
     "spaceNamePlaceholder": "z. B. Downtown Hub",
     "shopName": "Name des Verleihs",
+    "shopNamePlaceholder": "z. B. Elaia Grove",
     "nameRentalTitle": "Benennen Sie Ihren Verleih",
     "nameRentalSub": "Ihre Kunden sehen diesen Namen auf der Buchungsseite.",
+    "shopUrl": "Ihre Verleih-URL",
+    "shopSlugPlaceholder": "ihr-verleih",
+    "shopUrlHelp": "Automatisch aus dem Verleih-Namen erzeugt. Später in den Einstellungen änderbar.",
+    "shopMultiDesc": "Aktivieren, wenn Ihre Marke mehr als einen Verleih hat.",
     "verticalLabel": "Was betreiben Sie?",
     "vertical": {
       "coworking": {
@@ -96,6 +102,7 @@
     "defaultPriceHelp": "Später in den Einstellungen änderbar.",
     "creating": "Wird erstellt...",
     "createSpace": "Space erstellen",
+    "createShop": "Verleih erstellen",
     "createFailed": "Organisation konnte nicht erstellt werden. Bitte erneut versuchen."
   },
   "step5": {
@@ -103,7 +110,9 @@
     "description": "Sie betreiben mehrere Standorte. So geht es weiter.",
     "addingTitle": "Weitere Standorte hinzufügen",
     "addingBody": "Wenn der erste Space steht, öffnen Sie <1>Einstellungen</1>, um einen weiteren Standort hinzuzufügen. Jeder Standort hat eigenen Kalender, Räume und Team.",
-    "goToSpace": "Zu meinem Space"
+    "addingBodyRental": "Wenn der erste Verleih steht, öffnen Sie <1>Einstellungen</1>, um einen weiteren Standort hinzuzufügen. Jeder Standort hat eigenen Kalender, Fuhrpark und Team.",
+    "goToSpace": "Zu meinem Space",
+    "goToShop": "Zu meinem Verleih"
   },
   "publicJoin": {
     "defaultSpace": "dem Space",
@@ -133,8 +142,10 @@
   "telegram": {
     "title": "Telegram-Benachrichtigungen verbinden",
     "description": "Benachrichtigungen bei Buchungsstart oder Ende von Zuweisungen. Später unter Einstellungen möglich.",
+    "rentalDescription": "Benachrichtigungen, wenn ein Kunde ein Rad reserviert. Später unter Einstellungen möglich.",
     "connected": "Telegram verbunden!",
     "goCalendar": "Zum Kalender",
+    "goShop": "Zu meinem Verleih",
     "waitingConnection": "Warte auf Verbindung...",
     "generatingLink": "Link wird erstellt...",
     "connect": "Telegram verbinden",

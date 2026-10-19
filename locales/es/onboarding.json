@@ -12,7 +12,8 @@
     "meetingRooms": "Salas de reuniones",
     "pricing": "Precios",
     "notifications": "Notificaciones",
-    "finance": "Finanzas"
+    "finance": "Finanzas",
+    "shopInfo": "Tienda"
   },
   "stepLanguage": {
     "title": "Elige tu idioma",
@@ -61,7 +62,12 @@
     "multiExtra": "Configura tu primera ubicación ahora. Podrás añadir más desde Ajustes más tarde.",
     "backToWorkspace": "Volver al espacio de trabajo",
     "alreadyHaveAccount": "¿Ya tienes una cuenta?",
-    "signIn": "Iniciar sesión"
+    "signIn": "Iniciar sesión",
+    "shopNamePlaceholder": "p. ej., Elaia Grove",
+    "shopUrl": "URL de tu tienda",
+    "shopSlugPlaceholder": "tu-tienda",
+    "shopUrlHelp": "Se genera automáticamente a partir del nombre de tu tienda. Puedes cambiarla después en Ajustes.",
+    "shopMultiDesc": "Marca esta casilla si tu marca tiene más de una tienda."
   },
   "step1": {
     "title": "Configurar salas y puestos",
@@ -96,14 +102,17 @@
     "defaultPriceHelp": "Puedes cambiar esto más tarde en los ajustes.",
     "creating": "Creando...",
     "createSpace": "Crear espacio",
-    "createFailed": "No se pudo crear la organización. Inténtalo de nuevo."
+    "createFailed": "No se pudo crear la organización. Inténtalo de nuevo.",
+    "createShop": "Crear tienda"
   },
   "step5": {
     "title": "¡Tu primera ubicación está lista!",
     "description": "Mencionaste que gestionas varias ubicaciones. Esto es lo que debes hacer a continuación.",
     "addingTitle": "Añadiendo más ubicaciones",
     "addingBody": "Una vez que te sientas cómodo con tu primer espacio, ve a <1>Ajustes</1> para añadir otra ubicación. Cada ubicación tiene su propio calendario, salas y equipo.",
-    "goToSpace": "Ir a mi espacio"
+    "goToSpace": "Ir a mi espacio",
+    "addingBodyRental": "Cuando te hayas familiarizado con tu primera tienda, ve a <1>Ajustes</1> para añadir otra ubicación. Cada ubicación tiene su propio calendario, flota y equipo.",
+    "goToShop": "Ir a mi tienda"
   },
   "publicJoin": {
     "defaultSpace": "el espacio",
@@ -139,7 +148,9 @@
     "generatingLink": "Generando enlace...",
     "connect": "Conectar Telegram",
     "openBotStart": "Abre el bot en Telegram y pulsa Iniciar",
-    "skip": "Omitir por ahora"
+    "skip": "Omitir por ahora",
+    "rentalDescription": "Recibe una notificación cuando un cliente reserve una bicicleta. Siempre puedes conectarlo más tarde en Ajustes.",
+    "goShop": "Ir a mi tienda"
   },
   "stepFinance": {
     "title": "¿Con qué precisión haces un seguimiento de las finanzas?",

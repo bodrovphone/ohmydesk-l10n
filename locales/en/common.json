@@ -373,6 +373,7 @@
     "login": {
       "title": "Welcome back",
       "subtitle": "Sign in to manage your coworking desk bookings.",
+      "rentalSubtitle": "Sign in to manage your rental shop.",
       "emailLabel": "Email",
       "emailPlaceholder": "your@email.com",
       "passwordLabel": "Password",
@@ -388,6 +389,7 @@
     "signup": {
       "title": "Create an account",
       "subtitle": "Get started with OhMyDesk for your coworking space.",
+      "rentalSubtitle": "Get started with OhMyDesk for your rental shop.",
       "nameLabel": "Full Name",
       "namePlaceholder": "Your name",
       "emailLabel": "Email",

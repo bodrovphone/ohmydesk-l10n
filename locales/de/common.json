@@ -373,6 +373,7 @@
     "login": {
       "title": "Willkommen zurück",
       "subtitle": "Melden Sie sich an, um Ihre Coworking-Buchungen zu verwalten.",
+      "rentalSubtitle": "Melden Sie sich an, um Ihren Verleih zu verwalten.",
       "emailLabel": "E-Mail",
       "emailPlaceholder": "ihre@email.de",
       "passwordLabel": "Passwort",
@@ -388,6 +389,7 @@
     "signup": {
       "title": "Konto erstellen",
       "subtitle": "Starten Sie mit OhMyDesk für Ihren Coworking Space.",
+      "rentalSubtitle": "Starten Sie mit OhMyDesk für Ihren Verleih.",
       "nameLabel": "Vollständiger Name",
       "namePlaceholder": "Ihr Name",
       "emailLabel": "E-Mail",

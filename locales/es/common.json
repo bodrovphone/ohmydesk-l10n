@@ -383,7 +383,8 @@
       "submit": "Iniciar sesión",
       "noAccount": "¿No tienes una cuenta?",
       "signUpLink": "Regístrate",
-      "unexpectedError": "Ha ocurrido un error inesperado"
+      "unexpectedError": "Ha ocurrido un error inesperado",
+      "rentalSubtitle": "Inicia sesión para gestionar tu tienda de alquiler."
     },
     "signup": {
       "title": "Crear una cuenta",
@@ -403,7 +404,8 @@
       "hasAccount": "¿Ya tienes una cuenta?",
       "signInLink": "Iniciar sesión",
       "unexpectedError": "Ha ocurrido un error inesperado",
-      "termsAgreement": "Al registrarte, aceptas nuestros <terms>Términos</terms> y <privacy>Política de privacidad</privacy>."
+      "termsAgreement": "Al registrarte, aceptas nuestros <terms>Términos</terms> y <privacy>Política de privacidad</privacy>.",
+      "rentalSubtitle": "Empieza a usar OhMyDesk para tu tienda de alquiler."
     },
     "errors": {
       "invalidCredentials": "El correo electrónico o la contraseña son incorrectos.",

@@ -2,6 +2,12 @@
   "title": "Mitglieder",
   "description": "Alle Personen, die einen Schreibtisch gebucht haben, sowie Interessenten mit einem Flex-Paket.",
   "import": "Importieren",
+  "autoInvite": {
+    "label": "Auto-Einladung bei Buchung",
+    "tooltip": "Mitgliedern bei ihrer Buchung (online, im Kalender oder Meetingraum) automatisch den Portal-Link senden.",
+    "savedToast": "Einstellung für automatische Portal-Einladungen gespeichert.",
+    "nonOwnerNote": "Bitten Sie einen Space-Inhaber, diese Einstellung zu ändern."
+  },
   "pendingSignups": "Ausstehende Anmeldungen",
   "inviteLink": "Einladungslink",
   "addMember": "Mitglied hinzufügen",

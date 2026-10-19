@@ -148,8 +148,12 @@
     },
     "productPrices": "Price per product ({{currency}})",
     "productPricesHint": "Leave a field empty if this type is not offered for that product.",
-    "basePriceProductsHint": "Used only if the shop has no products.",
-    "notOffered": "not offered"
+    "basePriceProductsHint": "Used only if the shop has no active products.",
+    "notOffered": "not offered",
+    "noProductsHint": "Selling a half day or a full day? Add them under Rental settings first. Then you can set a price for each one here.",
+    "unbookableTitle": "Guests cannot book this type yet",
+    "unbookableHint": "Add a price for {{products}}. Until then the booking page shows this type as not offered.",
+    "unbookableAction": "Add prices"
   },
   "rules": {
     "title": "Pricing rules",
@@ -268,6 +272,9 @@
     "deleteYes": "Yes, delete",
     "duplicate": "Another active product already uses these times.",
     "pricesHint": "Set the price of each product per bike type under Fleet.",
+    "unpricedTitle": "Guests cannot book these bike types yet",
+    "unpricedHint": "No price is set for any product: {{types}}. Add the prices under Fleet.",
+    "unpricedLink": "Open Fleet",
     "errors": {
       "product_needs_name": "Give the product a name.",
       "product_name_too_long": "Keep the name under 60 characters.",
@@ -302,6 +309,8 @@
     "nothingSelected": "Choose dates and bikes to see the price.",
     "quoteUpdating": "Updating price…",
     "continueToDetails": "Continue",
+    "bikesSelected": "{{count}} bike",
+    "bikesSelected_other": "{{count}} bikes",
     "detailsTitle": "Your details",
     "backToCatalog": "Back to bikes",
     "name": "Name",

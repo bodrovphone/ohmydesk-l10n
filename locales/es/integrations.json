@@ -116,16 +116,6 @@
     "onlineInvoicesDesc": "Añade un botón de Pagar en las facturas impagadas en el portal de miembros. Los pagos se concilian automáticamente.",
     "nonAdminNote": "Pide a un propietario o administrador del espacio que configure Stripe."
   },
-  "memberPortalAutoInvite": {
-    "title": "Invitaciones al portal de miembros",
-    "description": "Envía a los miembros el enlace de su portal de miembros por correo electrónico cuando reserven, en lugar de copiar los enlaces manualmente.",
-    "on": "Auto-invitar activado",
-    "off": "Auto-invitar desactivado",
-    "toggleTitle": "Enviar por correo electrónico a los miembros el enlace de su portal cuando reserven",
-    "toggleDesc": "Desactivado por defecto. Cuando está activado, cada miembro recibe un correo electrónico con el enlace de su portal personal la próxima vez que reserve: en línea, en tu calendario o una sala de reuniones. Los miembros que ya tienen acceso al portal o un enlace de acceso se omiten, y nadie lo recibe dos veces.",
-    "nonOwnerNote": "Pide a un propietario del espacio que cambie esta configuración.",
-    "savedToast": "Configuración de auto-invitación al portal de miembros guardada."
-  },
   "smartLocks": {
     "title": "Cerraduras inteligentes",
     "description": "Desbloquea automáticamente la puerta principal para reservas activas a través de Nuki, August, Yale, Salto, Latch y más de 13 marcas. Los saldos de los miembros flexibles solo se consumen con la entrada real.",
@@ -442,7 +432,7 @@
     "oldLockCodesRemain": "Los códigos de puerta de la cerradura anterior no pudieron ser eliminados o verificados. Esa cerradura permanece activada para que ningún código quede sin seguimiento."
   },
   "legalDocs": {
-    "title": "Revisar documentos legales",
+    "title": "Documentos legales de la reserva",
     "description": "Tus Términos de uso y política de privacidad, mostrados justo encima del botón final en cada formulario de reserva público. Sube un PDF o enlaza a la página en tu propio sitio web.",
     "terms": {
       "title": "Términos de uso",

@@ -116,16 +116,6 @@
     "onlineInvoicesDesc": "Fügt bei unbezahlten Rechnungen im Mitgliederportal einen Bezahlen-Button hinzu. Zahlungen werden automatisch verbucht.",
     "nonAdminNote": "Bitten Sie einen Space-Inhaber oder Admin, Stripe zu konfigurieren."
   },
-  "memberPortalAutoInvite": {
-    "title": "Mitgliederportal-Einladungen",
-    "description": "Senden Sie Mitgliedern bei ihrer Buchung den Link zum Mitgliederportal per E-Mail, statt Links von Hand zu kopieren.",
-    "on": "Auto-Einladung an",
-    "off": "Auto-Einladung aus",
-    "toggleTitle": "Mitgliedern bei ihrer Buchung den Portal-Link senden",
-    "toggleDesc": "Standardmäßig aus. Wenn aktiviert, erhält jedes Mitglied bei seiner nächsten Buchung eine E-Mail mit seinem persönlichen Portal-Link: online, über Ihren Kalender oder für einen Meetingraum. Mitglieder mit Portalzugang oder Zugangslink werden übersprungen, und niemand erhält die E-Mail zweimal.",
-    "nonOwnerNote": "Bitten Sie einen Space-Inhaber, diese Einstellung zu ändern.",
-    "savedToast": "Einstellung für automatische Portal-Einladungen gespeichert."
-  },
   "unifiWifi": {
     "title": "Gast-WLAN",
     "description": "Erstellt einen UniFi-Hotspot-Gutschein zur Buchung und schickt den Code per E-Mail an das Mitglied.",

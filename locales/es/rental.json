@@ -148,8 +148,12 @@
     },
     "productPrices": "Precio por producto ({{currency}})",
     "productPricesHint": "Deja un campo vacío si este tipo no se ofrece para ese producto.",
-    "basePriceProductsHint": "Se usa solo si la tienda no tiene productos.",
-    "notOffered": "no ofrecido"
+    "basePriceProductsHint": "Se usa solo si la tienda no tiene productos activos.",
+    "notOffered": "no ofrecido",
+    "noProductsHint": "¿Ofreces medio día o un día completo? Añádelos primero en Ajustes de alquiler. Después podrás fijar aquí el precio de cada uno.",
+    "unbookableTitle": "Los visitantes aún no pueden reservar este tipo",
+    "unbookableHint": "Añade un precio para {{products}}. Hasta entonces, la página de reservas mostrará este tipo como no disponible.",
+    "unbookableAction": "Añadir precios"
   },
   "rules": {
     "title": "Reglas de precios",
@@ -273,7 +277,10 @@
       "product_name_too_long": "Mantén el nombre por debajo de 60 caracteres.",
       "product_needs_times": "Elige una hora de inicio y una hora de finalización.",
       "product_times_order": "La hora de finalización debe ser posterior a la hora de inicio."
-    }
+    },
+    "unpricedTitle": "Los visitantes aún no pueden reservar estos tipos de bicicleta",
+    "unpricedHint": "No hay ningún precio de producto para estos tipos: {{types}}. Añade los precios en Flota.",
+    "unpricedLink": "Abrir Flota"
   },
   "public": {
     "tagline": "Alquiler de bicicletas",
@@ -341,7 +348,9 @@
     "longerRentals": "Alquileres más largos: contacta con la tienda.",
     "chooseProduct": "Elige una fecha y una opción",
     "productStarted": "Iniciado · {{times}}",
-    "noProductLeft": "Las opciones de hoy han comenzado. Elige otra fecha."
+    "noProductLeft": "Las opciones de hoy han comenzado. Elige otra fecha.",
+    "bikesSelected": "{{count}} bicicleta",
+    "bikesSelected_other": "{{count}} bicicletas"
   },
   "orderPage": {
     "title": "Tu reserva",

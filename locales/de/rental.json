@@ -148,8 +148,12 @@
     },
     "productPrices": "Preis pro Produkt ({{currency}})",
     "productPricesHint": "Feld leer lassen, wenn dieser Typ für das Produkt nicht angeboten wird.",
-    "basePriceProductsHint": "Gilt nur, wenn der Verleih keine Produkte hat.",
-    "notOffered": "nicht angeboten"
+    "basePriceProductsHint": "Gilt nur, wenn der Verleih keine aktiven Produkte hat.",
+    "notOffered": "nicht angeboten",
+    "noProductsHint": "Sie verkaufen einen Halbtag oder Ganztag? Legen Sie diese zuerst unter Verleih-Einstellungen an. Danach können Sie hier für jedes Produkt einen Preis festlegen.",
+    "unbookableTitle": "Gäste können diesen Typ noch nicht buchen",
+    "unbookableHint": "Legen Sie einen Preis für {{products}} fest. Bis dahin zeigt die Buchungsseite diesen Typ als nicht angeboten.",
+    "unbookableAction": "Preise festlegen"
   },
   "rules": {
     "title": "Preisregeln",
@@ -268,6 +272,9 @@
     "deleteYes": "Ja, löschen",
     "duplicate": "Ein anderes aktives Produkt nutzt bereits diese Zeiten.",
     "pricesHint": "Den Preis jedes Produkts legen Sie pro Radtyp unter Flotte fest.",
+    "unpricedTitle": "Gäste können diese Radtypen noch nicht buchen",
+    "unpricedHint": "Für kein Produkt ist ein Preis festgelegt: {{types}}. Legen Sie die Preise unter Flotte fest.",
+    "unpricedLink": "Flotte öffnen",
     "errors": {
       "product_needs_name": "Geben Sie dem Produkt einen Namen.",
       "product_name_too_long": "Der Name darf höchstens 60 Zeichen lang sein.",
@@ -302,6 +309,8 @@
     "nothingSelected": "Wählen Sie Daten und Räder, um den Preis zu sehen.",
     "quoteUpdating": "Preis wird aktualisiert …",
     "continueToDetails": "Weiter",
+    "bikesSelected": "{{count}} Rad",
+    "bikesSelected_other": "{{count}} Räder",
     "detailsTitle": "Ihre Angaben",
     "backToCatalog": "Zurück zu den Rädern",
     "name": "Name",

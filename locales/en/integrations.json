@@ -116,16 +116,6 @@
     "onlineInvoicesDesc": "Adds a Pay button on unpaid invoices in the member portal. Payments are reconciled automatically.",
     "nonAdminNote": "Ask a space owner or admin to configure Stripe."
   },
-  "memberPortalAutoInvite": {
-    "title": "Member portal invites",
-    "description": "Send members their member portal link by email when they book, instead of copying links by hand.",
-    "on": "Auto-invite on",
-    "off": "Auto-invite off",
-    "toggleTitle": "Email members their portal link when they book",
-    "toggleDesc": "Off by default. When on, each member gets one email with their personal portal link the next time they book: online, in your calendar, or a meeting room. Members who already have portal access or an access link are skipped, and nobody gets it twice.",
-    "nonOwnerNote": "Ask a space owner to change this setting.",
-    "savedToast": "Member portal auto-invite setting saved."
-  },
   "unifiWifi": {
     "title": "Guest Wi-Fi",
     "description": "Create a UniFi Hotspot voucher for a booking and email the code to the member.",

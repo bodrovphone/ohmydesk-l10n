@@ -870,5 +870,11 @@
     "noKeypad": "(sin teclado)",
     "note": "Se aplica a los códigos de puerta creados a partir de ahora.",
     "saveError": "No se pudo guardar el acceso a la puerta. Inténtalo de nuevo."
+  },
+  "autoInvite": {
+    "label": "Invitar automáticamente al reservar",
+    "tooltip": "Envía automáticamente a los miembros el enlace de su portal por correo electrónico cuando reserven (en línea, en el calendario o en una sala de reuniones).",
+    "savedToast": "Configuración de invitación automática al portal de miembros guardada.",
+    "nonOwnerNote": "Pide al propietario del espacio que cambie esta configuración."
   }
 }

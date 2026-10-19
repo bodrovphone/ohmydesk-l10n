@@ -2,6 +2,12 @@
   "title": "Members",
   "description": "Everyone who has booked a desk in your space, plus prospects on a Flex pack.",
   "import": "Import",
+  "autoInvite": {
+    "label": "Auto-invite on booking",
+    "tooltip": "Email members their portal link automatically when they book (online, calendar, or meeting room).",
+    "savedToast": "Member portal auto-invite setting saved.",
+    "nonOwnerNote": "Ask a space owner to change this setting."
+  },
   "pendingSignups": "Pending sign-ups",
   "inviteLink": "Invite link",
   "addMember": "Add Member",

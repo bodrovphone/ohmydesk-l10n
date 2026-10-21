@@ -69,7 +69,8 @@ corrections into the app PR before claiming the two repositories are in sync.
 
 ## Greek
 
-`locales/el/` contains the 24 Greek namespaces from DeskPlanner PR #579. Copy is
-AI/machine-drafted with manual corrections; native review is pending. Keep all
+`locales/el/` contains the 24 Greek namespaces from DeskPlanner PR #579. Copy was
+machine-drafted, then reviewed key by key with AI assistance; native review is
+pending. Keep all
 keys, interpolation and markup aligned with English. Greek covers web/mobile UI;
 member email and PDF support lives in the app repository. See `GREEK.md`.

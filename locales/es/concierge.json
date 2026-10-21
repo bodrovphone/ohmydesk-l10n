@@ -1,0 +1,29 @@
+{
+  "header": {
+    "title": "Conserje de OhMyDesk",
+    "subtitle": "Pregunta cualquier cosa sobre el producto"
+  },
+  "greeting": "¡Hola! Soy el conserje de OhMyDesk. Pregúntame cualquier cosa sobre el producto: características, precios, cómo nos comparamos o cómo empezar.",
+  "starters": {
+    "whatIs": "¿Qué es OhMyDesk?",
+    "pricing": "¿Cuánto cuesta?",
+    "compareCobot": "¿Cómo os comparáis con Cobot?",
+    "flexPasses": "¿Puede gestionar pases de día flexibles?"
+  },
+  "input": {
+    "placeholder": "Pregunta sobre características, precios…"
+  },
+  "aria": {
+    "dialog": "Conserje de OhMyDesk",
+    "close": "Cerrar chat",
+    "typing": "El conserje está escribiendo",
+    "message": "Tu mensaje",
+    "send": "Enviar mensaje",
+    "open": "Chatea con el conserje de OhMyDesk",
+    "closeBubble": "Cerrar el conserje de OhMyDesk"
+  },
+  "errors": {
+    "generic": "Lo siento, algo salió mal. Por favor, envía un correo electrónico a hello@ohmydesk.app.",
+    "network": "No pude conectar con el servidor. Por favor, inténtalo de nuevo o envía un correo electrónico a hello@ohmydesk.app."
+  }
+}

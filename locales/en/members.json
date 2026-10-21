@@ -2,10 +2,16 @@
   "title": "Members",
   "description": "Everyone who has booked a desk in your space, plus prospects on a Flex pack.",
   "import": "Import",
+  "autoInvite": {
+    "label": "Auto-invite on booking",
+    "tooltip": "Email members their portal link automatically when they book (online, calendar, or meeting room).",
+    "savedToast": "Member portal auto-invite setting saved.",
+    "nonOwnerNote": "Ask a space owner to change this setting."
+  },
   "pendingSignups": "Pending sign-ups",
   "inviteLink": "Invite link",
   "addMember": "Add Member",
-  "searchPlaceholder": "Search by name, email, or phone…",
+  "searchPlaceholder": "Search by name, company, email, or phone…",
   "allPricingGroups": "All pricing groups",
   "fullPriceOnly": "Full price only",
   "empty": {
@@ -30,7 +36,15 @@
     "member": "Member",
     "contact": "Contact",
     "plan": "Plan",
-    "status": "Status"
+    "status": "Status",
+    "balance": "Balance"
+  },
+  "balanceFilter": {
+    "label": "Balance",
+    "all": "Any balance",
+    "owes": "Owes",
+    "credit": "In credit",
+    "settled": "Settled"
   },
   "showAll": "Show all {{count}} members",
   "reviewBanners": {
@@ -58,6 +72,8 @@
     "portalDiscoveryBody": "Members can log in to a portal to see their plan, balance, next bill and invoices. Invite anyone from their card — open a member and tap \"Create access link\"."
   },
   "row": {
+    "balanceOwes": "Owes",
+    "balanceCredit": "In credit",
     "portalActive": "Portal access active",
     "noPortal": "No portal access yet",
     "pricingGroup": "Pricing group: {{name}}",
@@ -69,6 +85,7 @@
     "activatePlan": "Activate Plan",
     "until": "Until {{date}}",
     "ongoing": "Ongoing",
+    "awaitingPayment": "Awaiting payment",
     "daysLeft": "{{count}} day left",
     "daysLeft_plural": "{{count}} days left",
     "days": "days",
@@ -94,6 +111,7 @@
       "hotdesk": "Hotdesk",
       "virtualOffice": "Virtual Office",
       "office": "Private office",
+      "meetingHours": "Meeting room hours",
       "noPlan": "No plan",
       "paused": "paused",
       "exp": "exp {{date}}",
@@ -102,6 +120,8 @@
   },
   "activePlans": {
     "active": "Active",
+    "awaitingPayment": "Booked · awaiting payment",
+    "awaitingPaymentFrom": "Starts {{date}} · awaiting payment",
     "frozen": "Frozen · {{days}}d banked",
     "cancelsWithDate": "Cancels {{date}} (renewal off)",
     "cancelsAtPeriodEnd": "Cancels at period end",
@@ -112,7 +132,8 @@
     "nextBill": "Next bill {{date}}",
     "openEnded": "Open-ended",
     "flexLeft": "{{left}} of {{total}} days left",
-    "flexExpires": " · Expires {{date}}"
+    "flexExpires": " · Expires {{date}}",
+    "renewsViaStripe": "Renews monthly via Stripe"
   },
   "drawer": {
     "title": "{{name}} details",
@@ -134,13 +155,17 @@
       "contactPlaceholder": "+359… or @handle",
       "emailLabel": "Email",
       "emailPlaceholder": "member@email.com",
-      "planSection": "Plan",
+      "emailLanguageLabel": "Email language",
+      "emailLanguageAuto": "Auto (from booking or space default)",
+      "emailLanguageEn": "English",
+      "emailLanguageDe": "Deutsch",
+      "planSection": "Active plans",
       "noActivePlan": "No active plan",
       "resumePlan": "Resume plan",
       "resumePlanTitle": "{{days}} banked day — resume the plan from where it paused.",
       "resumePlanTitle_plural": "{{days}} banked days — resume the plan from where it paused.",
       "activatePlan": "Activate Plan",
-      "history": "History",
+      "addPlan": "Add plan",
       "active": "active",
       "pricingGroup": "Pricing group",
       "fullPrice": "Full price",
@@ -161,7 +186,19 @@
       "clearFlexDescription": "Removes this member's flex plan{{daysPart}}. They will show as having no flex pack. Existing flex-marked desk bookings stay on the calendar but no longer consume a balance.",
       "clearFlexDaysPart": " ({{left}} of {{total}} day left)",
       "clearFlexDaysPart_plural": " ({{left}} of {{total}} days left)",
-      "clearingFlex": "Clearing…"
+      "clearingFlex": "Clearing…",
+      "planHistory": "History",
+      "planHistoryTitle": "Plan history",
+      "planHistoryDescription": "Every plan this member has held, newest first.",
+      "flexPacks": "Flex packs",
+      "noFlexPacks": "No flex packs yet.",
+      "loading": "Loading…",
+      "flexPackUsed": "{{used}} of {{total}} days used",
+      "endedOn": "ended {{date}}",
+      "officePlans": "Office & virtual office",
+      "planHistoryNote": "Monthly, weekly and hot-desk plans aren't logged as separate plan changes — see the Bookings tab for those.",
+      "emailLanguageEs": "Spanish",
+      "emailLanguageEl": "Greek"
     },
     "repriceDialog": {
       "title": "Apply the new price now, or only later?",
@@ -175,20 +212,29 @@
       "loading": "Loading…",
       "noBookings": "No bookings yet.",
       "editBooking": "Edit booking",
+      "bookDesk": "Book a desk",
+      "bookMeetingRoom": "Book a meeting room",
       "meetingRooms": "Meeting room bookings",
       "wholeDay": "Whole day",
       "hourPack": "hour pack",
       "meetingRoom": "Meeting room",
       "desk": "Desk",
       "day": "{{count}} day",
-      "day_plural": "{{count}} days"
+      "day_plural": "{{count}} days",
+      "planType": {
+        "day_pass": "Day pass",
+        "weekly": "Weekly",
+        "monthly": "Monthly",
+        "custom": "Custom",
+        "flex": "Flex",
+        "oneOff": "One-off"
+      }
     },
     "billing": {
       "invoices": "Invoices",
       "createInvoice": "Create invoice",
-      "autoGenerate": "Auto-generate monthly invoice",
-      "autoGenerateOn": "When on, this member is included in the monthly batch run.",
-      "autoGenerateOff": "Add billing name + address (Overview → billing requisites) to enable.",
+      "autoGenerate": "Auto-invoicing",
+      "autoGenerateHelp": "When off, this member is excluded from auto-invoicing of recurring plans.",
       "statement": "Statement"
     },
     "delete": "Remove"
@@ -199,9 +245,15 @@
       "hotdesk": "Hotdesk",
       "virtual_office": "Virtual Office",
       "dedicated": "Dedicated Desk",
-      "meeting_hours": "Meeting Room Hours"
+      "meeting_hours": "Meeting Room Hours",
+      "private_office": "Private Office"
     },
     "option": "Option",
+    "alreadyActive": "Already active — edit it on the member card",
+    "privateOffice": {
+      "office": "Office",
+      "price": "Monthly price ({{symbol}})"
+    },
     "flexDescription": "{{name}} will get <strong>{{count}} days</strong> of flex access starting today.",
     "meetingHours": {
       "description": "A prepaid hour balance for meeting rooms — burns down as {{name}} books, at whatever price you set below.",
@@ -245,7 +297,8 @@
     },
     "startDate": "Start date",
     "endDate": "End date",
-    "activate": "Activate"
+    "activate": "Activate",
+    "autoInvoiceOptIn": "Turn on auto-invoicing for this member"
   },
   "alerts": {
     "deleteTitle": "Delete member",
@@ -280,6 +333,7 @@
     "pricingGroupRepriced": "Pricing group updated and current price re-applied.",
     "hoursAdded": "{{hours}}h added to {{name}}'s pack.",
     "hourPackSold": "Hour pack sold",
+    "officeAssigned": "Office assigned",
     "hourPackSoldDesc": "{{name}}: {{hours}}h for {{symbol}}{{price}}.",
     "deskAssigned": "Desk assigned",
     "deskAssignedDesc": "{{name}} assigned from {{start}} to {{end}}.",
@@ -289,6 +343,15 @@
     "autoInvoiceOnDesc": "{{name}} will be included in the monthly batch.",
     "autoInvoiceOffDesc": "{{name}} won't be auto-invoiced.",
     "autoInvoiceFailed": "Could not update auto-invoice setting."
+  },
+  "autoInvoice": {
+    "missingWarning": "{{items}} missing — invoices will not be created.",
+    "missingWarningForPlans": "{{plans}}: {{items}} missing — invoices will not be created.",
+    "missing": {
+      "name": "Billing name",
+      "address": "Billing address",
+      "taxId": "Tax ID"
+    }
   },
   "profile": {
     "title": "Billing details",
@@ -308,7 +371,7 @@
     "memberName": "member name",
     "companyPlaceholder": "Company or legal entity name",
     "billingNameHelp": "The name printed on invoices. Leave blank to use the member's name.",
-    "taxId": "Tax / company ID",
+    "taxId": "Registration / company ID",
     "taxIdPlaceholder": "123456789",
     "vatId": "VAT ID",
     "vatIdPlaceholder": "VAT0000000",
@@ -319,19 +382,20 @@
     "contactPersonPlaceholder": "Full name of contact person",
     "paymentMethod": "Payment method",
     "notSet": "Not set",
-    "autoInvoiceTitle": "Auto-generate monthly invoices",
-    "autoInvoiceDesc": "When on, this member's recurring plans are drafted in the monthly batch run. You can still send or void manually any time.",
-    "autoInvoiceRequired": "Add a billing name and address above to enable.",
     "cancel": "Cancel",
-    "save": "Save"
+    "save": "Save",
+    "autosaved": "Changes save automatically",
+    "autosaving": "Saving…",
+    "autosaveFailed": "Couldn't save — check your connection"
   },
   "billingProfiles": {
     "heading": "Additional billing profiles",
+    "companyName": "Company name",
     "headingDesc": "Bill some of this member's plans to another entity (e.g. their company). You pick the profile as \"Bill to\" when raising an invoice — their own details above stay the default.",
     "labelRequired": "Label *",
     "billingEmail": "Billing email",
     "legalName": "Legal name",
-    "taxId": "Tax / company ID",
+    "taxId": "Registration / company ID",
     "vatId": "VAT ID",
     "billingAddress": "Billing address",
     "attn": "Attn / contact",
@@ -392,13 +456,77 @@
     "tryAgain": "Try again.",
     "linked": "Billing profile linked",
     "linkedDesc": "Now shares {{label}}.",
-    "couldNotLink": "Could not link profile"
+    "couldNotLink": "Could not link profile",
+    "unlink": "Unlink",
+    "unlinkTitle": "Unlink billing profile?",
+    "unlinkDescription": "Remove {{label}} from this member's billing settings. Their billing will use their personal details. The profile owner, other members, and past invoices are unchanged.",
+    "unlinkBlocked": "End this member's active desk, virtual office, or private office assignment before unlinking this profile.",
+    "unlinkChecking": "Checking active plan assignments…",
+    "unlinkCheckFailed": "Could not verify active plan assignments.",
+    "unlinked": "Billing profile unlinked",
+    "couldNotUnlink": "Could not unlink billing profile"
+  },
+  "planEdit": {
+    "editPlan": "Edit {{plan}}",
+    "title": {
+      "flex": "Flex plan — {{name}}",
+      "hotdesk": "Hotdesk plan — {{name}}",
+      "desk": "Desk plan — {{name}}",
+      "meetingHours": "Meeting room hours — {{name}}",
+      "virtualOffice": "Virtual office — {{name}}",
+      "office": "Private office — {{name}}"
+    },
+    "description": {
+      "flex": "Correct this flex pack. It is not sold again: the pack and its charge are updated.",
+      "hotdesk": "Change the hotdesk term, price and who it is billed to.",
+      "desk": "Desk plans are bookings on the calendar.",
+      "meetingHours": "Correct the pack, add hours or end it.",
+      "virtualOffice": "",
+      "office": ""
+    },
+    "name": "Name",
+    "totalDays": "Days in the pack",
+    "price": "Price ({{symbol}})",
+    "monthlyPrice": "Monthly price ({{symbol}})",
+    "startDate": "Start date",
+    "endDate": "End date",
+    "expiryDate": "Expires",
+    "packHours": "Hours",
+    "flexUsage": "{{used}} of {{total}} days used.",
+    "flexBelowUsed": "Fewer days than already used leaves the pack at zero.",
+    "flexCorrectionHint": "A price change replaces the pack's charge; a charge on a sent invoice can't be changed here.",
+    "flexSubscriptionWarning": "This member pays for flex by a monthly Stripe subscription. Clearing the balance does not stop it: Stripe keeps charging, and each paid month turns flex back on. To stop it, use “{{action}}” under {{section}} on the member card.",
+    "sharedDeskPayerHint": "One payer for all of this member's desk and hotdesk billing.",
+    "deskBookingsHint": "Dates, desk and price are edited on the booking itself.",
+    "openBookings": "Open bookings",
+    "endPlan": "End plan",
+    "endHotdeskConfirm": "End the hotdesk plan on {{date}}? It stops renewing; past invoices stay.",
+    "endHoursConfirm": "End this hour pack? Unused hours are dropped; its charges stay.",
+    "topUpRow": "{{date}} · +{{hours}} h · {{price}}",
+    "saved": "Plan saved",
+    "saveFailed": "Couldn't save the plan",
+    "endBeforeStart": "The end date can't be before the start date."
+  },
+  "planEndImpact": {
+    "checking": "Checking billed periods…",
+    "title_one": "Ending on {{date}} changes {{count}} billed period",
+    "title_other": "Ending on {{date}} changes {{count}} billed periods",
+    "periodCancelled": "{{start}} – {{end}}: cancelled, −{{amount}}",
+    "periodShortened": "{{start}} – {{end}}: billed until {{newEnd}} for its days only, −{{amount}}",
+    "periodPaid": "{{amount}} already paid becomes credit",
+    "reversed": "Saving reverses {{amount}} in total on the member’s statement.",
+    "paidKept": "{{amount}} of it is already paid — the payment stays and becomes credit on the member’s account.",
+    "invoices": "Billed on {{list}}. Invoices are not changed — void and reissue an unpaid one if it should no longer be collected."
   },
   "planTargets": {
     "billEachPlan": "Bill each plan to",
     "virtualOffice": "Virtual office",
     "privateOffice": "Private office — {{name}}",
-    "separateInvoices": "Select another member’s profile to share the same payer. By default each member still receives a separate invoice."
+    "separateInvoices": "Select another member’s profile to share the same payer. By default each member still receives a separate invoice.",
+    "billTo": "Bill to",
+    "memberDetails": "The member's own billing details",
+    "noOwnDetails": "no billing details",
+    "ownDetailsEmpty": "This member's own billing details are empty. Bill the plan to a billing profile, or add the details first."
   },
   "portal": {
     "heading": "Member portal access",
@@ -411,6 +539,8 @@
     "revoke": "Revoke",
     "createNewLink": "Create a new access link",
     "createLink": "Create access link",
+    "invited": "Invited",
+    "notInvited": "Not invited",
     "authCard": {
       "continueWithGoogle": "Continue with Google",
       "or": "or",
@@ -436,6 +566,7 @@
     "subscriptionCard": {
       "weeklyPass": "Weekly pass",
       "monthlyPass": "Monthly pass",
+      "monthlyFlexPlan": "Monthly flex plan",
       "paymentFailed": "Payment failed",
       "endsThisPeriod": "Ends this period",
       "ended": "Ended",
@@ -485,10 +616,17 @@
       "yourPlan": "Your plan",
       "noActivePlan": "No active plan right now.",
       "daysLeft": "days left",
-      "bookDesk": "Book a desk",
       "buyMoreDays": "Buy more days",
+      "flexRenewsNoTopUp": "Your flex plan renews every month with fresh visits, so extra days can't be bought here.",
       "renewVo": "Renew virtual office",
       "renewHotdesk": "Renew hot desk",
+      "doorAccess": "Door access",
+      "unlockDoor": "Unlock the door",
+      "unlockDoorDesc": "Your booking gives you access right now — tap to unlock the front door.",
+      "unlockSuccess": "Door unlocked",
+      "unlockFailed": "Could not unlock the door",
+      "unlockRetryHint": "Wait a moment, then try again. If it still fails, contact the space.",
+      "unlockCooling": "Door unlocked — wait a moment before unlocking again",
       "bookings": "Bookings",
       "noBookings": "No bookings yet.",
       "upcoming": "Upcoming",
@@ -499,8 +637,70 @@
       "contactForInvoice": "To settle an invoice, contact your space.",
       "stripeSecure": "Payments are processed securely by Stripe.",
       "downloadAriaLabel": "Download {{invoiceNumber}} as PDF",
+      "invoiceNotOnPortal": "This invoice is not in your portal.",
       "due": "due",
-      "flex": "Flex"
+      "flex": "Flex",
+      "showMore": "Show {{count}} more",
+      "showLess": "Show less",
+      "statement": "Statement",
+      "statementSince": "All time · since {{date}}",
+      "exportCsv": "Export CSV",
+      "statementExported": "Statement exported",
+      "colDate": "Date",
+      "colTransaction": "Transaction",
+      "colAmount": "Amount",
+      "colBalance": "Balance",
+      "closingBalance": "Closing balance",
+      "balance": "Balance",
+      "statementError": "Statement could not be loaded.",
+      "noStatement": "No charges or payments yet.",
+      "toPay": "To pay",
+      "credit": "Credit",
+      "settled": "Settled",
+      "desk": "Desk",
+      "meetingRoom": "Meeting room",
+      "privateOffice": "Private office",
+      "billingProfiles": "Billing profiles",
+      "sharedProfile": "Shared — your space manages it",
+      "taxIdShort": "Reg. ID",
+      "vatIdShort": "VAT",
+      "myContacts": "My contacts",
+      "email": "Email",
+      "phone": "Phone",
+      "edit": "Edit",
+      "cancel": "Cancel",
+      "save": "Save",
+      "contactsSaved": "Contacts saved",
+      "couldNotSave": "Could not save",
+      "tryAgain": "Please try again.",
+      "concierge": "Concierge",
+      "conciergeText": "Questions about your booking, an invoice or the space? Message {{space}} — the concierge replies right away.",
+      "language": "Language",
+      "name": "Name",
+      "requested": "Requested",
+      "bookDesk": "Book desk",
+      "bookMeetingRoom": "Book meeting room",
+      "requestPrivateOffice": "Request private office",
+      "requests": "Requests",
+      "spaceBookingsError": "Meeting room and private office bookings could not be loaded. Reload the page to try again.",
+      "contactErrors": {
+        "invalid_email": "Enter a valid email address.",
+        "invalid_phone": "Enter a valid phone number.",
+        "email_unchanged": "This is already your email.",
+        "too_many_requests": "Too many attempts. Try again in an hour."
+      },
+      "emailChangeHint": "A new email is used only after you confirm it from the link we send there.",
+      "emailConfirmSent": "Check {{email}}",
+      "emailConfirmSentDesc": "We sent a confirmation link. Your email changes when you open it.",
+      "emailPending": "Waiting for confirmation: {{email}}"
+    },
+    "confirmEmail": {
+      "doneTitle": "Email confirmed",
+      "doneDesc": "Your email is now {{email}}.",
+      "openPortal": "Open member portal",
+      "failedTitle": "Link not valid",
+      "invalid": "This confirmation link has expired or was already used. Change your email again in the member portal to get a new one.",
+      "taken": "Another member of this space now uses this email. Ask the space team to update it."
     }
   },
   "invites": {
@@ -544,6 +744,7 @@
     "chooseFile": "Choose file",
     "limitNote": "Up to {{count}} rows. Comma, semicolon, or tab delimited.",
     "orPaste": "Or paste CSV text",
+    "pastePlaceholder": "name,email,phone\nAlice,alice@example.com,555-1234\nBob,bob@example.com,",
     "parseBtn": "Parse pasted CSV",
     "tooManyRows": "File has {{count}} rows. Only the first {{limit}} will be imported. Split the file to import the rest.",
     "columnMapping": "Column mapping",
@@ -600,7 +801,21 @@
     "cancelToast": "Auto-renewal canceled",
     "cancelToastDesc": "Access remains active until {{date}}. No further charges will occur.",
     "resumeToast": "Auto-renewal resumed",
-    "resumeToastDesc": "The subscription will automatically renew at the end of the current period."
+    "resumeToastDesc": "The subscription will automatically renew at the end of the current period.",
+    "extrasHint": "These extras renew with the pass. The current period stays as paid. The next renewal bills the pass only.",
+    "stopExtra": "Stop at next renewal",
+    "stopExtraConfirm": "Stop {{name}} at the next renewal? The pass keeps renewing. This period stays as paid.",
+    "stopExtraToast": "Extra will not renew",
+    "stopExtraToastDesc": "{{name}} stays on this period. The next renewal bills the pass only.",
+    "stopExtraError": "Could not stop this extra",
+    "addExtrasHint": "Add an extra to renew with the pass. Billing for a new extra starts at the next renewal. The current period is not adjusted.",
+    "addExtra": "Add to pass",
+    "addExtraConfirm": "Add {{name}} to the pass? It renews with the pass from the next billing period. This period is not adjusted.",
+    "addExtraToast": "Extra added to pass",
+    "addExtraToastDesc": "{{name}} will renew with the pass from the next billing period.",
+    "addExtraError": "Could not add this extra",
+    "undoStopExtra": "Keep renewing",
+    "undoStopExtraConfirm": "Keep {{name}} on the pass? It will renew again from the next billing period."
   },
   "reactivate": {
     "title": "Reactivate {{name}}'s plan",
@@ -608,6 +823,11 @@
     "bankedNote_plural": "<1>{{count}}</1> days banked from the paused plan. They'll be placed day-by-day, swapping desks if needed to keep the plan contiguous.",
     "startDate": "Start date",
     "planCoverage": "Plan will cover {{start}} → {{end}}",
+    "desk": "Desk",
+    "deskFree": "Free for the whole plan",
+    "deskBusy_one": "Busy on {{count}} of {{days}} days",
+    "deskBusy_other": "Busy on {{count}} of {{days}} days",
+    "deskHint": "Days the desk is busy move to a free desk — see the table below.",
     "checking": "Checking desk availability…",
     "table": {
       "date": "Date",
@@ -624,10 +844,16 @@
     "save": "Save"
   },
   "autocomplete": {
+    "empty": "No members yet.",
     "placeholder": "Enter name",
     "existingClients": "Existing clients",
     "allClients": "All clients",
-    "createClient": "Create client \"{{name}}\""
+    "createClient": "Create client \"{{name}}\"",
+    "possibleMatches": "Possible matches",
+    "emailMatch": "email match",
+    "phoneMatch": "phone match",
+    "similarName": "similar name",
+    "createNewAnyway": "Create new anyway"
   },
   "payment": {
     "received": "Payment received",
@@ -644,5 +870,12 @@
       "overdue": "Overdue",
       "unpaid": "Unpaid"
     }
+  },
+  "doorAccess": {
+    "title": "Extra door access",
+    "description": "Doors this member can also open with their booking PIN. The front door is always included.",
+    "noKeypad": "(no keypad)",
+    "note": "Applies to door codes created from now on.",
+    "saveError": "Couldn't save door access. Try again."
   }
 }

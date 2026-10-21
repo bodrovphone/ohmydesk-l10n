@@ -34,6 +34,25 @@
     "lifecycleTitle": "Lifecycle-E-Mails",
     "lifecycleDesc": "Gelegentliche Mitteilungen, wenn Sie OhMyDesk längere Zeit nicht genutzt haben."
   },
+  "community": {
+    "title": "Community-Telegram-Gruppe",
+    "subtitle": "Veröffentlichen Sie Ankündigungen und Updates für Mitglieder in einer geteilten Telegram-Gruppe oder einem Kanal.",
+    "connected": "Verbunden",
+    "enabled": "Ankündigungen aktiviert",
+    "chatIdLabel": "Gruppen-Chat-ID",
+    "chatIdPlaceholder": "z. B. -1001234567890",
+    "instructions": "Fügen Sie @OhMyDesk_bot als Admin zu Ihrer Gruppe hinzu und tragen Sie die Gruppen-Chat-ID ein (Supergruppen beginnen mit -100).",
+    "connectBtn": "Gruppe verbinden",
+    "connectingBtn": "Wird verbunden...",
+    "disconnectBtn": "Trennen",
+    "sendTest": "Test an Gruppe senden",
+    "broadcastTitle": "Ankündigung senden",
+    "broadcastPlaceholder": "Schreiben Sie eine Ankündigung an Ihre Mitglieder (z. B. Events, Öffnungszeiten, Neuigkeiten)...",
+    "broadcastBtn": "Ankündigung senden",
+    "broadcastingBtn": "Wird gesendet...",
+    "cancelBtn": "Abbrechen",
+    "nonAdminNote": "Bitten Sie einen Space-Inhaber oder Admin, Community-Ankündigungen zu konfigurieren."
+  },
   "toasts": {
     "telegramConnected": "Verbunden",
     "telegramConnectedDesc": "Telegram-Benachrichtigungen sind jetzt aktiv.",
@@ -53,6 +72,15 @@
     "noNotificationSent": "Keine Nachricht gesendet",
     "noNotificationSentDesc": "Telegram ist möglicherweise nicht richtig konfiguriert.",
     "sendTestFailed": "Testbenachrichtigung konnte nicht gesendet werden. Überprüfen Sie Ihre Telegram-Verbindung.",
-    "updateEmailFailed": "E-Mail-Einstellungen konnten nicht aktualisiert werden."
+    "updateEmailFailed": "E-Mail-Einstellungen konnten nicht aktualisiert werden.",
+    "communityConnected": "Community-Gruppe verbunden",
+    "communityConnectedDesc": "Community-Ankündigungen sind jetzt für diese Gruppe aktiv.",
+    "communityDisconnected": "Community-Gruppe getrennt",
+    "communityDisconnectedDesc": "Community-Ankündigungen wurden getrennt.",
+    "communityTestSent": "Test an Gruppe gesendet",
+    "communityTestSentDesc": "Überprüfen Sie Ihre Telegram-Gruppe auf die Testankündigung.",
+    "broadcastSent": "Ankündigung gesendet",
+    "broadcastSentDesc": "Ihre Ankündigung wurde in der Community-Telegram-Gruppe veröffentlicht.",
+    "broadcastFailed": "Ankündigung konnte nicht gesendet werden."
   }
 }

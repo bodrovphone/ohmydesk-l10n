@@ -16,13 +16,15 @@
     "combineRooms": "Räume kombinieren",
     "save": "Speichern",
     "clearAll": "Alles leeren",
-    "clearRoom": "Raum leeren"
+    "clearRoom": "Raum leeren",
+    "fitToView": "Alles anzeigen"
   },
   "canvas": {
     "emptyAddPrompt": "Füge Schreibtische oder Formen aus dem rechten Bereich hinzu.",
     "emptyShortcuts": "Ziehen zum Verschieben · Klicken zum Auswählen · <kbd>R</kbd> zum Drehen",
-    "helpDrag": "<b>Ziehen</b> zum Bewegen · Klicken zum Auswählen.",
-    "helpKeys": "<kbd>R</kbd> dreht · <kbd>←→↑↓</kbd> verschiebt · <kbd>Entf</kbd> entfernt · <kbd>Esc</kbd> hebt Auswahl auf."
+    "helpDrag": "<b>Ziehen</b> zum Verschieben · freie Fläche zum Schwenken ziehen · Griffe zum Skalieren verwenden.",
+    "helpKeys": "<kbd>R</kbd> dreht um 15° · <kbd>←→↑↓</kbd> verschiebt · <kbd>Entf</kbd> entfernt · <kbd>Esc</kbd> hebt Auswahl auf.",
+    "retry": "Plan konnte nicht geladen werden. Erneut versuchen"
   },
   "tile": {
     "remove": "Entfernen",
@@ -44,7 +46,8 @@
       "rotation": "Drehung",
       "room": "Raum",
       "unplace": "Vom Plan nehmen",
-      "remove": "Entfernen"
+      "remove": "Entfernen",
+      "size": "Größe"
     },
     "shapes": {
       "title": "Formen",

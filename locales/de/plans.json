@@ -9,7 +9,9 @@
     "saving": "Wird gespeichert…",
     "enable": "Aktivieren",
     "disable": "Deaktivieren",
-    "saveChanges": "Änderungen speichern"
+    "saveChanges": "Änderungen speichern",
+    "expand": "{{title}} aufklappen",
+    "collapse": "{{title}} zuklappen"
   },
   "variantList": {
     "headers": {
@@ -17,11 +19,17 @@
       "days": "Tage",
       "price": "Preis",
       "autoInvoice": "Auto-Rechnung",
+      "sharedInvoiceDate": "Gemeinsamer Rechnungstag",
       "discount": "Rabatt"
     },
     "namePlaceholder": "z. B. Standard",
     "descriptionPlaceholder": "Optional – wird Besuchern auf der Buchungsseite angezeigt (z. B. Leistungen, Bedingungen).",
+    "addCaption": "Beschreibung hinzufügen",
+    "daysSuffix": "Tage",
     "autoInvoiceOn": "Ein",
+    "calendarMonth": "Kalendermonat",
+    "assignmentDate": "Startdatum",
+    "sharedInvoiceDateHelp": "Kalendermonat: Die erste Rechnung wird bis Monatsende anteilig berechnet; danach beginnt jeder Zeitraum am 1. Startdatum: Ein voller Monat ab Vertragsbeginn. Gilt nur für neue Zuweisungen.",
     "remove": "Entfernen",
     "addVariant": "Variante hinzufügen",
     "maxVariants": "Maximal {{max}} Varianten erreicht"
@@ -31,9 +39,46 @@
     "description": "Ein Tag am Schreibtisch, bezahlt pro Besuch. Jeder Tag ist eine eigene Buchung, Tage verfallen nicht genutzter Zeit.",
     "priceLabel": "Tagespreis ({{currency}})",
     "help": "Einzeltarif für einen Tag · wird für Spontanbesucher und Online-Buchungen genutzt.",
-    "updated": "Tagespass aktualisiert."
+    "updated": "Tagespass aktualisiert.",
+    "stopConfirmBody": "Besucher können auf Ihrer öffentlichen Buchungsseite keinen Tagespass mehr kaufen, und der Tagespass verschwindet aus der Tarifliste, wenn Sie im Kalender buchen. Bestehende Tagesbuchungen behalten Datum und Preis. Die Änderung wird beim Speichern übernommen."
+  },
+  "dedicatedDesk": {
+    "title": "Fixdesk-Tarife",
+    "description": "Ein fester Schreibtisch für eine Person – tageweise, wöchentlich, monatlich oder mit eigener Laufzeit. Tagespass, Wochen- und Monatstarif haben feste Laufzeiten; Laufzeiten zählen Kalendertage, Schließtage eingeschlossen.",
+    "updated": "Fixdesk-Tarife aktualisiert.",
+    "saveFailed": "Speichern der Fixdesk-Tarife fehlgeschlagen."
+  },
+  "deskPlans": {
+    "length": {
+      "day": "1 Tag",
+      "week": "7 Tage",
+      "month": "1 Monat"
+    },
+    "lockedHint": "Feste Laufzeit. Für eine andere Laufzeit eine Variante hinzufügen.",
+    "monthHint": "Ein Kalendermonat, Schließtage eingeschlossen.",
+    "termHint": "Kalendertage, Schließtage eingeschlossen.",
+    "unitLabel": "Einheit der Laufzeit",
+    "unitDays": "Tage",
+    "unitMonth": "Monat",
+    "offer": "Anbieten",
+    "termName_one": "{{count}}-Tage-Tarif",
+    "termName_other": "{{count}}-Tage-Tarif",
+    "invalidTerm": "Mindestens 2 Tage eingeben.",
+    "removeConfirmTitle": "{{name}} entfernen?",
+    "removeConfirmBody": "Neue Buchungen können ihn nicht mehr nutzen. Bestehende Buchungen behalten Daten, Preis und Rechnungen. Die Änderung wird beim Speichern übernommen.",
+    "removeAction": "Entfernen",
+    "autoInvoiceLabel": "Automatische Rechnung",
+    "autoInvoiceHint": "Mitglieder mit diesem Tarif erhalten automatisch Rechnungen, wenn ihre eigene automatische Rechnungsstellung aktiviert ist."
   },
   "dedicated": {
+    "daysLabelMonthly": "Tage (optional)",
+    "monthlyDaysPlaceholder": "Monat",
+    "monthlyDaysHelp": "Leer lassen für einen rollierenden Kalendermonat. Zahl eintragen für eine feste Laufzeit (z. B. 60 Tage).",
+    "enableTier": "{{title}} anbieten",
+    "disableTier": "{{title}} nicht mehr anbieten",
+    "stopOffering": "Nicht mehr anbieten",
+    "stopConfirmTitle": "{{title}} nicht mehr anbieten?",
+    "stopConfirmBody": "Neue Buchungen können ihn nicht mehr nutzen: Er verschwindet aus dem Kalender, aus Mitglieder → Tarif aktivieren und von Ihrer öffentlichen Buchungsseite. Bestehende Buchungen mit {{title}} behalten Daten, Preis und Rechnungen. Die Änderung wird beim Speichern übernommen.",
     "weeklyTitle": "Wochentarif",
     "weeklyDesc": "Ein fester Schreibtisch für sieben Tage reserviert. Wenn die letzten Tage reguläre Schließtage sind, endet die Laufzeit am vorangehenden Werktag.",
     "monthlyTitle": "Monatstarif",
@@ -59,7 +104,24 @@
     "never": "Nie",
     "autoExpireHelp": "Leer lassen, damit Guthaben nie verfällt. Falls festgelegt, verfallen ungenutzte Tage nach dieser Frist ab Aktivierung. Eine Erinnerungs-E-Mail wird vorab versendet.",
     "updated": "Flex-Tarif aktualisiert.",
-    "disabledToast": "Flex-Tarif deaktiviert – bestehendes Guthaben bleibt erhalten."
+    "disabledToast": "Flex-Tarif deaktiviert – bestehendes Guthaben bleibt erhalten.",
+    "renewsMonthly": "Verlängert sich monatlich",
+    "renewsMonthlyHelp_one": "Wird jeden Monat über Stripe abgebucht. Jeder Monat beginnt mit {{count}} neuen Besuch; nicht genutzte Besuche werden nicht übertragen.",
+    "renewsMonthlyHelp_other": "Wird jeden Monat über Stripe abgebucht. Jeder Monat beginnt mit {{count}} neuen Besuchen; nicht genutzte Besuche werden nicht übertragen.",
+    "renewsMonthlyNeedsSubscriptions": "Erfordert „Wochen- und Monatstickets automatisch verlängern“ unter Einstellungen → Integrationen → Stripe. Bis dahin wird dieser Tarif als einmaliges Paket verkauft."
+  },
+  "meetingHours": {
+    "title": "Besprechungsraum-Stunden",
+    "description": "Pakete mit Besprechungsraum-Stunden zu einem festen Preis. Jede stündliche Buchung über das Paket zieht ihre Dauer vom Guthaben ab; eine Buchung, die dank der Schreibtisch-Buchung des Mitglieds an diesem Tag kostenlos ist, verbraucht keine Stunden.",
+    "noPermission": "Bitte einen Space-Inhaber oder Admin, Stundenpakete einzurichten.",
+    "packsLabel": "Stundenpakete – Stunden × Preis ({{currency}})",
+    "hoursLabel": "Stunden",
+    "packsHelp": "Jedes Paket wird über die Mitgliedskarte als feste Stundenzahl verkauft.",
+    "defaultLabel": "{{hours}} Besprechungsraum-Stunden",
+    "updated": "Stundenpakete aktualisiert.",
+    "disabledToast": "Stundenpakete deaktiviert – bestehende Guthaben bleiben erhalten.",
+    "disableConfirmTitle": "Stundenpakete deaktivieren?",
+    "disableConfirmBody": "Neue Pakete können nicht verkauft werden. Bestehende Guthaben bleiben erhalten und die Pakete bleiben im Verlauf."
   },
   "hotdesk": {
     "title": "Hotdesk-Tarif",
@@ -83,8 +145,60 @@
     "help": "Kunden erhalten eine Geschäftsadresse und Postservice – ohne Schreibtisch. Aktivieren, um virtuelle Bürokunden zu verwalten und deren Umsatz zu erfassen.",
     "priceLabel": "Monatlicher Preis ({{currency}})",
     "revenueHelp": "Wird für Umsatzberichte und automatische Rechnungsstellung verwendet.",
+    "photosFor": "Fotos für „{{name}}“ auf der öffentlichen Buchung",
     "updated": "Tarif für virtuelle Büros aktualisiert.",
     "disabledToast": "Tarif für virtuelle Büros deaktiviert."
+  },
+  "services": {
+    "title": "Services & Extras",
+    "description": "Kaffee, Snacks, Mahlzeiten, Schließfächer und weitere Extras zu festen Preisen, bereit für Buchungen.",
+    "empty": "Noch keine Services. Fügen Sie Kaffee, eine Snackbox oder ein Schließfach mit Preis hinzu.",
+    "help": "Buchungen können Services noch nicht nutzen – das Hinzufügen zu Buchungen und Rechnungen folgt als Nächstes.",
+    "noPermission": "Bitten Sie einen Inhaber oder Admin des Spaces, Services und Extras zu verwalten.",
+    "add": "Service hinzufügen",
+    "nameLabel": "Name des Service",
+    "namePlaceholder": "z. B. Kaffee-Flatrate",
+    "priceLabel": "Preis",
+    "unitLabel": "Abrechnung",
+    "descriptionLabel": "Beschreibung",
+    "descriptionPlaceholder": "Optional – was enthalten ist, z. B. Filterkaffee und Tee den ganzen Tag.",
+    "appliesToLabel": "Verfügbar für",
+    "appliesToEmpty": "Noch nirgends angeboten: Wählen Sie oben mindestens eine Buchungsart, sonst erscheint dieses Extra bei keiner Buchung.",
+    "publicEnabled": "Bei der öffentlichen Buchung anzeigen",
+    "allowQuantity": "Kunde kann die Menge wählen",
+    "maxQuantityShort": "Max.",
+    "maxQuantityLabel": "Höchstmenge",
+    "maxQuantityPlaceholder": "Unbegrenzt",
+    "archive": "Archivieren",
+    "restore": "Wiederherstellen",
+    "archivedHeading_one": "{{count}} archivierter Service",
+    "archivedHeading_other": "{{count}} archivierte Services",
+    "updated": "Services aktualisiert.",
+    "units": {
+      "per_booking": "Pro Buchung",
+      "per_day": "Pro Tag",
+      "per_hour": "Pro Stunde"
+    },
+    "appliesTo": {
+      "day_pass": "Tagespass",
+      "flex": "Flex-Tarif",
+      "weekly": "Wochentarif",
+      "monthly": "Monatstarif",
+      "meeting_room_hourly": "Meetingraum (stundenweise)",
+      "meeting_room_whole_day": "Meetingraum (ganzer Tag)"
+    },
+    "errors": {
+      "nameRequired": "Bitte einen Namen eingeben.",
+      "maxQuantityInvalid": "Die Höchstmenge muss eine ganze Zahl ab 1 sein.",
+      "fixRows": "Einige Services müssen vor dem Speichern korrigiert werden.",
+      "saveFailed": "Services konnten nicht gespeichert werden. Bitte versuchen Sie es erneut."
+    },
+    "perPerson": "Preis pro Person",
+    "perPersonShort": "pro Person",
+    "perPersonHint": "Wird für jede teilnehmende Person berechnet – die Buchung fragt nach der Anzahl. Nur für Besprechungsräume.",
+    "perPersonRoomsOnly": "Leistungen pro Person gibt es nur für Besprechungsräume.",
+    "roomsLabel": "Verfügbar in Räumen",
+    "allRooms": "Alle Räume"
   },
   "pricingAdvisor": {
     "eyebrow": "OhMyDesk KI · Preisberater",
@@ -122,5 +236,10 @@
     "cheaperAxis": "← günstiger / pro Tag",
     "commitmentAxis": "kürzere Bindung ←      → längere Bindung",
     "note": "Wenn zwei Blasen nahe beieinander liegen, überschneiden sich Ihre Tarife und Mitglieder wählen den günstigeren. Die Matrix verdeutlicht Lücken auf einen Blick."
+  },
+  "conceptExploration": "Konzept-Exploration",
+  "quantityStepper": {
+    "increase": "Erhöhen",
+    "decrease": "Verringern"
   }
 }

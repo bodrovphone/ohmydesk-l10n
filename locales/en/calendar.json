@@ -2,6 +2,10 @@
   "heading": "Desks calendar",
   "pageDescription": "See live desk availability, tentative holds, and confirmed bookings. Select a free day to create a booking, or open a booking span to edit it.",
   "corner": "Desk",
+  "bookingDetailsAria": "Booking details",
+  "deskCell": {
+    "flexBookingTitle": "Flex plan booking"
+  },
   "deskFallback": "Desk {{number}}",
   "desksCount_one": "{{count}} desk",
   "desksCount_other": "{{count}} desks",
@@ -31,6 +35,8 @@
   "nav": {
     "today": "Today",
     "tomorrow": "Tomorrow",
+    "off": "Off",
+    "todayBadge": "TODAY",
     "allRooms": "All rooms",
     "all": "All",
     "byRoom": "By Room",
@@ -44,6 +50,8 @@
     "kindTrial": "Trial day",
     "kindQuiet": "Quiet day",
     "chipLabel": "AI · Performance",
+    "openSummaryAria": "Open performance summary",
+    "summaryAria": "Performance summary",
     "thisPeriod": "AI · This {{period}}",
     "periodWeek": "week",
     "periodMonth": "month",
@@ -116,7 +124,8 @@
   "floorPlan": {
     "loading": "Loading floor plan…",
     "emptyTitle": "No floor plan configured",
-    "emptyDesc": "Go to Floor Plan Editor to arrange your desks"
+    "emptyDesc": "Go to Floor Plan Editor to arrange your desks",
+    "retry": "Could not load the plan. Retry"
   },
   "customIncome": {
     "title": "Add extra earnings",
@@ -147,6 +156,7 @@
   },
   "modal": {
     "titleBook": "Book Desk",
+    "desk": "Desk",
     "moveToAnotherDesk": "Move to another desk",
     "currentDesk": " (current)",
     "plan": "Plan",
@@ -156,6 +166,8 @@
     "startDate": "Start Date *",
     "endDate": "End Date *",
     "coversDates": "Covers {{start}} → {{end}}",
+    "termDays_one": "{{count}} day",
+    "termDays_other": "{{count}} days",
     "ongoingContract": "Ongoing — open-ended, no end date",
     "aboutOngoing": "About ongoing contracts",
     "ongoingContractTooltip": "A rolling / month-to-month contract with no fixed end date. Auto-books the next monthly cycle; mark each as paid to extend by another month. Leave it unticked for a fixed-term booking.",
@@ -188,12 +200,17 @@
     "confirm": "Confirm?",
     "discarding": "Discarding...",
     "freezePlan": "Freeze plan",
+    "paymentDialogTitle": "Record desk booking payment",
+    "ongoingPaymentDialogTitle": "Record ongoing-cycle payment",
+    "recordPayment": "Save and mark paid",
+    "defaultPaymentNote": "Desk booking",
     "markAsPaid": "Mark as paid",
     "marking": "Marking...",
     "endContract": "End contract",
     "shareTooltip": "Share booking confirmation via Telegram, WhatsApp, or Viber",
     "cancel": "Cancel",
     "save": "Book Desk",
+    "saveChanges": "Save changes",
     "saving": "Saving...",
     "quickSaveTip": "Tip: Press Ctrl+Enter to save quickly",
     "groupEditTitle": "Change the whole booking?",
@@ -210,9 +227,11 @@
     "generateDoorCode": "Generate door code",
     "generatingDoorCode": "Generating door code…",
     "flexLabel": "Flex:",
+    "useFlexBalance": "Use the flex balance for this booking",
     "flexDaysRemainingSuffix": "days remaining",
     "perVisit": "{{price}}/visit",
-    "flexExpires": "Expires {{date}}"
+    "flexExpires": "Expires {{date}}",
+    "deskPayerHint": "One payer for all of this member's desk and hotdesk billing."
   },
   "shareModal": {
     "title": "Share Booking",

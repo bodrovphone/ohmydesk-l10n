@@ -1,0 +1,29 @@
+{
+  "header": {
+    "title": "Concierge OhMyDesk",
+    "subtitle": "Ρωτήστε οτιδήποτε για το προϊόν"
+  },
+  "greeting": "Γεια σας! Είμαι ο concierge του OhMyDesk. Ρωτήστε με ό,τι θέλετε για το προϊόν — λειτουργίες, τιμές, πώς συγκρινόμαστε ή πώς να ξεκινήσετε.",
+  "starters": {
+    "whatIs": "Τι είναι το OhMyDesk;",
+    "pricing": "Πόσο κοστίζει;",
+    "compareCobot": "Πώς συγκρίνεστε με το Cobot;",
+    "flexPasses": "Μπορεί να διαχειριστεί ευέλικτα ημερήσια πάσα;"
+  },
+  "input": {
+    "placeholder": "Ρωτήστε για λειτουργίες, τιμές…"
+  },
+  "aria": {
+    "dialog": "Concierge OhMyDesk",
+    "close": "Κλείσιμο συνομιλίας",
+    "typing": "Ο concierge πληκτρολογεί",
+    "message": "Το μήνυμά σας",
+    "send": "Αποστολή μηνύματος",
+    "open": "Συνομιλήστε με τον concierge του OhMyDesk",
+    "closeBubble": "Κλείστε τον concierge του OhMyDesk"
+  },
+  "errors": {
+    "generic": "Συγγνώμη — κάτι πήγε στραβά. Στείλτε email στο hello@ohmydesk.app.",
+    "network": "Δεν κατάφερα να επικοινωνήσω με τον διακομιστή. Δοκιμάστε ξανά ή στείλτε email στο hello@ohmydesk.app."
+  }
+}

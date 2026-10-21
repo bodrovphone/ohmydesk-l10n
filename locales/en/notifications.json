@@ -34,6 +34,25 @@
     "lifecycleTitle": "Lifecycle emails",
     "lifecycleDesc": "Occasional check-ins if you haven't used OhMyDesk in a while."
   },
+  "community": {
+    "title": "Community Telegram Group",
+    "subtitle": "Broadcast announcements and updates to your members in a shared Telegram group or channel.",
+    "connected": "Connected",
+    "enabled": "Announcements enabled",
+    "chatIdLabel": "Group Chat ID",
+    "chatIdPlaceholder": "e.g. -1001234567890",
+    "instructions": "Add @OhMyDesk_bot to your group as an admin, then paste the group's Chat ID (supergroups start with -100).",
+    "connectBtn": "Connect Group",
+    "connectingBtn": "Connecting...",
+    "disconnectBtn": "Disconnect",
+    "sendTest": "Send Test to Group",
+    "broadcastTitle": "Broadcast announcement",
+    "broadcastPlaceholder": "Write an announcement to your members (e.g. events, opening hours, community news)...",
+    "broadcastBtn": "Send Announcement",
+    "broadcastingBtn": "Sending...",
+    "cancelBtn": "Cancel",
+    "nonAdminNote": "Ask a space owner or admin to configure community Telegram announcements."
+  },
   "toasts": {
     "telegramConnected": "Connected",
     "telegramConnectedDesc": "Telegram notifications are now active.",
@@ -53,6 +72,15 @@
     "noNotificationSent": "No notification sent",
     "noNotificationSentDesc": "Telegram may not be configured correctly.",
     "sendTestFailed": "Failed to send test notification. Check your Telegram connection.",
-    "updateEmailFailed": "Failed to update email settings."
+    "updateEmailFailed": "Failed to update email settings.",
+    "communityConnected": "Community Group Connected",
+    "communityConnectedDesc": "Community announcements are now enabled for this group.",
+    "communityDisconnected": "Community Group Disconnected",
+    "communityDisconnectedDesc": "Community announcements have been disconnected.",
+    "communityTestSent": "Test Sent to Group",
+    "communityTestSentDesc": "Check your Telegram group for the test announcement.",
+    "broadcastSent": "Announcement Sent",
+    "broadcastSentDesc": "Your announcement was posted to the community Telegram group.",
+    "broadcastFailed": "Failed to send announcement."
   }
 }

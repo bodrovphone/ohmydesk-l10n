@@ -9,7 +9,9 @@
     "saving": "Saving…",
     "enable": "Enable",
     "disable": "Disable",
-    "saveChanges": "Save changes"
+    "saveChanges": "Save changes",
+    "expand": "Expand {{title}}",
+    "collapse": "Collapse {{title}}"
   },
   "variantList": {
     "headers": {
@@ -17,11 +19,17 @@
       "days": "Days",
       "price": "Price",
       "autoInvoice": "Auto-invoice",
+      "sharedInvoiceDate": "Shared invoice date",
       "discount": "Discount"
     },
     "namePlaceholder": "e.g. Standard",
     "descriptionPlaceholder": "Optional — shown to visitors on the public booking page, e.g. what's included, conditions.",
+    "addCaption": "Add caption",
+    "daysSuffix": "days",
     "autoInvoiceOn": "On",
+    "calendarMonth": "Calendar month",
+    "assignmentDate": "Assignment date",
+    "sharedInvoiceDateHelp": "Calendar month: prorate the first charge through month-end; later cycles start on the 1st. Assignment date: charge a full month from the start date. New assignments only.",
     "remove": "Remove",
     "addVariant": "Add variant",
     "maxVariants": "Maximum {{max}} variants reached"
@@ -31,10 +39,47 @@
     "description": "One day at a desk, paid per visit. Each day is its own booking and nothing carries over.",
     "priceLabel": "Price per day ({{currency}})",
     "help": "Single-day rate · used for walk-ins and public link bookings.",
-    "updated": "Day pass updated."
+    "updated": "Day pass updated.",
+    "stopConfirmBody": "Visitors can no longer buy a day pass on your public booking page, and Day Pass disappears from the plan list when you book from the desk calendar. Day bookings you already have keep their dates and price. The change applies when you save."
+  },
+  "dedicatedDesk": {
+    "title": "Reserved desk plans",
+    "description": "One named desk held for one person, by the day, week, month or your own length. Day Pass, Weekly and Monthly have fixed lengths; lengths count calendar days, days off included.",
+    "updated": "Reserved desk plans updated.",
+    "saveFailed": "Failed to save reserved desk plans."
+  },
+  "deskPlans": {
+    "length": {
+      "day": "1 day",
+      "week": "7 days",
+      "month": "1 month"
+    },
+    "lockedHint": "Fixed length. Add a variant for a different length.",
+    "monthHint": "One calendar month, days off included.",
+    "termHint": "Calendar days, days off included.",
+    "unitLabel": "Length unit",
+    "unitDays": "days",
+    "unitMonth": "month",
+    "offer": "Offer",
+    "termName_one": "{{count}}-day plan",
+    "termName_other": "{{count}}-day plan",
+    "invalidTerm": "Enter at least 2 days.",
+    "removeConfirmTitle": "Remove {{name}}?",
+    "removeConfirmBody": "New bookings can no longer use it. Bookings already on it keep their dates, price and invoices. The change applies when you save.",
+    "removeAction": "Remove",
+    "autoInvoiceLabel": "Auto-invoice",
+    "autoInvoiceHint": "Members on this plan are invoiced automatically when their own auto-invoicing is on."
   },
   "dedicated": {
     "weeklyTitle": "Weekly Plan",
+    "daysLabelMonthly": "Days (optional)",
+    "monthlyDaysPlaceholder": "Month",
+    "monthlyDaysHelp": "Leave days empty for a rolling calendar month. Enter a number for a fixed-length monthly-style pass (e.g. 60 days).",
+    "enableTier": "Offer {{title}}",
+    "disableTier": "Stop offering {{title}}",
+    "stopOffering": "Stop offering",
+    "stopConfirmTitle": "Stop offering {{title}}?",
+    "stopConfirmBody": "New bookings can no longer use it: it disappears from the desk calendar, Members → Activate Plan and your public booking page. Bookings already on {{title}} keep their dates, price and invoices. The change applies when you save.",
     "weeklyDesc": "One named desk held for a seven-day term. If only the final days are regular days off, the term ends on the preceding working day.",
     "monthlyTitle": "Monthly Plan",
     "monthlyDesc": "One named desk held for a rolling calendar month — the start date through the day before the same date next month. Can run open-ended, renewing month after month until you end it, and can be frozen mid-term with the unused days banked for later.",
@@ -59,7 +104,24 @@
     "never": "Never",
     "autoExpireHelp": "Leave blank to never expire. If set, each member's balance gets a fixed deadline from the day their plan is activated — days left unused on that date are forfeited. One reminder email goes out beforehand.",
     "updated": "Flex plan updated.",
-    "disabledToast": "Flex plan disabled — existing balances kept."
+    "disabledToast": "Flex plan disabled — existing balances kept.",
+    "renewsMonthly": "Renews monthly",
+    "renewsMonthlyHelp_one": "Charged every month by Stripe. Each month starts with a fresh {{count}} visit; unused visits don't carry over.",
+    "renewsMonthlyHelp_other": "Charged every month by Stripe. Each month starts with a fresh {{count}} visits; unused visits don't carry over.",
+    "renewsMonthlyNeedsSubscriptions": "Needs “Auto-renew weekly and monthly passes” turned on in Settings → Integrations → Stripe. Until then this plan sells as a one-off pack."
+  },
+  "meetingHours": {
+    "title": "Meeting room hours",
+    "description": "Packs of meeting-room hours sold at a fixed price. Each hourly booking against the pack burns its length from the balance; a booking that is free with the member's desk booking that day uses no hours.",
+    "noPermission": "Ask a space owner or admin to configure meeting room hour packs.",
+    "packsLabel": "Hour packs — hours × price ({{currency}})",
+    "hoursLabel": "Hours",
+    "packsHelp": "Each pack is sold as a fixed number of hours from the member card.",
+    "defaultLabel": "{{hours}} meeting room hours",
+    "updated": "Meeting room hour packs updated.",
+    "disabledToast": "Meeting room hour packs turned off — members keep their balances.",
+    "disableConfirmTitle": "Turn off meeting room hour packs?",
+    "disableConfirmBody": "New packs can't be sold. Existing member balances are kept and the packs stay in their history."
   },
   "hotdesk": {
     "title": "Hotdesk Plan",
@@ -83,8 +145,60 @@
     "help": "Members on a virtual office plan get a business address and mail handling — no desk access. Enable to track virtual office members and count their revenue (they never take up desk capacity).",
     "priceLabel": "Monthly price ({{currency}})",
     "revenueHelp": "Used for revenue reporting and auto-invoicing.",
+    "photosFor": "Photos for “{{name}}” on public booking",
     "updated": "Virtual office plan updated.",
     "disabledToast": "Virtual office plan disabled."
+  },
+  "services": {
+    "title": "Services & extras",
+    "description": "Coffee, snacks, meals, lockers and other extras with a set price, ready to add to bookings.",
+    "empty": "No services yet. Add coffee, a snack box or a locker with its price.",
+    "help": "Bookings can't use services yet — adding them to bookings and invoices comes next.",
+    "noPermission": "Ask a space owner or admin to manage services and extras.",
+    "add": "Add service",
+    "nameLabel": "Service name",
+    "namePlaceholder": "e.g. Coffee flat",
+    "priceLabel": "Price",
+    "unitLabel": "Charged",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Optional — what's included, e.g. filter coffee and tea all day.",
+    "appliesToLabel": "Available for",
+    "appliesToEmpty": "Not offered anywhere yet: tick at least one booking type above, or this extra won't appear on any booking.",
+    "publicEnabled": "Show on public booking",
+    "allowQuantity": "Customer can choose quantity",
+    "maxQuantityShort": "Max",
+    "maxQuantityLabel": "Maximum quantity",
+    "maxQuantityPlaceholder": "No limit",
+    "archive": "Archive",
+    "restore": "Restore",
+    "archivedHeading_one": "{{count}} archived service",
+    "archivedHeading_other": "{{count}} archived services",
+    "updated": "Services updated.",
+    "units": {
+      "per_booking": "Per booking",
+      "per_day": "Per day",
+      "per_hour": "Per hour"
+    },
+    "appliesTo": {
+      "day_pass": "Day pass",
+      "flex": "Flex plan",
+      "weekly": "Weekly plan",
+      "monthly": "Monthly plan",
+      "meeting_room_hourly": "Meeting room (hourly)",
+      "meeting_room_whole_day": "Meeting room (whole day)"
+    },
+    "errors": {
+      "nameRequired": "Enter a name.",
+      "maxQuantityInvalid": "Maximum must be a whole number of 1 or more.",
+      "fixRows": "Some services need a fix before saving.",
+      "saveFailed": "Could not save services. Please try again."
+    },
+    "perPerson": "Price per person",
+    "perPersonShort": "per person",
+    "perPersonHint": "Charged for every person coming — the booking asks how many. Meeting rooms only.",
+    "perPersonRoomsOnly": "Per-person services are for meeting rooms only.",
+    "roomsLabel": "Available in rooms",
+    "allRooms": "All rooms"
   },
   "pricingAdvisor": {
     "eyebrow": "OhMyDesk AI · Pricing advisor",
@@ -122,5 +236,10 @@
     "cheaperAxis": "← cheaper / per day",
     "commitmentAxis": "shorter commitment ←      → longer",
     "note": "When two bubbles sit close together, your plans overlap and members will pick the cheaper one. The matrix makes the gap (or lack of one) between Weekly and Flex obvious at a glance."
+  },
+  "conceptExploration": "Concept exploration",
+  "quantityStepper": {
+    "increase": "Increase",
+    "decrease": "Decrease"
   }
 }

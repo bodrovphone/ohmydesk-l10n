@@ -8,10 +8,19 @@
   },
   "steps": {
     "spaceInfo": "Space Info",
+    "shopInfo": "Shop",
     "roomsDesks": "Rooms & Desks",
     "meetingRooms": "Meeting Rooms",
     "pricing": "Pricing",
-    "notifications": "Notifications"
+    "notifications": "Notifications",
+    "finance": "Finances"
+  },
+  "stepLanguage": {
+    "title": "Choose your language",
+    "description": "We detected a default from your browser. Pick the language you want for the dashboard.",
+    "label": "Dashboard language",
+    "help": "You can change this anytime under My OhMyDesk → Your language.",
+    "continue": "Continue"
   },
   "common": {
     "next": "Next",
@@ -26,6 +35,25 @@
     "nameSpaceSub": "This will be visible to your team members.",
     "spaceName": "Space Name",
     "spaceNamePlaceholder": "e.g. Downtown Hub",
+    "shopName": "Shop name",
+    "shopNamePlaceholder": "e.g. Elaia Grove",
+    "nameRentalTitle": "Name your rental shop",
+    "nameRentalSub": "Your customers will see this on the booking page.",
+    "shopUrl": "Your shop URL",
+    "shopSlugPlaceholder": "your-shop",
+    "shopUrlHelp": "Auto-generated from your shop name. You can change it later in Settings.",
+    "shopMultiDesc": "Check this if your brand has more than one shop.",
+    "verticalLabel": "What do you run?",
+    "vertical": {
+      "coworking": {
+        "title": "Coworking space",
+        "desc": "Desks, meeting rooms, offices and memberships."
+      },
+      "rental": {
+        "title": "Rental shop",
+        "desc": "Bikes, e-bikes or equipment rented by the day."
+      }
+    },
     "spaceUrl": "Your space URL",
     "urlPrefix": "ohmydesk.app/",
     "slugPlaceholder": "your-space",
@@ -74,6 +102,7 @@
     "defaultPriceHelp": "You can change this later in settings.",
     "creating": "Creating...",
     "createSpace": "Create Space",
+    "createShop": "Create shop",
     "createFailed": "Failed to create organization. Please try again."
   },
   "step5": {
@@ -81,17 +110,55 @@
     "description": "You mentioned you manage multiple locations. Here's what to do next.",
     "addingTitle": "Adding more locations",
     "addingBody": "Once you're comfortable with your first space, go to <1>Settings</1> to add another location. Each location gets its own calendar, rooms, and team.",
-    "goToSpace": "Go to my space"
+    "addingBodyRental": "Once you're comfortable with your first shop, go to <1>Settings</1> to add another location. Each location gets its own calendar, fleet, and team.",
+    "goToSpace": "Go to my space",
+    "goToShop": "Go to my shop"
+  },
+  "publicJoin": {
+    "defaultSpace": "the space",
+    "linkInactiveTitle": "This link isn’t active",
+    "linkInactiveDesc": "It may have expired or already been used. Ask the team to send you a fresh sign-up link.",
+    "thanksTitle": "Thanks, {{name}}! 🎉",
+    "thanksThere": "there",
+    "thanksDesc": "Your details are with {{space}}. The team will confirm your membership shortly.",
+    "welcomeTitle": "Welcome to {{space}} 👋",
+    "welcomeDesc": "Tell us a bit about you and the team will get you set up. Takes about a minute.",
+    "yourName": "Your name",
+    "fullNamePlaceholder": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "contactHint": "Add at least one — an email or a phone number.",
+    "company": "Company",
+    "optional": "(optional)",
+    "companyPlaceholder": "If you’re joining for a company",
+    "consentAria": "Consent to store details",
+    "consentLabel": "I agree that {{space}} can store these details to manage my membership.",
+    "sendDetails": "Send my details",
+    "poweredByPrefix": "Powered by",
+    "brandName": "OhMyDesk",
+    "errorExpired": "This link has just expired or was already used.",
+    "errorGeneric": "Something went wrong. Please try again, or ask the team for a new link."
   },
   "telegram": {
     "title": "Connect Telegram notifications",
     "description": "Get notified when bookings start or assignments end. You can always connect later in Settings.",
+    "rentalDescription": "Get notified when a customer reserves a bike. You can always connect later in Settings.",
     "connected": "Telegram connected!",
     "goCalendar": "Go to Calendar",
+    "goShop": "Go to my shop",
     "waitingConnection": "Waiting for connection...",
     "generatingLink": "Generating link...",
     "connect": "Connect Telegram",
     "openBotStart": "Open the bot in Telegram and press Start",
     "skip": "Skip for now"
+  },
+  "stepFinance": {
+    "title": "How closely do you track finances?",
+    "description": "This sets up how payments are recorded and how revenue is reported.",
+    "simpleTitle": "Keep it simple",
+    "simpleDesc": "“Mark as paid” records the payment right away with today’s date. Revenue is reported by services delivered.",
+    "detailedTitle": "Detailed tracking",
+    "detailedDesc": "Every payment opens a form for the method, date and note. Revenue is reported both by payment and by services delivered.",
+    "changeLater": "You can change this anytime in My space → Billing & invoices."
   }
 }

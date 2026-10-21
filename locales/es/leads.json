@@ -1,0 +1,212 @@
+{
+  "title": "Contactos potenciales",
+  "description": "Personas que han preguntado por tu espacio. Haz un seguimiento desde el primer saludo hasta que se conviertan en miembros registrados.",
+  "export": "Exportar",
+  "csv": {
+    "columns": {
+      "name": "Nombre",
+      "stage": "Etapa",
+      "source": "Fuente",
+      "contact": "Contacto",
+      "preferredDates": "Fechas preferidas",
+      "notes": "Notas",
+      "createdAt": "Creado el"
+    }
+  },
+  "stages": {
+    "new": {
+      "label": "Nuevo",
+      "hint": "Acaba de contactar"
+    },
+    "contacted": {
+      "label": "Contactado",
+      "hint": "Esperando respuesta"
+    },
+    "toured": {
+      "label": "Visitado",
+      "hint": "Visitó el espacio"
+    },
+    "ready": {
+      "label": "Listo",
+      "hint": "Cerrar el trato"
+    }
+  },
+  "relTime": {
+    "today": "Hoy",
+    "yesterday": "Hace 1 día",
+    "daysAgo": "Hace {{count}}d",
+    "weeksAgo": "Hace {{count}}s",
+    "monthsAgo": "Hace {{count}}m"
+  },
+  "channels": {
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "viber": "Viber",
+    "instagram": "Instagram",
+    "email": "Correo electrónico",
+    "walkin": "Visita sin cita previa",
+    "referral": "Referencia",
+    "other": "Contacto"
+  },
+  "channelPlaceholders": {
+    "whatsapp": "+359 88 …",
+    "telegram": "@usuario",
+    "viber": "+359 88 …",
+    "instagram": "@usuario o URL",
+    "email": "nombre@ejemplo.com",
+    "walkin": "Entró el viernes a las 5pm",
+    "referral": "Vía María",
+    "other": "¿De dónde viene?"
+  },
+  "summary": {
+    "allLeads": "Todos los contactos potenciales",
+    "staleCount": "{{count}} inactivos"
+  },
+  "nudge": {
+    "eyebrow": "OhMyDesk IA",
+    "title_one": "{{count}} contacto potencial se ha enfriado.",
+    "title_other": "{{count}} contactos potenciales se han enfriado.",
+    "desc": "Sin respuesta en más de {{days}} días. Un recordatorio amistoso suele conseguir una renovación.",
+    "dismiss": "Descartar",
+    "reviewThem": "Revisarlos"
+  },
+  "actionbar": {
+    "addLead": "Añadir contacto potencial",
+    "viewMode": "Modo de vista",
+    "kanban": "Kanban",
+    "list": "Lista",
+    "columns": "Columnas",
+    "hiddenBadge": "{{count}} ocultas",
+    "minColumnsTooltip": "Se requieren al menos 2 columnas",
+    "showHideColumns": "Mostrar/ocultar columnas"
+  },
+  "card": {
+    "deleteLead": "Eliminar contacto potencial",
+    "conciergeBadge": "Conserje",
+    "conciergeTitle": "Creado automáticamente por el conserje IA",
+    "wants": "Quiere",
+    "added": "Añadido {{time}}",
+    "moveBackTo": "Mover de nuevo a {{stage}}",
+    "moveTo": "Mover a {{stage}}",
+    "finalStage": "Etapa final"
+  },
+  "deleteAlert": {
+    "title": "¿Eliminar a {{name}}?",
+    "description": "Este contacto potencial se eliminará permanentemente. Esta acción no se puede deshacer.",
+    "cancel": "Cancelar",
+    "delete": "Eliminar contacto potencial"
+  },
+  "list": {
+    "leadCol": "Contacto potencial",
+    "channelCol": "Canal",
+    "wantsCol": "Quiere",
+    "stageCol": "Etapa",
+    "addedCol": "Añadido",
+    "emptyStageTitle": "No hay contactos potenciales en esta etapa.",
+    "emptyStageDesc": "Borra el filtro o haz que alguien avance."
+  },
+  "kanban": {
+    "addToStage": "Añadir a esta etapa",
+    "hideColumn": "Ocultar esta columna",
+    "emptyNote": "Aún no hay contactos potenciales aquí.",
+    "addLeadBtn": "+ Añadir un contacto potencial"
+  },
+  "emptyState": {
+    "title": "Aún no hay contactos potenciales",
+    "description": "Añade a alguien que haya preguntado por tu espacio, o espera a que llegue la primera consulta."
+  },
+  "drawer": {
+    "detailsAria": "Detalles de {{name}}",
+    "addedPrefix": "· Añadido {{time}}",
+    "convertCta": {
+      "title": "Listo para convertir.",
+      "desc": "Crea el miembro a partir de este contacto potencial y elimínalo del proceso.",
+      "btn": "Convertir a miembro",
+      "converting": "Convirtiendo…"
+    },
+    "leadSection": {
+      "title": "Contacto potencial",
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Nombre del contacto potencial",
+      "channelLabel": "Canal",
+      "contactLabel": "Teléfono, @usuario o correo electrónico",
+      "contactPlaceholder": "+359 88 … / @usuario / nombre@ejemplo.com",
+      "stageLabel": "Etapa"
+    },
+    "requestSection": {
+      "title": "Solicitud",
+      "datesLabel": "Fechas preferidas",
+      "datesPlaceholder": "1-7 de junio · Flexible · Este verano…",
+      "notesLabel": "Notas",
+      "notesPlaceholder": "¿Qué preguntaron? Cualquier contexto que valga la pena recordar."
+    },
+    "timelineSection": {
+      "title": "Cronología",
+      "reachedOutWhat": "Contactado a través de <ch>{{channel}}</ch>. {{notes}}",
+      "noContext": "Sin contexto adicional.",
+      "repliedWhen": "Respondido",
+      "repliedWhat": "Moviste el contacto potencial a <st>{{stage}}</st>.",
+      "touredWhen": "Visitado",
+      "touredWhat": "{{name}} <vis>visitó</vis> el espacio.",
+      "nowWhen": "Ahora",
+      "nowWhat": "<bold>Interés confirmado.</bold> Listo para convertir cuando quieras.",
+      "staleWhen": "{{days}}d en silencio",
+      "staleWhat": "No hay respuesta en {{days}} días; considera un recordatorio amistoso."
+    },
+    "footer": {
+      "deleteConfirm": "¿Eliminar este contacto potencial?",
+      "yesDelete": "Sí, eliminar",
+      "deleting": "Eliminando…",
+      "cancel": "Cancelar",
+      "contact": "Contactar",
+      "backTo": "Volver a {{stage}}",
+      "moveTo": "Mover a {{stage}}",
+      "deleteLead": "Eliminar contacto potencial"
+    },
+    "missingContact": {
+      "title": "Actualiza la información de contacto para comunicarte",
+      "ariaLabel": "Actualizar información de contacto",
+      "noContactDesc": "Este contacto potencial aún no tiene un usuario de {{channel}} registrado. Añade uno arriba (por ejemplo, <code>{{placeholder}}</code>) y conectaremos el botón Contactar.",
+      "offlineChannelDesc": "Las visitas sin cita previa y las referencias no tienen una bandeja de entrada para abrir. Elige un canal diferente arriba (WhatsApp, Telegram, correo electrónico…) si tienes una forma de contactarlos.",
+      "invalidHandleDesc": "La información de contacto no parece correcta para {{channel}}. Prueba con <code>{{placeholder}}</code>.{{telegramNote}}",
+      "telegramNote": "Un @nombredeusuario de Telegram también funciona; simplemente escríbelo como @usuario.",
+      "gotIt": "Entendido"
+    }
+  },
+  "addModal": {
+    "title": "Añadir un contacto potencial",
+    "ariaLabel": "Añadir un contacto potencial",
+    "subtitle": "Haz un seguimiento de alguien que haya preguntado por el espacio. Conviértelo en miembro cuando se registre.",
+    "nameLabel": "Nombre *",
+    "namePlaceholder": "p. ej. María Petrov",
+    "reachLabel": "¿Cómo te contactaron?",
+    "contactLabel": "Usuario / teléfono / correo electrónico",
+    "datesLabel": "Fechas preferidas *",
+    "datesPlaceholder": "1-7 de junio · Flexible · Este verano…",
+    "stageLabel": "Etapa",
+    "notesLabel": "Notas",
+    "optional": "(opcional)",
+    "notesPlaceholder": "¿Qué preguntaron? Cualquier contexto que valga la pena recordar.",
+    "cancel": "Cancelar",
+    "addLead": "Añadir contacto potencial",
+    "adding": "Añadiendo…"
+  },
+  "toasts": {
+    "saved": "Guardado",
+    "leadUpdated": "Contacto potencial actualizado",
+    "failedToSave": "Error al guardar",
+    "editNotSaved": "No se pudo guardar la edición.",
+    "movedTo": "Movido a {{stage}}",
+    "failed": "Falló",
+    "couldNotMove": "No se pudo mover el contacto potencial.",
+    "leadAdded": "Contacto potencial añadido",
+    "couldNotAdd": "No se pudo añadir el contacto potencial.",
+    "couldNotUpdateChannel": "No se pudo actualizar el canal.",
+    "leadDeleted": "Contacto potencial eliminado",
+    "couldNotDelete": "No se pudo eliminar el contacto potencial.",
+    "convertedToMember": "Convertido a miembro",
+    "convertedDesc": "{{name}} ahora es miembro. Configura la facturación en la página de Miembros.",
+    "couldNotConvert": "No se pudo convertir este contacto potencial."
+  },
+  "contactInfoIncompleteTitle": "Información de contacto faltante o incompleta"
+}

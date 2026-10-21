@@ -27,6 +27,14 @@
   "changeStartDate": "Startdatum ändern",
   "startsOn": "Startet am {{date}}",
   "yourDetails": "Deine Angaben",
+  "publicContact": {
+    "heading": "Angaben aus der öffentlichen Buchung",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "company": "Firma",
+    "address": "Firmenadresse",
+    "vat": "USt-IdNr."
+  },
   "fullName": "Vollständiger Name",
   "emailAddress": "E-Mail-Adresse",
   "phoneNumber": "Telefonnummer",
@@ -68,6 +76,7 @@
     "phoneHelp": "Bitte überprüfe diese Nummer – so erreicht dich das Team des Spaces.",
     "email": "E-Mail *",
     "emailHelp": "Wir senden dir eine Bestätigung.",
+    "invalidEmail": "Gib eine gültige E-Mail-Adresse ein, zum Beispiel name@example.com.",
     "notes": "Anmerkungen",
     "notesPlaceholder": "Besondere Hinweise für das Team",
     "b2bCheckbox": "Ich buche für meine Firma",
@@ -105,7 +114,9 @@
     "to": "Bis",
     "continue": "Weiter",
     "redirectingToPayment": "Weiterleitung zur Zahlung…",
-    "submitting": "Wird gesendet…"
+    "submitting": "Wird gesendet…",
+    "booking": "Wird gebucht…",
+    "bookFor": "{{amount}} buchen"
   },
   "offices": {
     "interestRegistered": "Interesse registriert",
@@ -126,6 +137,7 @@
     "vatNumber": "USt-IdNr.",
     "vatNumberPlaceholder": "USt-IdNr. (für die Rechnung)",
     "contactName": "Ansprechpartner",
+    "invalidEmail": "Gib eine gültige E-Mail-Adresse ein, zum Beispiel name@example.com.",
     "contactNamePlaceholder": "Dein Name",
     "email": "E-Mail",
     "emailPlaceholder": "du@firma.de",
@@ -147,7 +159,9 @@
     "requestThisOffice": "Büro anfragen",
     "chooseOffice": "Büro auswählen",
     "privateOffices": "Private Büros",
-    "allOccupiedDesc": "Aktuell sind alle Büros belegt. Hinterlege dein Interesse, und {{org}} meldet sich, sobald ein Büro frei wird."
+    "allOccupiedDesc": "Aktuell sind alle Büros belegt. Hinterlege dein Interesse, und {{org}} meldet sich, sobald ein Büro frei wird.",
+    "virtualOffices": "Virtuelles Büro",
+    "virtualOfficeHint": "Geschäftsadresse und Postservice — ohne Schreibtisch. Anfrage über die Kontaktdaten auf dieser Seite. Die Online-Anfrage folgt."
   },
   "sharedBooking": {
     "notFoundTitle": "Buchung nicht gefunden",
@@ -163,6 +177,15 @@
     "footerOr": "oder",
     "footerPricing": "Preise ansehen",
     "footerPowered": "Powered by OhMyDesk"
+  },
+  "photos": {
+    "open": "Foto {{n}} von {{total}} öffnen",
+    "count": "{{count}} Fotos",
+    "photoAlt": "Foto {{n}} von {{total}}",
+    "dialogTitle": "Fotos von {{name}}",
+    "counter": "{{n}} / {{total}}",
+    "previous": "Vorheriges Foto",
+    "next": "Nächstes Foto"
   },
   "publicDesk": {
     "meetingRoomReserved": "Ihr Meeting-Raum {{roomName}} bei {{orgName}} ist reserviert. {{checkEmail}}",
@@ -184,6 +207,9 @@
     "flexBundleHint": "Ihr {{days}}-Tage-Paket gibt flexible Nutzung — Tage wann Sie möchten. Der Space-Manager aktiviert Ihren Pass nach dem Kauf.",
     "passRenewsWeekly": "Dieser Pass verlängert sich wöchentlich automatisch, bis Sie die Verlängerung abschalten. Kündigung stoppt nur die nächste Abbuchung.",
     "passRenewsMonthly": "Dieser Pass verlängert sich monatlich automatisch, bis Sie die Verlängerung abschalten. Kündigung stoppt nur die nächste Abbuchung.",
+    "flexRenewsMonthly_one": "Dieser Tarif verlängert sich jeden Monat: {{count}} Besuch pro Monat. Nicht genutzte Besuche werden nicht übertragen. Eine Kündigung stoppt nur die nächste Abbuchung.",
+    "flexRenewsMonthly_other": "Dieser Tarif verlängert sich jeden Monat: {{count}} Besuche pro Monat. Nicht genutzte Besuche werden nicht übertragen. Eine Kündigung stoppt nur die nächste Abbuchung.",
+    "flexPlanConflict": "Sie haben bereits einen aktiven Tarif bei diesem Space. Bitte wenden Sie sich an den Space, um ihn zu ändern.",
     "nameRequired": "Name *",
     "emailRequired": "E-Mail *",
     "phoneRequired": "Telefon *",
@@ -193,6 +219,7 @@
     "vatNumber": "USt-IdNr.",
     "phoneHelpLong": "Prüfen Sie diese Nummer — so erreicht Sie der Space-Manager. Ein falsches Zeichen bedeutet ein leeres Desk.",
     "emailOptionalHelp": "Optional. Wir senden eine Bestätigung.",
+    "invalidEmail": "Gib eine gültige E-Mail-Adresse ein, zum Beispiel name@example.com.",
     "notesPlaceholderManager": "Was der Space-Manager wissen sollte",
     "privacyNoticeDesk": "Mit dem Absenden stimmen Sie zu, dass Ihre Kontaktdaten für die Buchung an den Space-Manager weitergegeben werden.",
     "seeAvailableDates": "Verfügbare Termine anzeigen",
@@ -211,6 +238,35 @@
     "requestPlan": "{{plan}} anfragen",
     "booking": "Wird gebucht…"
   },
+  "memberBooking": {
+    "notFoundTitle": "Nicht gefunden",
+    "notFoundDesc": "Dieser Buchungslink ist ungültig oder abgelaufen.",
+    "successTitle": "Geschafft, {{name}}!",
+    "reserved_one": "Ihr Schreibtisch bei {{orgName}} ist reserviert.",
+    "reserved_other": "{{count}} Schreibtische bei {{orgName}} sind reserviert.",
+    "daysRemaining": "{{remaining}}/{{total}} Tage übrig",
+    "bookAnotherDay": "Weiteren Tag buchen",
+    "welcome": "Willkommen, {{name}}",
+    "flexPlanDefault": "Flex-Pass",
+    "flexDaysBalance": "{{remaining}}/{{total}} Tage",
+    "expiresOn": "Läuft ab am {{date}}",
+    "upcomingTitle": "Ihre kommenden Buchungen",
+    "flexExhaustedTitle": "Alle Flex-Tage verbraucht",
+    "flexExhaustedDesc": "Flex-Pass gefällt? Bitten Sie den Space um eine Verlängerung.",
+    "daysUsedTitle": "Genutzte Tage ({{used}}/{{total}})",
+    "pickDatesTitle": "Termine wählen",
+    "balanceExpiresHint": "Ihr Guthaben läuft am {{date}} ab — buchen Sie vorher, um die Tage zu nutzen.",
+    "booking": "Wird gebucht…",
+    "confirmBooking_one": "{{count}} Tag bestätigen",
+    "confirmBooking_other": "{{count}} Tage bestätigen",
+    "errorNoBalance": "Ihr Flex-Guthaben ist aufgebraucht. Bitte wenden Sie sich an den Space-Manager.",
+    "errorNoDesks": "Leider sind am {{date}} keine Schreibtische frei. Bitte Auswahl anpassen.",
+    "errorDeskTaken": "Dieser Schreibtisch wurde gerade gebucht. Bitte wählen Sie Ihre Tage erneut.",
+    "legacyLink": "Dieser Buchungslink funktioniert nur noch bis zum {{date}}. Bitten Sie {{orgName}} um Ihren neuen Link oder öffnen Sie ihn in Ihrem Mitgliederportal.",
+    "errorFailed": "Buchung fehlgeschlagen. Bitte erneut versuchen.",
+    "slotFree": "{{count}} frei",
+    "slotFull": "Voll"
+  },
   "availabilityCalendar": {
     "multiHint": "Einzelne Tage antippen, um mehrere auszuwählen",
     "legend": "Grün = Schreibtische frei · Grau = geschlossen oder ausgebucht",
@@ -218,5 +274,47 @@
     "selected_other": "{{count}} Tage ausgewählt",
     "done": "Fertig",
     "cancel": "Abbrechen"
-  }
+  },
+  "poweredByPromo": {
+    "line": "Entwickelt vom Team hinter diesem Space — <compare>So schneidet OhMyDesk ab</compare> oder <pricing>Preise ansehen</pricing>."
+  },
+  "publicExtras": {
+    "perHour_one": "pro Stunde, {{count}} Stunde",
+    "perHour_other": "pro Stunde, {{count}} Stunden",
+    "title": "Extras hinzufügen",
+    "perDay_one": "pro Tag, {{count}} Tag",
+    "perDay_other": "pro Tag, {{count}} Tage",
+    "less": "Eins weniger",
+    "more": "Eins mehr",
+    "renewsWithPass": "Extras verlängern sich mit Ihrem Pass, bis sie gekündigt werden.",
+    "invalid": "Eines der Extras ist nicht mehr verfügbar. Bitte prüfen Sie Ihre Extras und versuchen Sie es erneut.",
+    "perPerson": "pro Person",
+    "forPeople_one": "für {{count}} Person",
+    "forPeople_other": "für {{count}} Personen",
+    "addPeople": "Bitte Anzahl der Personen angeben",
+    "peopleLabel": "Wie viele Personen kommen?",
+    "peoplePlaceholder": "1–{{count}}",
+    "peopleHelp": "Extras „pro Person“ werden für alle Teilnehmenden berechnet.",
+    "peopleRequired": "Bitte geben Sie an, wie viele Personen kommen.",
+    "peopleTooMany_one": "Dieser Raum ist für {{count}} Person ausgelegt.",
+    "peopleTooMany_other": "Dieser Raum bietet Platz für höchstens {{count}} Personen."
+  },
+  "legal": {
+    "acceptTerms": "Mit meiner Bestellung akzeptiere ich die <doc>Nutzungsbedingungen</doc>.",
+    "privacyConsent": "Ich habe die <doc>Datenschutzerklärung</doc> gelesen und bin mit der Verarbeitung meiner Angaben für diese Buchung einverstanden.",
+    "consentRequired": "Bitte bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben."
+  },
+  "portalMember": {
+    "bookingAs": "Buchung als {{name}}",
+    "billTo": "Rechnung an",
+    "personal": "Mich persönlich",
+    "receiptTo": "Wir senden die Quittung an",
+    "receiptOther": "An eine andere Adresse?",
+    "receiptOtherLabel": "E-Mail für die Quittung",
+    "receiptUseCard": "Doch an {{email}} senden",
+    "invalidReceiptEmail": "Gib eine gültige E-Mail für die Quittung ein oder lass das Feld leer, dann nutzen wir deine gespeicherte.",
+    "severalClients": "Dein Konto ist mit mehr als einem Mitgliedsprofil in diesem Space verknüpft, daher wird diese Buchung als Gast gemacht. Bitte den Space, deine Profile zusammenzuführen, um als Mitglied zu buchen."
+  },
+  "onlyLeft_one": "Nur noch {{count}} verfügbar",
+  "onlyLeft_other": "Nur noch {{count}} verfügbar"
 }

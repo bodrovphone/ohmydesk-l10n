@@ -16,13 +16,15 @@
     "combineRooms": "Combine rooms",
     "save": "Save",
     "clearAll": "Clear all",
-    "clearRoom": "Clear room"
+    "clearRoom": "Clear room",
+    "fitToView": "Fit to view"
   },
   "canvas": {
     "emptyAddPrompt": "Add desks or shapes from the panel on the right.",
     "emptyShortcuts": "Drag to reposition · click to select · <kbd>R</kbd> to rotate",
-    "helpDrag": "<b>Drag</b> to move · click to select.",
-    "helpKeys": "<kbd>R</kbd> rotates · <kbd>←→↑↓</kbd> nudge · <kbd>Del</kbd> removes · <kbd>Esc</kbd> deselects."
+    "helpDrag": "<b>Drag</b> to move · drag empty space to pan · use handles to resize.",
+    "helpKeys": "<kbd>R</kbd> rotates 15° · <kbd>←→↑↓</kbd> nudge · <kbd>Del</kbd> removes · <kbd>Esc</kbd> deselects.",
+    "retry": "Could not load the plan. Retry"
   },
   "tile": {
     "remove": "Remove",
@@ -44,7 +46,8 @@
       "rotation": "Rotation",
       "room": "Room",
       "unplace": "Unplace",
-      "remove": "Remove"
+      "remove": "Remove",
+      "size": "Size"
     },
     "shapes": {
       "title": "Shapes",

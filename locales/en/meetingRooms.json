@@ -43,6 +43,7 @@
     "newBooking": "New Booking",
     "editBooking": "Edit Booking",
     "roomLabel": "Meeting Room",
+    "dateLabel": "Date",
     "wholeDayBooking": "Whole-day booking",
     "perDay": " · {{currencySymbol}}{{price}}/day",
     "numberOfDays": "Number of days",
@@ -57,6 +58,9 @@
     "title": "Title",
     "titlePlaceholder": "e.g. Team meeting",
     "bookAgainstHourPack": "Book against hour pack ({{remaining}}h remaining)",
+    "hourPackUsedUp": "Hour pack used up — this booking is charged at the room rate",
+    "hourPackWaivedToday": "Free today with the member's desk booking — pack hours aren't used.",
+    "hourPackShort": "This booking needs {{needed}}h but only {{left}}h are left in the pack — it will go over.",
     "price": "Price ({{currencySymbol}})",
     "freeSameDay": "Free · same-day desk booking",
     "autoPrice": "Auto: {{currencySymbol}}{{rate}}/hr",
@@ -67,6 +71,9 @@
     "saving": "Saving...",
     "saveChanges": "Save Changes",
     "createBooking": "Create Booking",
+    "recordPayment": "Record payment",
+    "paymentDialogTitle": "Record meeting-room payment",
+    "paymentRecorded": "Payment recorded",
     "toastCreated": "Booking created",
     "toastUpdated": "Booking updated",
     "toastCancelled": "Booking cancelled",
@@ -77,6 +84,10 @@
     "toastGenericError": "Failed to save booking.",
     "promptNoHours": "This room has no configured operating hours on one or more of those days. Book it anyway?",
     "errorSpaceClosed": "The space is closed on one or more of those days.",
-    "errorSlotTaken": "The room is already booked on one or more of those days."
+    "errorSlotTaken": "The room is already booked on one or more of those days.",
+    "attendees": "Number of people",
+    "attendeesPlaceholder": "1–{{count}}",
+    "attendeesHint": "Per-person extras are charged for this many people. Changing it re-prices them.",
+    "attendeesInvalid": "Number of people must be a whole number of 1 or more."
   }
 }

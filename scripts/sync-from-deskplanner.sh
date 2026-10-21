@@ -8,21 +8,22 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 L10N_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 DESKPLANNER="${DESKPLANNER:-${L10N_ROOT}/../deskplanner}"
 
-SRC_EN="${DESKPLANNER}/client/src/locales/en"
-SRC_DE="${DESKPLANNER}/client/src/locales/de"
-DEST_EN="${L10N_ROOT}/locales/en"
-DEST_DE="${L10N_ROOT}/locales/de"
+# Keep the shipped app locales together. Validate every source before writing
+# anything so an older checkout cannot leave a half-refreshed mirror.
+LANGUAGES=(en de es el)
+for language in "${LANGUAGES[@]}"; do
+  source_dir="${DESKPLANNER}/client/src/locales/${language}"
+  if [[ ! -d "${source_dir}" ]]; then
+    echo "error: missing ${source_dir}" >&2
+    echo "Set DESKPLANNER to a checkout with all shipped locales (en/de/es/el)." >&2
+    exit 1
+  fi
+done
 
-if [[ ! -d "${SRC_EN}" ]]; then
-  echo "error: missing ${SRC_EN}" >&2
-  echo "Set DESKPLANNER to your DeskPlanner clone, e.g.:" >&2
-  echo "  DESKPLANNER=~/pet_projects/deskplanner $0" >&2
-  exit 1
-fi
-
-mkdir -p "${DEST_EN}" "${DEST_DE}"
-cp "${SRC_EN}/"*.json "${DEST_EN}/"
-cp "${SRC_DE}/"*.json "${DEST_DE}/"
+for language in "${LANGUAGES[@]}"; do
+  mkdir -p "${L10N_ROOT}/locales/${language}"
+  cp "${DESKPLANNER}/client/src/locales/${language}/"*.json "${L10N_ROOT}/locales/${language}/"
+done
 
 SHA="$(git -C "${DESKPLANNER}" rev-parse HEAD)"
 DATE="$(git -C "${DESKPLANNER}" log -1 --format=%cs HEAD)"

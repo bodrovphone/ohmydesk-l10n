@@ -33,8 +33,12 @@
       "sizeNote": "Größenangabe",
       "optional": "(optional)",
       "sizePlaceholder": "≈4 Schreibtische",
+      "publicDescription": "Öffentliche Beschreibung",
+      "publicDescriptionPlaceholder": "Kurzer Text für Besucher auf der Buchungsseite, bevor sie dieses Büro anfragen.",
       "autoInvoiceTitle": "Laufende Verträge automatisch abrechnen",
       "autoInvoiceDesc": "Erstellt bei unbefristeten Verträgen für dieses Büro automatisch die monatliche Folgerechnung.",
+      "sharedInvoiceDateTitle": "An gemeinsamen Rechnungstag anpassen",
+      "sharedInvoiceDateDesc": "Ein: Die erste Rechnung wird bis Monatsende anteilig berechnet; danach beginnt jeder Zeitraum am 1. Aus: Ein voller Monat ab Vertragsbeginn. Gilt nur für neue Zuweisungen.",
       "saving": "Wird gespeichert…",
       "save": "Speichern",
       "nameRequiredTitle": "Name erforderlich",
@@ -42,7 +46,9 @@
       "officeUpdated": "Büro aktualisiert",
       "officeAdded": "Büro hinzugefügt",
       "saveErrorTitle": "Fehler beim Speichern",
-      "saveErrorDesc": "Bitte versuchen Sie es erneut."
+      "saveErrorDesc": "Bitte versuchen Sie es erneut.",
+      "addOffice": "Büro hinzufügen",
+      "agreementTitle": "Vertrag – {{company}}"
     },
     "assign": {
       "title": "{{name}} zuweisen",
@@ -69,10 +75,14 @@
     },
     "endAgreement": {
       "title": "Vertrag mit {{company}} beenden?",
-      "desc": "Das Büro wird wieder als frei markiert. Der Vertrag bleibt in der Historie erhalten.",
+      "desc": "Das Büro ist nach dem Enddatum wieder frei. Der Vertrag bleibt in der Historie erhalten.",
       "confirm": "Vertrag beenden",
       "success": "Vertrag beendet",
-      "error": "Vertrag konnte nicht beendet werden"
+      "error": "Vertrag konnte nicht beendet werden",
+      "endDate": "Enddatum",
+      "endDateHint": "Heute oder ein früheres Datum.",
+      "endInFuture": "Wählen Sie heute oder ein früheres Datum.",
+      "endBeforeStart": "Das Enddatum darf nicht vor dem Vertragsbeginn liegen."
     },
     "delete": {
       "title": "Dieses Büro löschen?",
@@ -81,6 +91,74 @@
       "confirm": "Löschen",
       "success": "Büro gelöscht",
       "error": "Büro konnte nicht gelöscht werden"
+    },
+    "view": {
+      "cards": "Karten",
+      "list": "Liste",
+      "ariaLabel": "Layout für private Büros"
+    },
+    "table": {
+      "office": "Büro",
+      "price": "Preis",
+      "status": "Status",
+      "tenant": "Mieter",
+      "term": "Laufzeit",
+      "autoInvoice": "Automatische Rechnung"
+    },
+    "filters": {
+      "toggle": "Filter",
+      "searchPlaceholder": "Büro, Unternehmen suchen…",
+      "status": "Status",
+      "allStatuses": "Alle",
+      "occupied": "Belegt",
+      "vacant": "Frei",
+      "price": "Preis",
+      "min": "Min.",
+      "max": "Max.",
+      "autoInvoice": "Automatische Rechnung",
+      "allAutoInvoice": "Alle",
+      "autoInvoiceOn": "Aktiviert",
+      "autoInvoiceOff": "Deaktiviert",
+      "clear": "Filter zurücksetzen",
+      "noMatch": "Keine privaten Büros entsprechen diesen Filtern."
+    },
+    "detail": {
+      "title": "Details zum privaten Büro",
+      "edit": "Büro bearbeiten",
+      "officeDetails": "Bürodetails",
+      "name": "Name",
+      "monthlyPrice": "Monatlicher Preis",
+      "size": "Größenangabe",
+      "autoInvoice": "Automatische Rechnung",
+      "sharedInvoiceDate": "Gemeinsamer Rechnungstag",
+      "calendarMonth": "Kalendermonat",
+      "assignmentDate": "Startdatum",
+      "publicListing": "Auf öffentlicher Seite anzeigen",
+      "tenantDetails": "Aktueller Mieter",
+      "company": "Unternehmen",
+      "status": "Status",
+      "term": "Laufzeit",
+      "started": "Gestartet",
+      "ends": "Endet",
+      "openEnded": "Unbefristet",
+      "notes": "Notizen",
+      "billingAddress": "Rechnungsdaten",
+      "billingName": "Rechnungsempfänger",
+      "legalName": "Offizieller Firmenname",
+      "address": "Adresse",
+      "taxId": "Steuer- / Handelsregisternummer",
+      "vatId": "USt-IdNr.",
+      "representative": "Vertretungsberechtigte Person",
+      "profile": "Profil",
+      "billTo": "Rechnungsempfänger",
+      "notAdded": "Nicht hinterlegt",
+      "noTenant": "Derzeit kein Mieter zugewiesen",
+      "assignCompany": "Unternehmen zuweisen",
+      "endAgreement": "Vertrag beenden",
+      "on": "Ein",
+      "off": "Aus",
+      "showInvoices": "Rechnungen anzeigen",
+      "primaryProfile": "Primär – die Rechnungsdaten des Mitglieds"
     }
   },
   "virtual": {
@@ -90,7 +168,7 @@
     "planOffTitle": "Tarif für virtuelle Büros ist deaktiviert",
     "planOffDesc": "Aktivieren Sie den Tarif für virtuelle Büros, um Adresskunden und deren Umsatz zu verwalten.",
     "enableInPlans": "In Tarife aktivieren",
-    "addMember": "Mitglied hinzufügen",
+    "addMember": "Mitglied zuweisen",
     "tabs": {
       "active": "Aktiv",
       "past": "Vergangen"
@@ -105,7 +183,7 @@
     "emptyActiveTitle": "Noch keine virtuellen Bürokunden",
     "emptyPastTitle": "Keine früheren virtuellen Bürokunden",
     "emptyActiveDesc": "Aktivieren Sie den Tarif für ein Mitglied, um eine Geschäftsadresse abzurechnen – ganz ohne Schreibtisch.",
-    "emptyAddButton": "Virtuelles Büromitglied hinzufügen",
+    "emptyAddButton": "Mitglied zuweisen",
     "table": {
       "member": "Mitglied",
       "plan": "Tarif",
@@ -136,12 +214,16 @@
     "durationMonths_other": "{{count}} Mon.",
     "endDialog": {
       "title": "Virtuelles Büro für {{name}} beenden?",
-      "desc": "Zählt ab heute nicht mehr zum Umsatz und wechselt in den Reiter „Vergangen“. Mitgliederprofil und Rechnungen bleiben erhalten.",
+      "desc": "Wechselt in den Reiter „Vergangen“ und zählt nach dem Enddatum nicht mehr zum Umsatz. Mitgliederprofil, Zahlungen und Rechnungen bleiben erhalten.",
+      "endDate": "Enddatum",
       "ending": "Wird beendet…",
       "confirm": "Tarif beenden",
       "success": "Virtuelles Büro beendet",
       "successDesc": "{{name}} nutzt den Tarif nicht mehr.",
-      "error": "Beenden fehlgeschlagen"
+      "error": "Beenden fehlgeschlagen",
+      "endDateHint": "Heute oder ein früheres Datum. Ein späteres Ende legen Sie unter „Bearbeiten“ fest.",
+      "endInFuture": "Wählen Sie heute oder ein früheres Datum.",
+      "endBeforeStart": "Das Enddatum darf nicht vor dem Beginn des virtuellen Büros liegen."
     },
     "detail": {
       "title": "Details zum virtuellen Büro",
@@ -181,7 +263,7 @@
       "showInvoices": "Rechnungen anzeigen"
     },
     "addDialog": {
-      "title": "Virtuelles Büromitglied hinzufügen",
+      "title": "Mitglied dem virtuellen Büro zuweisen",
       "desc": "Stellen Sie einem Mitglied eine Geschäftsadresse in Rechnung – ohne Schreibtischplatz.",
       "member": "Mitglied",
       "memberHint": "Bestehendes Mitglied auswählen oder neuen Namen eingeben – wird bei Bedarf neu angelegt.",
@@ -213,29 +295,37 @@
       "verbRenew": "Verlängern",
       "verbEdit": "Bearbeiten",
       "title": "{{verb}}: {{name}}",
-      "descRenew": "Startet den Zeitraum für das virtuelle Büro mit einem neuen Enddatum neu. Das Startdatum bleibt unverändert.",
+      "descRenew": "Startet den Zeitraum für das virtuelle Büro mit einem neuen Enddatum neu.",
       "descEdit": "Datumsangaben, Enddatum, monatlichen Preis und Notizen für dieses Mitglied anpassen.",
       "currentlyEnds": "Endet derzeit:",
       "openEnded": "Unbefristet (kein Enddatum)",
-      "endDate": "Enddatum",
+      "planStartRequiredTitle": "Tarifbeginn erforderlich",
+      "planStartRequiredDesc": "Geben Sie an, wann der aktuelle Tarif begonnen hat.",
+      "planStartHint": "Ein neuer Tarifbeginn berechnet vergangene Monate nicht neu.",
+      "planStart": "Tarifbeginn",
+      "endDate": "Tarifende",
       "monthlyPrice": "Monatlicher Preis ({{currency}})",
       "saving": "Wird gespeichert…",
       "endDateRequiredTitle": "Enddatum erforderlich",
       "endDateRequiredDesc": "Geben Sie ein Enddatum ein oder wählen Sie unbefristet.",
-      "dateInPastTitle": "Enddatum prüfen",
-      "dateInPastDesc": "Das Enddatum darf nicht in der Vergangenheit liegen.",
       "renewedTitle": "Verlängert",
       "savedTitle": "Gespeichert",
       "descEnds": "{{name}} endet nun am {{date}}.",
       "descOpenEnded": "{{name}} auf unbefristet gesetzt.",
       "error": "Fehler beim {{verb}}",
       "virtualOfficeSince": "Virtuelles Büro seit",
+      "virtualOfficeSinceHint": "Virtuelles Büro seit: das erste Datum, an dem das Mitglied an unserer Adresse registriert wurde.",
       "nextBilling": "Nächste Abrechnung",
       "nextBillingHint": "Das erste Leistungsdatum, das OhMyDesk als Nächstes abrechnet.",
       "nextBillingUnavailable": "Für dieses virtuelle Büro ist keine wiederkehrende Abrechnung geplant.",
       "notes": "Notizen",
       "notesPlaceholder": "Interne Notizen zu diesem virtuellen Büro",
-      "optional": "(optional)"
+      "optional": "(optional)",
+      "pastEndHint": "Dieses Datum liegt in der Vergangenheit — beim Speichern endet das virtuelle Büro an diesem Tag und wechselt in den Reiter „Vergangen“.",
+      "endBeforeStartTitle": "Enddatum prüfen",
+      "endBeforeStartDesc": "Das Enddatum darf nicht vor dem Beginn des virtuellen Büros liegen.",
+      "endedTitle": "Virtuelles Büro beendet",
+      "descEnded": "{{name}} endete am {{date}}."
     },
     "filters": {
       "member": "Mitglied",
@@ -255,7 +345,8 @@
       "from": "Von",
       "to": "Bis",
       "clear": "Filter zurücksetzen",
-      "noMatch": "Keine Mitglieder entsprechen diesen Filtern."
+      "noMatch": "Keine Mitglieder entsprechen diesen Filtern.",
+      "toggle": "Filter"
     }
   }
 }

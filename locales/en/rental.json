@@ -78,7 +78,13 @@
     "awaitingEmail": "Waiting for the customer to confirm by email. Released at {{time}} if not confirmed.",
     "notConfirmedInTime": "Not confirmed by {{time}}. The reservation is released and the bikes are free again.",
     "awaitingEmailBadge": "Awaiting email",
-    "notConfirmedBadge": "Not confirmed"
+    "notConfirmedBadge": "Not confirmed",
+    "cancelEmailNote": "The customer gets an email that the order was cancelled. The reason you type is not sent.",
+    "emails": {
+      "reminderSent": "Reminder email sent {{at}}",
+      "reminderScheduled": "Reminder email goes out {{at}}",
+      "cancellationSent": "Cancellation email sent {{at}}"
+    }
   },
   "orders": {
     "title": "Orders",
@@ -281,7 +287,25 @@
       "retired": "Retired"
     },
     "deleteConfirm": "Delete \"{{label}}\"?",
-    "deleteBlocked": "This bike has bookings and cannot be deleted. Retire it instead."
+    "deleteBlocked": "This bike has bookings and cannot be deleted. Retire it instead.",
+    "printAll": "Print QR stickers",
+    "code": {
+      "label": "Bike code",
+      "hint": "Printed on the sticker and part of its QR address. 2 to 32 letters, digits or hyphens.",
+      "invalid": "Use 2 to 32 letters, digits or hyphens, not starting with a hyphen.",
+      "taken": "Another bike in this shop already has that code.",
+      "saved": "Code saved. Print the sticker again: the old QR code no longer opens this bike.",
+      "reprintWarning": "If you change the code, print a new sticker. The old QR code stops working."
+    },
+    "qr": {
+      "button": "QR sticker",
+      "title": "QR sticker for {{label}}",
+      "scanHint": "Staff scan it with a phone camera to open this bike. They need to be signed in.",
+      "aria": "QR code for bike {{code}}",
+      "print": "Print sticker",
+      "open": "Open bike page",
+      "copy": "Copy link"
+    }
   },
   "calendar": {
     "title": "Calendar",
@@ -329,7 +353,9 @@
     "invalidNoShow": "Release hours must be between 0 and 168.",
     "invalidHold": "The hold must be between 5 and 1440 minutes.",
     "ownerOnly": "Only the owner can change the rental settings.",
-    "hoursNoteProducts": "Customers book your products, so pickup and return times come from the product times."
+    "hoursNoteProducts": "Customers book your products, so pickup and return times come from the product times.",
+    "customerEmails": "Email guests about their reservation",
+    "customerEmailsHint": "Sends a reminder 24 hours before pickup and a note when you cancel a reservation. Guests who book less than a day ahead get no reminder. The confirmation email always goes out."
   },
   "products": {
     "title": "Products",
@@ -479,5 +505,37 @@
     "invalid_confirm_link": "This confirmation link is not valid. Open the newest email about this order, or contact the shop.",
     "not_a_product_window": "Choose one of the shop's rental options.",
     "no_product_price": "One of the bikes is not offered for this option."
+  },
+  "unit": {
+    "description": "What this bike is, whether it can be rented, who has it now and who is booked next.",
+    "notFoundTitle": "Bike not found",
+    "notFound": "No bike with the code {{code}} in this shop.",
+    "notFoundHint": "The sticker may belong to another shop, or the code was changed or the bike was deleted.",
+    "toFleet": "Go to Fleet",
+    "toToday": "Go to Today",
+    "now": "Right now",
+    "nowNothing": "Nobody has this bike right now.",
+    "upcoming": "Booked next",
+    "upcomingNothing": "No bookings coming up.",
+    "recent": "Recently ended",
+    "maintenanceBlock": "Blocked for maintenance",
+    "overdue": "Should have been back {{at}}",
+    "outOfService": "This bike is out of service, so it cannot be rented.",
+    "affected": "Bookings that still use this bike: {{count}}. Give those customers another bike or call them.",
+    "notes": "Notes",
+    "notesPlaceholder": "Repairs, damage, what to check before the next rental",
+    "notesNone": "No notes.",
+    "notesSaved": "Notes saved"
+  },
+  "stickers": {
+    "title": "QR stickers",
+    "description": "One sticker per bike. Print at 100% scale and stick it on the frame.",
+    "print": "Print",
+    "ownerOnly": "Only owners and admins can print stickers.",
+    "origin": "These QR codes open {{origin}}.",
+    "notLive": "This is not your live site ({{origin}}). QR codes printed here would not open the bikes of your live shop. Open ohmydesk.app and print from there.",
+    "showAll": "Show all bikes",
+    "none": "No bikes to print yet",
+    "noneHint": "Add bikes in Fleet. Retired bikes get no sticker."
   }
 }

@@ -78,7 +78,13 @@
     "awaitingEmail": "Esperando que el cliente confirme por correo electrónico. Liberado a las {{time}} si no se confirma.",
     "notConfirmedInTime": "No confirmado a las {{time}}. La reserva se libera y las bicicletas vuelven a estar libres.",
     "awaitingEmailBadge": "Esperando el correo",
-    "notConfirmedBadge": "Sin confirmar"
+    "notConfirmedBadge": "Sin confirmar",
+    "cancelEmailNote": "El cliente recibe un correo avisando de que el pedido se ha cancelado. El motivo que escribas no se envía.",
+    "emails": {
+      "reminderSent": "Recordatorio enviado {{at}}",
+      "reminderScheduled": "El recordatorio se enviará {{at}}",
+      "cancellationSent": "Correo de cancelación enviado {{at}}"
+    }
   },
   "orders": {
     "title": "Pedidos",
@@ -281,7 +287,25 @@
       "retired": "Retirado"
     },
     "deleteConfirm": "¿Eliminar \"{{label}}\"?",
-    "deleteBlocked": "Esta bicicleta tiene reservas y no se puede eliminar. Retírala en su lugar."
+    "deleteBlocked": "Esta bicicleta tiene reservas y no se puede eliminar. Retírala en su lugar.",
+    "printAll": "Imprimir pegatinas QR",
+    "code": {
+      "label": "Código de la bicicleta",
+      "hint": "Va impreso en la pegatina y forma parte de su dirección QR. De 2 a 32 letras, dígitos o guiones.",
+      "invalid": "Usa de 2 a 32 letras, dígitos o guiones, sin empezar por un guion.",
+      "taken": "Otra bicicleta de esta tienda ya tiene ese código.",
+      "saved": "Código guardado. Imprime la pegatina de nuevo: el QR anterior ya no abre esta bicicleta.",
+      "reprintWarning": "Si cambias el código, imprime una pegatina nueva. El QR anterior dejará de funcionar."
+    },
+    "qr": {
+      "button": "Pegatina QR",
+      "title": "Pegatina QR de {{label}}",
+      "scanHint": "El personal la escanea con la cámara del móvil para abrir esta bicicleta. Tiene que haber iniciado sesión.",
+      "aria": "Código QR de la bicicleta {{code}}",
+      "print": "Imprimir pegatina",
+      "open": "Abrir página de la bicicleta",
+      "copy": "Copiar enlace"
+    }
   },
   "calendar": {
     "title": "Calendario",
@@ -329,7 +353,9 @@
     "invalidNoShow": "Las horas de liberación deben estar entre 0 y 168.",
     "invalidHold": "El tiempo de retención debe estar entre 5 y 1440 minutos.",
     "ownerOnly": "Solo el propietario puede cambiar los ajustes de alquiler.",
-    "hoursNoteProducts": "Los clientes reservan tus productos, por lo que los horarios de recogida y devolución provienen de los horarios del producto."
+    "hoursNoteProducts": "Los clientes reservan tus productos, por lo que los horarios de recogida y devolución provienen de los horarios del producto.",
+    "customerEmails": "Avisar a los clientes por correo sobre su reserva",
+    "customerEmailsHint": "Envía un recordatorio 24 horas antes de la recogida y un aviso cuando cancelas una reserva. Los clientes que reservan con menos de un día de antelación no reciben recordatorio. El correo de confirmación siempre se envía."
   },
   "products": {
     "title": "Productos",
@@ -479,5 +505,37 @@
     "invalid_confirm_link": "Este enlace de confirmación no es válido. Abre el correo electrónico más reciente sobre este pedido o contacta con la tienda.",
     "not_a_product_window": "Elige una de las opciones de alquiler de la tienda.",
     "no_product_price": "Una de las bicicletas no se ofrece para esta opción."
+  },
+  "unit": {
+    "description": "Qué bicicleta es, si se puede alquilar, quién la tiene ahora y quién la ha reservado después.",
+    "notFoundTitle": "Bicicleta no encontrada",
+    "notFound": "No hay ninguna bicicleta con el código {{code}} en esta tienda.",
+    "notFoundHint": "Puede que la pegatina sea de otra tienda, que se haya cambiado el código o que se haya eliminado la bicicleta.",
+    "toFleet": "Ir a Flota",
+    "toToday": "Ir a Hoy",
+    "now": "Ahora mismo",
+    "nowNothing": "Nadie tiene esta bicicleta ahora mismo.",
+    "upcoming": "Reservada a continuación",
+    "upcomingNothing": "No hay reservas próximas.",
+    "recent": "Terminadas hace poco",
+    "maintenanceBlock": "Bloqueada por mantenimiento",
+    "overdue": "Debería haber vuelto {{at}}",
+    "outOfService": "Esta bicicleta está fuera de servicio y no se puede alquilar.",
+    "affected": "Reservas que aún usan esta bicicleta: {{count}}. Da a esos clientes otra bicicleta o llámalos.",
+    "notes": "Notas",
+    "notesPlaceholder": "Reparaciones, daños, qué revisar antes del próximo alquiler",
+    "notesNone": "Sin notas.",
+    "notesSaved": "Notas guardadas"
+  },
+  "stickers": {
+    "title": "Pegatinas QR",
+    "description": "Una pegatina por bicicleta. Imprímela al 100 % y pégala en el cuadro.",
+    "print": "Imprimir",
+    "ownerOnly": "Solo los propietarios y administradores pueden imprimir pegatinas.",
+    "origin": "Estos códigos QR abren {{origin}}.",
+    "notLive": "Este no es tu sitio en producción ({{origin}}). Los QR impresos aquí no abrirían las bicicletas de tu tienda real. Abre ohmydesk.app e imprime desde allí.",
+    "showAll": "Mostrar todas las bicicletas",
+    "none": "Aún no hay bicicletas para imprimir",
+    "noneHint": "Añade bicicletas en Flota. Las retiradas no tienen pegatina."
   }
 }

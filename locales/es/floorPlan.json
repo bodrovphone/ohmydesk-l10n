@@ -16,13 +16,15 @@
     "combineRooms": "Combinar salas",
     "save": "Guardar",
     "clearAll": "Borrar todo",
-    "clearRoom": "Borrar sala"
+    "clearRoom": "Borrar sala",
+    "fitToView": "Ajustar a la vista"
   },
   "canvas": {
     "emptyAddPrompt": "Añade puestos o formas desde el panel de la derecha.",
     "emptyShortcuts": "Arrastra para reposicionar · haz clic para seleccionar · <kbd>R</kbd> para rotar",
     "helpDrag": "<b>Arrastra</b> para mover · haz clic para seleccionar.",
-    "helpKeys": "<kbd>R</kbd> rota · <kbd>←→↑↓</kbd> mueve ligeramente · <kbd>Supr</kbd> elimina · <kbd>Esc</kbd> deselecciona."
+    "helpKeys": "<kbd>R</kbd> rota · <kbd>←→↑↓</kbd> mueve ligeramente · <kbd>Supr</kbd> elimina · <kbd>Esc</kbd> deselecciona.",
+    "retry": "No se pudo cargar el plano. Reintentar"
   },
   "tile": {
     "remove": "Eliminar",
@@ -44,7 +46,8 @@
       "rotation": "Rotación",
       "room": "Sala",
       "unplace": "Descolocar",
-      "remove": "Eliminar"
+      "remove": "Eliminar",
+      "size": "Tamaño"
     },
     "shapes": {
       "title": "Formas",

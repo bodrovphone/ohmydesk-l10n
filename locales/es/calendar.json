@@ -124,7 +124,8 @@
   "floorPlan": {
     "loading": "Cargando plano…",
     "emptyTitle": "No hay plano configurado",
-    "emptyDesc": "Ve al Editor de planos para organizar tus puestos"
+    "emptyDesc": "Ve al Editor de planos para organizar tus puestos",
+    "retry": "No se pudo cargar el plano. Reintentar"
   },
   "customIncome": {
     "title": "Añadir ingresos extra",

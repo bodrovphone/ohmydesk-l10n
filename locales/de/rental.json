@@ -76,7 +76,9 @@
     "cancelReasonPlaceholder": "Grund (optional)",
     "cancelYes": "Ja, stornieren",
     "awaitingEmail": "Wartet auf die Bestätigung per E-Mail. Ohne Bestätigung wird sie um {{time}} freigegeben.",
-    "notConfirmedInTime": "Nicht bis {{time}} bestätigt. Die Reservierung wird freigegeben, die Räder sind wieder frei."
+    "notConfirmedInTime": "Nicht bis {{time}} bestätigt. Die Reservierung wird freigegeben, die Räder sind wieder frei.",
+    "awaitingEmailBadge": "Wartet auf E-Mail",
+    "notConfirmedBadge": "Nicht bestätigt"
   },
   "orders": {
     "title": "Buchungen",
@@ -104,6 +106,81 @@
       "status": "Status"
     },
     "openOrder": "Bestellung {{number}} öffnen"
+  },
+  "newOrder": {
+    "button": "Neue Buchung",
+    "title": "Neue Buchung",
+    "description": "Für eine Buchung per Telefon, am Schalter oder über ein Hotel. Die Räder verschwinden für diesen Zeitraum von der Buchungsseite. Es wird keine E-Mail verschickt.",
+    "when": "Wann",
+    "date": "Datum",
+    "option": "Mietoption",
+    "pickup": "Abholung",
+    "return": "Rückgabe",
+    "pickWindow": "Wählen Sie zuerst den Zeitraum.",
+    "ended": "Dieser Zeitraum ist schon vorbei.",
+    "bikes": "Räder",
+    "noBikes": "Noch keine Räder angelegt. Fügen Sie sie unter Flotte hinzu.",
+    "free": "{{count}} frei",
+    "free_other": "{{count}} frei",
+    "notOffered": "Für diese Option nicht angeboten",
+    "total": "Gesamt",
+    "customer": "Kunde",
+    "name": "Name",
+    "phone": "Telefon (optional)",
+    "email": "E-Mail (optional)",
+    "notes": "Notizen (optional)",
+    "pickedUpNow": "Der Kunde nimmt die Räder jetzt mit",
+    "pickedUpHint": "Die Buchung startet als abgeholt und wird deshalb nicht als Nichterscheinen freigegeben.",
+    "create": "Buchung anlegen",
+    "created": "Buchung {{number}} angelegt",
+    "createdHint": "Zahlung bei Abholung. Es wurde keine E-Mail verschickt.",
+    "errors": {
+      "sold_out": "Nicht genug frei: {{item}}. Passen Sie Anzahl oder Zeitraum an.",
+      "sold_out_unknown": "eines der Räder",
+      "missing_visitor_name": "Bitte geben Sie den Namen des Kunden ein.",
+      "invalid_visitor_email": "Diese E-Mail-Adresse ist nicht gültig. Lassen Sie das Feld leer, wenn der Kunde keine hat.",
+      "pickup_not_due": "Der Kunde kann die Räder nur jetzt mitnehmen, wenn die Abholung innerhalb der nächsten Stunde liegt.",
+      "starts_in_past": "Dieser Zeitraum ist schon vorbei.",
+      "not_authorized": "Nur Inhaber und Admins können Buchungen eintragen."
+    }
+  },
+  "setup": {
+    "title": "Richten Sie Ihren Shop ein",
+    "progress": "{{done}} von {{total}} erledigt",
+    "hide": "Diese Checkliste ausblenden",
+    "optional": "Optional",
+    "done": "Erledigt",
+    "ownerOnly": "Bitten Sie den Inhaber des Shops, das zu erledigen.",
+    "steps": {
+      "options": {
+        "title": "Mietoptionen anlegen",
+        "hint": "Nur wenn Sie Halbtage oder Ganztage vermieten. Legen Sie sie zuerst an, dann können Sie für jeden Radtyp einen Preis pro Option festlegen. Überspringen Sie den Schritt, wenn Sie pro Tag vermieten.",
+        "action": "Optionen anlegen"
+      },
+      "types": {
+        "title": "Radtyp mit Preis anlegen",
+        "hint": "Ein Typ ist eine Art von Rad, zum Beispiel Stadtrad. Gäste können einen Typ nur buchen, wenn er einen Preis hat.",
+        "hintUnpriced": "Noch kein Preis für: {{names}}. Gäste können ihn erst buchen, wenn er einen Preis hat.",
+        "action": "Radtyp anlegen",
+        "actionUnpriced": "Preise eintragen"
+      },
+      "bikes": {
+        "title": "Räder anlegen",
+        "hint": "Jedes Ihrer Räder ist eine Einheit. Gäste können so viele buchen, wie Sie anlegen.",
+        "action": "Räder anlegen"
+      },
+      "publish": {
+        "title": "Buchungsseite einschalten",
+        "hint": "Gäste buchen auf Ihrer eigenen Seite und zahlen bei Abholung. Die Seite ist aus, bis Sie sie einschalten.",
+        "action": "Verleih-Einstellungen öffnen"
+      },
+      "test": {
+        "title": "Testbuchung machen",
+        "hint": "Öffnen Sie Ihre Buchungsseite und reservieren Sie selbst ein Rad, wie ein Gast. Stornieren Sie es danach unter Buchungen.",
+        "action": "Buchungsseite öffnen",
+        "blocked": "Schalten Sie zuerst die Buchungsseite ein."
+      }
+    }
   },
   "fleet": {
     "title": "Flotte",
@@ -218,7 +295,7 @@
     "nextWeek": "Nächste Woche",
     "today": "Heute",
     "legendBooked": "Gebucht",
-    "legendHeld": "Zahlung ausstehend",
+    "legendHeld": "Zahlung oder Bestätigung ausstehend",
     "legendMaintenance": "Wartung",
     "noUnits": "Keine Räder für diesen Typ",
     "noUnitsHint": "Fügen Sie Räder auf der Seite Flotte hinzu.",

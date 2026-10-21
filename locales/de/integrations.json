@@ -316,7 +316,8 @@
     "metaConfigSubhead": "In Meta → WhatsApp → Konfiguration einfügen",
     "callbackUrl": "Callback-URL",
     "verifyToken": "Verifizierungs-Token",
-    "metaInstructions": "Abonnieren Sie in der App 'messages'. Erste Antworten bleiben im 24-Stunden-Fenster. Vorlagen für Buchungsalarme folgen später.",
+    "metaInstructions": "Abonnieren Sie in der App messages und message_template_status_update. Erste Antworten bleiben im 24-Stunden-Fenster. Die Utility-Vorlagen unten werden in Meta von dieser Karte erstellt; das Senden an Mitglieder braucht noch eine Einwilligung.",
+    "wabaIdHint": "(für Vorlagen nötig)",
     "replaceCredentials": "Zugangsdaten ersetzen",
     "disconnect": "Trennen",
     "disconnectTitle": "WhatsApp trennen?",
@@ -336,7 +337,36 @@
     "wabaIdPlaceholder": "WhatsApp Business Account ID",
     "connectBtn": "WhatsApp verbinden",
     "connectingBtn": "Wird verbunden…",
-    "cancel": "Abbrechen"
+    "cancel": "Abbrechen",
+    "templates": {
+      "subhead": "Nachrichtenvorlagen",
+      "help": "Erstellen Sie die vier Utility-Vorlagen in Meta (Englisch und Spanisch). Meta prüft sie, bevor Sie senden können. Mitglieder werden damit noch nicht angeschrieben.",
+      "needsWaba": "Speichern Sie eine WABA-ID unter Zugangsdaten ersetzen, um Vorlagen zu erstellen.",
+      "loading": "Vorlagenstatus wird geladen…",
+      "failed": "Vorlagen konnten nicht geladen werden.",
+      "createBtn": "Vorlagen in Meta erstellen",
+      "syncBtn": "Status aktualisieren",
+      "created": "Vorlagen an Meta gesendet",
+      "synced": "Vorlagenstatus aktualisiert",
+      "createPartial": "Einige Vorlagen konnten nicht erstellt werden",
+      "langEn": "Englisch",
+      "langEs": "Spanisch",
+      "purpose": {
+        "pass_confirmed_unlock_link": "Pass bestätigt + Türlink",
+        "booking_reminder": "Buchungserinnerung",
+        "invoice_ready": "Rechnung bereit",
+        "payment_failed": "Zahlung fehlgeschlagen"
+      },
+      "status": {
+        "missing": "Nicht erstellt",
+        "pending": "In Prüfung",
+        "approved": "Freigegeben",
+        "rejected": "Abgelehnt",
+        "paused": "Pausiert",
+        "disabled": "Deaktiviert",
+        "in_appeal": "In Einspruch"
+      }
+    }
   },
   "copilot": {
     "title": "Operator Autopilot",

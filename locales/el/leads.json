@@ -1,0 +1,212 @@
+{
+  "title": "Υποψήφιοι πελάτες",
+  "description": "Άτομα που έχουν ρωτήσει για το χώρο σας. Εντοπίστε τους από το πρώτο γεια σε εγγεγραμμένο μέλος.",
+  "export": "Εξαγωγή",
+  "csv": {
+    "columns": {
+      "name": "Όνομα",
+      "stage": "Στάδιο",
+      "source": "Πηγή",
+      "contact": "Επικοινωνία",
+      "preferredDates": "Προτιμώμενες ημερομηνίες",
+      "notes": "Παραπομπές",
+      "createdAt": "Δημιουργήθηκε στο"
+    }
+  },
+  "stages": {
+    "new": {
+      "label": "Νέο",
+      "hint": "Μόλις έφτασε"
+    },
+    "contacted": {
+      "label": "Επαφή",
+      "hint": "Αναμονή απάντησης"
+    },
+    "toured": {
+      "label": "Περιήγηση",
+      "hint": "Επισκέφθηκε τον χώρο"
+    },
+    "ready": {
+      "label": "Έτοιμοι",
+      "hint": "Κλείσιμο της συμφωνίας"
+    }
+  },
+  "relTime": {
+    "today": "Σήμερα",
+    "yesterday": "1 ημέρα πριν",
+    "daysAgo": "{{count}}d πριν",
+    "weeksAgo": "{{count}}w πριν",
+    "monthsAgo": "{{count}}mo πριν"
+  },
+  "channels": {
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "viber": "Τρόπος κλήσης",
+    "instagram": "Στο Instagram",
+    "email": "Email",
+    "walkin": "Περιπέτειες",
+    "referral": "Παραπομπή",
+    "other": "Επικοινωνία"
+  },
+  "channelPlaceholders": {
+    "whatsapp": "+359 88 …",
+    "telegram": "@Χάντλε",
+    "viber": "+359 88 …",
+    "instagram": "@handle ή url ",
+    "email": "όνομα@example.com",
+    "walkin": "Περπατώντας στις Παρ 5μμ",
+    "referral": "Βία Μαρία",
+    "other": "Από πού;"
+  },
+  "summary": {
+    "allLeads": "Όλα τα στοιχεία",
+    "staleCount": "{{count}} μπαγιάτικο"
+  },
+  "nudge": {
+    "eyebrow": "OhMyDesk AI (στα Αγγλικά)",
+    "title_one": "{{count}} μόλυβδος έχει πάει κρύο.",
+    "title_other": "{{count}} υποψήφιοι πελάτες έχουν μείνει χωρίς επικοινωνία.",
+    "desc": "Καμία απάντηση για {{days}}+ ημέρες. Μια φιλική επικοινωνία συχνά βοηθά να προχωρήσει η συζήτηση.",
+    "dismiss": "Απόρριψη",
+    "reviewThem": "Επανεξέταση τους"
+  },
+  "actionbar": {
+    "addLead": "Προσθήκη μολύβδου",
+    "viewMode": "Λειτουργία προβολής",
+    "kanban": "Κανμπάν",
+    "list": "Λίστα",
+    "columns": "Στήλες",
+    "hiddenBadge": "{{count}} κρυμμένο",
+    "minColumnsTooltip": "Απαιτούνται τουλάχιστον 2 στήλες",
+    "showHideColumns": "Εμφάνιση/απόκρυψη στηλών"
+  },
+  "card": {
+    "deleteLead": "Διαγραφή μολύβδου",
+    "conciergeBadge": "Θυρωρός",
+    "conciergeTitle": "Αυτόματη δημιουργία από τον θυρωρό AI",
+    "wants": "Επιθυμίες",
+    "added": "Προστέθηκε {{time}}",
+    "moveBackTo": "Μετακίνηση πίσω στο {{stage}}",
+    "moveTo": "Μετακίνηση στο {{stage}}",
+    "finalStage": "Τελικό στάδιο"
+  },
+  "deleteAlert": {
+    "title": "Διαγραφή {{name}};",
+    "description": "Αυτό το προβάδισμα θα αφαιρεθεί οριστικά. Αυτό δεν μπορεί να αναιρεθεί.",
+    "cancel": "Ακύρωση",
+    "delete": "Διαγραφή μολύβδου"
+  },
+  "list": {
+    "leadCol": "Υποψήφιος πελάτης",
+    "channelCol": "Κανάλι",
+    "wantsCol": "Επιθυμίες",
+    "stageCol": "Στάδιο",
+    "addedCol": "Προστέθηκε",
+    "emptyStageTitle": "Κανένα στοιχείο σε αυτό το στάδιο.",
+    "emptyStageDesc": "Καθαρίστε το φίλτρο, ή μετακινήστε κάποιον προς τα εμπρός."
+  },
+  "kanban": {
+    "addToStage": "Προσθήκη σε αυτό το στάδιο",
+    "hideColumn": "Απόκρυψη αυτής της στήλης",
+    "emptyNote": "Δεν έχουμε στοιχεία ακόμα.",
+    "addLeadBtn": "+ Προσθήκη μολύβδου"
+  },
+  "emptyState": {
+    "title": "Κανένα στοιχείο ακόμα",
+    "description": "Πρόσθεσε κάποιον που ρώτησε για τον χώρο σου, ή περίμενε να έρθει η πρώτη έρευνα."
+  },
+  "drawer": {
+    "detailsAria": "{{name}} λεπτομέρειες",
+    "addedPrefix": "· Προστέθηκε {{time}}",
+    "convertCta": {
+      "title": "Έτοιμοι για μετατροπή.",
+      "desc": "Δημιουργία του μέλους από αυτό το μόλυβδο και αφαίρεση του από τον αγωγό.",
+      "btn": "Μετατροπή σε μέλος",
+      "converting": "Μετατροπή..."
+    },
+    "leadSection": {
+      "title": "Υποψήφιος πελάτης",
+      "nameLabel": "Όνομα",
+      "namePlaceholder": "Επικεφαλής όνομα",
+      "channelLabel": "Κανάλι",
+      "contactLabel": "Τηλέφωνο, @handle, ή email",
+      "contactPlaceholder": "+359 88 ... / @handle / name@example.com ",
+      "stageLabel": "Στάδιο"
+    },
+    "requestSection": {
+      "title": "Αίτηση",
+      "datesLabel": "Προτιμώμενες ημερομηνίες",
+      "datesPlaceholder": "17 Ιουν · Εύκαμπτος · Αυτό το καλοκαίρι...",
+      "notesLabel": "Παραπομπές",
+      "notesPlaceholder": "Τι ρώτησαν; Οποιοδήποτε πλαίσιο αξίζει να θυμηθούμε."
+    },
+    "timelineSection": {
+      "title": "Χρονολόγιο",
+      "reachedOutWhat": "Προσεγγίστηκε μέσω <ch>{{channel}}</ch>. {{notes}}",
+      "noContext": "Κανένα πρόσθετο πλαίσιο.",
+      "repliedWhen": "Αντίγραφο",
+      "repliedWhat": "Μετακινήσατε το προβάδισμα στο <st>{{stage}}</st>.",
+      "touredWhen": "Περιήγηση",
+      "touredWhat": "Ο/Η {{name}} <vis>επισκέφθηκε</vis> τον χώρο.",
+      "nowWhen": "Τώρα.",
+      "nowWhat": "<bold>Επιβεβαιωμένο ενδιαφέρον.</bold> Έτοιμος να προσηλυτιστείς όταν είσαι.",
+      "staleWhen": "{{days}}d ησυχία",
+      "staleWhat": "Καμία απάντηση σε {{days}} ημέρες σκεφτείτε ένα φιλικό σπρώξιμο."
+    },
+    "footer": {
+      "deleteConfirm": "Διαγραφή αυτού του μολύβδου;",
+      "yesDelete": "Ναι, διαγραφή",
+      "deleting": "Διαγραφή...",
+      "cancel": "Ακύρωση",
+      "contact": "Επικοινωνία",
+      "backTo": "Επιστροφή στο {{stage}}",
+      "moveTo": "Μετακίνηση στο {{stage}}",
+      "deleteLead": "Διαγραφή μολύβδου"
+    },
+    "missingContact": {
+      "title": "Ενημέρωση πληροφοριών επαφής για επικοινωνία",
+      "ariaLabel": "Ενημέρωση πληροφοριών επαφής",
+      "noContactDesc": "Αυτό το προβάδισμα δεν έχει λαβή {{channel}} στο αρχείο ακόμα. Προσθέστε μία παραπάνω (π.χ. <code>{{placeholder}}</code>) και θα συνδέσουμε το κουμπί Επαφή.",
+      "offlineChannelDesc": "Οι επισκέπτες χωρίς κράτηση και οι συστάσεις δεν έχουν εισερχόμενα μηνύματα για άνοιγμα. Επιλέξτε άλλο κανάλι παραπάνω (WhatsApp, Telegram, Email...) αν έχετε τρόπο επικοινωνίας.",
+      "invalidHandleDesc": "Τα στοιχεία επικοινωνίας δεν φαίνονται σωστά για {{channel}}. Δοκιμάστε <code>{{placeholder}}</code>.{{telegramNote}}",
+      "telegramNote": " Ένα Telegram @username λειτουργεί επίσης απλά πληκτρολογήστε το ως @handle.",
+      "gotIt": "Έγινε."
+    }
+  },
+  "addModal": {
+    "title": "Προσθήκη ενός μολύβδου",
+    "ariaLabel": "Προσθήκη ενός μολύβδου",
+    "subtitle": "Εντοπίστε κάποιον που έχει ρωτήσει για τον χώρο. Μετατροπή σε μέλος όταν εγγραφούν.",
+    "nameLabel": "Όνομα *",
+    "namePlaceholder": "π.χ. Μαρία Πετρόφ",
+    "reachLabel": "Πώς σε έφτασαν;",
+    "contactLabel": "Λαβή / τηλέφωνο / email",
+    "datesLabel": "Προτιμώμενες ημερομηνίες *",
+    "datesPlaceholder": "17 Ιουν · Εύκαμπτος · Αυτό το καλοκαίρι...",
+    "stageLabel": "Στάδιο",
+    "notesLabel": "Παραπομπές",
+    "optional": "(προαιρετικό)",
+    "notesPlaceholder": "Τι ρώτησαν; Οποιοδήποτε πλαίσιο αξίζει να θυμηθούμε.",
+    "cancel": "Ακύρωση",
+    "addLead": "Προσθήκη μολύβδου",
+    "adding": "Προσθήκη..."
+  },
+  "toasts": {
+    "saved": "Αποθηκεύτηκε",
+    "leadUpdated": "Ο μόλυβδος ενημερώθηκε",
+    "failedToSave": "Αποτυχία αποθήκευσης",
+    "editNotSaved": "Η επεξεργασία δεν μπόρεσε να σωθεί.",
+    "movedTo": "Μεταφέρθηκε στο {{stage}}",
+    "failed": "Αποτυχία",
+    "couldNotMove": "Δεν μπορούσε να κινηθεί το προβάδισμα.",
+    "leadAdded": "Ο μόλυβδος προστέθηκε",
+    "couldNotAdd": "Αδύνατη η προσθήκη του μολύβδου.",
+    "couldNotUpdateChannel": "Αδυναμία ενημέρωσης του καναλιού.",
+    "leadDeleted": "Ο μόλυβδος διαγράφηκε",
+    "couldNotDelete": "Αδύνατη η διαγραφή του μολύβδου.",
+    "convertedToMember": "Μετατροπή σε μέλος",
+    "convertedDesc": "{{name}} είναι πλέον μέλος. χρέωσης στη σελίδα Μέλη.",
+    "couldNotConvert": "Αδύνατη η μετατροπή αυτού του μολύβδου."
+  },
+  "contactInfoIncompleteTitle": "Στοιχεία επικοινωνίας που λείπουν ή είναι ελλιπή"
+}

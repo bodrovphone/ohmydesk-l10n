@@ -316,7 +316,8 @@
     "metaConfigSubhead": "Paste these into Meta → WhatsApp → Configuration",
     "callbackUrl": "Callback URL",
     "verifyToken": "Verify token",
-    "metaInstructions": "Subscribe the app to messages. First replies stay inside the 24-hour window. Booking-alert templates are a later step.",
+    "metaInstructions": "Subscribe the app to messages and message_template_status_update. First replies stay inside the 24-hour window. Utility templates below are created in Meta from this card; sending them to members still needs opt-in.",
+    "wabaIdHint": "(needed for templates)",
     "replaceCredentials": "Replace credentials",
     "disconnect": "Disconnect",
     "disconnectTitle": "Disconnect WhatsApp?",
@@ -336,7 +337,36 @@
     "wabaIdPlaceholder": "WhatsApp Business Account ID",
     "connectBtn": "Connect WhatsApp",
     "connectingBtn": "Connecting…",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "templates": {
+      "subhead": "Message templates",
+      "help": "Create the four Utility templates in Meta (English and Spanish). Meta reviews them before you can send. This does not message members yet.",
+      "needsWaba": "Save a WABA ID with Replace credentials to create templates.",
+      "loading": "Loading template status…",
+      "failed": "Could not load templates.",
+      "createBtn": "Create templates in Meta",
+      "syncBtn": "Refresh status",
+      "created": "Templates submitted to Meta",
+      "synced": "Template status updated",
+      "createPartial": "Some templates could not be created",
+      "langEn": "English",
+      "langEs": "Spanish",
+      "purpose": {
+        "pass_confirmed_unlock_link": "Pass confirmed + door link",
+        "booking_reminder": "Booking reminder",
+        "invoice_ready": "Invoice ready",
+        "payment_failed": "Payment failed"
+      },
+      "status": {
+        "missing": "Not created",
+        "pending": "In review",
+        "approved": "Approved",
+        "rejected": "Rejected",
+        "paused": "Paused",
+        "disabled": "Disabled",
+        "in_appeal": "In appeal"
+      }
+    }
   },
   "copilot": {
     "title": "Operator Autopilot",

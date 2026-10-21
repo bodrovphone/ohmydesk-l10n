@@ -124,7 +124,8 @@
   "floorPlan": {
     "loading": "Loading floor plan…",
     "emptyTitle": "No floor plan configured",
-    "emptyDesc": "Go to Floor Plan Editor to arrange your desks"
+    "emptyDesc": "Go to Floor Plan Editor to arrange your desks",
+    "retry": "Could not load the plan. Retry"
   },
   "customIncome": {
     "title": "Add extra earnings",

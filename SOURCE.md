@@ -3,21 +3,19 @@
 | Field | Value |
 |-------|-------|
 | Repository | https://github.com/bodrovphone/DeskPlanner |
-| Branch | `alex_b/spanish-localization` |
-| Git SHA | `6ef9996a9caf702141b39d8afe8506c72336e76a` |
-| Synced on | 2026-10-19 |
-| Paths copied | `client/src/locales/{en,de,es}/*.json` (24 namespaces per language) |
-| App integration | [DeskPlanner PR #550](https://github.com/bodrovphone/DeskPlanner/pull/550) |
+| Branch | `alex_b/greek-localization` |
+| Git SHA | `b0af5bb309547cd6c3baf88c92245d1ec0874b23` |
+| Synced on | 2026-10-21 |
+| Paths copied | `client/src/locales/{en,de,es,el}/*.json` (24 namespaces per language) |
+| App integration | [DeskPlanner PR #579](https://github.com/bodrovphone/DeskPlanner/pull/579) |
 
-All 72 JSON files are byte-for-byte copies of the app commit above. English is
-the source reference; German includes the current app fixes; Spanish is the new
-UI locale. The rental namespace is included and remains separately loaded by the
-app. This is a branch snapshot, not a claim that Spanish is released.
+All 96 JSON catalogs are byte-for-byte copies of the app commit above. English
+is the source reference. This branch preserves the open Spanish translation work
+(PR #3) and adds Greek; it is based on that branch to avoid duplicating its PR.
 
-Spanish copy is AI-drafted. Alex will arrange native Spanish review later;
-this does not block marking these PRs ready. App PR #550 also implements
-Spanish member transactional emails, Stripe checkout labels and invoice PDFs.
-Those templates and renderer live in DeskPlanner; this repository mirrors their
-UI catalogs, not Edge template code. Email/PDF language settings remain separate.
+Greek catalogs are AI/machine-drafted, with manual corrections. Native Greek
+review remains pending. App PR #579 also implements Greek member emails,
+checkout labels and invoice PDFs. Those templates live in DeskPlanner. This
+repository contains only translation catalogs and their contributor workflow.
 
-Update this file whenever locales are refreshed from DeskPlanner.
+This is a feature-branch snapshot, not a production-release claim.

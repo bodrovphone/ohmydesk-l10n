@@ -76,7 +76,9 @@
     "cancelReasonPlaceholder": "Reason (optional)",
     "cancelYes": "Yes, cancel",
     "awaitingEmail": "Waiting for the customer to confirm by email. Released at {{time}} if not confirmed.",
-    "notConfirmedInTime": "Not confirmed by {{time}}. The reservation is released and the bikes are free again."
+    "notConfirmedInTime": "Not confirmed by {{time}}. The reservation is released and the bikes are free again.",
+    "awaitingEmailBadge": "Awaiting email",
+    "notConfirmedBadge": "Not confirmed"
   },
   "orders": {
     "title": "Orders",
@@ -104,6 +106,81 @@
       "status": "Status"
     },
     "openOrder": "Open order {{number}}"
+  },
+  "newOrder": {
+    "button": "New order",
+    "title": "New order",
+    "description": "For a booking taken by phone, at the counter or by a hotel. The bikes leave the booking page for that window. No email is sent.",
+    "when": "When",
+    "date": "Date",
+    "option": "Rental option",
+    "pickup": "Pickup",
+    "return": "Return",
+    "pickWindow": "Choose the dates first.",
+    "ended": "That window has already ended.",
+    "bikes": "Bikes",
+    "noBikes": "No bikes are set up yet. Add them under Fleet.",
+    "free": "{{count}} free",
+    "free_other": "{{count}} free",
+    "notOffered": "Not offered for this option",
+    "total": "Total",
+    "customer": "Customer",
+    "name": "Name",
+    "phone": "Phone (optional)",
+    "email": "Email (optional)",
+    "notes": "Notes (optional)",
+    "pickedUpNow": "The customer takes the bikes now",
+    "pickedUpHint": "The order starts as picked up, so it is not released as a no-show.",
+    "create": "Create order",
+    "created": "Order {{number}} created",
+    "createdHint": "Pay at pickup. No email was sent.",
+    "errors": {
+      "sold_out": "Not enough free: {{item}}. Change the quantity or the window.",
+      "sold_out_unknown": "one of the bikes",
+      "missing_visitor_name": "Enter the customer's name.",
+      "invalid_visitor_email": "That email address is not valid. Leave it empty if the customer has none.",
+      "pickup_not_due": "The customer can only take the bikes now when the pickup is within the next hour.",
+      "starts_in_past": "That window has already ended.",
+      "not_authorized": "Only owners and admins can enter orders."
+    }
+  },
+  "setup": {
+    "title": "Set up your shop",
+    "progress": "{{done}} of {{total}} done",
+    "hide": "Hide this checklist",
+    "optional": "Optional",
+    "done": "Done",
+    "ownerOnly": "Ask the shop owner to do this.",
+    "steps": {
+      "options": {
+        "title": "Add your rental options",
+        "hint": "Only if you rent a half day or a full day. Add them first, so you can set a price for each option on every bike type. Skip this to rent by the day.",
+        "action": "Add options"
+      },
+      "types": {
+        "title": "Add a bike type with a price",
+        "hint": "A type is a kind of bike, for example City bike. Guests can book a type only when it has a price.",
+        "hintUnpriced": "No price yet for: {{names}}. Guests cannot book it until it has one.",
+        "action": "Add a bike type",
+        "actionUnpriced": "Add prices"
+      },
+      "bikes": {
+        "title": "Add your bikes",
+        "hint": "Every bike you own is one unit. Guests can book as many as you add.",
+        "action": "Add bikes"
+      },
+      "publish": {
+        "title": "Turn on your booking page",
+        "hint": "Guests book on your own page and pay at pickup. The page is off until you turn it on.",
+        "action": "Open Rental settings"
+      },
+      "test": {
+        "title": "Make a test booking",
+        "hint": "Open your booking page and reserve a bike yourself, like a guest. Cancel it afterwards under Orders.",
+        "action": "Open booking page",
+        "blocked": "Turn on the booking page first."
+      }
+    }
   },
   "fleet": {
     "title": "Fleet",
@@ -218,7 +295,7 @@
     "nextWeek": "Next week",
     "today": "Today",
     "legendBooked": "Booked",
-    "legendHeld": "Awaiting payment",
+    "legendHeld": "Awaiting payment or confirmation",
     "legendMaintenance": "Maintenance",
     "noUnits": "No bikes for this type",
     "noUnitsHint": "Add bikes on the Fleet page.",

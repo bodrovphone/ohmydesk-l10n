@@ -164,6 +164,8 @@
     "startDate": "Startdatum *",
     "endDate": "Enddatum *",
     "coversDates": "Zeitraum {{start}} → {{end}}",
+    "termDays_one": "{{count}} Tag",
+    "termDays_other": "{{count}} Tage",
     "ongoingContract": "Laufender Vertrag — unbefristet, kein Enddatum",
     "aboutOngoing": "Über fortlaufende Verträge",
     "ongoingContractTooltip": "Ein fortlaufender Monatsvertrag ohne festes Enddatum. Verlängert sich automatisch monatlich; markieren Sie jeden Monat als bezahlt, um ihn zu verlängern. Für eine befristete Buchung nicht ankreuzen.",

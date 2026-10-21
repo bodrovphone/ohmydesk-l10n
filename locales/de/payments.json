@@ -25,7 +25,11 @@
     "member": "Mitglied",
     "allMembers": "Alle Mitglieder",
     "selectedMembers": "{{count}} ausgewählt",
-    "clearMembers": "Zurücksetzen"
+    "clearMembers": "Zurücksetzen",
+    "clearFilters": "Filter zurücksetzen",
+    "searchMembers": "Mitglieder suchen",
+    "noMatchingMembers": "Keine passenden Mitglieder.",
+    "notAssigned": "Nicht zugewiesen"
   },
   "summary": {
     "totalPayments": "Zahlungen gesamt (erfolgreich)"
@@ -62,6 +66,10 @@
     "method": "Methode",
     "for": "Für",
     "status": "Status",
+    "actions": "Aktionen",
+    "sortBy": "Nach {{column}} sortieren",
+    "sortByAscending": "{{column}} aufsteigend sortieren",
+    "sortByDescending": "{{column}} absteigend sortieren",
     "loading": "Wird geladen…",
     "noCharges": "Noch keine Gebühren.",
     "noChargesFiltered": "Keine Gebühren entsprechen diesen Filtern.",
@@ -75,20 +83,34 @@
     "deleteManualCharge": "Manuelle Gebühr löschen",
     "edit": "Bearbeiten",
     "delete": "Löschen",
+    "editPayment": "Zahlung bearbeiten",
+    "deletePayment": "Zahlung löschen",
+    "editCharge": "Gebühr bearbeiten",
+    "deleteCharge": "Gebühr löschen",
     "recordRefund": "Rückerstattung erfassen",
     "deleteManualPayment": "Manuelle Zahlung löschen",
     "autoPaymentTooltip": "Automatische Zahlung",
+    "mutability": {
+      "externalSource": "Importierte Einträge sind schreibgeschützt.",
+      "superseded": "Dieser Eintrag wurde bereits korrigiert oder storniert.",
+      "draftInvoice": "Dieser Eintrag steht auf einem Rechnungsentwurf. Entfernen Sie ihn vor der Bearbeitung aus dem Entwurf.",
+      "sentInvoice": "Dieser Eintrag ist durch eine versendete oder bezahlte Rechnung geschützt. Stornieren Sie die Rechnung und stellen Sie sie zur Korrektur neu aus.",
+      "notFinanceManager": "Nur Finanzverantwortliche können Hauptbucheinträge ändern.",
+      "unavailable": "Bearbeiten und Löschen sind nicht verfügbar, weil der Server die Änderbarkeit dieses Eintrags nicht bestätigen konnte."
+    },
     "pagination": {
       "newer": "Neuere",
       "older": "Ältere",
-      "page": "Seite {{page}}"
+      "page": "Seite {{page}}",
+      "pageOf": "Seite {{page}} von {{pages}}"
     }
   },
   "dialogs": {
     "deletePayment": {
-      "title": "Diese manuelle Zahlung löschen?",
-      "description": "Dadurch wird der manuelle Buchungseintrag dauerhaft gelöscht. Verwenden Sie Erstatten, wenn tatsächlich Geld zurückgegeben wurde.",
-      "confirm": "Löschen"
+      "title": "Diese Zahlung löschen?",
+      "description": "Dies erfasst eine vorzeichenbehaftete Stornierung und behält die ursprüngliche Zahlung im Hauptbuch. Verwenden Sie Rückerstattung erfassen, wenn tatsächlich Geld zurückgegeben wurde.",
+      "confirm": "Stornierung erfassen",
+      "pending": "Wird erfasst…"
     },
     "refundPayment": {
       "title": "Vollständige Rückerstattung erfassen?",
@@ -101,14 +123,16 @@
       "confirm": "Stornierung erstellen"
     },
     "deleteCharge": {
-      "title": "Diese manuelle Gebühr löschen?",
-      "description": "Dadurch wird die manuell erstellte Gebühr dauerhaft entfernt.",
-      "confirm": "Löschen"
+      "title": "Diese Gebühr löschen?",
+      "description": "Dies erfasst eine separate Stornierung und behält die ursprüngliche Gebühr im Hauptbuch sichtbar.",
+      "confirm": "Stornierung erfassen",
+      "pending": "Wird erfasst…"
     },
     "payment": {
       "titleAdd": "Zahlung hinzufügen",
       "titleEdit": "Zahlung bearbeiten",
       "lockedNotice": "Erfolgreiche und integrationsgesperrte Zahlungen sind unveränderlich. Erfassen Sie stattdessen eine Rückerstattung.",
+      "successStatusHint": "Eine erfolgreiche Zahlung bleibt erfolgreich. Korrekturen werden als vorzeichenbehaftete Hauptbuchereignisse erfasst.",
       "memberLabel": "Mitglied",
       "memberOptional": "(optional)",
       "memberValidation": "Wählen Sie ein bestehendes Mitglied aus der Liste aus.",
@@ -140,6 +164,7 @@
     },
     "charge": {
       "title": "Manuelle Gebühr hinzufügen",
+      "titleEdit": "Gebühr bearbeiten",
       "memberLabel": "Mitglied",
       "memberOptional": "(optional)",
       "memberValidation": "Wählen Sie ein bestehendes Mitglied aus der Liste aus.",
@@ -149,7 +174,8 @@
       "descriptionPlaceholder": "Was in Rechnung gestellt wird",
       "reversalHint": "Korrekturen werden mit einer separaten negativen Stornogebühr erfasst.",
       "saving": "Wird gespeichert…",
-      "add": "Gebühr hinzufügen"
+      "add": "Gebühr hinzufügen",
+      "save": "Änderungen speichern"
     },
     "memberLink": {
       "title": "Bestehendes Mitglied verknüpfen",
@@ -160,18 +186,20 @@
     }
   },
   "toasts": {
-    "paymentDeleted": "Zahlung gelöscht",
+    "paymentDeleted": "Zahlungsstornierung erfasst",
     "refundRecorded": "Rückerstattung erfasst",
     "couldNotRefund": "Rückerstattung konnte nicht erfasst werden.",
     "reversalCreated": "Stornogebühr erstellt",
     "couldNotReverse": "Gebühr konnte nicht storniert werden.",
-    "chargeDeleted": "Manuelle Gebühr gelöscht",
+    "chargeDeleted": "Gebührenstornierung erfasst",
     "paymentRecordedSuccess": "Zahlung als erfolgreich erfasst",
     "paymentUpdated": "Zahlung aktualisiert",
     "paymentRecorded": "Zahlung erfasst",
     "couldNotSavePayment": "Zahlung konnte nicht gespeichert werden.",
     "chargeAdded": "Gebühr hinzugefügt",
+    "chargeUpdated": "Gebührenkorrektur erfasst",
     "couldNotCreateCharge": "Gebühr konnte nicht erstellt werden.",
+    "couldNotUpdateCharge": "Gebühr konnte nicht aktualisiert werden.",
     "memberLinked": "Mitglied verknüpft",
     "couldNotLinkMember": "Mitglied konnte nicht verknüpft werden.",
     "chargeLinkedError": "Diese Gebühr ist mit einer Rechnung oder Stornierung verknüpft und kann nicht gelöscht werden.",

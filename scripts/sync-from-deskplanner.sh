@@ -10,12 +10,12 @@ DESKPLANNER="${DESKPLANNER:-${L10N_ROOT}/../deskplanner}"
 
 # Keep the shipped app locales together. Validate every source before writing
 # anything so an older checkout cannot leave a half-refreshed mirror.
-LANGUAGES=(en de es)
+LANGUAGES=(en de es el)
 for language in "${LANGUAGES[@]}"; do
   source_dir="${DESKPLANNER}/client/src/locales/${language}"
   if [[ ! -d "${source_dir}" ]]; then
     echo "error: missing ${source_dir}" >&2
-    echo "Set DESKPLANNER to a checkout with all shipped locales (en/de/es)." >&2
+    echo "Set DESKPLANNER to a checkout with all shipped locales (en/de/es/el)." >&2
     exit 1
   fi
 done

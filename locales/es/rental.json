@@ -76,7 +76,15 @@
     "cancelReasonPlaceholder": "Motivo (opcional)",
     "cancelYes": "Sí, cancelar",
     "awaitingEmail": "Esperando que el cliente confirme por correo electrónico. Liberado a las {{time}} si no se confirma.",
-    "notConfirmedInTime": "No confirmado a las {{time}}. La reserva se libera y las bicicletas vuelven a estar libres."
+    "notConfirmedInTime": "No confirmado a las {{time}}. La reserva se libera y las bicicletas vuelven a estar libres.",
+    "awaitingEmailBadge": "Esperando el correo",
+    "notConfirmedBadge": "Sin confirmar",
+    "cancelEmailNote": "El cliente recibe un correo avisando de que el pedido se ha cancelado. El motivo que escribas no se envía.",
+    "emails": {
+      "reminderSent": "Recordatorio enviado {{at}}",
+      "reminderScheduled": "El recordatorio se enviará {{at}}",
+      "cancellationSent": "Correo de cancelación enviado {{at}}"
+    }
   },
   "orders": {
     "title": "Pedidos",
@@ -104,6 +112,81 @@
       "status": "Estado"
     },
     "openOrder": "Abrir pedido {{number}}"
+  },
+  "newOrder": {
+    "button": "Nuevo pedido",
+    "title": "Nuevo pedido",
+    "description": "Para una reserva tomada por teléfono, en el mostrador o por un hotel. Las bicicletas desaparecen de la página de reservas para ese periodo. No se envía ningún correo.",
+    "when": "Cuándo",
+    "date": "Fecha",
+    "option": "Opción de alquiler",
+    "pickup": "Recogida",
+    "return": "Devolución",
+    "pickWindow": "Elige primero las fechas.",
+    "ended": "Ese periodo ya ha terminado.",
+    "bikes": "Bicicletas",
+    "noBikes": "Aún no hay bicicletas. Añádelas en Flota.",
+    "free": "{{count}} libres",
+    "free_other": "{{count}} libres",
+    "notOffered": "No disponible para esta opción",
+    "total": "Total",
+    "customer": "Cliente",
+    "name": "Nombre",
+    "phone": "Teléfono (opcional)",
+    "email": "Correo electrónico (opcional)",
+    "notes": "Notas (opcional)",
+    "pickedUpNow": "El cliente se lleva las bicicletas ahora",
+    "pickedUpHint": "El pedido empieza como recogido, así que no se libera como no presentado.",
+    "create": "Crear pedido",
+    "created": "Pedido {{number}} creado",
+    "createdHint": "Pago al recoger. No se envió ningún correo.",
+    "errors": {
+      "sold_out": "No hay suficientes libres: {{item}}. Cambia la cantidad o el periodo.",
+      "sold_out_unknown": "una de las bicicletas",
+      "missing_visitor_name": "Introduce el nombre del cliente.",
+      "invalid_visitor_email": "Ese correo no es válido. Déjalo vacío si el cliente no tiene.",
+      "pickup_not_due": "El cliente solo puede llevarse las bicicletas ahora si la recogida es en la próxima hora.",
+      "starts_in_past": "Ese periodo ya ha terminado.",
+      "not_authorized": "Solo los propietarios y administradores pueden introducir pedidos."
+    }
+  },
+  "setup": {
+    "title": "Configura tu tienda",
+    "progress": "{{done}} de {{total}} hechos",
+    "hide": "Ocultar esta lista",
+    "optional": "Opcional",
+    "done": "Hecho",
+    "ownerOnly": "Pide al propietario de la tienda que lo haga.",
+    "steps": {
+      "options": {
+        "title": "Añade tus opciones de alquiler",
+        "hint": "Solo si alquilas medio día o un día completo. Añádelas primero, así podrás poner un precio por opción a cada tipo de bicicleta. Sáltate este paso si alquilas por día.",
+        "action": "Añadir opciones"
+      },
+      "types": {
+        "title": "Añade un tipo de bicicleta con precio",
+        "hint": "Un tipo es una clase de bicicleta, por ejemplo bicicleta urbana. Los clientes solo pueden reservar un tipo que tenga precio.",
+        "hintUnpriced": "Aún sin precio: {{names}}. Los clientes no podrán reservarlo hasta que lo tenga.",
+        "action": "Añadir un tipo de bicicleta",
+        "actionUnpriced": "Añadir precios"
+      },
+      "bikes": {
+        "title": "Añade tus bicicletas",
+        "hint": "Cada bicicleta que tengas es una unidad. Los clientes pueden reservar tantas como añadas.",
+        "action": "Añadir bicicletas"
+      },
+      "publish": {
+        "title": "Activa tu página de reservas",
+        "hint": "Los clientes reservan en tu propia página y pagan al recoger. La página está desactivada hasta que la actives.",
+        "action": "Abrir ajustes de alquiler"
+      },
+      "test": {
+        "title": "Haz una reserva de prueba",
+        "hint": "Abre tu página de reservas y reserva una bicicleta tú mismo, como un cliente. Cancélala después en Pedidos.",
+        "action": "Abrir página de reservas",
+        "blocked": "Activa primero la página de reservas."
+      }
+    }
   },
   "fleet": {
     "title": "Flota",
@@ -204,7 +287,25 @@
       "retired": "Retirado"
     },
     "deleteConfirm": "¿Eliminar \"{{label}}\"?",
-    "deleteBlocked": "Esta bicicleta tiene reservas y no se puede eliminar. Retírala en su lugar."
+    "deleteBlocked": "Esta bicicleta tiene reservas y no se puede eliminar. Retírala en su lugar.",
+    "printAll": "Imprimir pegatinas QR",
+    "code": {
+      "label": "Código de la bicicleta",
+      "hint": "Va impreso en la pegatina y forma parte de su dirección QR. De 2 a 32 letras, dígitos o guiones.",
+      "invalid": "Usa de 2 a 32 letras, dígitos o guiones, sin empezar por un guion.",
+      "taken": "Otra bicicleta de esta tienda ya tiene ese código.",
+      "saved": "Código guardado. Imprime la pegatina de nuevo: el QR anterior ya no abre esta bicicleta.",
+      "reprintWarning": "Si cambias el código, imprime una pegatina nueva. El QR anterior dejará de funcionar."
+    },
+    "qr": {
+      "button": "Pegatina QR",
+      "title": "Pegatina QR de {{label}}",
+      "scanHint": "El personal la escanea con la cámara del móvil para abrir esta bicicleta. Tiene que haber iniciado sesión.",
+      "aria": "Código QR de la bicicleta {{code}}",
+      "print": "Imprimir pegatina",
+      "open": "Abrir página de la bicicleta",
+      "copy": "Copiar enlace"
+    }
   },
   "calendar": {
     "title": "Calendario",
@@ -218,7 +319,7 @@
     "nextWeek": "Semana siguiente",
     "today": "Hoy",
     "legendBooked": "Reservado",
-    "legendHeld": "Pendiente de pago",
+    "legendHeld": "Pendiente de pago o confirmación",
     "legendMaintenance": "Mantenimiento",
     "noUnits": "No hay bicicletas para este tipo",
     "noUnitsHint": "Añade bicicletas en la página de Flota.",
@@ -252,7 +353,9 @@
     "invalidNoShow": "Las horas de liberación deben estar entre 0 y 168.",
     "invalidHold": "El tiempo de retención debe estar entre 5 y 1440 minutos.",
     "ownerOnly": "Solo el propietario puede cambiar los ajustes de alquiler.",
-    "hoursNoteProducts": "Los clientes reservan tus productos, por lo que los horarios de recogida y devolución provienen de los horarios del producto."
+    "hoursNoteProducts": "Los clientes reservan tus productos, por lo que los horarios de recogida y devolución provienen de los horarios del producto.",
+    "customerEmails": "Avisar a los clientes por correo sobre su reserva",
+    "customerEmailsHint": "Envía un recordatorio 24 horas antes de la recogida y un aviso cuando cancelas una reserva. Los clientes que reservan con menos de un día de antelación no reciben recordatorio. El correo de confirmación siempre se envía."
   },
   "products": {
     "title": "Productos",
@@ -402,5 +505,37 @@
     "invalid_confirm_link": "Este enlace de confirmación no es válido. Abre el correo electrónico más reciente sobre este pedido o contacta con la tienda.",
     "not_a_product_window": "Elige una de las opciones de alquiler de la tienda.",
     "no_product_price": "Una de las bicicletas no se ofrece para esta opción."
+  },
+  "unit": {
+    "description": "Qué bicicleta es, si se puede alquilar, quién la tiene ahora y quién la ha reservado después.",
+    "notFoundTitle": "Bicicleta no encontrada",
+    "notFound": "No hay ninguna bicicleta con el código {{code}} en esta tienda.",
+    "notFoundHint": "Puede que la pegatina sea de otra tienda, que se haya cambiado el código o que se haya eliminado la bicicleta.",
+    "toFleet": "Ir a Flota",
+    "toToday": "Ir a Hoy",
+    "now": "Ahora mismo",
+    "nowNothing": "Nadie tiene esta bicicleta ahora mismo.",
+    "upcoming": "Reservada a continuación",
+    "upcomingNothing": "No hay reservas próximas.",
+    "recent": "Terminadas hace poco",
+    "maintenanceBlock": "Bloqueada por mantenimiento",
+    "overdue": "Debería haber vuelto {{at}}",
+    "outOfService": "Esta bicicleta está fuera de servicio y no se puede alquilar.",
+    "affected": "Reservas que aún usan esta bicicleta: {{count}}. Da a esos clientes otra bicicleta o llámalos.",
+    "notes": "Notas",
+    "notesPlaceholder": "Reparaciones, daños, qué revisar antes del próximo alquiler",
+    "notesNone": "Sin notas.",
+    "notesSaved": "Notas guardadas"
+  },
+  "stickers": {
+    "title": "Pegatinas QR",
+    "description": "Una pegatina por bicicleta. Imprímela al 100 % y pégala en el cuadro.",
+    "print": "Imprimir",
+    "ownerOnly": "Solo los propietarios y administradores pueden imprimir pegatinas.",
+    "origin": "Estos códigos QR abren {{origin}}.",
+    "notLive": "Este no es tu sitio en producción ({{origin}}). Los QR impresos aquí no abrirían las bicicletas de tu tienda real. Abre ohmydesk.app e imprime desde allí.",
+    "showAll": "Mostrar todas las bicicletas",
+    "none": "Aún no hay bicicletas para imprimir",
+    "noneHint": "Añade bicicletas en Flota. Las retiradas no tienen pegatina."
   }
 }

@@ -76,7 +76,15 @@
     "cancelReasonPlaceholder": "Grund (optional)",
     "cancelYes": "Ja, stornieren",
     "awaitingEmail": "Wartet auf die Bestätigung per E-Mail. Ohne Bestätigung wird sie um {{time}} freigegeben.",
-    "notConfirmedInTime": "Nicht bis {{time}} bestätigt. Die Reservierung wird freigegeben, die Räder sind wieder frei."
+    "notConfirmedInTime": "Nicht bis {{time}} bestätigt. Die Reservierung wird freigegeben, die Räder sind wieder frei.",
+    "awaitingEmailBadge": "Wartet auf E-Mail",
+    "notConfirmedBadge": "Nicht bestätigt",
+    "cancelEmailNote": "Der Kunde erhält eine E-Mail, dass die Buchung storniert wurde. Der eingegebene Grund wird nicht gesendet.",
+    "emails": {
+      "reminderSent": "Erinnerung gesendet {{at}}",
+      "reminderScheduled": "Erinnerung wird gesendet {{at}}",
+      "cancellationSent": "Stornierungs-E-Mail gesendet {{at}}"
+    }
   },
   "orders": {
     "title": "Buchungen",
@@ -104,6 +112,81 @@
       "status": "Status"
     },
     "openOrder": "Bestellung {{number}} öffnen"
+  },
+  "newOrder": {
+    "button": "Neue Buchung",
+    "title": "Neue Buchung",
+    "description": "Für eine Buchung per Telefon, am Schalter oder über ein Hotel. Die Räder verschwinden für diesen Zeitraum von der Buchungsseite. Es wird keine E-Mail verschickt.",
+    "when": "Wann",
+    "date": "Datum",
+    "option": "Mietoption",
+    "pickup": "Abholung",
+    "return": "Rückgabe",
+    "pickWindow": "Wählen Sie zuerst den Zeitraum.",
+    "ended": "Dieser Zeitraum ist schon vorbei.",
+    "bikes": "Räder",
+    "noBikes": "Noch keine Räder angelegt. Fügen Sie sie unter Flotte hinzu.",
+    "free": "{{count}} frei",
+    "free_other": "{{count}} frei",
+    "notOffered": "Für diese Option nicht angeboten",
+    "total": "Gesamt",
+    "customer": "Kunde",
+    "name": "Name",
+    "phone": "Telefon (optional)",
+    "email": "E-Mail (optional)",
+    "notes": "Notizen (optional)",
+    "pickedUpNow": "Der Kunde nimmt die Räder jetzt mit",
+    "pickedUpHint": "Die Buchung startet als abgeholt und wird deshalb nicht als Nichterscheinen freigegeben.",
+    "create": "Buchung anlegen",
+    "created": "Buchung {{number}} angelegt",
+    "createdHint": "Zahlung bei Abholung. Es wurde keine E-Mail verschickt.",
+    "errors": {
+      "sold_out": "Nicht genug frei: {{item}}. Passen Sie Anzahl oder Zeitraum an.",
+      "sold_out_unknown": "eines der Räder",
+      "missing_visitor_name": "Bitte geben Sie den Namen des Kunden ein.",
+      "invalid_visitor_email": "Diese E-Mail-Adresse ist nicht gültig. Lassen Sie das Feld leer, wenn der Kunde keine hat.",
+      "pickup_not_due": "Der Kunde kann die Räder nur jetzt mitnehmen, wenn die Abholung innerhalb der nächsten Stunde liegt.",
+      "starts_in_past": "Dieser Zeitraum ist schon vorbei.",
+      "not_authorized": "Nur Inhaber und Admins können Buchungen eintragen."
+    }
+  },
+  "setup": {
+    "title": "Richten Sie Ihren Shop ein",
+    "progress": "{{done}} von {{total}} erledigt",
+    "hide": "Diese Checkliste ausblenden",
+    "optional": "Optional",
+    "done": "Erledigt",
+    "ownerOnly": "Bitten Sie den Inhaber des Shops, das zu erledigen.",
+    "steps": {
+      "options": {
+        "title": "Mietoptionen anlegen",
+        "hint": "Nur wenn Sie Halbtage oder Ganztage vermieten. Legen Sie sie zuerst an, dann können Sie für jeden Radtyp einen Preis pro Option festlegen. Überspringen Sie den Schritt, wenn Sie pro Tag vermieten.",
+        "action": "Optionen anlegen"
+      },
+      "types": {
+        "title": "Radtyp mit Preis anlegen",
+        "hint": "Ein Typ ist eine Art von Rad, zum Beispiel Stadtrad. Gäste können einen Typ nur buchen, wenn er einen Preis hat.",
+        "hintUnpriced": "Noch kein Preis für: {{names}}. Gäste können ihn erst buchen, wenn er einen Preis hat.",
+        "action": "Radtyp anlegen",
+        "actionUnpriced": "Preise eintragen"
+      },
+      "bikes": {
+        "title": "Räder anlegen",
+        "hint": "Jedes Ihrer Räder ist eine Einheit. Gäste können so viele buchen, wie Sie anlegen.",
+        "action": "Räder anlegen"
+      },
+      "publish": {
+        "title": "Buchungsseite einschalten",
+        "hint": "Gäste buchen auf Ihrer eigenen Seite und zahlen bei Abholung. Die Seite ist aus, bis Sie sie einschalten.",
+        "action": "Verleih-Einstellungen öffnen"
+      },
+      "test": {
+        "title": "Testbuchung machen",
+        "hint": "Öffnen Sie Ihre Buchungsseite und reservieren Sie selbst ein Rad, wie ein Gast. Stornieren Sie es danach unter Buchungen.",
+        "action": "Buchungsseite öffnen",
+        "blocked": "Schalten Sie zuerst die Buchungsseite ein."
+      }
+    }
   },
   "fleet": {
     "title": "Flotte",
@@ -204,7 +287,25 @@
       "retired": "Ausgemustert"
     },
     "deleteConfirm": "„{{label}}“ löschen?",
-    "deleteBlocked": "Dieses Rad hat Buchungen und kann nicht gelöscht werden. Mustern Sie es stattdessen aus."
+    "deleteBlocked": "Dieses Rad hat Buchungen und kann nicht gelöscht werden. Mustern Sie es stattdessen aus.",
+    "printAll": "QR-Aufkleber drucken",
+    "code": {
+      "label": "Rad-Code",
+      "hint": "Steht auf dem Aufkleber und ist Teil seiner QR-Adresse. 2 bis 32 Buchstaben, Ziffern oder Bindestriche.",
+      "invalid": "Verwenden Sie 2 bis 32 Buchstaben, Ziffern oder Bindestriche, nicht mit einem Bindestrich am Anfang.",
+      "taken": "Ein anderes Rad in diesem Shop hat diesen Code bereits.",
+      "saved": "Code gespeichert. Drucken Sie den Aufkleber neu: Der alte QR-Code öffnet dieses Rad nicht mehr.",
+      "reprintWarning": "Wenn Sie den Code ändern, drucken Sie einen neuen Aufkleber. Der alte QR-Code funktioniert dann nicht mehr."
+    },
+    "qr": {
+      "button": "QR-Aufkleber",
+      "title": "QR-Aufkleber für {{label}}",
+      "scanHint": "Das Team scannt ihn mit der Handykamera, um dieses Rad zu öffnen. Dafür muss man angemeldet sein.",
+      "aria": "QR-Code für Rad {{code}}",
+      "print": "Aufkleber drucken",
+      "open": "Radseite öffnen",
+      "copy": "Link kopieren"
+    }
   },
   "calendar": {
     "title": "Kalender",
@@ -218,7 +319,7 @@
     "nextWeek": "Nächste Woche",
     "today": "Heute",
     "legendBooked": "Gebucht",
-    "legendHeld": "Zahlung ausstehend",
+    "legendHeld": "Zahlung oder Bestätigung ausstehend",
     "legendMaintenance": "Wartung",
     "noUnits": "Keine Räder für diesen Typ",
     "noUnitsHint": "Fügen Sie Räder auf der Seite Flotte hinzu.",
@@ -252,7 +353,9 @@
     "invalidNoShow": "Die Stunden müssen zwischen 0 und 168 liegen.",
     "invalidHold": "Die Reservierung muss zwischen 5 und 1440 Minuten liegen.",
     "ownerOnly": "Nur der Inhaber kann die Verleih-Einstellungen ändern.",
-    "hoursNoteProducts": "Kunden buchen Ihre Produkte, daher gelten für Abholung und Rückgabe die Produktzeiten."
+    "hoursNoteProducts": "Kunden buchen Ihre Produkte, daher gelten für Abholung und Rückgabe die Produktzeiten.",
+    "customerEmails": "Gäste per E-Mail über ihre Reservierung informieren",
+    "customerEmailsHint": "Sendet 24 Stunden vor der Abholung eine Erinnerung und eine Nachricht, wenn Sie eine Reservierung stornieren. Gäste, die weniger als einen Tag im Voraus buchen, erhalten keine Erinnerung. Die Bestätigungs-E-Mail wird immer gesendet."
   },
   "products": {
     "title": "Produkte",
@@ -402,5 +505,37 @@
     "invalid_confirm_link": "Dieser Bestätigungslink ist ungültig. Öffnen Sie die neueste E-Mail zu dieser Buchung oder kontaktieren Sie den Verleih.",
     "not_a_product_window": "Bitte wählen Sie eine der Mietoptionen des Verleihs.",
     "no_product_price": "Eines der Räder wird für diese Option nicht angeboten."
+  },
+  "unit": {
+    "description": "Was dieses Rad ist, ob es vermietet werden kann, wer es gerade hat und wer als Nächstes gebucht hat.",
+    "notFoundTitle": "Rad nicht gefunden",
+    "notFound": "In diesem Shop gibt es kein Rad mit dem Code {{code}}.",
+    "notFoundHint": "Der Aufkleber gehört vielleicht zu einem anderen Shop, oder der Code wurde geändert oder das Rad gelöscht.",
+    "toFleet": "Zur Flotte",
+    "toToday": "Zu Heute",
+    "now": "Gerade jetzt",
+    "nowNothing": "Niemand hat dieses Rad gerade.",
+    "upcoming": "Als Nächstes gebucht",
+    "upcomingNothing": "Keine kommenden Buchungen.",
+    "recent": "Zuletzt beendet",
+    "maintenanceBlock": "Für Wartung gesperrt",
+    "overdue": "Hätte {{at}} zurück sein sollen",
+    "outOfService": "Dieses Rad ist außer Betrieb und kann nicht vermietet werden.",
+    "affected": "Buchungen, die dieses Rad noch nutzen: {{count}}. Geben Sie diesen Kunden ein anderes Rad oder rufen Sie sie an.",
+    "notes": "Notizen",
+    "notesPlaceholder": "Reparaturen, Schäden, was vor der nächsten Vermietung zu prüfen ist",
+    "notesNone": "Keine Notizen.",
+    "notesSaved": "Notizen gespeichert"
+  },
+  "stickers": {
+    "title": "QR-Aufkleber",
+    "description": "Ein Aufkleber pro Rad. In 100 % Größe drucken und auf den Rahmen kleben.",
+    "print": "Drucken",
+    "ownerOnly": "Nur Inhaber und Admins können Aufkleber drucken.",
+    "origin": "Diese QR-Codes öffnen {{origin}}.",
+    "notLive": "Das ist nicht Ihre Live-Seite ({{origin}}). Hier gedruckte QR-Codes würden die Räder Ihres Live-Shops nicht öffnen. Öffnen Sie ohmydesk.app und drucken Sie von dort.",
+    "showAll": "Alle Räder anzeigen",
+    "none": "Noch keine Räder zum Drucken",
+    "noneHint": "Fügen Sie Räder unter Flotte hinzu. Ausgemusterte Räder bekommen keinen Aufkleber."
   }
 }

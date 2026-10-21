@@ -197,7 +197,8 @@
       "endedOn": "ended {{date}}",
       "officePlans": "Office & virtual office",
       "planHistoryNote": "Monthly, weekly and hot-desk plans aren't logged as separate plan changes — see the Bookings tab for those.",
-      "emailLanguageEs": "Spanish"
+      "emailLanguageEs": "Spanish",
+      "emailLanguageEl": "Greek"
     },
     "repriceDialog": {
       "title": "Apply the new price now, or only later?",

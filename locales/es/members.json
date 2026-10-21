@@ -191,7 +191,8 @@
       "endedOn": "finalizó el {{date}}",
       "officePlans": "Oficina y oficina virtual",
       "planHistoryNote": "Los planes mensuales, semanales y de puesto de trabajo no se registran como cambios de plan separados; consulta la pestaña Reservas para esos.",
-      "emailLanguageEs": "Español"
+      "emailLanguageEs": "Español",
+      "emailLanguageEl": "Griego"
     },
     "repriceDialog": {
       "title": "¿Aplicar el nuevo precio ahora o solo más tarde?",

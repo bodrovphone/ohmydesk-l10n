@@ -10,6 +10,7 @@ The application source lives in the main product repo: **[DeskPlanner](https://g
 locales/
   en/   # English source strings (reference)
   de/   # German mirror for QA and community edits
+  el/   # Greek draft translations (Greece and Cyprus)
   es/   # Spanish UI copy — native review pending
 ```
 
@@ -65,3 +66,11 @@ The app importer validates namespace filenames and JSON and skips English by
 default. Run the app catalog tests after importing edits to check Spanish key,
 placeholder and markup parity. Merge this translation PR and import any review
 corrections into the app PR before claiming the two repositories are in sync.
+
+## Greek
+
+`locales/el/` contains the 24 Greek namespaces from DeskPlanner PR #579. Copy was
+machine-drafted, then reviewed key by key with AI assistance; native review is
+pending. Keep all
+keys, interpolation and markup aligned with English. Greek covers web/mobile UI;
+member email and PDF support lives in the app repository. See `GREEK.md`.

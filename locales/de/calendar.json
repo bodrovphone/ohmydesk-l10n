@@ -124,7 +124,8 @@
   "floorPlan": {
     "loading": "Raumplan wird geladen…",
     "emptyTitle": "Kein Raumplan konfiguriert",
-    "emptyDesc": "Gehen Sie zum Raumplan-Editor, um Ihre Schreibtische anzuordnen"
+    "emptyDesc": "Gehen Sie zum Raumplan-Editor, um Ihre Schreibtische anzuordnen",
+    "retry": "Plan konnte nicht geladen werden. Erneut versuchen"
   },
   "customIncome": {
     "title": "Zusatzerlöse hinzufügen",

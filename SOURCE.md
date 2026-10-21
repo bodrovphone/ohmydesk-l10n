@@ -4,7 +4,7 @@
 |-------|-------|
 | Repository | https://github.com/bodrovphone/DeskPlanner |
 | Branch | `alex_b/greek-localization` |
-| Git SHA | `4a577871e2092d6a53c27f263d5e343565ddc74d` |
+| Git SHA | `b500916da06729e82f89c40cba0204c44dc01165` |
 | Synced on | 2026-10-21 |
 | Paths copied | `client/src/locales/{en,de,es,el}/*.json` (24 namespaces per language) |
 | App integration | [DeskPlanner PR #579](https://github.com/bodrovphone/DeskPlanner/pull/579) |
